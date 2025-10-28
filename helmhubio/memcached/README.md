@@ -44,7 +44,7 @@ To install the chart with the release name `my-release`:
 helm install my-release oci://REGISTRY_NAME/REPOSITORY_NAME/memcached
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 These commands deploy Memcached on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
 
@@ -405,7 +405,7 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 helm install my-release --set auth.username=user,auth.password=password oci://REGISTRY_NAME/REPOSITORY_NAME/memcached
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 The above command sets the Memcached admin account username and password to `user` and `password` respectively.
 
@@ -417,7 +417,7 @@ Alternatively, a YAML file that specifies the values for the parameters can be p
 helm install my-release -f values.yaml oci://REGISTRY_NAME/REPOSITORY_NAME/memcached
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 > **Tip**: You can use the default [values.yaml](https://github.com/helmhub-io/charts/tree/main/helmhubio/memcached/values.yaml)
 
 ## Troubleshooting
@@ -473,7 +473,7 @@ kubectl delete deployment  memcached --cascade=false
 helm upgrade memcached oci://REGISTRY_NAME/REPOSITORY_NAME/memcached
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 ### To 3.0.0
 

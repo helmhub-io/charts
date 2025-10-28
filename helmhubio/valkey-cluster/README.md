@@ -57,7 +57,7 @@ To install the chart with the release name `my-release`:
 helm install my-release oci://REGISTRY_NAME/REPOSITORY_NAME/valkey-cluster
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 The command deploys Valkey on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
 
@@ -67,7 +67,7 @@ NOTE: if you get a timeout error waiting for the hook to complete increase the d
 helm install --timeout 600s myrelease oci://REGISTRY_NAME/REPOSITORY_NAME/valkey-cluster
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 > **Tip**: List all releases using `helm list`
 
 ## Configuration and installation details
@@ -147,7 +147,7 @@ The following will be an example to add one more node:
 helm upgrade --timeout 600s <release> --set "password=${VALKEY_PASSWORD},cluster.nodes=7,cluster.update.addNodes=true,cluster.update.currentNumberOfNodes=6" oci://REGISTRY_NAME/REPOSITORY_NAME/valkey-cluster
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 Where `VALKEY_PASSWORD` is the password obtained with the command that appears after the first installation of the Helm Chart.
 The cluster will continue up while restarting pods one by one as the quorum is not lost.
@@ -160,7 +160,7 @@ If you are using external access, to add a new node you will need to perform two
 helm upgrade <release> --set "password=${VALKEY_PASSWORD},cluster.externalAccess.enabled=true,cluster.externalAccess.service.type=LoadBalancer,cluster.externalAccess.service.loadBalancerIP[0]=<loadBalancerip-0>,cluster.externalAccess.service.loadBalancerIP[1]=<loadbalanacerip-1>,cluster.externalAccess.service.loadBalancerIP[2]=<loadbalancerip-2>,cluster.externalAccess.service.loadBalancerIP[3]=<loadbalancerip-3>,cluster.externalAccess.service.loadBalancerIP[4]=<loadbalancerip-4>,cluster.externalAccess.service.loadBalancerIP[5]=<loadbalancerip-5>,cluster.externalAccess.service.loadBalancerIP[6]=,cluster.nodes=7,cluster.init=false oci://REGISTRY_NAME/REPOSITORY_NAME/valkey-cluster
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 > Important here to provide the loadBalancerIP parameters for the new nodes empty to not get an index error.
 
 As we want to add a new node, we are setting `cluster.nodes=7` and we leave empty the LoadBalancerIP for the new node, so the cluster will provide the correct one.
@@ -172,7 +172,7 @@ Now, wait until the cluster provides the new LoadBalancerIP for the new service 
 helm upgrade <release> --set "password=${VALKEY_PASSWORD},cluster.externalAccess.enabled=true,cluster.externalAccess.service.type=LoadBalancer,cluster.externalAccess.service.loadBalancerIP[0]=<loadbalancerip-0>,cluster.externalAccess.service.loadBalancerIP[1]=<loadbalancerip-1>,cluster.externalAccess.service.loadBalancerIP[2]=<loadbalancerip-2>,cluster.externalAccess.service.loadBalancerIP[3]=<loadbalancerip-3>,cluster.externalAccess.service.loadBalancerIP[4]=<loadbalancerip-4>,cluster.externalAccess.service.loadBalancerIP[5]=<loadbalancerip-5>,cluster.externalAccess.service.loadBalancerIP[6]=<loadbalancerip-6>,cluster.nodes=7,cluster.init=false,cluster.update.addNodes=true,cluster.update.newExternalIPs[0]=<load-balancerip-6>" oci://REGISTRY_NAME/REPOSITORY_NAME/valkey-cluster
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 Note we are providing the new IPs at `cluster.update.newExternalIPs`, the flag `cluster.update.addNodes=true` to enable the creation of the Job that adds a new node and now we are setting the LoadBalancerIP of the new service instead of leave it empty.
 
@@ -709,7 +709,7 @@ helm install my-release \
     oci://REGISTRY_NAME/REPOSITORY_NAME/valkey-cluster
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 The above command sets the Valkey server password to `secretpassword`.
 
@@ -721,7 +721,7 @@ Alternatively, a YAML file that specifies the values for the parameters can be p
 helm install my-release -f values.yaml oci://REGISTRY_NAME/REPOSITORY_NAME/valkey-cluster
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 > **Tip**: You can use the default [values.yaml](https://github.com/helmhub-io/charts/tree/main/helmhubio/valkey-cluster/values.yaml)
 > **Note for minikube users**: Current versions of minikube (v0.24.1 at the time of writing) provision `hostPath` persistent volumes that are only writable by root. Using chart defaults cause pod failure for the Valkey pod as it attempts to write to the `/bitnami` directory. See minikube issue [1990](https://github.com/kubernetes/minikube/issues/1990) for more information.
 

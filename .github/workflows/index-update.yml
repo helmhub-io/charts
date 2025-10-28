@@ -24,7 +24,7 @@ jobs:
       - id: get-oci-index
         name: Get OCI index
         run: |
-          oras pull registry-1.docker.io/bitnamicharts/charts-index:latest
+          oras pull registry-1.docker.io/helmhubiocharts/charts-index:latest
           cat charts-index.json | yq -P | yq eval '. | .entries[] |= .versions' > ./oci_index.yaml
       - id: get-charts-index
         name: Get Charts index

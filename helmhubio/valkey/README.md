@@ -45,7 +45,7 @@ To install the chart with the release name `my-release`:
 helm install my-release oci://REGISTRY_NAME/REPOSITORY_NAME/valkey
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 The command deploys Valkey on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
 
@@ -431,7 +431,7 @@ By default, the chart mounts a [Persistent Volume](https://kubernetes.io/docs/co
 helm install my-release --set primary.persistence.existingClaim=PVC_NAME oci://REGISTRY_NAME/REPOSITORY_NAME/valkey
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 ## Parameters
 
@@ -1028,7 +1028,7 @@ helm install my-release \
     oci://REGISTRY_NAME/REPOSITORY_NAME/valkey
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 The above command sets the Valkey server password to `secretpassword`.
 
@@ -1040,7 +1040,7 @@ Alternatively, a YAML file that specifies the values for the parameters can be p
 helm install my-release -f values.yaml oci://REGISTRY_NAME/REPOSITORY_NAME/valkey
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 > **Tip**: You can use the default [values.yaml](https://github.com/helmhub-io/charts/tree/main/helmhubio/valkey/values.yaml)
 
 ## Troubleshooting
@@ -1071,7 +1071,7 @@ Backwards compatibility is not guaranteed. To upgrade to `2.0.0`, install a new 
 helm install valkey oci://REGISTRY_NAME/REPOSITORY_NAME/valkey --set auth.password=[PASSWORD] --set primary.persistence.existingClaim=[EXISTING_PVC]
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 | Note: you need to substitute the placeholder *[EXISTING_PVC]* with the name of the PVC used on your previous release, and *[PASSWORD]* with the password used in your previous release.
 

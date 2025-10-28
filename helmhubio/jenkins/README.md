@@ -46,7 +46,7 @@ To install the chart with the release name `my-release`:
 helm install my-release oci://REGISTRY_NAME/REPOSITORY_NAME/jenkins
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 These commands deploy Jenkins on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
 
@@ -511,7 +511,7 @@ helm install my-release \
   oci://REGISTRY_NAME/REPOSITORY_NAME/jenkins
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 The above command sets the Jenkins administrator account username and password to `admin` and `password` respectively.
 
@@ -523,7 +523,7 @@ Alternatively, a YAML file that specifies the values for the above parameters ca
 helm install my-release -f values.yaml oci://REGISTRY_NAME/REPOSITORY_NAME/jenkins
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 > **Tip**: You can use the default [values.yaml](https://github.com/helmhub-io/charts/tree/main/helmhubio/jenkins/values.yaml)
 
 ## Troubleshooting
@@ -586,7 +586,7 @@ helm upgrade jenkins oci://REGISTRY_NAME/REPOSITORY_NAME/jenkins --set jenkinsPa
 kubectl exec -it $(kubectl get pod -l app.kubernetes.io/instance=jenkins,app.kubernetes.io/name=jenkins -o jsonpath="{.items[0].metadata.name}") -- find /helmhubio/jenkins -mindepth 1 -maxdepth 1 -not -name jenkins_home -exec rm -rf {} \;
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 ### To 7.0.0
 
@@ -602,7 +602,7 @@ kubectl delete deployments.apps jenkins
 helm upgrade jenkins oci://REGISTRY_NAME/REPOSITORY_NAME/jenkins --set jenkinsPassword=$JENKINS_PASSWORD
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 ### To 6.1.0
 

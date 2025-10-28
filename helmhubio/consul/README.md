@@ -45,7 +45,7 @@ To install the chart with the release name `my-release`:
 helm install my-release oci://REGISTRY_NAME/REPOSITORY_NAME/consul
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 These commands deploy HashiCorp Consul on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
 
@@ -467,7 +467,7 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 helm install my-release --set domain=consul-domain,gossipKey=secretkey oci://REGISTRY_NAME/REPOSITORY_NAME/consul
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 The above command sets the HashiCorp Consul domain to `consul-domain` and sets the gossip key to `secretkey`.
 
@@ -479,7 +479,7 @@ Alternatively, a YAML file that specifies the values for the above parameters ca
 helm install my-release -f values.yaml oci://REGISTRY_NAME/REPOSITORY_NAME/consul
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 > **Tip**: You can use the default [values.yaml](https://github.com/helmhub-io/charts/tree/main/helmhubio/consul/values.yaml)
 
 ## Troubleshooting
@@ -557,7 +557,7 @@ kubectl delete statefulset consul
 helm upgrade <DEPLOYMENT_NAME> oci://REGISTRY_NAME/REPOSITORY_NAME/consul
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 ### To 6.0.0
 
@@ -571,7 +571,7 @@ Consul container was moved to a non-root approach. There shouldn't be any issue 
 helm upgrade my-release oci://REGISTRY_NAME/REPOSITORY_NAME/consul
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 If you use a previous container image (previous to **1.4.0-r16**) disable the `securityContext` by running the command below:
 
@@ -579,7 +579,7 @@ If you use a previous container image (previous to **1.4.0-r16**) disable the `s
 helm upgrade my-release oci://REGISTRY_NAME/REPOSITORY_NAME/consul --set securityContext.enabled=false,image.tag=XXX
 ```
 
-> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=bitnamicharts`.
+> Note: You need to substitute the placeholders `REGISTRY_NAME` and `REPOSITORY_NAME` with a reference to your Helm chart registry and repository. For example, in the case of HelmHubIO, you need to use `REGISTRY_NAME=registry-1.docker.io` and `REPOSITORY_NAME=helmhubiocharts`.
 
 ### To 2.0.0
 

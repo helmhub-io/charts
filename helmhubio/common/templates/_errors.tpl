@@ -72,7 +72,7 @@ Usage:
   {{- if and (eq (len $relocatedImages) 0) (eq (len $replacedImages) (len $bitnamiLegacyImages)) -}}
     {{- $errorString = print "\n\n⚠ WARNING: " $errorString -}}
     {{- print $errorString -}}
-  {{- else if or (contains "docker.io/helmhubio/" $originalImages) (contains "docker.io/bitnamiprem/" $originalImages) (contains "docker.io/bitnamisecure/" $originalImages) -}}
+  {{- else if or (contains "docker.io/helmhubio/" $originalImages) (contains "docker.io/helmhubio/" $originalImages) (contains "docker.io/helmhubio/" $originalImages) -}}
     {{- $errorString = print "\n\n⚠ ERROR: " $errorString -}}
     {{- $errorString = print $errorString "\n\nIf you are sure you want to proceed with non-standard containers, you can skip container image verification by setting the global parameter 'global.security.allowInsecureImages' to true." -}}
     {{- $errorString = print $errorString "\nFurther information can be obtained at https://github.com/helmhub-io/charts/issues/30850" -}}

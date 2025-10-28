@@ -1,12 +1,12 @@
 dependencies:
 - name: node-exporter
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://registry-1.docker.io/helmhubiocharts
   version: 4.5.19
 - name: kube-state-metrics
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://registry-1.docker.io/helmhubiocharts
   version: 5.1.0
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://registry-1.docker.io/helmhubiocharts
   version: 2.31.4
 - name: kube-prometheus-crds
   repository: file://./charts/kube-prometheus-crds

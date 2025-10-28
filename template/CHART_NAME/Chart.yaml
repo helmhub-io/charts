@@ -8,10 +8,10 @@ appVersion: %%UPSTREAM_PROJECT_VERSION%%
 dependencies:
   - condition: SUBCHART_NAME.enabled
     name: SUBCHART_NAME
-    repository: oci://registry-1.docker.io/bitnamicharts
+    repository: oci://registry-1.docker.io/helmhubiocharts
     version: %%MAJOR_SUBCHART_VERSION_(A.X.X)%%
   - name: common
-    repository: oci://registry-1.docker.io/bitnamicharts
+    repository: oci://registry-1.docker.io/helmhubiocharts
     tags:
       - bitnami-common
     version: 2.x.x
@@ -24,11 +24,11 @@ keywords:
   - ...
 maintainers:
   - name: Broadcom, Inc. All Rights Reserved.
-    url: https://github.com/bitnami/charts
+    url: https://github.com/helmhub-io/charts
 name: %%CHART_NAME%%
 sources:
-  - https://github.com/bitnami/charts/tree/main/bitnami/%%IMAGE_NAME%%
-  - https://github.com/bitnami/containers/tree/main/bitnami/%%IMAGE_NAME%%
+  - https://github.com/helmhub-io/charts/tree/main/helmhubio/%%IMAGE_NAME%%
+  - https://github.com/bitnami/containers/tree/main/helmhubio/%%IMAGE_NAME%%
   - %%UPSTREAM_PROJECT_SOURCE_CODE_URL%%
   - ...
 version: 0.1.0
