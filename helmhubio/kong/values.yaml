@@ -353,7 +353,7 @@ kong:
   ## Container resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param kong.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if kong.resources is set (kong.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "medium"
   ## @param kong.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -725,7 +725,7 @@ ingressController:
   ## Container resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param ingressController.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if ingressController.resources is set (ingressController.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param ingressController.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -857,7 +857,7 @@ migration:
   ## Container resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param migration.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if migration.resources is set (migration.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param migration.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -895,7 +895,7 @@ migration:
 ##
 
 ## PostgreSQL chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/postgresql/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/postgresql/values.yaml
 ## @param postgresql.enabled Switch to enable or disable the PostgreSQL helm chart
 ## @param postgresql.auth.postgresPassword Password for the "postgres" admin user
 ## @param postgresql.auth.username Name for a custom user to create
@@ -917,7 +917,7 @@ postgresql:
     ## PostgreSQL Primary resource requests and limits
     ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param postgresql.primary.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if primary.resources is set (primary.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "nano"
     ## @param postgresql.primary.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -953,7 +953,7 @@ postgresql:
 ##
 
 ## Cassandra chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/cassandra/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/cassandra/values.yaml
 ## @param cassandra.enabled Switch to enable or disable the Cassandra helm chart
 ## @param cassandra.dbUser.user Cassandra admin user
 ## @param cassandra.dbUser.password Password for `cassandra.dbUser.user`. Randomly generated if empty
@@ -994,7 +994,7 @@ cassandra:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param cassandra.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "large"
   ## @param cassandra.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1065,7 +1065,7 @@ metrics:
     ##
     labels: {}
     ## @param metrics.serviceMonitor.selector Prometheus instance selector labels
-    ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+    ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
     ##
     selector: {}
     ## @param metrics.serviceMonitor.relabelings RelabelConfigs to apply to samples before scraping

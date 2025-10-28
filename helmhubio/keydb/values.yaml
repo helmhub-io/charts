@@ -109,7 +109,7 @@ image:
   debug: false
 
 ## @section KeyDB common configuration parameters
-## https://github.com/bitnami/containers/tree/main/bitnami/keydb#configuration
+## https://github.com/bitnami/containers/tree/main/helmhubio/keydb#configuration
 ##
 
 ## @param architecture KeyDB architecture. Allowed values: `standalone` or `replication`
@@ -119,7 +119,7 @@ image:
 ##
 architecture: replication
 ## KeyDB Authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/keydb#setting-the-server-password-on-first-run
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/keydb#setting-the-server-password-on-first-run
 ##
 auth:
   ## @param auth.enabled Enable password authentication
@@ -261,7 +261,7 @@ master:
   ## KeyDB master resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param master.resourcesPreset Set KeyDB master container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param master.resources Set KeyDB master container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -749,7 +749,7 @@ replica:
   ## KeyDB replicas resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param replica.resourcesPreset Set KeyDB replicas container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param replica.resources Set KeyDB replicas container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1315,7 +1315,7 @@ metrics:
   ## KeyDB metrics exporter resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param metrics.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if metrics.resources is set (metrics.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param metrics.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1388,7 +1388,7 @@ metrics:
     ##
     relabelings: []
     ## @param metrics.serviceMonitor.selector Prometheus instance selector labels
-    ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+    ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
     ## selector:
     ##   prometheus: my-prometheus
     ##
@@ -1500,7 +1500,7 @@ volumePermissions:
   ## Init container's resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param volumePermissions.resourcesPreset Set init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param volumePermissions.resources Set init container requests and limits for different resources like CPU or memory (essential for production workloads)

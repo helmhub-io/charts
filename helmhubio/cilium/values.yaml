@@ -222,7 +222,7 @@ agent:
   ## Cilium Agent resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param agent.resourcesPreset Set Cilium Agent container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if agent.resources is set (agent.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param agent.resources Set Cilium Agent container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -482,7 +482,7 @@ agent:
       ## Cilium Agent "prepare-write-dirs" init container resource requests and limits
       ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       ## @param agent.defaultInitContainers.prepareWriteDirs.resourcesPreset Set Cilium Agent "prepare-write-dirs" init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if agent.resources is set (agent.initContainerResources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "nano"
       ## @param agent.defaultInitContainers.prepareWriteDirs.resources Set Cilium Agent "prepare-write-dirs" init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -531,7 +531,7 @@ agent:
       ## Cilium Agent "build-config" init container resource requests and limits
       ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       ## @param agent.defaultInitContainers.buildConfig.resourcesPreset Set Cilium Agent "build-config" init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if agent.resources is set (agent.initContainerResources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "nano"
       ## @param agent.defaultInitContainers.buildConfig.resources Set Cilium Agent "build-config" init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -591,7 +591,7 @@ agent:
       ## Cilium Agent "install-cni-plugin" init container resource requests and limits
       ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       ## @param agent.defaultInitContainers.installCniPlugin.resourcesPreset Set Cilium Agent "install-cni-plugin" init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if agent.resources is set (agent.initContainerResources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "nano"
       ## @param agent.defaultInitContainers.installCniPlugin.resources Set Cilium Agent "install-cni-plugin" init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -640,7 +640,7 @@ agent:
       ## Cilium Agent "host-mount-bpf" init container resource requests and limits
       ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       ## @param agent.defaultInitContainers.mountBpf.resourcesPreset Set Cilium Agent "host-mount-bpf" init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if agent.resources is set (agent.initContainerResources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "nano"
       ## @param agent.defaultInitContainers.mountBpf.resources Set Cilium Agent "host-mount-bpf" init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -689,7 +689,7 @@ agent:
       ## Cilium Agent "host-mount-cgroup2" init container resource requests and limits
       ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       ## @param agent.defaultInitContainers.mountCgroup2.resourcesPreset Set Cilium Agent "host-mount-cgroup2" init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if agent.resources is set (agent.initContainerResources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "nano"
       ## @param agent.defaultInitContainers.mountCgroup2.resources Set Cilium Agent "host-mount-cgroup2" init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -747,7 +747,7 @@ agent:
       ## Cilium Agent "clean-state" init container resource requests and limits
       ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       ## @param agent.defaultInitContainers.cleanState.resourcesPreset Set Cilium Agent "clean-state" init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if agent.resources is set (agent.initContainerResources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "nano"
       ## @param agent.defaultInitContainers.cleanState.resources Set Cilium Agent "clean-state" init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -796,7 +796,7 @@ agent:
       ## Cilium Agent "wait-for-kube-proxy" init container resource requests and limits
       ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       ## @param agent.defaultInitContainers.waitForKubeProxy.resourcesPreset Set Cilium Agent "wait-for-kube-proxy" init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if agent.resources is set (agent.initContainerResources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "nano"
       ## @param agent.defaultInitContainers.waitForKubeProxy.resources Set Cilium Agent "wait-for-kube-proxy" init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -988,7 +988,7 @@ agent:
       ##
       relabelings: []
       ## @param agent.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ## selector:
       ##   prometheus: my-prometheus
       ##
@@ -1103,7 +1103,7 @@ operator:
   ## Cilium Operator resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param operator.resourcesPreset Set Cilium Operator container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if operator.resources is set (operator.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param operator.resources Set Cilium Operator container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1487,7 +1487,7 @@ operator:
       ##
       relabelings: []
       ## @param operator.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ## selector:
       ##   prometheus: my-prometheus
       ##
@@ -1596,7 +1596,7 @@ envoy:
   ## Cilium Envoy resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param envoy.resourcesPreset Set Cilium Envoy container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if envoy.resources is set (envoy.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param envoy.resources Set Cilium Envoy container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1947,7 +1947,7 @@ envoy:
       ##
       relabelings: []
       ## @param envoy.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ## selector:
       ##   prometheus: my-prometheus
       ##
@@ -2084,7 +2084,7 @@ hubble:
         ##
         relabelings: []
         ## @param hubble.peers.metrics.serviceMonitor.selector Prometheus instance selector labels
-        ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+        ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
         ## selector:
         ##   prometheus: my-prometheus
         ##
@@ -2200,7 +2200,7 @@ hubble:
     ## Hubble Relay resource requests and limits
     ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param hubble.relay.resourcesPreset Set Hubble Relay container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if hubble.relay.resources is set (hubble.relay.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "nano"
     ## @param hubble.relay.resources Set Hubble Relay container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2432,7 +2432,7 @@ hubble:
         ## Hubble Relay "wait-for-hubble-peers" init container resource requests and limits
         ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
         ## @param hubble.relay.defaultInitContainers.waitForHubble.resourcesPreset Set Hubble Relay "wait-for-hubble-peers" init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if hubble.relay.resources is set (hubble.relay.defaultInitContainers.waitForHubble.resources is recommended for production).
-        ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+        ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
         ##
         resourcesPreset: "nano"
         ## @param hubble.relay.defaultInitContainers.waitForHubble.resources Set Hubble Relay "wait-for-hubble-peers" init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2674,7 +2674,7 @@ hubble:
         ##
         relabelings: []
         ## @param hubble.relay.metrics.serviceMonitor.selector Prometheus instance selector labels
-        ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+        ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
         ## selector:
         ##   prometheus: my-prometheus
         ##
@@ -2784,7 +2784,7 @@ hubble:
       ## Hubble UI frontend resource requests and limits
       ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       ## @param hubble.ui.frontend.resourcesPreset Set Hubble UI frontend container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if hubble.ui.frontend.resources is set (hubble.ui.frontend.resources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "nano"
       ## @param hubble.ui.frontend.resources Set Hubble UI frontend container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2963,7 +2963,7 @@ hubble:
       ## Hubble UI backend resource requests and limits
       ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       ## @param hubble.ui.backend.resourcesPreset Set Hubble UI backend container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if hubble.ui.backend.resources is set (hubble.ui.backend.resources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "nano"
       ## @param hubble.ui.backend.resources Set Hubble UI backend container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -3183,7 +3183,7 @@ hubble:
         ## Hubble UI "wait-for-hubble-relay" init container resource requests and limits
         ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
         ## @param hubble.ui.defaultInitContainers.waitForHubbleRelay.resourcesPreset Set Hubble UI "wait-for-hubble-relay" init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if hubble.ui.resources is set (hubble.ui.defaultInitContainers.waitForHubbleRelay.resources is recommended for production).
-        ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+        ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
         ##
         resourcesPreset: "nano"
         ## @param hubble.ui.defaultInitContainers.waitForHubbleRelay.resources Set Hubble UI "wait-for-hubble-relay" init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -3496,7 +3496,7 @@ hubble:
 ##
 
 ## etcd chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/etcd/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/etcd/values.yaml
 ##
 etcd:
   ## @param etcd.enabled Deploy etcd to satisfy the key-value store requirements
@@ -3512,7 +3512,7 @@ etcd:
     rbac:
       create: false
   ## @param etcd.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param etcd.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

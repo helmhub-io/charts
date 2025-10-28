@@ -150,19 +150,19 @@ dnsConfig: {}
 ##
 auth:
   ## @param auth.username RabbitMQ application username
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/rabbitmq#environment-variables
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/rabbitmq#environment-variables
   ##
   username: user
   ## @param auth.password RabbitMQ application password
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/rabbitmq#environment-variables
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/rabbitmq#environment-variables
   ##
   password: ""
   ## @param auth.securePassword Whether to set the RabbitMQ password securely. This is incompatible with loading external RabbitMQ definitions and 'true' when not setting the auth.password parameter.
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/rabbitmq#environment-variables
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/rabbitmq#environment-variables
   ##
   securePassword: true
   ## @param auth.updatePassword Update RabbitMQ password on secret change
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/rabbitmq#environment-variables
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/rabbitmq#environment-variables
   ##
   updatePassword: false
   ## @param auth.existingPasswordSecret Existing secret with RabbitMQ credentials (existing secret must contain a value for `rabbitmq-password` key or override with setting auth.existingSecretPasswordKey)
@@ -178,7 +178,7 @@ auth:
   ##
   enableLoopbackUser: false
   ## @param auth.erlangCookie Erlang cookie to determine whether different nodes are allowed to communicate with each other
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/rabbitmq#environment-variables
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/rabbitmq#environment-variables
   ##
   erlangCookie: ""
   ## @param auth.existingErlangSecret Existing secret with RabbitMQ Erlang cookie (must contain a value for `rabbitmq-erlang-cookie` key or override with auth.existingSecretErlangKey)
@@ -228,13 +228,13 @@ auth:
 ##
 logs: "-"
 ## @param ulimitNofiles RabbitMQ Max File Descriptors
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/rabbitmq#environment-variables
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/rabbitmq#environment-variables
 ## ref: https://www.rabbitmq.com/install-debian.html#kernel-resource-limits
 ##
 ulimitNofiles: "65535"
 ## RabbitMQ maximum available scheduler threads and online scheduler threads. By default it will create a thread per CPU detected, with the following parameters you can tune it manually.
 ## ref: https://hamidreza-s.github.io/erlang/scheduling/real-time/preemptive/migration/2016/02/09/erlang-scheduler-details.html#scheduler-threads
-## ref: https://github.com/bitnami/charts/issues/2189
+## ref: https://github.com/helmhub-io/charts/issues/2189
 ## @param maxAvailableSchedulers RabbitMQ maximum available scheduler threads
 ## @param onlineSchedulers RabbitMQ online scheduler threads
 ##
@@ -817,7 +817,7 @@ containerSecurityContext:
 ## resources, such as Minikube. If you do want to specify resources, uncomment the following
 ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
 ## @param resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
 ##
 resourcesPreset: "micro"
 ## @param resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1046,7 +1046,7 @@ service:
   ##
   distPortEnabled: true
   ## @param service.managerPortEnabled RabbitMQ Manager port
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/rabbitmq#environment-variables
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/rabbitmq#environment-variables
   ##
   managerPortEnabled: true
   ## @param service.epmdPortEnabled RabbitMQ EPMD Discovery service port
@@ -1385,7 +1385,7 @@ metrics:
     ##
     podTargetLabels: {}
     ## @param metrics.serviceMonitor.selector ServiceMonitor selector labels
-    ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+    ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
     ##
     ## selector:
     ##   prometheus: my-prometheus
@@ -1617,7 +1617,7 @@ volumePermissions:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param volumePermissions.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param volumePermissions.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

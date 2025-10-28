@@ -260,7 +260,7 @@ master:
   ## Master Server resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param master.resourcesPreset Set Master Server container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if master.resources is set (master.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param master.resources Set Master Server container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -872,7 +872,7 @@ master:
       ##
       relabelings: []
       ## @param master.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ## selector:
       ##   prometheus: my-prometheus
       ##
@@ -955,7 +955,7 @@ volume:
   ## Volume Server resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param volume.resourcesPreset Set Volume Server container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if volume.resources is set (volume.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param volume.resources Set Volume Server container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1576,7 +1576,7 @@ volume:
       ##
       relabelings: []
       ## @param volume.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ## selector:
       ##   prometheus: my-prometheus
       ##
@@ -1662,7 +1662,7 @@ filer:
   ## Filer Server resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param filer.resourcesPreset Set Filer Server container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if filer.resources is set (filer.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param filer.resources Set Filer Server container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2235,7 +2235,7 @@ filer:
       ##
       relabelings: []
       ## @param filer.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ## selector:
       ##   prometheus: my-prometheus
       ##
@@ -2321,7 +2321,7 @@ s3:
   ## Amazon S3 API resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param s3.resourcesPreset Set Amazon S3 API container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if s3.resources is set (s3.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param s3.resources Set Amazon S3 API container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2835,7 +2835,7 @@ s3:
       ##
       relabelings: []
       ## @param s3.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ## selector:
       ##   prometheus: my-prometheus
       ##
@@ -2917,7 +2917,7 @@ webdav:
   ## WebDAV resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param webdav.resourcesPreset Set WebDAV container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if webdav.resources is set (webdav.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param webdav.resources Set WebDAV container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -3441,7 +3441,7 @@ iam:
   ## IAM resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param iam.resourcesPreset Set IAM container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if webdav.resources is set (webdav.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param iam.resources Set IAM container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -3735,7 +3735,7 @@ volumePermissions:
   ## Init container's resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param volumePermissions.resourcesPreset Set init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param volumePermissions.resources Set init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -3787,7 +3787,7 @@ serviceAccount:
 ##
 
 ## MariaDB chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/mariadb/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/mariadb/values.yaml
 ##
 mariadb:
   ## @param mariadb.enabled Deploy a MariaDB server to satisfy the Filer server database requirements
@@ -3795,7 +3795,7 @@ mariadb:
   ##
   enabled: true
   ## Bitnami MariaDB image
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/mariadb
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb
   ## @param mariadb.image.registry [default: REGISTRY_NAME] MariaDB image registry
   ## @param mariadb.image.repository [default: REPOSITORY_NAME/mariadb] MariaDB image repository
   ## @skip mariadb.image.tag MariaDB image tag (immutable tags are recommended)
@@ -3827,9 +3827,9 @@ mariadb:
   ## @param mariadb.auth.database MariaDB custom database
   ## @param mariadb.auth.username MariaDB custom user name
   ## @param mariadb.auth.password MariaDB custom user password
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/mariadb#setting-the-root-password-on-first-run
-  ##      https://github.com/bitnami/containers/blob/main/bitnami/mariadb/README.md#creating-a-database-on-first-run
-  ##      https://github.com/bitnami/containers/blob/main/bitnami/mariadb/README.md#creating-a-database-user-on-first-run
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb#setting-the-root-password-on-first-run
+  ##      https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-on-first-run
+  ##      https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-user-on-first-run
   ##
   auth:
     rootPassword: ""
@@ -3871,7 +3871,7 @@ mariadb:
     ## resources, such as Minikube. If you do want to specify resources, uncomment the following
     ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
     ## @param mariadb.primary.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if primary.resources is set (primary.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "micro"
     ## @param mariadb.primary.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -3886,7 +3886,7 @@ mariadb:
     ##
     resources: {}
 ## PostgresSQL chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/postgresql/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/postgresql/values.yaml
 ##
 postgresql:
   ## @param postgresql.enabled Deploy a PostgresSQL server to satisfy the Filer server database requirements
@@ -3894,7 +3894,7 @@ postgresql:
   ##
   enabled: false
   ## Bitnami PostgreSQL image version
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql
   ## @param postgresql.image.registry [default: REGISTRY_NAME] PostgreSQL image registry
   ## @param postgresql.image.repository [default: REPOSITORY_NAME/postgresql] PostgreSQL image repository
   ## @skip postgresql.image.tag PostgreSQL image tag (immutable tags are recommended)
@@ -3942,7 +3942,7 @@ postgresql:
     ## PostgreSQL Primary resource requests and limits
     ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param postgresql.primary.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if postgresql.primary.resources is set (postgresql.primary.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "nano"
     ## @param postgresql.primary.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -4077,7 +4077,7 @@ externalDatabase:
     ## Container resource requests and limits
     ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param externalDatabase.initDatabaseJob.resourcesPreset Set init external database job container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if externalDatabase.initDatabaseJob.resources is set (externalDatabase.initDatabaseJob.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "micro"
     ## @param externalDatabase.initDatabaseJob.resources Set init external database job container requests and limits for different resources like CPU or memory (essential for production workloads)

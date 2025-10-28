@@ -322,7 +322,7 @@ postgresql:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param postgresql.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if postgresql.resources is set (postgresql.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param postgresql.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -473,7 +473,7 @@ postgresql:
   ##
   existingSecret: ""
   ## @param postgresql.postgresPassword PostgreSQL password for the `postgres` user when `username` is not `postgres`
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql#creating-a-database-user-on-first-run (see note!)
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql#creating-a-database-user-on-first-run (see note!)
   ##
   postgresPassword: ""
   ## @param postgresql.usePasswordFiles Set to `true` to mount PostgreSQL secret as a file instead of passing environment variable
@@ -524,7 +524,7 @@ postgresql:
   ##
   usePgRewind: false
   ## Audit settings
-  ## https://github.com/bitnami/containers/tree/main/bitnami/postgresql#auditing
+  ## https://github.com/bitnami/containers/tree/main/helmhubio/postgresql#auditing
   ##
   audit:
     ## @param postgresql.audit.logHostname Add client hostnames to the log file
@@ -590,8 +590,8 @@ postgresql:
   ## @param postgresql.repmgrConfiguration Repmgr configuration
   ## You can use this parameter to specify the content for repmgr.conf
   ## Otherwise, a repmgr.conf will be generated based on the environment variables
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration-file
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration-file
   ## Example:
   ## repmgrConfiguration: |-
   ##   ssh_options='-o "StrictHostKeyChecking no" -v'
@@ -602,8 +602,8 @@ postgresql:
   ## @param postgresql.configuration PostgreSQL configuration
   ## You can use this parameter to specify the content for postgresql.conf
   ## Otherwise, a postgresql.conf will be generated based on the environment variables
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration-file
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration-file
   ## Example:
   ## configuration: |-
   ##   listen_addresses = '*'
@@ -614,8 +614,8 @@ postgresql:
   ## @param postgresql.pgHbaConfiguration PostgreSQL client authentication configuration
   ## You can use this parameter to specify the content for pg_hba.conf
   ## Otherwise, a pg_hba.conf will be generated based on the environment variables
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration-file
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration-file
   ## Example:
   ## pgHbaConfiguration: |-
   ##   host     all            repmgr    0.0.0.0/0    md5
@@ -629,7 +629,7 @@ postgresql:
   configurationCM: ""
   ## @param postgresql.extendedConf Extended PostgreSQL configuration (requires `volumePermissions.enabled` to be `true`)
   ## Similar to postgresql.configuration, but _appended_ to the main configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#allow-settings-to-be-loaded-from-files-other-than-the-default-postgresqlconf
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#allow-settings-to-be-loaded-from-files-other-than-the-default-postgresqlconf
   ## Example:
   ## extendedConf: |-
   ##   deadlock_timeout = 1s
@@ -644,7 +644,7 @@ postgresql:
   ## @param postgresql.initdbScripts Dictionary of initdb scripts
   ## Specify dictionary of scripts to be run at first boot
   ## The allowed extensions are `.sh`, `.sql` and `.sql.gz`
-  ## ref: https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha#initialize-a-fresh-instance
+  ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/postgresql-ha#initialize-a-fresh-instance
   ## e.g:
   ## initdbScripts:
   ##   my_init_script.sh: |
@@ -884,7 +884,7 @@ witness:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param witness.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if witness.resources is set (witness.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param witness.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -981,7 +981,7 @@ witness:
   repmgrReconnectAttempts: 2
   repmgrReconnectInterval: 3
   ## Audit settings
-  ## https://github.com/bitnami/containers/tree/main/bitnami/postgresql#auditing
+  ## https://github.com/bitnami/containers/tree/main/helmhubio/postgresql#auditing
   ##
   audit:
     ## @param witness.audit.logHostname Add client hostnames to the log file
@@ -1044,8 +1044,8 @@ witness:
   ## @param witness.repmgrConfiguration Repmgr configuration
   ## You can use this parameter to specify the content for repmgr.conf
   ## Otherwise, a repmgr.conf will be generated based on the environment variables
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration-file
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration-file
   ## Example:
   ## repmgrConfiguration: |-
   ##   ssh_options='-o "StrictHostKeyChecking no" -v'
@@ -1056,8 +1056,8 @@ witness:
   ## @param witness.configuration PostgreSQL configuration
   ## You can use this parameter to specify the content for witness.conf
   ## Otherwise, a repmgr.conf will be generated based on the environment variables
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration-file
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration-file
   ## Example:
   ## configuration: |-
   ##   listen_addresses = '*'
@@ -1068,8 +1068,8 @@ witness:
   ## @param witness.pgHbaConfiguration PostgreSQL client authentication configuration
   ## You can use this parameter to specify the content for pg_hba.conf
   ## Otherwise, a repmgr.conf will be generated based on the environment variables
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration-file
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration-file
   ## Example:
   ## pgHbaConfiguration: |-
   ##   host     all            repmgr    0.0.0.0/0    md5
@@ -1083,7 +1083,7 @@ witness:
   configurationCM: ""
   ## @param witness.extendedConf Extended PostgreSQL configuration (requires `volumePermissions.enabled` to be `true`)
   ## Similar to witness.configuration, but _appended_ to the main configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#allow-settings-to-be-loaded-from-files-other-than-the-default-postgresqlconf
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#allow-settings-to-be-loaded-from-files-other-than-the-default-postgresqlconf
   ## Example:
   ## extendedConf: |-
   ##   deadlock_timeout = 1s
@@ -1098,7 +1098,7 @@ witness:
   ## @param witness.initdbScripts Dictionary of initdb scripts
   ## Specify dictionary of scripts to be run at first boot
   ## The allowed extensions are `.sh`, `.sql` and `.sql.gz`
-  ## ref: https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha#initialize-a-fresh-instance
+  ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/postgresql-ha#initialize-a-fresh-instance
   ## e.g:
   ## initdbScripts:
   ##   my_init_script.sh: |
@@ -1343,7 +1343,7 @@ pgpool:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param pgpool.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if pgpool.resources is set (pgpool.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param pgpool.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1500,64 +1500,64 @@ pgpool:
   ##
   authenticationMethod: scram-sha-256
   ## @param pgpool.logConnections Log all client connections (PGPOOL_ENABLE_LOG_CONNECTIONS)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   logConnections: false
   ## @param pgpool.logHostname Log the client hostname instead of IP address (PGPOOL_ENABLE_LOG_HOSTNAME)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   logHostname: true
   ## @param pgpool.logPcpProcesses Log PCP processes (PGPOOL_ENABLE_LOG_PCP_PROCESSES)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   logPcpProcesses: true
   ## @param pgpool.logPerNodeStatement Log every SQL statement for each DB node separately (PGPOOL_ENABLE_LOG_PER_NODE_STATEMENT)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   logPerNodeStatement: false
   ## @param pgpool.logLinePrefix Format of the log entry lines (PGPOOL_LOG_LINE_PREFIX)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ## ref: https://www.pgpool.net/docs/latest/en/html/runtime-config-logging.html
   ##
   logLinePrefix: ""
   ## @param pgpool.clientMinMessages Log level for clients
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   clientMinMessages: error
   ## @param pgpool.numInitChildren The number of preforked Pgpool-II server processes. It is also the concurrent
   ## connections limit to Pgpool-II from clients. Must be a positive integer. (PGPOOL_NUM_INIT_CHILDREN)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   numInitChildren: ""
   ## @param pgpool.reservedConnections Number of reserved connections. When zero, excess connection block. When non-zero, excess connections are refused with an error message.
   ## When this parameter is set to 1 or greater, incoming connections from clients are not accepted with error message
   ## "Sorry, too many clients already", rather than blocked if the number of current connections from clients is more than
   ## (num_init_children - reserved_connections).
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   reservedConnections: 1
   ## @param pgpool.maxPool The maximum number of cached connections in each child process (PGPOOL_MAX_POOL)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   maxPool: ""
   ## @param pgpool.childMaxConnections The maximum number of client connections in each child process (PGPOOL_CHILD_MAX_CONNECTIONS)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   childMaxConnections: ""
   ## @param pgpool.childLifeTime The time in seconds to terminate a Pgpool-II child process if it remains idle (PGPOOL_CHILD_LIFE_TIME)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   childLifeTime: ""
   ## @param pgpool.clientIdleLimit The time in seconds to disconnect a client if it remains idle since the last query (PGPOOL_CLIENT_IDLE_LIMIT)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   clientIdleLimit: ""
   ## @param pgpool.connectionLifeTime The time in seconds to terminate the cached connections to the PostgreSQL backend (PGPOOL_CONNECTION_LIFE_TIME)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   connectionLifeTime: ""
   ## @param pgpool.useConnectionCache Use connection cache (PGPOOL_ENABLE_CONNECTION_CACHE)
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
   ##
   useConnectionCache: true
   ## @param pgpool.useLoadBalancing Use Pgpool-II Load-Balancing
@@ -1570,8 +1570,8 @@ pgpool:
   ## @param pgpool.configuration Pgpool-II configuration
   ## You can use this parameter to specify the content for pgpool.conf
   ## Otherwise, a repmgr.conf will be generated based on the environment variables
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/pgpool#configuration-file
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/pgpool#configuration-file
   ## Example:
   ## configuration: |-
   ##   listen_addresses = '*'
@@ -1582,8 +1582,8 @@ pgpool:
   ## @param pgpool.poolHbaConfiguration Pgpool-II client authentication configuration
   ## You can use this parameter to specify the content for pool_hba.conf
   ## Otherwise, a pool_hba.conf will be generated based on the environment variables
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/bitnami/postgresql-repmgr#configuration-file
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration
+  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql-repmgr#configuration-file
   ## Example:
   ## poolHbaConfiguration: |-
   ##   host     all            repmgr    0.0.0.0/0    md5
@@ -1598,7 +1598,7 @@ pgpool:
   ## @param pgpool.initdbScripts Dictionary of initdb scripts
   ## Specify dictionary of scripts to be run every time Pgpool-II container is initialized
   ## The allowed extension is `.sh`
-  ## ref: https://github.com/bitnami/charts/tree/main/bitnami/postgresql-ha#initialize-a-fresh-instance
+  ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/postgresql-ha#initialize-a-fresh-instance
   ## e.g:
   ## initdbScripts:
   ##   my_init_script.sh: |
@@ -1777,7 +1777,7 @@ metrics:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param metrics.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if metrics.resources is set (metrics.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param metrics.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1948,9 +1948,9 @@ metrics:
     ## @param metrics.serviceMonitor.labels Additional labels that can be used so ServiceMonitor will be discovered by Prometheus
     ##
     labels: {}
-    ## @param metrics.serviceMonitor.selector [object] Defaults to what's used if you follow CoreOS Prometheus Install Instructions (<https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus#tldr>)
-    ## Prometheus Selector Label (https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus#prometheus-operator-parameters)
-    ## Kube Prometheus Selector Label (https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus#exporters)
+    ## @param metrics.serviceMonitor.selector [object] Defaults to what's used if you follow CoreOS Prometheus Install Instructions (<https://github.com/helmhub-io/charts/tree/main/helmhubio/kube-prometheus#tldr>)
+    ## Prometheus Selector Label (https://github.com/helmhub-io/charts/tree/main/helmhubio/kube-prometheus#prometheus-operator-parameters)
+    ## Kube Prometheus Selector Label (https://github.com/helmhub-io/charts/tree/main/helmhubio/kube-prometheus#exporters)
     ##
     selector:
       prometheus: kube-prometheus
@@ -2024,7 +2024,7 @@ volumePermissions:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param volumePermissions.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param volumePermissions.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2272,7 +2272,7 @@ backup:
     ## backup cronjob container resource requests and limits
     ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param backup.cronjob.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if backup.cronjob.resources is set (backup.cronjob.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "nano"
     ## @param backup.cronjob.resources Set container requests and limits for different resources like CPU or memory

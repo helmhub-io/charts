@@ -117,7 +117,7 @@ existingConfigmap: ""
 loadExamples: false
 
 ## Authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/superset#environment-variables
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/superset#environment-variables
 ##
 auth:
   ## @param auth.username Username to access web UI
@@ -213,7 +213,7 @@ web:
   ## Superset webserver resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param web.resourcesPreset Set Superset webserver container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if web.resources is set (web.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "small"
   ## @param web.resources Set Superset webserver container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -577,7 +577,7 @@ web:
     ## Init container's resource requests and limits
     ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param web.waitForExamples.resourcesPreset Set init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if waitForExamples.resources is set (waitForExamples.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "nano"
     ## @param web.waitForExamples.resources Set init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -680,7 +680,7 @@ worker:
   ## Superset Celery worker resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param worker.resourcesPreset Set Superset Celery worker container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if worker.resources is set (worker.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "large"
   ## @param worker.resources Set Superset Celery worker container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1024,7 +1024,7 @@ init:
   ## Superset init-job resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param init.resourcesPreset Set Superset init-job container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if init.resources is set (init.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "medium"
   ## @param init.resources Set Superset init-job container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1212,7 +1212,7 @@ beat:
   ## Superset celery beat resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param beat.resourcesPreset Set Superset celery beat container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if beat.resources is set (beat.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "small"
   ## @param beat.resources Set Superset celery beat container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1551,7 +1551,7 @@ flower:
   ## Superset celery flower resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param flower.resourcesPreset Set Superset celery flower container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if flower.resources is set (flower.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "small"
   ## @param flower.resources Set Superset celery flower container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2024,7 +2024,7 @@ defaultInitContainers:
     ## Init container's resource requests and limits
     ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param defaultInitContainers.waitForDB.resourcesPreset Set init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if waitForDB.resources is set (waitForDB.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "nano"
     ## @param defaultInitContainers.waitForDB.resources Set init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2074,7 +2074,7 @@ defaultInitContainers:
     ## Init container's resource requests and limits
     ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param defaultInitContainers.waitForRedis.resourcesPreset Set init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if waitForRedis.resources is set (waitForRedis.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "nano"
     ## @param defaultInitContainers.waitForRedis.resources Set init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2138,7 +2138,7 @@ serviceAccount:
 ## @section Superset database parameters
 
 ## PostgreSQL chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/postgresql/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/postgresql/values.yaml
 ## @param postgresql.enabled Switch to enable or disable the PostgreSQL helm chart
 ## @param postgresql.auth.enablePostgresUser Assign a password to the "postgres" admin user. Otherwise, remote access will be blocked for this user
 ## @param postgresql.auth.username Name for a custom user to create
@@ -2165,7 +2165,7 @@ postgresql:
     ## PostgreSQL Primary resource requests and limits
     ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param postgresql.primary.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if primary.resources is set (primary.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "nano"
     ## @param postgresql.primary.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2198,7 +2198,7 @@ externalDatabase:
   existingSecret: ""
   existingSecretPasswordKey: "db-password"
 ## Redis&reg; chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/redis/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/redis/values.yaml
 ## @param redis.enabled Switch to enable or disable the Redis&reg; helm
 ## @param redis.auth.enabled Enable password authentication
 ## @param redis.auth.password Redis&reg; password
@@ -2223,7 +2223,7 @@ redis:
     ## Redis&reg; master resource requests and limits
     ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param redis.master.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if master.resources is set (master.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "nano"
     ## @param redis.master.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

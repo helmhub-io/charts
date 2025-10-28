@@ -178,7 +178,7 @@ contour:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param contour.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if contour.resources is set (contour.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param contour.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -713,7 +713,7 @@ envoy:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param envoy.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if envoy.resources is set (envoy.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param envoy.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -736,7 +736,7 @@ envoy:
   ## @param envoy.shutdownManager.enabled Contour shutdownManager sidecar
   ## @param envoy.shutdownManager.extraArgs [array] Extra arguments passed to shutdown container
   ## @param envoy.shutdownManager.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if envoy.shutdownManager.resources is set (envoy.shutdownManager.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ## @param envoy.shutdownManager.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
   ## @param envoy.shutdownManager.containerPorts.http Specify Port for shutdown container
   ## @param envoy.shutdownManager.lifecycleHooks lifecycleHooks for the container to automate configuration before or after startup.
@@ -1329,7 +1329,7 @@ envoy:
       ## Envoy "init-config" init container resource requests and limits
       ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
       ## @param envoy.defaultInitContainers.initConfig.resourcesPreset Set Envoy "init-config" init container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if envoy.defaultInitContainers.initConfig.resources is set (envoy.defaultInitContainers.initConfig.resources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "nano"
       ## @param envoy.defaultInitContainers.initConfig.resources Set Envoy "init-config" init container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1499,7 +1499,7 @@ defaultBackend:
   ## choice for the user. This also increases chances charts run on environments with little
   ## resources, such as Minikube.
   ## @param defaultBackend.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if defaultBackend.resources is set (defaultBackend.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param defaultBackend.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

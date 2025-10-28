@@ -112,32 +112,32 @@ autoscaling:
   targetCPU: 80
   targetMemory: 80
 ## @param moodleSkipInstall Skip Moodle&trade; installation wizard. Useful for migrations and restoring from SQL dump
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/moodle#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodleSkipInstall: false
 ## @param moodleSiteName Site name
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/moodle#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodleSiteName: ""
 ## @param moodleLang Site language
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/moodle#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodleLang: ""
 ## @param moodleUsername User of the application
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/moodle#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodleUsername: user
 ## @param moodlePassword Application password
 ## Defaults to a random 10-character alphanumeric string if not set
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/moodle#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodlePassword: ""
 ## @param moodleEmail Admin email
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/moodle#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodleEmail: user@example.com
 ## @param allowEmptyPassword Allow DB blank passwords
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/moodle#environment-variables
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#environment-variables
 ##
 allowEmptyPassword: true
 ## @param command Override default container command (useful when using custom images)
@@ -217,7 +217,7 @@ topologySpreadConstraints: []
 ##
 existingSecret: ""
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/moodle/#smtp-configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle/#smtp-configuration
 ## @param smtpHost SMTP host
 ## @param smtpPort SMTP port
 ## @param smtpUser SMTP user
@@ -342,7 +342,7 @@ nodeSelector: {}
 ## Configure resource requests and limits
 ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 ## @param resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
 ##
 resourcesPreset: "micro"
 ## @param resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -644,7 +644,7 @@ ingress:
 ## @section Database parameters
 
 ## MariaDB chart configuration
-## https://github.com/bitnami/charts/blob/main/bitnami/mariadb/values.yaml
+## https://github.com/helmhub-io/charts/blob/main/helmhubio/mariadb/values.yaml
 ##
 mariadb:
   ## @param mariadb.enabled Whether to deploy a mariadb server to satisfy the applications database requirements
@@ -658,15 +658,15 @@ mariadb:
   ##
   auth:
     ## @param mariadb.auth.rootPassword Password for the MariaDB `root` user
-    ## ref: https://github.com/bitnami/containers/tree/main/bitnami/mariadb#setting-the-root-password-on-first-run
+    ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb#setting-the-root-password-on-first-run
     ##
     rootPassword: ""
     ## @param mariadb.auth.database Database name to create
-    ## ref: https://github.com/bitnami/containers/blob/main/bitnami/mariadb/README.md#creating-a-database-on-first-run
+    ## ref: https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-on-first-run
     ##
     database: bitnami_moodle
     ## @param mariadb.auth.username Database user to create
-    ## ref: https://github.com/bitnami/containers/blob/main/bitnami/mariadb/README.md#creating-a-database-user-on-first-run
+    ## ref: https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-user-on-first-run
     ##
     username: bn_moodle
     ## @param mariadb.auth.password Password for the database
@@ -708,7 +708,7 @@ mariadb:
     ## resources, such as Minikube. If you do want to specify resources, uncomment the following
     ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
     ## @param mariadb.primary.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if primary.resources is set (primary.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "micro"
     ## @param mariadb.primary.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -781,7 +781,7 @@ volumePermissions:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param volumePermissions.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param volumePermissions.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -867,7 +867,7 @@ metrics:
     ##
     sessionAffinityConfig: {}
   ## @param metrics.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if metrics.resources is set (metrics.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param metrics.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

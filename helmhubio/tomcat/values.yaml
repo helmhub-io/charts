@@ -103,11 +103,11 @@ automountServiceAccountToken: false
 ##
 hostAliases: []
 ## @param tomcatUsername Tomcat admin user
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/tomcat#creating-a-custom-user
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/tomcat#creating-a-custom-user
 ##
 tomcatUsername: user
 ## @param tomcatPassword Tomcat admin password
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/tomcat#creating-a-custom-user
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/tomcat#creating-a-custom-user
 ##
 tomcatPassword: ""
 ## @param existingSecret Use existing secret for credentials details (`tomcatUsername` and `tomcatPassword` will be ignored and picked up from this secret)
@@ -120,7 +120,7 @@ secretKeys:
   adminUsernameKey: ""
   adminPasswordKey: ""
 ## @param tomcatAllowRemoteManagement Enable remote access to management interface
-## ref: https://github.com/bitnami/charts/tree/main/bitnami/tomcat#configuration
+## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/tomcat#configuration
 ##
 tomcatAllowRemoteManagement: 0
 ## @param catalinaOpts Java runtime option used by tomcat JVM
@@ -223,7 +223,7 @@ containerSecurityContext:
 ## resources, such as Minikube. If you do want to specify resources, uncomment the following
 ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
 ## @param resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
 ##
 resourcesPreset: "micro"
 ## @param resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -711,7 +711,7 @@ volumePermissions:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param volumePermissions.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "none"
   ## @param volumePermissions.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -806,7 +806,7 @@ metrics:
     ## resources, such as Minikube. If you do want to specify resources, uncomment the following
     ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
     ## @param metrics.jmx.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if metrics.jmx.resources is set (metrics.jmx.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "none"
     ## @param metrics.jmx.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

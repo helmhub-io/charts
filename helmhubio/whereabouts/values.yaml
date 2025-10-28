@@ -107,15 +107,15 @@ image:
   ##
   debug: false
 ## @param hostCNIBinDir CNI binary dir in the host machine to mount
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/whereabouts#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/whereabouts#configuration
 ##
 hostCNIBinDir: /opt/cni/bin
 ## @param hostCNINetDir CNI net.d dir in the host machine to mount
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/whereabouts#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/whereabouts#configuration
 ##
 hostCNINetDir: /etc/cni/net.d
 ## @param CNIMountPath Path inside the container to mount the CNI dirs
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/whereabouts#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/whereabouts#configuration
 ##
 CNIMountPath: /bitnami/whereabouts/host
 ## @param command Override default container command (useful when using custom images)
@@ -216,7 +216,7 @@ nodeSelector: {}
 ## Whereabouts container's resource requests and limits
 ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 ## @param resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
 ##
 resourcesPreset: "nano"
 ## @param resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

@@ -222,7 +222,7 @@ operator:
   ## Kuberay Operator resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
   ## @param operator.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if operator.resources is set (operator.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param operator.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -758,7 +758,7 @@ operator:
       ##
       relabelings: []
       ## @param operator.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ## selector:
       ##   prometheus: my-prometheus
       ##
@@ -870,7 +870,7 @@ apiserver:
   ## Kuberay API Server resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
   ## @param apiserver.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if apiserver.resources is set (apiserver.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param apiserver.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1410,7 +1410,7 @@ apiserver:
       ##
       relabelings: []
       ## @param apiserver.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ## selector:
       ##   prometheus: my-prometheus
       ##
@@ -1433,7 +1433,7 @@ cluster:
     ## Ray Cluster Worker (common) resource requests and limits
     ## ref: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
     ## @param cluster.head.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if cluster.head.resources is set (cluster.head.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "large"
     ## @param cluster.head.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1635,7 +1635,7 @@ cluster:
       ## Ray Cluster Worker (common) resource requests and limits
       ## ref: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
       ## @param cluster.worker.common.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if cluster.worker.common.resources is set (cluster.worker.common.resources is recommended for production).
-      ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+      ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
       ##
       resourcesPreset: "small"
       ## @param cluster.worker.common.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

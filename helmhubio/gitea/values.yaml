@@ -96,24 +96,24 @@ image:
   ##
   debug: false
 ## @param adminUsername User of the application
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/gitea#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea#configuration
 ##
 adminUsername: bn_user
 ## @param adminPassword Application password
 ## Defaults to a random 10-character alphanumeric string if not set
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/gitea#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea#configuration
 ##
 adminPassword: ""
 ## @param adminEmail Admin email
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/gitea#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea#configuration
 ##
 adminEmail: user@example.com
 ## @param appName Gitea application name
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/gitea#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea#configuration
 ##
 appName: example
 ## @param runMode Gitea application host
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/gitea#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea#configuration
 ##
 runMode: prod
 ## @param exposeSSH Make the SSH server accesible
@@ -199,7 +199,7 @@ existingSecret: ""
 ##
 existingSecretKey: "admin-password"
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/gitea/#smtp-configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea/#smtp-configuration
 ## @param smtpHost SMTP host
 ## @param smtpPort SMTP port
 ## @param smtpUser SMTP user
@@ -319,7 +319,7 @@ nodeSelector: {}
 ## Gitea container's resource requests and limits
 ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 ## @param resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
 ##
 resourcesPreset: "micro"
 ## @param resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -693,7 +693,7 @@ serviceAccount:
 ##
 
 ## PostgreSQL chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/postgresql/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/postgresql/values.yaml
 ## @param postgresql.enabled Switch to enable or disable the PostgreSQL helm chart
 ## @param postgresql.auth.username Name for a custom user to create
 ## @param postgresql.auth.password Password for the custom user to create
@@ -769,7 +769,7 @@ volumePermissions:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param volumePermissions.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param volumePermissions.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

@@ -76,7 +76,7 @@ diagnosticMode:
   - infinity
 ## @section Redmine Configuration parameters
 ## Redmine settings based on environment variables
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/redmine#environment-variables
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/redmine#environment-variables
 
 ## Bitnami Redmine image
 ## ref: https://hub.docker.com/r/bitnami/redmine/tags/
@@ -125,7 +125,7 @@ redmineLanguage: en
 ##
 allowEmptyPassword: false
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/redmine/#smtp-configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/redmine/#smtp-configuration
 ## @param smtpHost SMTP server host
 ## @param smtpPort SMTP server port
 ## @param smtpUser SMTP username
@@ -191,7 +191,7 @@ containerPorts:
 ## Redmine containers' resource requests and limits
 ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 ## @param resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
 ##
 resourcesPreset: "micro"
 ## @param resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -619,7 +619,7 @@ volumePermissions:
   ## Init container's resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param volumePermissions.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param volumePermissions.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -685,11 +685,11 @@ autoscaling:
 ## @section Database Parameters
 
 ## @param databaseType Redmine database type. Allowed values: `mariadb` and `postgresql`
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/redmine/#environment-variables
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/redmine/#environment-variables
 ##
 databaseType: mariadb
 ## MariaDB chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/mariadb/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/mariadb/values.yaml
 ## @param mariadb.enabled Switch to enable or disable the MariaDB helm chart
 ## @param mariadb.auth.rootPassword MariaDB root password
 ## @param mariadb.auth.username MariaDB username
@@ -706,7 +706,7 @@ mariadb:
     existingSecret: ""
   architecture: standalone
 ## PostgreSQL chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/postgresql/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/postgresql/values.yaml
 ## @param postgresql.enabled Switch to enable or disable the PostgreSQL helm chart
 ## @param postgresql.auth.username Name for a custom user to create
 ## @param postgresql.auth.password Password for the custom user to create

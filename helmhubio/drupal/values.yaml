@@ -94,28 +94,28 @@ image:
 ##
 replicaCount: 1
 ## @param drupalProfile Drupal installation profile
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/drupal#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#configuration
 ##
 drupalProfile: standard
 ## @param drupalSkipInstall Skip Drupal installation wizard. Useful for migrations and restoring from SQL dump
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/drupal#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#configuration
 ##
 drupalSkipInstall: false
 ## @param drupalUsername User of the application
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/drupal#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#configuration
 ##
 drupalUsername: user
 ## @param drupalPassword Application password
 ## Defaults to a random 10-character alphanumeric string if not set
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/drupal#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#configuration
 ##
 drupalPassword: ""
 ## @param drupalEmail Admin email
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/drupal#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#configuration
 ##
 drupalEmail: user@example.com
 ## @param allowEmptyPassword Allow DB blank passwords
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/drupal#environment-variables
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#environment-variables
 ##
 allowEmptyPassword: true
 ## @param command Override default container command (useful when using custom images)
@@ -210,7 +210,7 @@ serviceAccount:
 ##
 existingSecret: ""
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/drupal/#smtp-configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal/#smtp-configuration
 ## @param smtpHost SMTP host
 ## @param smtpPort SMTP port
 ## @param smtpUser SMTP user
@@ -318,7 +318,7 @@ nodeSelector: {}
 ## resources, such as Minikube. If you do want to specify resources, uncomment the following
 ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
 ## @param resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
 ##
 resourcesPreset: "micro"
 ## @param resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -610,7 +610,7 @@ ingress:
 ## @section Database parameters
 
 ## MariaDB chart configuration
-## https://github.com/bitnami/charts/blob/main/bitnami/mariadb/values.yaml
+## https://github.com/helmhub-io/charts/blob/main/helmhubio/mariadb/values.yaml
 ##
 mariadb:
   ## @param mariadb.enabled Whether to deploy a mariadb server to satisfy the applications database requirements
@@ -627,13 +627,13 @@ mariadb:
   ## @param mariadb.auth.password Password for the database
   ##
   auth:
-    ## ref: https://github.com/bitnami/containers/tree/main/bitnami/mariadb#setting-the-root-password-on-first-run
+    ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb#setting-the-root-password-on-first-run
     ##
     rootPassword: ""
-    ## ref: https://github.com/bitnami/containers/blob/main/bitnami/mariadb/README.md#creating-a-database-on-first-run
+    ## ref: https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-on-first-run
     ##
     database: bitnami_drupal
-    ## ref: https://github.com/bitnami/containers/blob/main/bitnami/mariadb/README.md#creating-a-database-user-on-first-run
+    ## ref: https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-user-on-first-run
     ##
     username: bn_drupal
     password: ""
@@ -714,7 +714,7 @@ volumePermissions:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param volumePermissions.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "none"
   ## @param volumePermissions.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -758,7 +758,7 @@ metrics:
     ##
     pullSecrets: []
   ## @param metrics.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if metrics.resources is set (metrics.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "none"
   ## @param metrics.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

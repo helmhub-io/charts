@@ -98,32 +98,32 @@ image:
 ##
 replicaCount: 1
 ## @param matomoUsername User of the application
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/matomo#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/matomo#configuration
 ##
 matomoUsername: user
 ## @param matomoPassword Application password
 ## Defaults to a random 10-character alphanumeric string if not set
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/matomo#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/matomo#configuration
 ##
 matomoPassword: ""
 ## @param matomoEmail Admin email
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/matomo#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/matomo#configuration
 ##
 matomoEmail: user@example.com
 ## @param matomoWebsiteName Matomo application name
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/matomo#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/matomo#configuration
 ##
 matomoWebsiteName: example
 ## @param matomoWebsiteHost Matomo application host
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/matomo#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/matomo#configuration
 ##
 matomoWebsiteHost: https://example.org
 ## @param matomoSkipInstall Skip Matomo installation wizard. Useful for migrations and restoring from SQL dump
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/matomo#configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/matomo#configuration
 ##
 matomoSkipInstall: false
 ## @param customPostInitScripts Custom post-init.d user scripts
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/matomo
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/matomo
 ## NOTE: supported formats are `.sh` or `.php`
 ## NOTE: scripts are exclusively executed during the 1st boot of the container
 ## e.g:
@@ -138,7 +138,7 @@ matomoSkipInstall: false
 ##
 customPostInitScripts: {}
 ## @param allowEmptyPassword Allow DB blank passwords
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/matomo#environment-variables
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/matomo#environment-variables
 ##
 allowEmptyPassword: true
 ## @param command Override default container command (useful when using custom images)
@@ -223,7 +223,7 @@ tolerations: []
 ##
 existingSecret: ""
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/matomo/#smtp-configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/matomo/#smtp-configuration
 ## @param smtpAuth SMTP authentication mechanism (options: Plain, Login, Cram-md5)
 ## @param smtpHost SMTP host
 ## @param smtpPort SMTP port
@@ -349,7 +349,7 @@ nodeSelector: {}
 ## resources, such as Minikube. If you do want to specify resources, uncomment the following
 ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
 ## @param resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
 ##
 resourcesPreset: "micro"
 ## @param resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -645,7 +645,7 @@ ingress:
 ##
 
 ## MariaDB chart configuration
-## https://github.com/bitnami/charts/blob/main/bitnami/mariadb/values.yaml
+## https://github.com/helmhub-io/charts/blob/main/helmhubio/mariadb/values.yaml
 ##
 mariadb:
   ## @param mariadb.enabled Whether to deploy a mariadb server to satisfy the applications database requirements
@@ -662,13 +662,13 @@ mariadb:
   ## @param mariadb.auth.password Password for the database
   ##
   auth:
-    ## ref: https://github.com/bitnami/containers/tree/main/bitnami/mariadb#setting-the-root-password-on-first-run
+    ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb#setting-the-root-password-on-first-run
     ##
     rootPassword: ""
-    ## ref: https://github.com/bitnami/containers/blob/main/bitnami/mariadb/README.md#creating-a-database-on-first-run
+    ## ref: https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-on-first-run
     ##
     database: bitnami_matomo
-    ## ref: https://github.com/bitnami/containers/blob/main/bitnami/mariadb/README.md#creating-a-database-user-on-first-run
+    ## ref: https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-user-on-first-run
     ##
     username: bn_matomo
     password: ""
@@ -704,7 +704,7 @@ mariadb:
     ## resources, such as Minikube. If you do want to specify resources, uncomment the following
     ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
     ## @param mariadb.primary.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if primary.resources is set (primary.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "micro"
     ## @param mariadb.primary.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -771,7 +771,7 @@ volumePermissions:
   ## resources, such as Minikube. If you do want to specify resources, uncomment the following
   ## lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   ## @param volumePermissions.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "small"
   ## @param volumePermissions.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -816,7 +816,7 @@ metrics:
     ##
     pullSecrets: []
   ## @param metrics.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if metrics.resources is set (metrics.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "small"
   ## @param metrics.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)

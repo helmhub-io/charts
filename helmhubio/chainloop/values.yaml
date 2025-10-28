@@ -654,7 +654,7 @@ controlplane:
   ## Init container's resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param controlplane.resourcesPreset Set init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param controlplane.resources Set controlplane container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1400,7 +1400,7 @@ cas:
   ## Init container's resource requests and limits
   ## ref: http://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param cas.resourcesPreset Set init container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param cas.resources Set cas container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1691,7 +1691,7 @@ cas:
 ##################################
 
 ## PostgreSQL chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/postgresql/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/postgresql/values.yaml
 ## @param postgresql.enabled Switch to enable or disable the PostgreSQL helm chart
 ## @param postgresql.auth.enablePostgresUser Assign a password to the "postgres" admin user. Otherwise, remote access will be blocked for this user
 ## @param postgresql.auth.username Name for a custom user to create
@@ -1711,7 +1711,7 @@ postgresql:
 # IMPORTANT: This is not meant to run in production
 
 ## Bitnami Hashicorp Vault chart configuration
-## ref: https://github.com/bitnami/charts/blob/main/bitnami/vault/values.yaml
+## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/vault/values.yaml
 ## @param vault.server.args Arguments to pass to the vault server. This is useful for setting the server in development mode
 ## @param vault.server.config Configuration for the vault server. Small override of default Bitnami configuration
 ## @param vault.server.extraEnvVars[0].name Root token for the vault server
@@ -1830,7 +1830,7 @@ dex:
   ## Dex resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param dex.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if dex.resources is set (dex.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "nano"
   ## @param dex.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2092,7 +2092,7 @@ dex:
       ##
       metricRelabelings: []
       ## @param dex.metrics.serviceMonitor.selector ServiceMonitor selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ##
       ## selector:
       ##   prometheus: my-prometheus

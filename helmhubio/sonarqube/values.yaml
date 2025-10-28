@@ -111,7 +111,7 @@ image:
   debug: false
 ## @section SonarQube(TM) Configuration parameters
 ## SonarQube(TM) settings based on environment variables
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/sonarqube#environment-variables
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/sonarqube#environment-variables
 ## @param sonarqubeUsername SonarQube(TM) username
 ##
 sonarqubeUsername: user
@@ -154,7 +154,7 @@ startTimeout: 300
 extraProperties: []
 ## @param sonarqubeSkipInstall Skip wizard installation
 ## NOTE: useful if you use an external database that already contains SonarQube(TM) data
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/sonarqube#connect-sonarqube-container-to-an-existing-database
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/sonarqube#connect-sonarqube-container-to-an-existing-database
 ##
 sonarqubeSkipInstall: false
 ## @param sonarSecurityRealm Set this to LDAP authenticate first against the external sytem. If the external system is not
@@ -212,7 +212,7 @@ ldap:
     request: (&(objectClass=groupOfUniqueNames)(uniqueMember={dn}))
     idAttribute: cn
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/bitnami/sonarqube/#smtp-configuration
+## ref: https://github.com/bitnami/containers/tree/main/helmhubio/sonarqube/#smtp-configuration
 ## @param smtpHost SMTP server host
 ## @param smtpPort SMTP server port
 ## @param smtpUser SMTP username
@@ -317,7 +317,7 @@ customStartupProbe: {}
 ## SonarQube(TM) resource requests and limits
 ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
 ## @param resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production).
-## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
 ##
 resourcesPreset: "xlarge"
 ## @param resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -741,7 +741,7 @@ caCerts:
   ## Init container's resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param caCerts.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if caCerts.resources is set (caCerts.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "none"
   ## @param caCerts.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -827,7 +827,7 @@ plugins:
   ## Init container's resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param plugins.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if plugins.resources is set (plugins.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "none"
   ## @param plugins.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -936,7 +936,7 @@ volumePermissions:
   ## Init container's resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param volumePermissions.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if volumePermissions.resources is set (volumePermissions.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "none"
   ## @param volumePermissions.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -998,7 +998,7 @@ sysctl:
   ## Init container's resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param sysctl.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if sysctl.resources is set (sysctl.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "none"
   ## @param sysctl.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1102,7 +1102,7 @@ metrics:
     ## Prometheus JMX Exporter' resource requests and limits
     ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
     ## @param metrics.jmx.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if metrics.jmx.resources is set (metrics.jmx.resources is recommended for production).
-    ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+    ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
     ##
     resourcesPreset: "none"
     ## @param metrics.jmx.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1250,14 +1250,14 @@ metrics:
     ##
     relabelings: []
     ## @param metrics.serviceMonitor.selector Prometheus instance selector labels
-    ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+    ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
     ##
     selector: {}
 ## @section PostgreSQL subchart settings
 ##
 
 ## PostgreSQL chart configuration
-## https://github.com/bitnami/charts/blob/main/bitnami/postgresql/values.yaml
+## https://github.com/helmhub-io/charts/blob/main/helmhubio/postgresql/values.yaml
 ##
 postgresql:
   ## @param postgresql.enabled Deploy PostgreSQL subchart

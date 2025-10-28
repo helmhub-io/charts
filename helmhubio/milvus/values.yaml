@@ -365,7 +365,7 @@ initJob:
   ## Container resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param initJob.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if initJob.resources is set (initJob.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param initJob.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -604,7 +604,7 @@ coordinator:
   ## coordinator resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param coordinator.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if coordinator.resources is set (coordinator.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param coordinator.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -985,7 +985,7 @@ coordinator:
       ##
       labels: {}
       ## @param coordinator.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ##
       selector: {}
       ## @param coordinator.metrics.serviceMonitor.relabelings RelabelConfigs to apply to samples before scraping
@@ -1105,7 +1105,7 @@ dataNode:
   ## data node resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param dataNode.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if dataNode.resources is set (dataNode.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param dataNode.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1490,7 +1490,7 @@ dataNode:
       ##
       labels: {}
       ## @param dataNode.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ##
       selector: {}
       ## @param dataNode.metrics.serviceMonitor.relabelings RelabelConfigs to apply to samples before scraping
@@ -1610,7 +1610,7 @@ queryNode:
   ## data node resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param queryNode.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if queryNode.resources is set (queryNode.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param queryNode.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -1995,7 +1995,7 @@ queryNode:
       ##
       labels: {}
       ## @param queryNode.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ##
       selector: {}
       ## @param queryNode.metrics.serviceMonitor.relabelings RelabelConfigs to apply to samples before scraping
@@ -2114,7 +2114,7 @@ streamingNode:
   ## data node resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param streamingNode.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if streamingNode.resources is set (streamingNode.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param streamingNode.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -2499,7 +2499,7 @@ streamingNode:
       ##
       labels: {}
       ## @param streamingNode.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ##
       selector: {}
       ## @param streamingNode.metrics.serviceMonitor.relabelings RelabelConfigs to apply to samples before scraping
@@ -2647,7 +2647,7 @@ proxy:
   ## proxy resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param proxy.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if proxy.resources is set (proxy.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param proxy.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -3032,7 +3032,7 @@ proxy:
       ##
       labels: {}
       ## @param proxy.metrics.serviceMonitor.selector Prometheus instance selector labels
-      ## ref: https://github.com/bitnami/charts/tree/main/bitnami/prometheus-operator#prometheus-configuration
+      ## ref: https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus-operator#prometheus-configuration
       ##
       selector: {}
       ## @param proxy.metrics.serviceMonitor.relabelings RelabelConfigs to apply to samples before scraping
@@ -3164,7 +3164,7 @@ attu:
   ## attu resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param attu.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if attu.resources is set (attu.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param attu.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -3667,7 +3667,7 @@ waitContainer:
   ## Container resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param waitContainer.resourcesPreset Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if initJob.resources is set (initJob.resources is recommended for production).
-  ## More information: https://github.com/bitnami/charts/blob/main/bitnami/common/templates/_resources.tpl#L15
+  ## More information: https://github.com/helmhub-io/charts/blob/main/helmhubio/common/templates/_resources.tpl#L15
   ##
   resourcesPreset: "micro"
   ## @param waitContainer.resources Set container requests and limits for different resources like CPU or memory (essential for production workloads)
@@ -3839,7 +3839,7 @@ etcd:
     client:
       secureTransport: false
 ## @section MinIO&reg; chart parameters
-## @extra minio For full list of MinIO&reg; values configurations please refere [here](https://github.com/bitnami/charts/tree/main/bitnami/minio)
+## @extra minio For full list of MinIO&reg; values configurations please refere [here](https://github.com/helmhub-io/charts/tree/main/helmhubio/minio)
 ##
 minio:
   ## @param minio.enabled Enable/disable MinIO&reg; chart installation
@@ -3886,7 +3886,7 @@ minio:
   console:
     enabled: false
 ## @section kafka sub-chart paramaters
-## https://github.com/bitnami/charts/blob/main/bitnami/kafka/values.yaml
+## https://github.com/helmhub-io/charts/blob/main/helmhubio/kafka/values.yaml
 ##
 kafka:
   ## @param kafka.enabled Enable/disable Kafka chart installation

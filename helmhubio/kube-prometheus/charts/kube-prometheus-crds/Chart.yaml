@@ -18,8 +18,8 @@ keywords:
 kubeVersion: '>= 1.16.0-0'
 maintainers:
 - name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
+  url: https://github.com/helmhub-io/charts
 name: kube-prometheus-crds
 sources:
-- https://github.com/bitnami/charts/tree/main/bitnami/kube-prometheus/charts/kube-prometheus-crds
+- https://github.com/helmhub-io/charts/tree/main/helmhubio/kube-prometheus/charts/kube-prometheus-crds
 version: 0.1.0
