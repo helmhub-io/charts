@@ -25,7 +25,7 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
@@ -328,7 +328,7 @@ Learn more about [sidecar containers](https://kubernetes.io/docs/concepts/worklo
 
 ### Initialize a fresh instance
 
-The [HelmHubIO Keycloak](https://github.com/helmhubio/containers/tree/main/helmhubio/keycloak) image allows you to use your custom scripts to initialize a fresh instance. In order to execute the scripts, you can specify custom scripts using the `initdbScripts` parameter as dict.
+The [HelmHubIO Keycloak](https://github.com/helmhub-io/containers/tree/main/helmhubio/keycloak) image allows you to use your custom scripts to initialize a fresh instance. In order to execute the scripts, you can specify custom scripts using the `initdbScripts` parameter as dict.
 
 In addition to this option, you can also set an external ConfigMap with all the initialization scripts. This is done by setting the `initdbScriptsConfigMap` parameter. Note that this will override the previous option.
 

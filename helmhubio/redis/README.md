@@ -27,11 +27,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [Redis&reg;](https://github.com/helmhubio/containers/tree/main/helmhubio/redis) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [Redis&reg;](https://github.com/helmhub-io/containers/tree/main/helmhubio/redis) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ### Choose between Redis&reg; Helm Chart and Redis&reg; Cluster Helm Chart
 
@@ -1206,7 +1206,7 @@ The Redis&reg; sentinel exporter was removed in this version because the upstrea
   - `sentinel.metrics.*` parameters are deprecated in favor of `metrics.sentinel.*` ones.
 - New parameters to add custom command, environment variables, sidecars, init containers, etc. were added.
 - Chart labels were adapted to follow the [Helm charts standard labels](https://helm.sh/docs/chart_best_practices/labels/#standard-labels).
-- values.yaml metadata was adapted to follow the format supported by [Readme Generator for Helm](https://github.com/helmhubio/readme-generator-for-helm).
+- values.yaml metadata was adapted to follow the format supported by [Readme Generator for Helm](https://github.com/helmhub-io/readme-generator-for-helm).
 
 Consequences:
 

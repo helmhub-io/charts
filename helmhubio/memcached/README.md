@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [Memcached](https://github.com/helmhubio/containers/tree/main/helmhubio/memcached) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [Memcached](https://github.com/helmhub-io/containers/tree/main/helmhubio/memcached) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -141,7 +141,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-When using `architecture: "high-availability"` the [HelmHubIO Memcached](https://github.com/helmhubio/containers/tree/main/helmhubio/memcached) image stores the cache-state at the `/cache-state` path of the container if enabled.
+When using `architecture: "high-availability"` the [HelmHubIO Memcached](https://github.com/helmhub-io/containers/tree/main/helmhubio/memcached) image stores the cache-state at the `/cache-state` path of the container if enabled.
 
 Persistent Volume Claims (PVCs) are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
 
@@ -397,7 +397,7 @@ If you encounter errors when working with persistent volumes, refer to our [trou
 | `metrics.serviceMonitor.honorLabels`                        | Specify honorLabels parameter to add the scrape endpoint                                                                                                                                                                                              | `false`                              |
 | `metrics.serviceMonitor.jobLabel`                           | The name of the label on the target service to use as the job name in prometheus.                                                                                                                                                                     | `""`                                 |
 
-The above parameters map to the environment variables defined in the [helmhubio/memcached](https://github.com/helmhubio/containers/tree/main/helmhubio/memcached) container image. For more information please refer to the [helmhubio/memcached](https://github.com/helmhubio/containers/tree/main/helmhubio/memcached) container image documentation.
+The above parameters map to the environment variables defined in the [helmhubio/memcached](https://github.com/helmhub-io/containers/tree/main/helmhubio/memcached) container image. For more information please refer to the [helmhubio/memcached](https://github.com/helmhub-io/containers/tree/main/helmhubio/memcached) container image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

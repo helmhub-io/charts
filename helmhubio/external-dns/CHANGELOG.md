@@ -903,7 +903,7 @@
 
 ## <small>6.1.3 (2022-01-31)</small>
 
-* [helmhubio/external-dns] Fix deployment error on AKS with MSI. (refs bitnami#8822) (#8823) ([ea05887](https://github.com/helmhub-io/charts/commit/ea058878f327d64ce71700b600a6ad966adf0a54)), closes [bitnami#8822](https://github.com/helmhubio/issues/8822) [#8823](https://github.com/helmhub-io/charts/issues/8823) [bitnami#8822](https://github.com/helmhubio/issues/8822)
+* [helmhubio/external-dns] Fix deployment error on AKS with MSI. (refs bitnami#8822) (#8823) ([ea05887](https://github.com/helmhub-io/charts/commit/ea058878f327d64ce71700b600a6ad966adf0a54)), closes [bitnami#8822](https://github.com/helmhub-io/issues/8822) [#8823](https://github.com/helmhub-io/charts/issues/8823) [bitnami#8822](https://github.com/helmhub-io/issues/8822)
 
 ## <small>6.1.2 (2022-01-20)</small>
 

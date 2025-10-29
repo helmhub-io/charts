@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [WildFly](https://github.com/helmhubio/containers/tree/main/helmhubio/wildfly) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [WildFly](https://github.com/helmhub-io/containers/tree/main/helmhubio/wildfly) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 WildFly is written in Java, and implements the Java Platform, Enterprise Edition (Java EE) specification.
 
@@ -143,7 +143,7 @@ As an alternative, use one of the preset configurations for pod affinity, pod an
 
 ## Persistence
 
-The [HelmHubIO WildFly](https://github.com/helmhubio/containers/tree/main/helmhubio/wildfly) image stores the WildFly data and configurations at the `/helmhubio/wildfly` path of the container.
+The [HelmHubIO WildFly](https://github.com/helmhub-io/containers/tree/main/helmhubio/wildfly) image stores the WildFly data and configurations at the `/helmhubio/wildfly` path of the container.
 
 Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
 See the [Parameters](#parameters) section to configure the PVC or to disable persistence.
@@ -356,7 +356,7 @@ You can enable this initContainer by setting `volumePermissions.enabled` to `tru
 | `volumePermissions.securityContext.seLinuxOptions` | Set SELinux options in container                                                                                                                                                                                                                      | `{}`                       |
 | `volumePermissions.securityContext.runAsUser`      | Set init container's Security Context runAsUser                                                                                                                                                                                                       | `0`                        |
 
-The above parameters map to the env variables defined in [helmhubio/wildfly](https://github.com/helmhubio/containers/tree/main/helmhubio/wildfly). For more information please refer to the [helmhubio/wildfly](https://github.com/helmhubio/containers/tree/main/helmhubio/wildfly) image documentation.
+The above parameters map to the env variables defined in [helmhubio/wildfly](https://github.com/helmhub-io/containers/tree/main/helmhubio/wildfly). For more information please refer to the [helmhubio/wildfly](https://github.com/helmhub-io/containers/tree/main/helmhubio/wildfly) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
@@ -404,7 +404,7 @@ This could potentially break any customization or init scripts used in your depl
 
 ### To 10.0.0
 
-Due to recent changes in the container image (see [Notable changes](https://github.com/helmhubio/containers/tree/main/helmhubio/apache#notable-changes)), the major version of the chart has been bumped preemptively.
+Due to recent changes in the container image (see [Notable changes](https://github.com/helmhub-io/containers/tree/main/helmhubio/apache#notable-changes)), the major version of the chart has been bumped preemptively.
 
 Upgrading from version `9.x.x` should be possible without any extra required step, but it's highly recommended to backup your custom web apps data before upgrading.
 

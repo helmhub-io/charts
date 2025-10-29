@@ -46,7 +46,7 @@
 
 ## <small>22.0.12 (2025-07-11)</small>
 
-* [helmhubio/elasticsearch] remove copyTlsCerts init container (#31960) ([1322022](https://github.com/helmhub-io/charts/commit/132202265495626d96a827d205c9d25ed5b6dd4d)), closes [#31960](https://github.com/helmhub-io/charts/issues/31960) [helmhubio/charts#31872](https://github.com/helmhub-io/charts/issues/31872) [helmhubio/charts#25280](https://github.com/helmhub-io/charts/issues/25280) [helmhubio/containers#77525](https://github.com/helmhubio/containers/issues/77525)
+* [helmhubio/elasticsearch] remove copyTlsCerts init container (#31960) ([1322022](https://github.com/helmhub-io/charts/commit/132202265495626d96a827d205c9d25ed5b6dd4d)), closes [#31960](https://github.com/helmhub-io/charts/issues/31960) [helmhubio/charts#31872](https://github.com/helmhub-io/charts/issues/31872) [helmhubio/charts#25280](https://github.com/helmhub-io/charts/issues/25280) [helmhubio/containers#77525](https://github.com/helmhub-io/containers/issues/77525)
 
 ## <small>22.0.11 (2025-07-08)</small>
 

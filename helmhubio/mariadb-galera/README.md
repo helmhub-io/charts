@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [MariaDB Galera](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb-galera) cluster on [Kubernetes](https://kubernetes.io) using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [MariaDB Galera](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera) cluster on [Kubernetes](https://kubernetes.io) using the [Helm](https://helm.sh) package manager.
 
 ## Differences between the the HelmHubIO MariaDB Galera and HelmHubIO MariaDB Helm charts
 
@@ -199,7 +199,7 @@ tls.certCAFilename="ca.pem"
 
 ### Initialize a fresh instance
 
-The [HelmHubIO MariaDB Galera](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb-galera) image allows you to use your custom scripts to initialize a fresh instance. In order to execute the scripts, they must be located inside the chart folder `files/docker-entrypoint-initdb.d` so they can be consumed as a ConfigMap.
+The [HelmHubIO MariaDB Galera](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera) image allows you to use your custom scripts to initialize a fresh instance. In order to execute the scripts, they must be located inside the chart folder `files/docker-entrypoint-initdb.d` so they can be consumed as a ConfigMap.
 
 Alternatively, you can specify custom scripts using the `initdbScripts` parameter as dict.
 
@@ -418,7 +418,7 @@ As an alternative, you can use of the preset configurations for pod affinity, po
 
 ## Persistence
 
-The [HelmHubIO MariaDB Galera](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb-galera) image stores the MariaDB data and configurations at the `/helmhubio/mariadb` path of the container.
+The [HelmHubIO MariaDB Galera](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera) image stores the MariaDB data and configurations at the `/helmhubio/mariadb` path of the container.
 
 The chart mounts a [Persistent Volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) volume at this location. The volume is created using dynamic volume provisioning, by default. An existing PersistentVolumeClaim can be defined.
 
@@ -651,7 +651,7 @@ The chart mounts a [Persistent Volume](https://kubernetes.io/docs/concepts/stora
 | `metrics.prometheusRules.additionalLabels`                  | Additional labels to add to the PrometheusRule so it is picked up by the operator                                                                                                                                                 | `{}`                              |
 | `metrics.prometheusRules.rules`                             | PrometheusRule rules to configure                                                                                                                                                                                                 | `{}`                              |
 
-The above parameters map to the env variables defined in [helmhubio/mariadb-galera](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb-galera). For more information please refer to the [helmhubio/mariadb-galera](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb-galera) image documentation.
+The above parameters map to the env variables defined in [helmhubio/mariadb-galera](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera). For more information please refer to the [helmhubio/mariadb-galera](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
@@ -800,7 +800,7 @@ In this version the bootstraping was improved. Now it is possible to indicate a 
 
 ### To 1.0.0
 
-The [HelmHubIO MariaDB Galera](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb-galera) image was migrated to a "non-root" user approach. Previously the container ran as the `root` user and the MySQL daemon was started as the `mysql` user. From now on, both the container and the MySQL daemon run as user `1001`. You can revert this behavior by setting the parameters `securityContext.runAsUser`, and `securityContext.fsGroup` to `0`.
+The [HelmHubIO MariaDB Galera](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera) image was migrated to a "non-root" user approach. Previously the container ran as the `root` user and the MySQL daemon was started as the `mysql` user. From now on, both the container and the MySQL daemon run as user `1001`. You can revert this behavior by setting the parameters `securityContext.runAsUser`, and `securityContext.fsGroup` to `0`.
 
 Consequences:
 

@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [MariaDB](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb) replication cluster deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [MariaDB](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb) replication cluster deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 MariaDB is developed as open source software and as a relational database it provides an SQL interface for accessing data. The latest versions of MariaDB also include GIS and JSON features.
 
@@ -140,7 +140,7 @@ You can add extra update commands using the `passwordUpdateJob.extraCommands` va
 
 ### Initialize a fresh instance
 
-The [HelmHubIO MariaDB](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb) image allows you to use your custom scripts to initialize a fresh instance. Custom scripts may be specified using the `initdbScripts` parameter. Alternatively, an external ConfigMap may be created with all the initialization scripts and the ConfigMap passed to the chart via the `initdbScriptsConfigMap` parameter. Note that this will override the `initdbScripts` parameter.
+The [HelmHubIO MariaDB](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb) image allows you to use your custom scripts to initialize a fresh instance. Custom scripts may be specified using the `initdbScripts` parameter. Alternatively, an external ConfigMap may be created with all the initialization scripts and the ConfigMap passed to the chart via the `initdbScriptsConfigMap` parameter. Note that this will override the `initdbScripts` parameter.
 
 The allowed extensions are `.sh`, `.sql` and `.sql.gz`.
 
@@ -259,7 +259,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO MariaDB](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb) image stores the MariaDB data and configurations at the `/helmhubio/mariadb` path of the container.
+The [HelmHubIO MariaDB](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb) image stores the MariaDB data and configurations at the `/helmhubio/mariadb` path of the container.
 
 The chart mounts a [Persistent Volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) volume at this location. The volume is created using dynamic volume provisioning, by default. An existing PersistentVolumeClaim can also be defined.
 
@@ -717,7 +717,7 @@ As an alternative, this chart supports using an initContainer to change the owne
 | `networkPolicy.ingressNSMatchLabels`    | Labels to match to allow traffic from other namespaces          | `{}`   |
 | `networkPolicy.ingressNSPodMatchLabels` | Pod labels to match to allow traffic from other namespaces      | `{}`   |
 
-The above parameters map to the env variables defined in [helmhubio/mariadb](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb). For more information please refer to the [helmhubio/mariadb](https://github.com/helmhubio/containers/tree/main/helmhubio/mariadb) image documentation.
+The above parameters map to the env variables defined in [helmhubio/mariadb](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb). For more information please refer to the [helmhubio/mariadb](https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

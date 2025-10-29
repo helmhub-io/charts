@@ -25,13 +25,13 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
 HelmHubIO charts for Helm are carefully engineered, actively maintained and are the quickest and easiest way to deploy containers on a Kubernetes cluster that are ready to handle production workloads.
 
-This chart bootstraps a [Neo4j](https://github.com/helmhubio/containers/tree/main/helmhubio/neo4j) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [Neo4j](https://github.com/helmhub-io/containers/tree/main/helmhubio/neo4j) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -179,7 +179,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO neo4j](https://github.com/helmhubio/containers/tree/main/helmhubio/neo4j) image stores the neo4j data and configurations at the `/bitnami` path of the container. Persistent Volume Claims are used to keep the data across deployments.
+The [HelmHubIO neo4j](https://github.com/helmhub-io/containers/tree/main/helmhubio/neo4j) image stores the neo4j data and configurations at the `/bitnami` path of the container. Persistent Volume Claims are used to keep the data across deployments.
 
 If you encounter errors when working with persistent volumes, refer to our [troubleshooting guide for persistent volumes](https://docs.bitnami.com/kubernetes/faq/troubleshooting/troubleshooting-persistence-volumes/).
 
@@ -402,9 +402,9 @@ If you encounter errors when working with persistent volumes, refer to our [trou
 | `serviceAccount.annotations`                  | Additional Service Account annotations (evaluated as a template) | `{}`    |
 | `serviceAccount.automountServiceAccountToken` | Automount service account token for the server service account   | `true`  |
 
-See <https://github.com/helmhubio/readme-generator-for-helm> to create the table
+See <https://github.com/helmhub-io/readme-generator-for-helm> to create the table
 
-The above parameters map to the env variables defined in [helmhubio/neo4j](https://github.com/helmhubio/containers/tree/main/helmhubio/neo4j). For more information please refer to the [helmhubio/neo4j](https://github.com/helmhubio/containers/tree/main/helmhubio/neo4j) image documentation.
+The above parameters map to the env variables defined in [helmhubio/neo4j](https://github.com/helmhub-io/containers/tree/main/helmhubio/neo4j). For more information please refer to the [helmhubio/neo4j](https://github.com/helmhub-io/containers/tree/main/helmhubio/neo4j) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

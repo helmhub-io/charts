@@ -27,11 +27,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [MongoDB(&reg;)](https://github.com/helmhubio/containers/tree/main/helmhubio/mongodb) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [MongoDB(&reg;)](https://github.com/helmhub-io/containers/tree/main/helmhubio/mongodb) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Architecture
 
@@ -160,7 +160,7 @@ HelmHubIO will release a new chart updating its containers if a new version of t
 
 ### Customize a new MongoDB instance
 
-The [HelmHubIO MongoDB(&reg;) image](https://github.com/helmhubio/containers/tree/main/helmhubio/mongodb) supports the use of custom scripts to initialize a fresh instance. In order to execute the scripts, two options are available:
+The [HelmHubIO MongoDB(&reg;) image](https://github.com/helmhub-io/containers/tree/main/helmhubio/mongodb) supports the use of custom scripts to initialize a fresh instance. In order to execute the scripts, two options are available:
 
 - Specify them using the `initdbScripts` parameter as dict.
 - Define an external Kubernetes ConfigMap with all the initialization scripts by setting the `initdbScriptsConfigMap` parameter. Note that this will override the previous option.
@@ -496,7 +496,7 @@ As an alternative, you can use the preset configurations for pod affinity, pod a
 
 ## Persistence
 
-The [HelmHubIO MongoDB(&reg;)](https://github.com/helmhubio/containers/tree/main/helmhubio/mongodb) image stores the MongoDB(&reg;) data and configurations at the `/helmhubio/mongodb` path of the container.
+The [HelmHubIO MongoDB(&reg;)](https://github.com/helmhub-io/containers/tree/main/helmhubio/mongodb) image stores the MongoDB(&reg;) data and configurations at the `/helmhubio/mongodb` path of the container.
 
 The chart mounts a [Persistent Volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) at this location. The volume is created using dynamic volume provisioning.
 
@@ -1278,7 +1278,7 @@ ingress:
 ### To 6.0.0
 
 From this version, `mongodbEnableIPv6` is set to `false` by default in order to work properly in most k8s clusters, if you want to use IPv6 support, you need to set this variable to `true` by adding `--set mongodbEnableIPv6=true` to your `helm` command.
-You can find more information in the [`helmhubio/mongodb` image README](https://github.com/helmhubio/containers/tree/main/helmhubio/mongodb#readme).
+You can find more information in the [`helmhubio/mongodb` image README](https://github.com/helmhub-io/containers/tree/main/helmhubio/mongodb#readme).
 
 ### To 5.0.0
 

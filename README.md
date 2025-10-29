@@ -29,13 +29,13 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Vulnerabilities scanner
 
-Each Helm chart contains one or more containers. Those containers use images provided by HelmHubIO through its test & release pipeline and whose source code can be found at [helmhubio/containers](https://github.com/helmhubio/containers).
+Each Helm chart contains one or more containers. Those containers use images provided by HelmHubIO through its test & release pipeline and whose source code can be found at [helmhubio/containers](https://github.com/helmhub-io/containers).
 
-As part of the container releases, the images are scanned for vulnerabilities, [here](https://github.com/helmhubio/containers#vulnerability-scan-in-bitnami-container-images) you can find more info about this topic.
+As part of the container releases, the images are scanned for vulnerabilities, [here](https://github.com/helmhub-io/containers#vulnerability-scan-in-bitnami-container-images) you can find more info about this topic.
 
 Since the container image is an immutable artifact that is already analyzed, as part of the Helm chart release process we are not looking for vulnerabilities in the containers but running different verifications to ensure the Helm charts work as expected, see the testing strategy defined at [_TESTING.md_](https://github.com/helmhub-io/charts/blob/main/TESTING.md).
 

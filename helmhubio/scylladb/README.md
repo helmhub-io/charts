@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps an [ScyllaDB](https://github.com/helmhubio/containers/tree/main/helmhubio/scylladb) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps an [ScyllaDB](https://github.com/helmhub-io/containers/tree/main/helmhubio/scylladb) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -116,7 +116,7 @@ You can manually create the required TLS certificates or relying on the chart au
 
 ### Initialize the database
 
-The [ScyllaDB](https://github.com/helmhubio/containers/tree/main/helmhubio/scylladb) image supports the use of custom scripts to initialize a fresh instance. This may be done by creating a Kubernetes ConfigMap that includes the necessary `.sh` or `.cql` scripts and passing this ConfigMap to the chart via the `initDBConfigMap` parameter.
+The [ScyllaDB](https://github.com/helmhub-io/containers/tree/main/helmhubio/scylladb) image supports the use of custom scripts to initialize a fresh instance. This may be done by creating a Kubernetes ConfigMap that includes the necessary `.sh` or `.cql` scripts and passing this ConfigMap to the chart via the `initDBConfigMap` parameter.
 
 ### Use a custom configuration file
 
@@ -140,7 +140,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO ScyllaDB](https://github.com/helmhubio/containers/tree/main/helmhubio/scylladb) image stores the ScyllaDB data at the `/helmhubio/scylladb` path of the container.
+The [HelmHubIO ScyllaDB](https://github.com/helmhub-io/containers/tree/main/helmhubio/scylladb) image stores the ScyllaDB data at the `/helmhubio/scylladb` path of the container.
 
 Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
 See the [Parameters](#parameters) section to configure the PVC or to disable persistence.
@@ -499,7 +499,7 @@ As the image run as non-root by default, it is necessary to adjust the ownership
 | `sysctl.resourcesPreset`                           | Set container resources according to one common preset (allowed values: none, nano, micro, small, medium, large, xlarge, 2xlarge). This is ignored if sysctl.resources is set (sysctl.resources is recommended for production). | `nano`                     |
 | `sysctl.resources`                                 | Set container requests and limits for different resources like CPU or memory (essential for production workloads)                                                                                                               | `{}`                       |
 
-The above parameters map to the env variables defined in [helmhubio/scylladb](https://github.com/helmhubio/containers/tree/main/helmhubio/scylladb). For more information please refer to the [helmhubio/scylladb](https://github.com/helmhubio/containers/tree/main/helmhubio/scylladb) image documentation.
+The above parameters map to the env variables defined in [helmhubio/scylladb](https://github.com/helmhub-io/containers/tree/main/helmhubio/scylladb). For more information please refer to the [helmhubio/scylladb](https://github.com/helmhub-io/containers/tree/main/helmhubio/scylladb) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

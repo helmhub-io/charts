@@ -23,11 +23,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [WordPress](https://github.com/helmhubio/containers/tree/main/helmhubio/wordpress) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [WordPress](https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 It also packages the [HelmHubIO MariaDB chart](https://github.com/helmhub-io/charts/tree/main/helmhubio/mariadb) which is required for bootstrapping a MariaDB deployment for the database requirements of the WordPress application, and the [HelmHubIO Memcached chart](https://github.com/helmhub-io/charts/tree/main/helmhubio/memcached) that can be used to cache database queries.
 
@@ -122,7 +122,7 @@ externalDatabase.port=3306
 
 If the database already contains data from a previous WordPress installation, set the `wordpressSkipInstall` parameter to `true`. This parameter forces the container to skip the WordPress installation wizard. Otherwise, the container will assume it is a fresh installation and execute the installation wizard, potentially modifying or resetting the data in the existing database.
 
-[Refer to the container documentation for more information](https://github.com/helmhubio/containers/tree/main/helmhubio/wordpress#connect-wordpress-container-to-an-existing-database).
+[Refer to the container documentation for more information](https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress#connect-wordpress-container-to-an-existing-database).
 
 ### Memcached
 
@@ -217,7 +217,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO WordPress](https://github.com/helmhubio/containers/tree/main/helmhubio/wordpress) image stores the WordPress data and configurations at the `/bitnami` path of the container. Persistent Volume Claims are used to keep the data across deployments.
+The [HelmHubIO WordPress](https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress) image stores the WordPress data and configurations at the `/bitnami` path of the container. Persistent Volume Claims are used to keep the data across deployments.
 
 If you encounter errors when working with persistent volumes, refer to our [troubleshooting guide for persistent volumes](https://docs.bitnami.com/kubernetes/faq/troubleshooting/troubleshooting-persistence-volumes/).
 
@@ -666,7 +666,7 @@ Removed support for limiting auto-updates to WordPress core via the `wordpressAu
 
 ### 11.0.0
 
-The [HelmHubIO WordPress](https://github.com/helmhubio/containers/tree/main/helmhubio/wordpress) image was refactored and now the source code is published in GitHub in the `rootfs` folder of the container image.
+The [HelmHubIO WordPress](https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress) image was refactored and now the source code is published in GitHub in the `rootfs` folder of the container image.
 
 In addition, several new features have been implemented:
 
@@ -766,7 +766,7 @@ Site backups can be easily performed using tools such as [VaultPress](https://va
 
 ### To 11.0.0
 
-The [HelmHubIO WordPress](https://github.com/helmhubio/containers/tree/main/helmhubio/wordpress) image was refactored and now the source code is published in GitHub in the `rootfs` folder of the container image.
+The [HelmHubIO WordPress](https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress) image was refactored and now the source code is published in GitHub in the `rootfs` folder of the container image.
 
 Compatibility is not guaranteed due to the amount of involved changes, however no breaking changes are expected.
 
@@ -820,7 +820,7 @@ mariadb 12:13:25.01 INFO  ==> Running mysql_upgrade
 
 ### To 9.0.0
 
-The [HelmHubIO WordPress](https://github.com/helmhubio/containers/tree/main/helmhubio/wordpress) image was migrated to a "non-root" user approach. Previously the container ran as the `root` user and the Apache daemon was started as the `daemon` user. From now on, both the container and the Apache daemon run as user `1001`. You can revert this behavior by setting the parameters `securityContext.runAsUser`, and `securityContext.fsGroup` to `0`.
+The [HelmHubIO WordPress](https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress) image was migrated to a "non-root" user approach. Previously the container ran as the `root` user and the Apache daemon was started as the `daemon` user. From now on, both the container and the Apache daemon run as user `1001`. You can revert this behavior by setting the parameters `securityContext.runAsUser`, and `securityContext.fsGroup` to `0`.
 Chart labels and Ingress configuration were also adapted to follow the Helm charts best practices.
 
 Consequences:

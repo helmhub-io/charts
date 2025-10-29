@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps an [Apache Cassandra](https://github.com/helmhubio/containers/tree/main/helmhubio/cassandra) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps an [Apache Cassandra](https://github.com/helmhub-io/containers/tree/main/helmhubio/cassandra) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -136,7 +136,7 @@ tls.passwordsSecret=my-stores-password
 
 ### Initialize the database
 
-The [Apache Cassandra](https://github.com/helmhubio/containers/tree/main/helmhubio/cassandra) image supports the use of custom scripts to initialize a fresh instance. This may be done by creating a Kubernetes ConfigMap that includes the necessary `.sh` or `.cql` scripts and passing this ConfigMap to the chart via the `initDBConfigMap` parameter.
+The [Apache Cassandra](https://github.com/helmhub-io/containers/tree/main/helmhubio/cassandra) image supports the use of custom scripts to initialize a fresh instance. This may be done by creating a Kubernetes ConfigMap that includes the necessary `.sh` or `.cql` scripts and passing this ConfigMap to the chart via the `initDBConfigMap` parameter.
 
 ### Use a custom configuration file
 
@@ -160,7 +160,7 @@ As an alternative, you can use the preset configurations for pod affinity, pod a
 
 ## Persistence
 
-The [HelmHubIO Apache Cassandra](https://github.com/helmhubio/containers/tree/main/helmhubio/cassandra) image stores the Apache Cassandra data at the `/helmhubio/cassandra` path of the container.
+The [HelmHubIO Apache Cassandra](https://github.com/helmhub-io/containers/tree/main/helmhubio/cassandra) image stores the Apache Cassandra data at the `/helmhubio/cassandra` path of the container.
 
 Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
 See the [Parameters](#parameters) section to configure the PVC or to disable persistence.
@@ -439,7 +439,7 @@ As the image run as non-root by default, it is necessary to adjust the ownership
 | `tls.certificatesSecret`      | Secret with the TLS certificates.                                                                                                                                                                                         | `""`    |
 | `tls.tlsEncryptionSecretName` | Secret with the encryption of the TLS certificates                                                                                                                                                                        | `""`    |
 
-The above parameters map to the env variables defined in [helmhubio/cassandra](https://github.com/helmhubio/containers/tree/main/helmhubio/cassandra). For more information please refer to the [helmhubio/cassandra](https://github.com/helmhubio/containers/tree/main/helmhubio/cassandra) image documentation.
+The above parameters map to the env variables defined in [helmhubio/cassandra](https://github.com/helmhub-io/containers/tree/main/helmhubio/cassandra). For more information please refer to the [helmhubio/cassandra](https://github.com/helmhub-io/containers/tree/main/helmhubio/cassandra) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

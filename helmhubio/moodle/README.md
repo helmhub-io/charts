@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [Moodle&trade;](https://github.com/helmhubio/containers/tree/main/helmhubio/moodle) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [Moodle&trade;](https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 It also packages the [HelmHubIO MariaDB chart](https://github.com/helmhub-io/charts/tree/main/helmhubio/mariadb) which is required for bootstrapping a MariaDB deployment for the database requirements of the Moodle&trade; application.
 
@@ -151,7 +151,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO Container Image for Moodle&trade;](https://github.com/helmhubio/containers/tree/main/helmhubio/moodle) stores the Moodle&trade; data and configurations at the `/helmhubio/moodle` and `/helmhubio/apache` paths of the container.
+The [HelmHubIO Container Image for Moodle&trade;](https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle) stores the Moodle&trade; data and configurations at the `/helmhubio/moodle` and `/helmhubio/apache` paths of the container.
 
 Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, vpshere, and minikube.
 See the [Parameters](#parameters) section to configure the PVC or to disable persistence.
@@ -596,7 +596,7 @@ mariadb 12:13:25.01 INFO  ==> Running mysql_upgrade
 
 ### To 8.0.0
 
-The [HelmHubIO Container Image for Moodle&trade;](https://github.com/helmhubio/containers/tree/main/helmhubio/moodle) was updated to support "non-root" user approach, however, **it is not enabled by default**. The container still runs as the `root` user and the Apache daemon is started as the `daemon` user, due to running Cron as a service, which requires running as root.
+The [HelmHubIO Container Image for Moodle&trade;](https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle) was updated to support "non-root" user approach, however, **it is not enabled by default**. The container still runs as the `root` user and the Apache daemon is started as the `daemon` user, due to running Cron as a service, which requires running as root.
 
 If you want to run with a non-root user, you need to set `podSecurityContext.enabled=true` and `containerSecurity.context.enabled=true`. In addition to that, you will also need to change the default Apache HTTP ports to run as a non-privileged user by setting `containerPorts.http` and `containerPorts.https` to a non-privileged port number (higher than 1024, i.e. 8080 and 8443, respectively). Note that, when running as a non-root user, Cron will not supported and therefore scheduled tasks will not be enabled for Moodle&trade;.
 

@@ -1967,7 +1967,7 @@
 
 ## 3.9.0 (2020-10-06)
 
-* [helmhubio/postgres-ha] Extra volumes, mount and initContainers added. (#3861) ([4f53a54](https://github.com/helmhub-io/charts/commit/4f53a54a339dba9d908942c2139023e4ce00acee)), closes [#3861](https://github.com/helmhub-io/charts/issues/3861) [bitnami#3437](https://github.com/helmhubio/issues/3437)
+* [helmhubio/postgres-ha] Extra volumes, mount and initContainers added. (#3861) ([4f53a54](https://github.com/helmhub-io/charts/commit/4f53a54a339dba9d908942c2139023e4ce00acee)), closes [#3861](https://github.com/helmhub-io/charts/issues/3861) [bitnami#3437](https://github.com/helmhub-io/issues/3437)
 
 ## <small>3.8.2 (2020-10-06)</small>
 

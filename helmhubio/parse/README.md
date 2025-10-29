@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [Parse](https://github.com/helmhubio/containers/tree/main/helmhubio/parse) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [Parse](https://github.com/helmhub-io/containers/tree/main/helmhubio/parse) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -68,7 +68,7 @@ HelmHubIO will release a new chart updating its containers if a new version of t
 
 ### Deploy your Cloud functions with Parse Cloud Code
 
-The [HelmHubIO Parse](https://github.com/helmhubio/containers/tree/main/helmhubio/parse) image allows you to deploy your Cloud functions with Parse Cloud Code (a feature which allows running a piece of code in your Parse Server instead of the user's mobile devices). In order to add your custom scripts, they must be located inside the chart folder `files/cloud` so they can be consumed as a ConfigMap.
+The [HelmHubIO Parse](https://github.com/helmhub-io/containers/tree/main/helmhubio/parse) image allows you to deploy your Cloud functions with Parse Cloud Code (a feature which allows running a piece of code in your Parse Server instead of the user's mobile devices). In order to add your custom scripts, they must be located inside the chart folder `files/cloud` so they can be consumed as a ConfigMap.
 
 Alternatively, you can specify custom scripts using the `cloudCodeScripts` parameter as dict.
 
@@ -133,7 +133,7 @@ As an alternative, you can use of the preset configurations for pod affinity, po
 
 ## Persistence
 
-The [HelmHubIO Parse](https://github.com/helmhubio/containers/tree/main/helmhubio/parse) image stores the Parse data and configurations at the `/helmhubio/parse` path of the container.
+The [HelmHubIO Parse](https://github.com/helmhub-io/containers/tree/main/helmhubio/parse) image stores the Parse data and configurations at the `/helmhubio/parse` path of the container.
 
 Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
 See the [Parameters](#parameters) section to configure the PVC or to disable persistence.
@@ -554,7 +554,7 @@ Please visit the release notes from the upstream project at <https://github.com/
 
 ### To 15.0.0
 
-The [HelmHubIO Parse](https://github.com/helmhubio/containers/tree/main/helmhubio/parse) and [HelmHubIO Parse Dashboard](https://github.com/helmhubio/containers/tree/main/helmhubio/parse-dashboard) images were refactored and now the source code is published in GitHub in the `rootfs` folder of the container images.
+The [HelmHubIO Parse](https://github.com/helmhub-io/containers/tree/main/helmhubio/parse) and [HelmHubIO Parse Dashboard](https://github.com/helmhub-io/containers/tree/main/helmhubio/parse-dashboard) images were refactored and now the source code is published in GitHub in the `rootfs` folder of the container images.
 
 Compatibility is not guaranteed due to the amount of involved changes, however no breaking changes are expected.
 

@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [Redmine](https://github.com/helmhubio/containers/tree/main/helmhubio/redmine) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [Redmine](https://github.com/helmhub-io/containers/tree/main/helmhubio/redmine) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 It also packages the [HelmHubIO MariaDB chart](https://github.com/helmhub-io/charts/tree/main/helmhubio/mariadb) and the [PostgreSQL chart](https://github.com/helmhub-io/charts/tree/main/helmhubio/postgresql) which are required for bootstrapping a MariaDB/PostgreSQL deployment for the database requirements of the Redmine application.
 
@@ -158,7 +158,7 @@ Redmine writes uploaded files to a persistent volume. By default that volume can
 
 ### Deploying to a sub-URI
 
-(adapted from <https://github.com/helmhubio/containers/tree/main/helmhubio/redmine>)
+(adapted from <https://github.com/helmhub-io/containers/tree/main/helmhubio/redmine>)
 
 On certain occasions, you may need that Redmine is available under a specific sub-URI path rather than the root. A common scenario to this problem may arise if you plan to set up your Redmine container behind a reverse proxy. To deploy your Redmine container using a certain sub-URI you just need to follow these steps:
 
@@ -233,7 +233,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO Redmine](https://github.com/helmhubio/containers/tree/main/helmhubio/redmine) image stores the Redmine data and configurations at the `/helmhubio/redmine` path of the container.
+The [HelmHubIO Redmine](https://github.com/helmhub-io/containers/tree/main/helmhubio/redmine) image stores the Redmine data and configurations at the `/helmhubio/redmine` path of the container.
 
 Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube. The volume is created using dynamic volume provisioning. Clusters configured with NFS mounts require manually managed volumes and claims.
 
@@ -567,7 +567,7 @@ helm install test --set persistence.existingClaim=PVC_REDMINE,mariadb.persistenc
 | `networkPolicy.ingressNSMatchLabels`    | Labels to match to allow traffic from other namespaces          | `{}`   |
 | `networkPolicy.ingressNSPodMatchLabels` | Pod labels to match to allow traffic from other namespaces      | `{}`   |
 
-The above parameters map to the env variables defined in [helmhubio/redmine](https://github.com/helmhubio/containers/tree/main/helmhubio/redmine). For more information please refer to the [helmhubio/redmine](https://github.com/helmhubio/containers/tree/main/helmhubio/redmine) image documentation.
+The above parameters map to the env variables defined in [helmhubio/redmine](https://github.com/helmhub-io/containers/tree/main/helmhubio/redmine). For more information please refer to the [helmhubio/redmine](https://github.com/helmhub-io/containers/tree/main/helmhubio/redmine) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
@@ -743,7 +743,7 @@ See [PR#7114](https://github.com/helmhub-io/charts/pull/7114) for more info abou
 
 ### To 16.0.0
 
-The [HelmHubIO Redmine](https://github.com/helmhubio/containers/tree/main/helmhubio/redmine) image was refactored and now the source code is published in GitHub in the `rootfs` folder of the container image repository.
+The [HelmHubIO Redmine](https://github.com/helmhub-io/containers/tree/main/helmhubio/redmine) image was refactored and now the source code is published in GitHub in the `rootfs` folder of the container image repository.
 
 #### Upgrading Instructions
 

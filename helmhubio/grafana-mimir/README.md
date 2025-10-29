@@ -25,7 +25,7 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
@@ -91,7 +91,7 @@ The mimir configuration file `mimir.yaml` is shared across the different compone
 
 ### Data
 
-The [HelmHubIO grafana-mimir](https://github.com/helmhubio/containers/tree/main/helmhubio/grafana-mimir) image stores the data at the `/bitnami` path of the container. Persistent Volume Claims are used to keep the data across deployments.
+The [HelmHubIO grafana-mimir](https://github.com/helmhub-io/containers/tree/main/helmhubio/grafana-mimir) image stores the data at the `/bitnami` path of the container. Persistent Volume Claims are used to keep the data across deployments.
 
 ### Backup and restore
 
@@ -1514,7 +1514,7 @@ externalMemcachedChunks.port=11211
 | `memcachedmetadata.resourcesPreset`         | Set container resources according to one common preset (allowed values: none, nano, small, medium, large, xlarge, 2xlarge). This is ignored if resources is set (resources is recommended for production). | `nano`                      |
 | `memcachedmetadata.resources`               | Set container requests and limits for different resources like CPU or memory (essential for production workloads)                                                                                          | `{}`                        |
 
-See <https://github.com/helmhubio/readme-generator-for-helm> to create the table
+See <https://github.com/helmhub-io/readme-generator-for-helm> to create the table
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

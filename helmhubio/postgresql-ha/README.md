@@ -25,7 +25,7 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
@@ -284,7 +284,7 @@ In addition to this option, you can also set an external ConfigMap with all the 
 
 ### Initialize a fresh instance
 
-The [HelmHubIO PostgreSQL with Repmgr](https://github.com/helmhubio/containers/tree/main/helmhubio/postgresql-repmgr) image allows you to use your custom scripts to initialize a fresh instance. You can specify custom scripts using the `initdbScripts` parameter as dict so they can be consumed as a ConfigMap.
+The [HelmHubIO PostgreSQL with Repmgr](https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql-repmgr) image allows you to use your custom scripts to initialize a fresh instance. You can specify custom scripts using the `initdbScripts` parameter as dict so they can be consumed as a ConfigMap.
 
 In addition to this option, you can also set an external ConfigMap with all the initialization scripts. This is done by setting the `initdbScriptsCM` parameter. Note that this will override the two previous options. If your initialization scripts contain sensitive information such as credentials or passwords, you can use the `initdbScriptsSecret` parameter.
 
@@ -292,7 +292,7 @@ The above parameters (`initdbScripts`, `initdbScriptsCM`, and `initdbScriptsSecr
 
 The allowed extensions are `.sh`, `.sql` and `.sql.gz` in the **Postgresql** container while only `.sh` in the case of the **Pgpool-II** one.
 
-+info: <https://github.com/helmhubio/containers/tree/main/helmhubio/postgresql#initializing-a-new-instance> and <https://github.com/helmhubio/containers/tree/main/helmhubio/pgpool#initializing-with-custom-scripts>
++info: <https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql#initializing-a-new-instance> and <https://github.com/helmhub-io/containers/tree/main/helmhubio/pgpool#initializing-with-custom-scripts>
 
 ### Use of global variables
 
@@ -1272,7 +1272,7 @@ helm upgrade my-release --version 3.0.0 oci://REGISTRY_NAME/REPOSITORY_NAME/post
 
 ### To 2.0.0
 
-The [HelmHubIO Pgpool](https://github.com/helmhubio/containers/tree/main/helmhubio/pgpool) image was migrated to a "non-root" user approach. Previously the container ran as the `root` user and the Pgpool daemon was started as the `pgpool` user. From now on, both the container and the Pgpool daemon run as user `1001`. You can revert this behavior by setting the parameters `pgpool.containerSecurityContext.runAsUser`, and `pgpool.securityContext.fsGroup` to `0`.
+The [HelmHubIO Pgpool](https://github.com/helmhub-io/containers/tree/main/helmhubio/pgpool) image was migrated to a "non-root" user approach. Previously the container ran as the `root` user and the Pgpool daemon was started as the `pgpool` user. From now on, both the container and the Pgpool daemon run as user `1001`. You can revert this behavior by setting the parameters `pgpool.containerSecurityContext.runAsUser`, and `pgpool.securityContext.fsGroup` to `0`.
 
 Consequences:
 

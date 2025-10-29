@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [MySQL](https://github.com/helmhubio/containers/tree/main/helmhubio/mysql) replication cluster deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [MySQL](https://github.com/helmhub-io/containers/tree/main/helmhubio/mysql) replication cluster deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -89,7 +89,7 @@ To modify the application version used in this chart, specify a different versio
 
 ### Customize a new MySQL instance
 
-The [HelmHubIO MySQL](https://github.com/helmhubio/containers/tree/main/helmhubio/mysql) image allows you to use your custom scripts to initialize a fresh instance. Custom scripts may be specified using the `initdbScripts` parameter. Alternatively, an external ConfigMap may be created with all the initialization scripts and the ConfigMap passed to the chart via the `initdbScriptsConfigMap` parameter. Note that this will override the `initdbScripts` parameter.
+The [HelmHubIO MySQL](https://github.com/helmhub-io/containers/tree/main/helmhubio/mysql) image allows you to use your custom scripts to initialize a fresh instance. Custom scripts may be specified using the `initdbScripts` parameter. Alternatively, an external ConfigMap may be created with all the initialization scripts and the ConfigMap passed to the chart via the `initdbScriptsConfigMap` parameter. Note that this will override the `initdbScripts` parameter.
 
 The allowed extensions are `.sh`, `.sql` and `.sql.gz`.
 
@@ -230,7 +230,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO MySQL](https://github.com/helmhubio/containers/tree/main/helmhubio/mysql) image stores the MySQL data and configurations at the `/helmhubio/mysql` path of the container.
+The [HelmHubIO MySQL](https://github.com/helmhub-io/containers/tree/main/helmhubio/mysql) image stores the MySQL data and configurations at the `/helmhubio/mysql` path of the container.
 
 The chart mounts a [Persistent Volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) volume at this location. The volume is created using dynamic volume provisioning by default. An existing PersistentVolumeClaim can also be defined for this purpose.
 
@@ -670,7 +670,7 @@ If you encounter errors when working with persistent volumes, refer to our [trou
 | `metrics.prometheusRule.additionalLabels`                   | Additional labels that can be used so prometheusRule will be discovered by Prometheus                                                                                                                                             | `{}`                              |
 | `metrics.prometheusRule.rules`                              | Prometheus Rule definitions                                                                                                                                                                                                       | `[]`                              |
 
-The above parameters map to the env variables defined in [helmhubio/mysql](https://github.com/helmhubio/containers/tree/main/helmhubio/mysql). For more information please refer to the [helmhubio/mysql](https://github.com/helmhubio/containers/tree/main/helmhubio/mysql) image documentation.
+The above parameters map to the env variables defined in [helmhubio/mysql](https://github.com/helmhub-io/containers/tree/main/helmhubio/mysql). For more information please refer to the [helmhubio/mysql](https://github.com/helmhub-io/containers/tree/main/helmhubio/mysql) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

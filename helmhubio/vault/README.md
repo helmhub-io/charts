@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [HashiCorp Vault](https://github.com/helmhubio/containers/tree/main/helmhubio/vault) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [HashiCorp Vault](https://github.com/helmhub-io/containers/tree/main/helmhubio/vault) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -197,7 +197,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO vault](https://github.com/helmhubio/containers/tree/main/helmhubio/vault) image stores the vault data and configurations at the `/bitnami` path of the container. Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
+The [HelmHubIO vault](https://github.com/helmhub-io/containers/tree/main/helmhubio/vault) image stores the vault data and configurations at the `/bitnami` path of the container. Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
 
 ## Parameters
 
@@ -686,7 +686,7 @@ The [HelmHubIO vault](https://github.com/helmhubio/containers/tree/main/helmhubi
 | `volumePermissions.containerSecurityContext.seLinuxOptions` | Set SELinux options in container                                                                                                                                                                                                                      | `{}`                       |
 | `volumePermissions.containerSecurityContext.runAsUser`      | Set init container's Security Context runAsUser                                                                                                                                                                                                       | `0`                        |
 
-The above parameters map to the env variables defined in [helmhubio/vault](https://github.com/helmhubio/containers/tree/main/helmhubio/vault). For more information please refer to the [helmhubio/vault](https://github.com/helmhubio/containers/tree/main/helmhubio/vault) image documentation.
+The above parameters map to the env variables defined in [helmhubio/vault](https://github.com/helmhub-io/containers/tree/main/helmhubio/vault). For more information please refer to the [helmhubio/vault](https://github.com/helmhub-io/containers/tree/main/helmhubio/vault) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

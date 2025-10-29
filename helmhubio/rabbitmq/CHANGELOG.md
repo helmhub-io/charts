@@ -1704,7 +1704,7 @@
 
 ## <small>7.5.3 (2020-07-10)</small>
 
-* [helmhubio/rabbitmq] Corrected example of extraContainerPorts (#3076) ([bcc42b4](https://github.com/helmhub-io/charts/commit/bcc42b4e3c7ccf9dabd2023e27dd582bc7f4a862)), closes [#3076](https://github.com/helmhub-io/charts/issues/3076) [#2023](https://github.com/helmhub-io/charts/issues/2023) [#2027](https://github.com/helmhub-io/charts/issues/2027) [bitnami#2023](https://github.com/helmhubio/issues/2023) [bitnami#2027](https://github.com/helmhubio/issues/2027) [bitnami#2023](https://github.com/helmhubio/issues/2023) [bitnami#2027](https://github.com/helmhubio/issues/2027)
+* [helmhubio/rabbitmq] Corrected example of extraContainerPorts (#3076) ([bcc42b4](https://github.com/helmhub-io/charts/commit/bcc42b4e3c7ccf9dabd2023e27dd582bc7f4a862)), closes [#3076](https://github.com/helmhub-io/charts/issues/3076) [#2023](https://github.com/helmhub-io/charts/issues/2023) [#2027](https://github.com/helmhub-io/charts/issues/2027) [bitnami#2023](https://github.com/helmhub-io/issues/2023) [bitnami#2027](https://github.com/helmhub-io/issues/2027) [bitnami#2023](https://github.com/helmhub-io/issues/2023) [bitnami#2027](https://github.com/helmhub-io/issues/2027)
 
 ## <small>7.5.2 (2020-07-09)</small>
 

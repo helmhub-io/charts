@@ -27,11 +27,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [PostgreSQL](https://github.com/helmhubio/containers/tree/main/helmhubio/postgresql) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [PostgreSQL](https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 For HA, please see [this repo](https://github.com/helmhub-io/charts/tree/main/helmhubio/postgresql-ha)
 
@@ -186,7 +186,7 @@ In addition to these options, you can also set an external ConfigMap with all th
 
 ### Initialize a fresh instance
 
-The [HelmHubIO PostgreSQL](https://github.com/helmhubio/containers/tree/main/helmhubio/postgresql) image allows you to use your custom scripts to initialize a fresh instance. In order to execute the scripts, you can specify custom scripts using the `primary.initdb.scripts` parameter as a string.
+The [HelmHubIO PostgreSQL](https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql) image allows you to use your custom scripts to initialize a fresh instance. In order to execute the scripts, you can specify custom scripts using the `primary.initdb.scripts` parameter as a string.
 
 In addition, you can also set an external ConfigMap with all the initialization scripts. This is done by setting the `primary.initdb.scriptsConfigMap` parameter. Note that this will override the two previous options. If your initialization scripts contain sensitive information such as credentials or passwords, you can use the `primary.initdb.scriptsSecret` parameter.
 
@@ -342,12 +342,12 @@ As an alternative, you can use of the preset configurations for pod affinity, po
 
 ## Persistence
 
-The [HelmHubIO PostgreSQL](https://github.com/helmhubio/containers/tree/main/helmhubio/postgresql) image stores the PostgreSQL data and configurations at the `/helmhubio/postgresql` path of the container.
+The [HelmHubIO PostgreSQL](https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql) image stores the PostgreSQL data and configurations at the `/helmhubio/postgresql` path of the container.
 
 Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
 See the [Parameters](#parameters) section to configure the PVC or to disable persistence.
 
-If you already have data in it, you will fail to sync to standby nodes for all commits, details can refer to the [code present in the container repository](https://github.com/helmhubio/containers/tree/main/helmhubio/postgresql). If you need to use those data, please covert them to sql and import after `helm install` finished.
+If you already have data in it, you will fail to sync to standby nodes for all commits, details can refer to the [code present in the container repository](https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql). If you need to use those data, please covert them to sql and import after `helm install` finished.
 
 ## Parameters
 

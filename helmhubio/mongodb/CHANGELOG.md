@@ -1136,7 +1136,7 @@
 ## <small>12.1.18 (2022-06-08)</small>
 
 * [bitnami/*] Replace Kubeapps URL in READMEs (and kubeapps Chart.yaml) and remove BKPR references (#1 ([c6a7914](https://github.com/helmhub-io/charts/commit/c6a7914361e5aea6016fb45bf4d621edfd111d32)), closes [#10600](https://github.com/helmhub-io/charts/issues/10600)
-* [helmhubio/mongodb] - Fixing mongdb certificate generation issue when external access is enabled - #10 ([99119c0](https://github.com/helmhub-io/charts/commit/99119c04fc7642858bd3803517b01c732758822b)), closes [#10262](https://github.com/helmhub-io/charts/issues/10262) [#10513](https://github.com/helmhub-io/charts/issues/10513) [#10262](https://github.com/helmhub-io/charts/issues/10262) [bitnami#10262](https://github.com/helmhubio/issues/10262) [bitnami#10262](https://github.com/helmhubio/issues/10262)
+* [helmhubio/mongodb] - Fixing mongdb certificate generation issue when external access is enabled - #10 ([99119c0](https://github.com/helmhub-io/charts/commit/99119c04fc7642858bd3803517b01c732758822b)), closes [#10262](https://github.com/helmhub-io/charts/issues/10262) [#10513](https://github.com/helmhub-io/charts/issues/10513) [#10262](https://github.com/helmhub-io/charts/issues/10262) [bitnami#10262](https://github.com/helmhub-io/issues/10262) [bitnami#10262](https://github.com/helmhub-io/issues/10262)
 
 ## <small>12.1.17 (2022-06-06)</small>
 

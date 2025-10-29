@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [phpMyAdmin](https://github.com/helmhubio/containers/tree/main/helmhubio/phpmyadmin) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [phpMyAdmin](https://github.com/helmhub-io/containers/tree/main/helmhubio/phpmyadmin) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 As a portable web application written primarily in PHP, phpMyAdmin has become one of the most popular MySQL administration tools, especially for web hosting services.
 
@@ -407,7 +407,7 @@ As an alternative, you can use of the preset configurations for pod affinity, po
 | `networkPolicy.ingressNSMatchLabels`    | Labels to match to allow traffic from other namespaces          | `{}`   |
 | `networkPolicy.ingressNSPodMatchLabels` | Pod labels to match to allow traffic from other namespaces      | `{}`   |
 
-For more information please refer to the [helmhubio/phpmyadmin](https://github.com/helmhubio/containers/tree/main/helmhubio/phpmyadmin) image documentation.
+For more information please refer to the [helmhubio/phpmyadmin](https://github.com/helmhub-io/containers/tree/main/helmhubio/phpmyadmin) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
@@ -605,7 +605,7 @@ mariadb 12:13:25.01 INFO  ==> Running mysql_upgrade
 
 ### To 6.0.0
 
-The [HelmHubIO phpMyAdmin](https://github.com/helmhubio/containers/tree/main/helmhubio/phpmyadmin) image was migrated to a "non-root" user approach. Previously the container ran as the `root` user and the Apache daemon was started as the `daemon` user. From now on, both the container and the Apache daemon run as user `1001`. You can revert this behavior by setting the parameters `containerSecurityContext.runAsUser` to `root`.
+The [HelmHubIO phpMyAdmin](https://github.com/helmhub-io/containers/tree/main/helmhubio/phpmyadmin) image was migrated to a "non-root" user approach. Previously the container ran as the `root` user and the Apache daemon was started as the `daemon` user. From now on, both the container and the Apache daemon run as user `1001`. You can revert this behavior by setting the parameters `containerSecurityContext.runAsUser` to `root`.
 Chart labels and Ingress configuration were also adapted to follow the Helm charts best practices.
 
 Consequences:

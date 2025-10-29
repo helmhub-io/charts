@@ -27,11 +27,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [RabbitMQ](https://github.com/helmhubio/containers/tree/main/helmhubio/rabbitmq) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [RabbitMQ](https://github.com/helmhub-io/containers/tree/main/helmhubio/rabbitmq) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -339,7 +339,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO RabbitMQ](https://github.com/helmhubio/containers/tree/main/helmhubio/rabbitmq) image stores the RabbitMQ data and configurations at the `/opt/helmhubio/rabbitmq/var/lib/rabbitmq/` path of the container.
+The [HelmHubIO RabbitMQ](https://github.com/helmhub-io/containers/tree/main/helmhubio/rabbitmq) image stores the RabbitMQ data and configurations at the `/opt/helmhubio/rabbitmq/var/lib/rabbitmq/` path of the container.
 
 The chart mounts a [Persistent Volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) at this location. By default, the volume is created using dynamic volume provisioning. An existing PersistentVolumeClaim can also be defined.
 
@@ -760,7 +760,7 @@ Because they expose different sets of data, a valid use case is to scrape metric
 | `volumePermissions.containerSecurityContext.seLinuxOptions` | Set SELinux options in container                                                                                                                                                                                                                      | `{}`                       |
 | `volumePermissions.containerSecurityContext.runAsUser`      | User ID for the init container                                                                                                                                                                                                                        | `0`                        |
 
-The above parameters map to the env variables defined in [helmhubio/rabbitmq](https://github.com/helmhubio/containers/tree/main/helmhubio/rabbitmq). For more information please refer to the [helmhubio/rabbitmq](https://github.com/helmhubio/containers/tree/main/helmhubio/rabbitmq) image documentation.
+The above parameters map to the env variables defined in [helmhubio/rabbitmq](https://github.com/helmhub-io/containers/tree/main/helmhubio/rabbitmq). For more information please refer to the [helmhubio/rabbitmq](https://github.com/helmhub-io/containers/tree/main/helmhubio/rabbitmq) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 
@@ -933,7 +933,7 @@ Consequences:
 
 ### To 6.0.0
 
-This new version updates the RabbitMQ image to a [new version based on bash instead of node.js](https://github.com/helmhubio/containers/tree/main/helmhubio/rabbitmq#3715-r18-3715-ol-7-r19). However, since this Chart overwrites the container's command, the changes to the container shouldn't affect the Chart. To upgrade, it may be needed to enable the `fastBoot` option, as it is already the case from upgrading from 5.X to 5.Y.
+This new version updates the RabbitMQ image to a [new version based on bash instead of node.js](https://github.com/helmhub-io/containers/tree/main/helmhubio/rabbitmq#3715-r18-3715-ol-7-r19). However, since this Chart overwrites the container's command, the changes to the container shouldn't affect the Chart. To upgrade, it may be needed to enable the `fastBoot` option, as it is already the case from upgrading from 5.X to 5.Y.
 
 ### To 5.0.0
 

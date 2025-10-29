@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [Tomcat](https://github.com/helmhubio/containers/tree/main/helmhubio/tomcat) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [Tomcat](https://github.com/helmhub-io/containers/tree/main/helmhubio/tomcat) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 Tomcat implements several Java EE specifications including Java Servlet, JavaServer Pages, Java EL, and WebSocket, and provides a "pure Java" HTTP web server environment for Java code to run in.
 
@@ -165,7 +165,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO Tomcat](https://github.com/helmhubio/containers/tree/main/helmhubio/tomcat) image stores the Tomcat data and configurations at the `/helmhubio/tomcat` path of the container.
+The [HelmHubIO Tomcat](https://github.com/helmhub-io/containers/tree/main/helmhubio/tomcat) image stores the Tomcat data and configurations at the `/helmhubio/tomcat` path of the container.
 
 Persistent Volume Claims (PVCs) are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
 
@@ -404,7 +404,7 @@ You can enable this init container by setting `volumePermissions.enabled` to `tr
 | `metrics.prometheusRule.namespace`                              | namespace where prometheusRules resource should be created                                                                                                                                                                                | `""`                                                                                                                                                                                                                |
 | `metrics.prometheusRule.rules`                                  | Create specified [Rules](https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/)                                                                                                                                      | `[]`                                                                                                                                                                                                                |
 
-The above parameters map to the env variables defined in [helmhubio/tomcat](https://github.com/helmhubio/containers/tree/main/helmhubio/tomcat). For more information please refer to the [helmhubio/tomcat](https://github.com/helmhubio/containers/tree/main/helmhubio/tomcat) image documentation.
+The above parameters map to the env variables defined in [helmhubio/tomcat](https://github.com/helmhub-io/containers/tree/main/helmhubio/tomcat). For more information please refer to the [helmhubio/tomcat](https://github.com/helmhub-io/containers/tree/main/helmhubio/tomcat) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

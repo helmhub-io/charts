@@ -135,7 +135,7 @@
 
 ## <small>6.6.9 (2025-04-28)</small>
 
-*  [helmhubio/influxdb] Fix backup functionality, closes bitnami#33110 (#33111) ([2f8efe4](https://github.com/helmhub-io/charts/commit/2f8efe49372ea6c45c197154d093f49bcfb3d625)), closes [bitnami#33110](https://github.com/helmhubio/issues/33110) [#33111](https://github.com/helmhub-io/charts/issues/33111) [bitnami#33110](https://github.com/helmhubio/issues/33110)
+*  [helmhubio/influxdb] Fix backup functionality, closes bitnami#33110 (#33111) ([2f8efe4](https://github.com/helmhub-io/charts/commit/2f8efe49372ea6c45c197154d093f49bcfb3d625)), closes [bitnami#33110](https://github.com/helmhub-io/issues/33110) [#33111](https://github.com/helmhub-io/charts/issues/33111) [bitnami#33110](https://github.com/helmhub-io/issues/33110)
 
 ## <small>6.6.8 (2025-04-22)</small>
 
@@ -143,7 +143,7 @@
 
 ## <small>6.6.7 (2025-04-21)</small>
 
-* [helmhubio/influxdb] Fix backup functionality, closes bitnami#33038 (#33092) ([25f2b73](https://github.com/helmhub-io/charts/commit/25f2b73042b394eb4d2bfdfb6625c3559bbc945d)), closes [bitnami#33038](https://github.com/helmhubio/issues/33038) [#33092](https://github.com/helmhub-io/charts/issues/33092) [#33038](https://github.com/helmhub-io/charts/issues/33038)
+* [helmhubio/influxdb] Fix backup functionality, closes bitnami#33038 (#33092) ([25f2b73](https://github.com/helmhub-io/charts/commit/25f2b73042b394eb4d2bfdfb6625c3559bbc945d)), closes [bitnami#33038](https://github.com/helmhub-io/issues/33038) [#33092](https://github.com/helmhub-io/charts/issues/33092) [#33038](https://github.com/helmhub-io/charts/issues/33038)
 
 ## <small>6.6.6 (2025-04-21)</small>
 

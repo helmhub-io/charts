@@ -27,7 +27,7 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
@@ -229,7 +229,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO ClickHouse](https://github.com/helmhubio/containers/tree/main/helmhubio/clickhouse) image stores the ClickHouse data and configurations at the `/helmhubio/clickhouse` path of the container. Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
+The [HelmHubIO ClickHouse](https://github.com/helmhub-io/containers/tree/main/helmhubio/clickhouse) image stores the ClickHouse data and configurations at the `/helmhubio/clickhouse` path of the container. Persistent Volume Claims are used to keep the data across deployments. This is known to work in GCE, AWS, and minikube.
 
 ## Parameters
 
@@ -680,9 +680,9 @@ The [HelmHubIO ClickHouse](https://github.com/helmhubio/containers/tree/main/hel
 | `externalZookeeper.servers` | List of external ClickHouse Keeper / Zookeeper servers to use | `[]`   |
 | `externalZookeeper.port`    | Port of the ClickHouse Keeper / Zookeeper servers             | `2888` |
 
-See <https://github.com/helmhubio/readme-generator-for-helm> to create the table.
+See <https://github.com/helmhub-io/readme-generator-for-helm> to create the table.
 
-The above parameters map to the env variables defined in [helmhubio/clickhouse](https://github.com/helmhubio/containers/tree/main/helmhubio/clickhouse). For more information please refer to the [helmhubio/clickhouse](https://github.com/helmhubio/containers/tree/main/helmhubio/clickhouse) image documentation.
+The above parameters map to the env variables defined in [helmhubio/clickhouse](https://github.com/helmhub-io/containers/tree/main/helmhubio/clickhouse). For more information please refer to the [helmhubio/clickhouse](https://github.com/helmhub-io/containers/tree/main/helmhubio/clickhouse) image documentation.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

@@ -27,11 +27,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [MinIO&reg;](https://github.com/helmhubio/containers/tree/main/helmhubio/minio) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [MinIO&reg;](https://github.com/helmhub-io/containers/tree/main/helmhubio/minio) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -217,7 +217,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ## Persistence
 
-The [HelmHubIO Object Storage based on MinIO(&reg;)](https://github.com/helmhubio/containers/tree/main/helmhubio/minio) image stores data at the `/helmhubio/minio/data` path of the container by default.
+The [HelmHubIO Object Storage based on MinIO(&reg;)](https://github.com/helmhub-io/containers/tree/main/helmhubio/minio) image stores data at the `/helmhubio/minio/data` path of the container by default.
 This can be modified with the `persistence.mountPath` value which modifies the `MINIO_DATA_DIR` environment variable of the container.
 
 The chart mounts a [Persistent Volume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) at this location so that data within MinIO is persistent. The volume is created using dynamic volume provisioning.

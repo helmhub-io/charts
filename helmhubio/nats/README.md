@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps a [NATS](https://github.com/helmhubio/containers/tree/main/helmhubio/nats) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a [NATS](https://github.com/helmhub-io/containers/tree/main/helmhubio/nats) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -487,7 +487,7 @@ This could potentially break any customization or init scripts used in your depl
 
 ### To 7.0.0
 
-This new version updates the NATS image to a [new version that has support to configure NATS based on bash logic](https://github.com/helmhubio/containers/tree/main/helmhubio/nats#264-r13), although this chart overwrites the configuration file so that shouldn't affect the functionality. It also adds several standardizations that were missing in the chart:
+This new version updates the NATS image to a [new version that has support to configure NATS based on bash logic](https://github.com/helmhub-io/containers/tree/main/helmhubio/nats#264-r13), although this chart overwrites the configuration file so that shouldn't affect the functionality. It also adds several standardizations that were missing in the chart:
 
 - Add missing parameters such as `existingSecret`, `containerPorts.*`, `startupProbe.*` or `lifecycleHooks`.
 - Add missing parameters to extend the services such as `service.extraPorts` or `service.sessionAffinity`.

@@ -700,7 +700,7 @@
 
 ## <small>3.1.3 (2022-11-23)</small>
 
-* [helmhubio/rabbitmq-cluster-operator] RabbitMQ messaging topology operator allow edit secrets in clust ([8d2125c](https://github.com/helmhub-io/charts/commit/8d2125c489d82e3c56e76daaa62114aaf507a1c0)), closes [bitnami#13497](https://github.com/helmhubio/issues/13497) [#13613](https://github.com/helmhub-io/charts/issues/13613)
+* [helmhubio/rabbitmq-cluster-operator] RabbitMQ messaging topology operator allow edit secrets in clust ([8d2125c](https://github.com/helmhub-io/charts/commit/8d2125c489d82e3c56e76daaa62114aaf507a1c0)), closes [bitnami#13497](https://github.com/helmhub-io/issues/13497) [#13613](https://github.com/helmhub-io/charts/issues/13613)
 
 ## <small>3.1.2 (2022-11-07)</small>
 

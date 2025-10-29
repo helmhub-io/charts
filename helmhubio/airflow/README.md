@@ -25,11 +25,11 @@ Beginning August 28th, 2025, HelmHubIO will evolve its public catalog to offer a
 - Starting August 28th, over two weeks, all existing container images, including older or versioned tags (e.g., 2.50.0, 10.6), will be migrated from the public catalog (docker.io/helmhubio) to the “HelmHubIO Legacy” repository (docker.io/helmhubio), where they will no longer receive updates.
 - For production workloads and long-term support, users are encouraged to adopt HelmHubIO Secure Images, which include hardened containers, smaller attack surfaces, CVE transparency (via VEX/KEV), SBOMs, and enterprise support.
 
-These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhubio/containers/issues/83267).
+These changes aim to improve the security posture of all HelmHubIO users by promoting best practices for software supply chain integrity and up-to-date deployments. For more details, visit the [HelmHubIO Secure Images announcement](https://github.com/helmhub-io/containers/issues/83267).
 
 ## Introduction
 
-This chart bootstraps an [Apache Airflow](https://github.com/helmhubio/containers/tree/main/helmhubio/airflow) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
+This chart bootstraps an [Apache Airflow](https://github.com/helmhub-io/containers/tree/main/helmhubio/airflow) deployment on a [Kubernetes](https://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -1383,7 +1383,7 @@ No upgrades issues are expected when upgrading from `21.x.x` but existing dashbo
 
 ### To 21.0.0
 
-This major version uses a single container image ([`helmhubio/airflow`](https://github.com/helmhubio/containers/tree/main/helmhubio/airflow) by default) to run every Airflow component (Webserver, Scheduler and Worker) so `helmhubio/airflow-scheduler` and `helmhubio/airflow-worker` images are no longer necessary. Also, operations to load custom DAGs and plugins via init containers also use this same image so `helmhubio/git` and `helmhubio/os-shell` are no longer necessary either. These changes implies several simplifications in the chart values:
+This major version uses a single container image ([`helmhubio/airflow`](https://github.com/helmhub-io/containers/tree/main/helmhubio/airflow) by default) to run every Airflow component (Webserver, Scheduler and Worker) so `helmhubio/airflow-scheduler` and `helmhubio/airflow-worker` images are no longer necessary. Also, operations to load custom DAGs and plugins via init containers also use this same image so `helmhubio/git` and `helmhubio/os-shell` are no longer necessary either. These changes implies several simplifications in the chart values:
 
 - New `image.*` parameters are introduced to configure the container image used to run the Airflow components.
 - `web.image.*`, `scheduler.image.*` and `worker.image.*` parameters are removed.

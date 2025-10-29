@@ -328,7 +328,7 @@
 
 ## 8.3.0 (2024-06-19)
 
-* [helmhubio/milvus] feat: config external S3 tls client certs settings (… (#27068) ([f8249bf](https://github.com/helmhub-io/charts/commit/f8249bf1cca9198fd42c23d02409b774b18d3e60)), closes [#27068](https://github.com/helmhub-io/charts/issues/27068) [bitnami#26111](https://github.com/helmhubio/issues/26111)
+* [helmhubio/milvus] feat: config external S3 tls client certs settings (… (#27068) ([f8249bf](https://github.com/helmhub-io/charts/commit/f8249bf1cca9198fd42c23d02409b774b18d3e60)), closes [#27068](https://github.com/helmhub-io/charts/issues/27068) [bitnami#26111](https://github.com/helmhub-io/issues/26111)
 
 ## <small>8.2.7 (2024-06-18)</small>
 
@@ -360,7 +360,7 @@
 
 ## 8.2.0 (2024-06-06)
 
-* [helmhubio/milvus] feat: config external kafka tls client certs setting… (#26118) ([43e8796](https://github.com/helmhub-io/charts/commit/43e87967c4dd409632e37e9eacc1825397de4192)), closes [#26118](https://github.com/helmhub-io/charts/issues/26118) [bitnami#26110](https://github.com/helmhubio/issues/26110)
+* [helmhubio/milvus] feat: config external kafka tls client certs setting… (#26118) ([43e8796](https://github.com/helmhub-io/charts/commit/43e87967c4dd409632e37e9eacc1825397de4192)), closes [#26118](https://github.com/helmhub-io/charts/issues/26118) [bitnami#26110](https://github.com/helmhub-io/issues/26110)
 
 ## <small>8.1.2 (2024-06-05)</small>
 
@@ -516,17 +516,17 @@
 
 ## <small>5.1.1 (2023-11-20)</small>
 
-* [helmhubio/milvus] Fixup waitForS3InitContainer missing s3 port (bitnami#20398) (#20502) ([dd40a2a](https://github.com/helmhub-io/charts/commit/dd40a2ac7f6eee8b2c550eb4d1db517c0b3f2aed)), closes [bitnami#20398](https://github.com/helmhubio/issues/20398) [#20502](https://github.com/helmhub-io/charts/issues/20502)
+* [helmhubio/milvus] Fixup waitForS3InitContainer missing s3 port (bitnami#20398) (#20502) ([dd40a2a](https://github.com/helmhub-io/charts/commit/dd40a2ac7f6eee8b2c550eb4d1db517c0b3f2aed)), closes [bitnami#20398](https://github.com/helmhub-io/issues/20398) [#20502](https://github.com/helmhub-io/charts/issues/20502)
 * Update readme-generator links (#21043) ([1581eba](https://github.com/helmhub-io/charts/commit/1581eba8044d730a763c266f279ac2ac782f764d)), closes [#21043](https://github.com/helmhub-io/charts/issues/21043)
 
 ## 5.1.0 (2023-11-17)
 
 * [bitnami/*] Remove relative links to non-README sections, add verification for that and update TL;DR ([1103633](https://github.com/helmhub-io/charts/commit/11036334d82df0490aa4abdb591543cab6cf7d7f)), closes [#20967](https://github.com/helmhub-io/charts/issues/20967)
-* [helmhubio/milvus] Fixup milvus & externalS3 couldn't be deployed in the same namespace (bitnami#20396 ([15910c2](https://github.com/helmhub-io/charts/commit/15910c20483149ae7559275a96aeb7370f5744af)), closes [bitnami#20396](https://github.com/helmhubio/issues/20396) [#20500](https://github.com/helmhub-io/charts/issues/20500) [bitnami#20396](https://github.com/helmhubio/issues/20396)
+* [helmhubio/milvus] Fixup milvus & externalS3 couldn't be deployed in the same namespace (bitnami#20396 ([15910c2](https://github.com/helmhub-io/charts/commit/15910c20483149ae7559275a96aeb7370f5744af)), closes [bitnami#20396](https://github.com/helmhub-io/issues/20396) [#20500](https://github.com/helmhub-io/charts/issues/20500) [bitnami#20396](https://github.com/helmhub-io/issues/20396)
 
 ## 5.0.0 (2023-11-09)
 
-* [helmhubio/milvus] Fix externalEtcd settings with ssl (bitnami#19983) (#20498) ([75d4661](https://github.com/helmhub-io/charts/commit/75d466123dbc9efea93a0ca41604c2e9c3df93e4)), closes [bitnami#19983](https://github.com/helmhubio/issues/19983) [#20498](https://github.com/helmhub-io/charts/issues/20498)
+* [helmhubio/milvus] Fix externalEtcd settings with ssl (bitnami#19983) (#20498) ([75d4661](https://github.com/helmhub-io/charts/commit/75d466123dbc9efea93a0ca41604c2e9c3df93e4)), closes [bitnami#19983](https://github.com/helmhub-io/issues/19983) [#20498](https://github.com/helmhub-io/charts/issues/20498)
 
 ## <small>4.2.1 (2023-11-08)</small>
 
