@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         Thank you for reporting an issue. Before you open the bug report, please review the following troubleshooting guide:
-          - [Troubleshoot HelmHubIO Helm Chart Issues](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues)
+          - [Troubleshoot HelmHubIO Helm Chart Issues](https://helmhub.io/docs/troubleshoot-helm-chart-issues)
 
         Please fill in as much of the following form as you're able.
   - type: input

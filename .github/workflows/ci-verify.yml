@@ -11,7 +11,6 @@ on: # rebuild any PRs and main branch changes
       - labeled
     branches:
       - main
-      - bitnami:main
 # Remove all permissions by default
 permissions: {}
 # Avoid concurrency over the same PR
@@ -55,7 +54,7 @@ jobs:
             if [[ -n "$image" && $image != {{*}} ]]; then
               hardcoded_images+=("${image}")
             fi
-          done <<< "$(grep --exclude "NOTES.txt" -REoh "\s*image:\s+[\"']*.+[\"']*\s*$" "bitnami/${CHART}/templates" | sed "s/image: [\"']*//" | sed "s/[\"']*$//")"
+          done <<< "$(grep --exclude "NOTES.txt" -REoh "\s*image:\s+[\"']*.+[\"']*\s*$" "helmhubio/${CHART}/templates" | sed "s/image: [\"']*//" | sed "s/[\"']*$//")"
           echo "${hardcoded_images[@]}"
           if [[ ${#hardcoded_images[@]} -gt 0 ]] ; then
             echo "error=Found hardcoded images in the chart templates: ${hardcoded_images[*]}"
@@ -69,8 +68,8 @@ jobs:
           cd "${GITHUB_WORKSPACE}/charts" || exit 1
 
           if [[ "$CHART" != "common" && "$CHART" != "fluentd" ]]; then
-            readarray -t tag_paths < <(yq e '.. | (path | join("."))' "bitnami/${CHART}/values.yaml" | grep -E '\.tag$' | sed 's/.tag$//g' | sort -u)
-            readarray -t registry_paths < <(yq e '.. | (path | join("."))' "bitnami/${CHART}/values.yaml" | grep '\.registry$' | sed 's/.registry$//g' | sort -u)
+            readarray -t tag_paths < <(yq e '.. | (path | join("."))' "helmhubio/${CHART}/values.yaml" | grep -E '\.tag$' | sed 's/.tag$//g' | sort -u)
+            readarray -t registry_paths < <(yq e '.. | (path | join("."))' "helmhubio/${CHART}/values.yaml" | grep '\.registry$' | sed 's/.registry$//g' | sort -u)
 
             # We assume that image objects are those that contain both keys 'tag' and 'registry'
             images_paths=()
@@ -81,7 +80,7 @@ jobs:
             done
 
             # Get the images defined in the image warning helper
-            readarray -d ' ' -t images_list_tmp < <(grep -E 'common.warnings.modifiedImages' "bitnami/${CHART}/templates/NOTES.txt" | sed -E 's/.*\(list (.+)\) "context".*/\1/' | sed 's/.Values.//g')
+            readarray -d ' ' -t images_list_tmp < <(grep -E 'common.warnings.modifiedImages' "helmhubio/${CHART}/templates/NOTES.txt" | sed -E 's/.*\(list (.+)\) "context".*/\1/' | sed 's/.Values.//g')
 
             # Remove any empty element from the array
             images_list=()
@@ -138,10 +137,10 @@ jobs:
         run: |
           charts_paths=("charts-main" "charts-pr")
           for charts_path in "${charts_paths[@]}"; do
-            if [ -d "${charts_path}/bitnami/${CHART}" ]; then
-              helm dep build "${charts_path}/bitnami/${CHART}"
-              if [ -d "${charts_path}/bitnami/${CHART}/charts" ]; then
-                pushd ${charts_path}/bitnami/${CHART}/charts
+            if [ -d "${charts_path}/helmhubio/${CHART}" ]; then
+              helm dep build "${charts_path}/helmhubio/${CHART}"
+              if [ -d "${charts_path}/helmhubio/${CHART}/charts" ]; then
+                pushd ${charts_path}/helmhubio/${CHART}/charts
                 for filename in *.tgz; do
                   tar -xf "$filename"
                   rm -f "$filename"
@@ -154,7 +153,7 @@ jobs:
         env:
           CHART: ${{ needs.get-chart.outputs.chart }}
         run: |
-            helm lint "charts-pr/bitnami/${CHART}"
+            helm lint "charts-pr/helmhubio/${CHART}"
       - id: validate-scores
         name: Validate score
         # Skip step when user 'skip-score' label is used
@@ -168,13 +167,13 @@ jobs:
         run: |
           export PATH="$PATH:$HOME/.kubescape/bin"
           FRAMEWORKS="MITRE,NSA,SOC2,cis-v1.10.0"
-          if [ -d "charts-main/bitnami/${CHART}" ]; then
+          if [ -d "charts-main/helmhubio/${CHART}" ]; then
             report_dir="$(mktemp -d)"
             charts_paths=("charts-pr" "charts-main")
             for chart_path in "${charts_paths[@]}"; do
-              echo "Scanning ${chart_path}/bitnami/${CHART}"
+              echo "Scanning ${chart_path}/helmhubio/${CHART}"
               report_file="${report_dir}/${chart_path}.json"
-              kubescape scan framework "${FRAMEWORKS}" "${chart_path}/bitnami/${CHART}" --format json -o "${report_file}"
+              kubescape scan framework "${FRAMEWORKS}" "${chart_path}/helmhubio/${CHART}" --format json -o "${report_file}"
               # Use only 2 decimals and save it wihout separator (for integer operations).
               printf "%s%.2s" $(echo "$(jq .summaryDetails.complianceScore ${report_file})" | tr '.' ' ') | sed 's/\.$//' > "${report_dir}/${chart_path}.score"
             done
@@ -187,5 +186,5 @@ jobs:
               exit 1
             fi
           else
-            echo "Chart not found at bitnami/${CHART}. It will be assumed that the upstream chart does not exist."
+            echo "Chart not found at helmhubio/${CHART}. It will be assumed that the upstream chart does not exist."
           fi
