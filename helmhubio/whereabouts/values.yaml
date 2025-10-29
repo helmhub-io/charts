@@ -76,7 +76,7 @@ diagnosticMode:
 ## @section Whereabouts parameters
 ##
 
-## Bitnami Whereabouts image version
+## HelmHubIO Whereabouts image version
 ## ref: https://hub.docker.com/r/bitnami/whereabouts/tags/
 ## @param image.registry [default: REGISTRY_NAME] Whereabouts image registry
 ## @param image.repository [default: REPOSITORY_NAME/whereabouts] Whereabouts Image name
@@ -107,15 +107,15 @@ image:
   ##
   debug: false
 ## @param hostCNIBinDir CNI binary dir in the host machine to mount
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/whereabouts#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/whereabouts#configuration
 ##
 hostCNIBinDir: /opt/cni/bin
 ## @param hostCNINetDir CNI net.d dir in the host machine to mount
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/whereabouts#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/whereabouts#configuration
 ##
 hostCNINetDir: /etc/cni/net.d
 ## @param CNIMountPath Path inside the container to mount the CNI dirs
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/whereabouts#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/whereabouts#configuration
 ##
 CNIMountPath: /bitnami/whereabouts/host
 ## @param command Override default container command (useful when using custom images)

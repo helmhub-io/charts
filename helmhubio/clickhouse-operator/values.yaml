@@ -70,7 +70,7 @@ extraDeploy: []
 
 ## @section ClickHouse Operator Parameters
 
-## Bitnami ClickHouse Operator image
+## HelmHubIO ClickHouse Operator image
 ## ref: https://hub.docker.com/r/bitnami/clickhouse-operator/tags/
 ## @param image.registry [default: REGISTRY_NAME] ClickHouse Operator image registry
 ## @param image.repository [default: REPOSITORY_NAME/clickhouse-operator] ClickHouse Operator image repository
@@ -97,7 +97,7 @@ image:
   ##   - myRegistryKeySecretName
   ##
   pullSecrets: []
-## Bitnami ClickHouse image
+## HelmHubIO ClickHouse image
 ## ref: https://hub.docker.com/r/bitnami/clickhouse/tags/
 ## @param clickHouseImage.registry [default: REGISTRY_NAME] ClickHouse image registry
 ## @param clickHouseImage.repository [default: REPOSITORY_NAME/clickhouse] ClickHouse image repository
@@ -124,7 +124,7 @@ clickHouseImage:
   ##   - myRegistryKeySecretName
   ##
   pullSecrets: []
-## Bitnami ClickHouse Keeper image
+## HelmHubIO ClickHouse Keeper image
 ## ref: https://hub.docker.com/r/bitnami/clickhouse-keeper/tags/
 ## @param keeperImage.registry [default: REGISTRY_NAME] ClickHouse Keeper image registry
 ## @param keeperImage.repository [default: REPOSITORY_NAME/clickhouse-keeper] ClickHouse Keeper image repository
@@ -646,7 +646,7 @@ metrics:
   ## @param metrics.enabled Enable the export of Prometheus metrics using a exporter sidecar
   ##
   enabled: false
-  ## Bitnami ClickHouse Operator Metrics exporter image
+  ## HelmHubIO ClickHouse Operator Metrics exporter image
   ## ref: https://hub.docker.com/r/bitnami/clickhouse-operator/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] ClickHouse Operator Metrics exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/clickhouse-operator] ClickHouse Operator Metrics exporter image repository

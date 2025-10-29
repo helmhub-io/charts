@@ -77,7 +77,7 @@ diagnosticMode:
 ## @section Common Grafana Mimir Parameters
 ##
 mimir:
-  ## Bitnami Grafana Mimir image
+  ## HelmHubIO Grafana Mimir image
   ## ref: https://hub.docker.com/r/bitnami/grafana-mimir/tags/
   ## @param mimir.image.registry [default: REGISTRY_NAME] Grafana Mimir image registry
   ## @param mimir.image.repository [default: REPOSITORY_NAME/grafana-mimir] Grafana Mimir image repository
@@ -1562,7 +1562,7 @@ gateway:
   ## @param gateway.enabled Enable Gateway deployment
   ##
   enabled: true
-  ## Bitnami Nginx image
+  ## HelmHubIO Nginx image
   ## ref: https://hub.docker.com/r/bitnami/grafana-nginx/tags/
   ## @param gateway.image.registry [default: REGISTRY_NAME] Nginx image registry
   ## @param gateway.image.repository [default: REPOSITORY_NAME/nginx] Nginx image repository
@@ -5063,7 +5063,7 @@ memcachedchunks:
   ## @param memcachedchunks.enabled Deploy memcached sub-chart
   ##
   enabled: true
-  ## Bitnami Memcached image version
+  ## HelmHubIO Memcached image version
   ## ref: https://hub.docker.com/r/bitnami/memcached/tags/
   ## @param memcachedchunks.image.registry [default: REGISTRY_NAME] Memcached image registry
   ## @param memcachedchunks.image.repository [default: REPOSITORY_NAME/memcached] Memcached image repository
@@ -5119,7 +5119,7 @@ memcachedfrontend:
   ## @param memcachedfrontend.enabled Deploy memcached sub-chart
   ##
   enabled: true
-  ## Bitnami Memcached image version
+  ## HelmHubIO Memcached image version
   ## ref: https://hub.docker.com/r/bitnami/memcached/tags/
   ## @param memcachedfrontend.image.registry [default: REGISTRY_NAME] Memcached image registry
   ## @param memcachedfrontend.image.repository [default: REPOSITORY_NAME/memcached] Memcached image repository
@@ -5175,7 +5175,7 @@ memcachedindex:
   ## @param memcachedindex.enabled Deploy memcached sub-chart
   ##
   enabled: true
-  ## Bitnami Memcached image version
+  ## HelmHubIO Memcached image version
   ## ref: https://hub.docker.com/r/bitnami/memcached/tags/
   ## @param memcachedindex.image.registry [default: REGISTRY_NAME] Memcached image registry
   ## @param memcachedindex.image.repository [default: REPOSITORY_NAME/memcached] Memcached image repository
@@ -5231,7 +5231,7 @@ memcachedmetadata:
   ## @param memcachedmetadata.enabled Deploy memcached sub-chart
   ##
   enabled: true
-  ## Bitnami Memcached image version
+  ## HelmHubIO Memcached image version
   ## ref: https://hub.docker.com/r/bitnami/memcached/tags/
   ## @param memcachedmetadata.image.registry [default: REGISTRY_NAME] Memcached image registry
   ## @param memcachedmetadata.image.repository [default: REPOSITORY_NAME/memcached] Memcached image repository

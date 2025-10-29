@@ -84,7 +84,7 @@ diagnosticMode:
 ## @section MySQL common parameters
 ##
 
-## Bitnami MySQL image
+## HelmHubIO MySQL image
 ## ref: https://hub.docker.com/r/bitnami/mysql/tags/
 ## @param image.registry [default: REGISTRY_NAME] MySQL image registry
 ## @param image.repository [default: REPOSITORY_NAME/mysql] MySQL image repository
@@ -121,26 +121,26 @@ architecture: standalone
 ##
 auth:
   ## @param auth.rootPassword Password for the `root` user. Ignored if existing secret is provided
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mysql#setting-the-root-password-on-first-run
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mysql#setting-the-root-password-on-first-run
   ##
   rootPassword: ""
   ## @param auth.createDatabase Whether to create the .Values.auth.database or not
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mysql#creating-a-database-on-first-run
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mysql#creating-a-database-on-first-run
   ##
   createDatabase: true
   ## @param auth.database Name for a custom database to create
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mysql#creating-a-database-on-first-run
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mysql#creating-a-database-on-first-run
   ##
   database: "my_database"
   ## @param auth.username Name for a custom user to create
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mysql#creating-a-database-user-on-first-run
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mysql#creating-a-database-user-on-first-run
   ##
   username: ""
   ## @param auth.password Password for the new user. Ignored if existing secret is provided
   ##
   password: ""
   ## @param auth.replicationUser MySQL replication user
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mysql#setting-up-a-replication-cluster
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mysql#setting-up-a-replication-cluster
   ##
   replicationUser: replicator
   ## @param auth.replicationPassword MySQL replication user password. Ignored if existing secret is provided

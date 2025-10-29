@@ -96,7 +96,7 @@ diagnosticMode:
 ## @section Spark parameters
 ##
 
-## Bitnami Spark image version
+## HelmHubIO Spark image version
 ## ref: https://hub.docker.com/r/bitnami/spark/tags/
 ## @param image.registry [default: REGISTRY_NAME] Spark image registry
 ## @param image.repository [default: REPOSITORY_NAME/spark] Spark image repository

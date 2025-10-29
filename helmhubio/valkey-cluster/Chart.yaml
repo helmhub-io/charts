@@ -32,5 +32,5 @@ maintainers:
 name: valkey-cluster
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/valkey-cluster
-- https://github.com/bitnami/containers/tree/main/helmhubio/vakey-cluster
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/vakey-cluster
 version: 3.0.25

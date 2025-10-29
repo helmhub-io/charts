@@ -62,7 +62,7 @@ clusterDomain: cluster.local
 ## @param extraDeploy Array of extra objects to deploy with the release
 ##
 extraDeploy: []
-## Bitnami Pinniped image
+## HelmHubIO Pinniped image
 ## ref: https://hub.docker.com/r/bitnami/pinniped/tags/
 ## @param image.registry [default: REGISTRY_NAME] Pinniped image registry
 ## @param image.repository [default: REPOSITORY_NAME/pinniped] Pinniped image repository

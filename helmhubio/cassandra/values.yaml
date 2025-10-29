@@ -77,7 +77,7 @@ diagnosticMode:
 ## @section Cassandra parameters
 ##
 
-## Bitnami Cassandra image
+## HelmHubIO Cassandra image
 ## ref: https://hub.docker.com/r/bitnami/cassandra/tags/
 ## @param image.registry [default: REGISTRY_NAME] Cassandra image registry
 ## @param image.repository [default: REPOSITORY_NAME/cassandra] Cassandra image repository
@@ -667,7 +667,7 @@ persistence:
   storageClass: ""
   ## @param persistence.commitStorageClass PVC Storage Class for Cassandra Commit Log volume
   ## Storage class to use with CASSANDRA_COMMITLOG_DIR to reduce the concurrence for writing data and commit logs
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/cassandra
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/cassandra
   ## If set to "-", commitStorageClass: "", which disables dynamic provisioning
   ## If undefined (the default) or set to null, no storageClassName spec is
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
@@ -770,7 +770,7 @@ metrics:
   ## @param metrics.enabled Start a side-car prometheus exporter
   ##
   enabled: false
-  ## Bitnami Cassandra Exporter image
+  ## HelmHubIO Cassandra Exporter image
   ## ref: https://hub.docker.com/r/bitnami/cassandra-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] Cassandra exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/cassandra-exporter] Cassandra exporter image name

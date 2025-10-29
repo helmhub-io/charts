@@ -19,7 +19,7 @@ dependencies:
   tags:
   - bitnami-common
   version: 2.x.x
-description: PyTorch is a deep learning platform that accelerates the transition from research prototyping to production deployment. Bitnami image includes Torchvision for specific computer vision support.
+description: PyTorch is a deep learning platform that accelerates the transition from research prototyping to production deployment. HelmHubIO image includes Torchvision for specific computer vision support.
 home: https://github.com/helmhub-io/charts
 icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/pytorch/img/pytorch-stack-220x234.png
 keywords:

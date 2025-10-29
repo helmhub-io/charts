@@ -7,7 +7,7 @@ on:
   schedule:
     # Hourly
     - cron: '0 * * * *'
-# Remove all permissions by default. Actions are performed by Bitnami Bot
+# Remove all permissions by default. Actions are performed by HelmHubIO Bot
 permissions: {}
 jobs:
   stale:

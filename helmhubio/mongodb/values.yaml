@@ -126,7 +126,7 @@ diagnosticMode:
 ## @section MongoDB(&reg;) parameters
 ##
 
-## Bitnami MongoDB(&reg;) image
+## HelmHubIO MongoDB(&reg;) image
 ## ref: https://hub.docker.com/r/bitnami/mongodb/tags/
 ## @param image.registry [default: REGISTRY_NAME] MongoDB(&reg;) image registry
 ## @param image.repository [default: REPOSITORY_NAME/mongodb] MongoDB(&reg;) image registry
@@ -177,11 +177,11 @@ auth:
   ##
   rootUser: root
   ## @param auth.rootPassword MongoDB(&reg;) root password
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mongodb#setting-the-root-user-and-password-on-first-run
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mongodb#setting-the-root-user-and-password-on-first-run
   ##
   rootPassword: ""
   ## MongoDB(&reg;) custom users and databases
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mongodb#creating-a-user-and-database-on-first-run
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mongodb#creating-a-user-and-database-on-first-run
   ## @param auth.usernames List of custom users to be created during the initialization
   ## @param auth.passwords List of passwords for the custom users set at `auth.usernames`
   ## @param auth.databases List of custom databases to be created during the initialization
@@ -253,7 +253,7 @@ tls:
     ## NOTE: When it's set it will disable certificate self-generation from existing CA.
     ##
     existingSecret: ""
-  ## Bitnami Nginx image
+  ## HelmHubIO Nginx image
   ## @param tls.image.registry [default: REGISTRY_NAME] Init container TLS certs setup image registry
   ## @param tls.image.repository [default: REPOSITORY_NAME/nginx] Init container TLS certs setup image repository
   ## @skip tls.image.tag Init container TLS certs setup image tag (immutable tags are recommended)
@@ -333,15 +333,15 @@ replicaSetName: rs0
 ##
 replicaSetHostnames: true
 ## @param enableIPv6 Switch to enable/disable IPv6 on MongoDB(&reg;)
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mongodb#enablingdisabling-ipv6
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mongodb#enablingdisabling-ipv6
 ##
 enableIPv6: false
 ## @param directoryPerDB Switch to enable/disable DirectoryPerDB on MongoDB(&reg;)
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mongodb#enablingdisabling-directoryperdb
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mongodb#enablingdisabling-directoryperdb
 ##
 directoryPerDB: false
 ## MongoDB(&reg;) System Log configuration
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mongodb#configuring-system-log-verbosity-level
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mongodb#configuring-system-log-verbosity-level
 ## @param systemLogVerbosity MongoDB(&reg;) system log verbosity level
 ## @param disableSystemLog Switch to enable/disable MongoDB(&reg;) system log
 ##
@@ -845,7 +845,7 @@ externalAccess:
     ## @param externalAccess.autoDiscovery.enabled Enable using an init container to auto-detect external IPs by querying the K8s API
     ##
     enabled: false
-    ## Bitnami Kubectl image
+    ## HelmHubIO Kubectl image
     ## ref: https://hub.docker.com/r/bitnami/kubectl/tags/
     ## @param externalAccess.autoDiscovery.image.registry [default: REGISTRY_NAME] Init container auto-discovery image registry
     ## @param externalAccess.autoDiscovery.image.repository [default: REPOSITORY_NAME/kubectl] Init container auto-discovery image repository
@@ -894,7 +894,7 @@ externalAccess:
   ## Init container what mission is ensure public names can be resolved.
   ##
   dnsCheck:
-    ## Bitnami os-shell image
+    ## HelmHubIO os-shell image
     ## ref: https://hub.docker.com/r/bitnami/os-shell/tags/
     ## @param externalAccess.dnsCheck.image.registry [default: REGISTRY_NAME] Init container dns-check image registry
     ## @param externalAccess.dnsCheck.image.repository [default: REPOSITORY_NAME/kubectl] Init container dns-check image repository
@@ -2423,7 +2423,7 @@ metrics:
   ## @param metrics.enabled Enable using a sidecar Prometheus exporter
   ##
   enabled: false
-  ## Bitnami MongoDB(&reg;) Promtheus Exporter image
+  ## HelmHubIO MongoDB(&reg;) Promtheus Exporter image
   ## ref: https://hub.docker.com/r/bitnami/mongodb-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] MongoDB(&reg;) Prometheus exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/mongodb-exporter] MongoDB(&reg;) Prometheus exporter image repository

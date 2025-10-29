@@ -80,7 +80,7 @@ diagnosticMode:
   ##
   args:
   - infinity
-## Bitnami APISIX image
+## HelmHubIO APISIX image
 ## ref: https://hub.docker.com/r/bitnami/apisix/tags/
 ## @param image.registry [default: REGISTRY_NAME] APISIX image registry
 ## @param image.repository [default: REPOSITORY_NAME/apisix] APISIX image repository
@@ -1687,7 +1687,7 @@ ingressController:
   ## @param ingressController.enabled Enable APISIX Ingress Controller
   ##
   enabled: true
-  ## Bitnami APISIX Ingress Controller image
+  ## HelmHubIO APISIX Ingress Controller image
   ## ref: https://hub.docker.com/r/bitnami/apisix-ingress-controller/tags/
   ## @param ingressController.image.registry [default: REGISTRY_NAME] APISIX Ingress Controller image registry
   ## @param ingressController.image.repository [default: REPOSITORY_NAME/apisix-ingress-controller] APISIX Ingress Controller image repository

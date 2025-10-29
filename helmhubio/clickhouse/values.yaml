@@ -154,7 +154,7 @@ defaultInitContainers:
 
 ## @section ClickHouse parameters
 
-## Bitnami ClickHouse image
+## HelmHubIO ClickHouse image
 ## ref: https://hub.docker.com/r/bitnami/clickhouse/tags/
 ## @param image.registry [default: REGISTRY_NAME] ClickHouse image registry
 ## @param image.repository [default: REPOSITORY_NAME/clickhouse] ClickHouse image repository
@@ -945,7 +945,7 @@ keeper:
   ## @param keeper.enabled Deploy ClickHouse Keeper to provide coordination capabilities
   ##
   enabled: true
-  ## Bitnami ClickHouse Keeper image
+  ## HelmHubIO ClickHouse Keeper image
   ## ref: https://hub.docker.com/r/bitnami/clickhouse-keeper/tags/
   ## @param keeper.image.registry [default: REGISTRY_NAME] ClickHouse Keeper image registry
   ## @param keeper.image.repository [default: REPOSITORY_NAME/clickhouse-keeper] ClickHouse Keeper image repository

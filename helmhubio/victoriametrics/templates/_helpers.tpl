@@ -201,7 +201,7 @@ Return the proper image name (for the init container volume-permissions image)
 {{- end -}}
 
 {{- define "victoriametrics.init-containers.volume-permissions" -}}
-{{- /* As most Bitnami charts have volumePermissions in the root, we add this overwrite to maintain a similar UX */}}
+{{- /* As most HelmHubIO charts have volumePermissions in the root, we add this overwrite to maintain a similar UX */}}
 - name: volume-permissions
   image: {{ include "victoriametrics.volume-permissions.image" . }}
   imagePullPolicy: {{ .context.Values.defaultInitContainers.volumePermissions.image.pullPolicy | quote }}

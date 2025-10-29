@@ -16,7 +16,7 @@ helm install my-release oci://registry-1.docker.io/helmhubiocharts/redis
 
 > Tip: Did you know that this app is also available as a Kubernetes App on the Azure Marketplace? Kubernetes Apps are the easiest way to deploy HelmHubIO on AKS. Click [here](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitnami.redis-cnab) to see the listing on Azure Marketplace.
 
-Looking to use Redis&reg; in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the HelmHubIO catalog.
+Looking to use Redis&reg; in production? Try [VMware Tanzu Application Catalog](https://helmhub.io/enterprise), the commercial edition of the HelmHubIO catalog.
 
 ## ⚠️ Important Notice: Upcoming changes to the HelmHubIO Catalog
 

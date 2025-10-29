@@ -77,7 +77,7 @@ diagnosticMode:
 ## @section WordPress Image parameters
 ##
 
-## Bitnami WordPress image
+## HelmHubIO WordPress image
 ## ref: https://hub.docker.com/r/bitnami/wordpress/tags/
 ## @param image.registry [default: REGISTRY_NAME] WordPress image registry
 ## @param image.repository [default: REPOSITORY_NAME/wordpress] WordPress image repository
@@ -109,7 +109,7 @@ image:
   debug: false
 ## @section WordPress Configuration parameters
 ## WordPress settings based on environment variables
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/wordpress#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress#environment-variables
 ##
 
 ## @param wordpressUsername WordPress username
@@ -144,7 +144,7 @@ wordpressTablePrefix: wp_
 wordpressScheme: http
 ## @param wordpressSkipInstall Skip wizard installation
 ## NOTE: useful if you use an external database that already contains WordPress data
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/wordpress#connect-wordpress-docker-container-to-an-existing-database
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress#connect-wordpress-docker-container-to-an-existing-database
 ##
 wordpressSkipInstall: false
 ## @param wordpressExtraConfigContent Add extra content to the default wp-config.php file
@@ -179,7 +179,7 @@ apacheConfiguration: ""
 ##
 existingApacheConfigurationConfigMap: ""
 ## @param customPostInitScripts Custom post-init.d user scripts
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/wordpress
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress
 ## NOTE: supported formats are `.sh`, `.sql` or `.php`
 ## NOTE: scripts are exclusively executed during the 1st boot of the container
 ## e.g:
@@ -197,7 +197,7 @@ existingApacheConfigurationConfigMap: ""
 ##
 customPostInitScripts: {}
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/wordpress/#smtp-configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress/#smtp-configuration
 ## @param smtpHost SMTP server host
 ## @param smtpPort SMTP server port
 ## @param smtpUser SMTP username
@@ -257,7 +257,7 @@ extraEnvVarsCM: ""
 ##
 extraEnvVarsSecret: ""
 ## @section WordPress Multisite Configuration parameters
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/wordpress#multisite-configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/wordpress#multisite-configuration
 ##
 
 ## @param multisite.enable Whether to enable WordPress Multisite configuration.
@@ -987,7 +987,7 @@ metrics:
   ## @param metrics.enabled Start a sidecar prometheus exporter to expose metrics
   ##
   enabled: false
-  ## Bitnami Apache exporter image
+  ## HelmHubIO Apache exporter image
   ## ref: https://hub.docker.com/r/bitnami/apache-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] Apache exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/apache-exporter] Apache exporter image repository
@@ -1236,9 +1236,9 @@ mariadb:
   ## @param mariadb.auth.database MariaDB custom database
   ## @param mariadb.auth.username MariaDB custom user name
   ## @param mariadb.auth.password MariaDB custom user password
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb#setting-the-root-password-on-first-run
-  ##      https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-on-first-run
-  ##      https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-user-on-first-run
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb#setting-the-root-password-on-first-run
+  ##      https://github.com/helmhub-io/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-on-first-run
+  ##      https://github.com/helmhub-io/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-user-on-first-run
   ##
   auth:
     rootPassword: ""
@@ -1314,7 +1314,7 @@ memcached:
   ##
   enabled: false
   ## Authentication parameters
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/memcached#creating-the-memcached-admin-user
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/memcached#creating-the-memcached-admin-user
   ##
   auth:
     ## @param memcached.auth.enabled Enable Memcached authentication

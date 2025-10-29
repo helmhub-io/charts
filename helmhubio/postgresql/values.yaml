@@ -107,7 +107,7 @@ diagnosticMode:
 ## @section PostgreSQL common parameters
 ##
 
-## Bitnami PostgreSQL image version
+## HelmHubIO PostgreSQL image version
 ## ref: https://hub.docker.com/r/bitnami/postgresql/tags/
 ## @param image.registry [default: REGISTRY_NAME] PostgreSQL image registry
 ## @param image.repository [default: REPOSITORY_NAME/postgresql] PostgreSQL image repository
@@ -138,9 +138,9 @@ image:
   ##
   debug: false
 ## Authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql#setting-the-root-password-on-first-run
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql#creating-a-database-on-first-run
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql#creating-a-database-user-on-first-run
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql#setting-the-root-password-on-first-run
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql#creating-a-database-on-first-run
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql#creating-a-database-user-on-first-run
 ##
 auth:
   ## @param auth.enablePostgresUser Assign a password to the "postgres" admin user. Otherwise, remote access will be blocked for this user
@@ -199,7 +199,7 @@ replication:
 containerPorts:
   postgresql: 5432
 ## Audit settings
-## https://github.com/bitnami/containers/tree/main/helmhubio/postgresql#auditing
+## https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql#auditing
 ## @param audit.logHostname Log client hostnames
 ## @param audit.logConnections Add client log-in operations to the log file
 ## @param audit.logDisconnections Add client log-outs operations to the log file
@@ -330,7 +330,7 @@ primary:
   ##
   existingConfigmap: ""
   ## @param primary.extendedConfiguration Extended PostgreSQL Primary configuration (appended to main or default configuration)
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql#allow-settings-to-be-loaded-from-files-other-than-the-default-postgresqlconf
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql#allow-settings-to-be-loaded-from-files-other-than-the-default-postgresqlconf
   ##
   extendedConfiguration: ""
   ## @param primary.existingExtendedConfigmap Name of an existing ConfigMap with PostgreSQL Primary extended configuration
@@ -338,7 +338,7 @@ primary:
   ##
   existingExtendedConfigmap: ""
   ## Initdb configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql#specifying-initdb-arguments
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql#specifying-initdb-arguments
   ##
   initdb:
     ## @param primary.initdb.args PostgreSQL initdb extra arguments
@@ -371,7 +371,7 @@ primary:
     ##
     password: ""
   ## Pre-init configuration
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql/#on-container-start
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql/#on-container-start
   preInitDb:
     ## @param primary.preInitDb.scripts Dictionary of pre-init scripts
     ## Specify dictionary of shell scripts to be run before db boot
@@ -852,7 +852,7 @@ readReplicas:
   ##
   replicaCount: 1
   ## @param readReplicas.extendedConfiguration Extended PostgreSQL read only replicas configuration (appended to main or default configuration)
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/postgresql#allow-settings-to-be-loaded-from-files-other-than-the-default-postgresqlconf
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/postgresql#allow-settings-to-be-loaded-from-files-other-than-the-default-postgresqlconf
   ##
   extendedConfiguration: ""
   ## @param readReplicas.extraEnvVars Array with extra environment variables to add to PostgreSQL read only nodes

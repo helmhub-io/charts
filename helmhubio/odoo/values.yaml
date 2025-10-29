@@ -76,7 +76,7 @@ diagnosticMode:
   ##
   args:
   - infinity
-## Bitnami Odoo image
+## HelmHubIO Odoo image
 ## ref: https://hub.docker.com/r/bitnami/odoo/tags/
 ## @param image.registry [default: REGISTRY_NAME] Odoo image registry
 ## @param image.repository [default: REPOSITORY_NAME/odoo] Odoo image repository
@@ -108,16 +108,16 @@ image:
   debug: false
 ## @section Odoo Configuration parameters
 ## Odoo settings based on environment variables
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/odoo#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/odoo#environment-variables
 ##
 
 ## @param odooEmail Odoo user email
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/odoo#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/odoo#configuration
 ##
 odooEmail: user@example.com
 ## @param odooPassword Odoo user password
 ## Defaults to a random 10-character alphanumeric string if not set
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/odoo#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/odoo#configuration
 ##
 odooPassword: ""
 ## @param odooSkipInstall Skip Odoo installation wizard
@@ -127,11 +127,11 @@ odooSkipInstall: false
 ##
 odooDatabaseFilter: .*
 ## @param loadDemoData Whether to load demo data for all modules during initialization
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/odoo#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/odoo#configuration
 ##
 loadDemoData: false
 ## @param customPostInitScripts Custom post-init.d user scripts
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/odoo
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/odoo
 ## NOTE: supported formats are `.sh`, `.sql` or `.php`
 ## NOTE: scripts are exclusively executed during the 1st boot of the container
 ## e.g:
@@ -143,7 +143,7 @@ loadDemoData: false
 ##
 customPostInitScripts: {}
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/odoo/#smtp-configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/odoo/#smtp-configuration
 ## @param smtpHost SMTP server host
 ## @param smtpPort SMTP server port
 ## @param smtpUser SMTP username

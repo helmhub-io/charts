@@ -23,7 +23,7 @@ dependencies:
   version: 2.x.x
 description: CloudNativePG is an open-source tool for managing PostgreSQL databases on Kubernetes, from setup to ongoing upkeep.
 home: https://github.com/helmhub-io/charts
-icon: https://bitnami.com/assets/stacks/cloudnative-pg/img/cloudnative-pg-stack-220x234.png
+icon: https://helmhub.io/assets/stacks/cloudnative-pg/img/cloudnative-pg-stack-220x234.png
 keywords:
 - cloudnative-pg
 - operator

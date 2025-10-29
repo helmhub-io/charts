@@ -12,7 +12,7 @@ Harbor is an open source trusted cloud-native registry to store, sign, and scan 
 helm install my-release oci://registry-1.docker.io/helmhubiocharts/harbor
 ```
 
-Looking to use Harbor in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the HelmHubIO catalog.
+Looking to use Harbor in production? Try [VMware Tanzu Application Catalog](https://helmhub.io/enterprise), the commercial edition of the HelmHubIO catalog.
 
 ## ⚠️ Important Notice: Upcoming changes to the HelmHubIO Catalog
 

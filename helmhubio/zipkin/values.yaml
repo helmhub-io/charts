@@ -107,7 +107,7 @@ existingSecret: ""
 ##
 javaOpts: ""
 
-## Bitnami zipkin image
+## HelmHubIO zipkin image
 ## ref: https://hub.docker.com/r/bitnami/zipkin/tags/
 ## @param image.registry [default: REGISTRY_NAME] zipkin image registry
 ## @param image.repository [default: REPOSITORY_NAME/zipkin] zipkin image repository

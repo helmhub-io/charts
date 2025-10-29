@@ -21,7 +21,7 @@ dependencies:
   version: 2.x.x
 description: Grafana k6 Operator is a Kubernetes operator that enables running distributed k6 load tests in a cluster, automating test execution and scaling for performance validation.
 home: https://github.com/helmhub-io/charts
-icon: https://bitnami.com/assets/stacks/grafana-k6-operator/img/grafana-k6-operator-stack-220x234.png
+icon: https://helmhub.io/assets/stacks/grafana-k6-operator/img/grafana-k6-operator-stack-220x234.png
 keywords:
 - grafana-k6-operator
 - operator

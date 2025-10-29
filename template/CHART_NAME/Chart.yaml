@@ -16,7 +16,7 @@ dependencies:
       - bitnami-common
     version: 2.x.x
 description: %%DESCRIPTION%%
-home: https://bitnami.com
+home: https://helmhub.io
 icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/%%IMAGE_NAME%%/img/%%IMAGE_NAME%%-stack-220x234.png
 keywords:
   - %%UPSTREAM_PROJECT_KEYWORD%%
@@ -28,7 +28,7 @@ maintainers:
 name: %%CHART_NAME%%
 sources:
   - https://github.com/helmhub-io/charts/tree/main/helmhubio/%%IMAGE_NAME%%
-  - https://github.com/bitnami/containers/tree/main/helmhubio/%%IMAGE_NAME%%
+  - https://github.com/helmhub-io/containers/tree/main/helmhubio/%%IMAGE_NAME%%
   - %%UPSTREAM_PROJECT_SOURCE_CODE_URL%%
   - ...
 version: 0.1.0

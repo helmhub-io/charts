@@ -57,7 +57,7 @@ extraDeploy: []
 usePasswordFiles: true
 ## @section Moodle&trade; parameters
 
-## Bitnami Moodle&trade; image version
+## HelmHubIO Moodle&trade; image version
 ## ref: https://hub.docker.com/r/bitnami/moodle/tags/
 ## @param image.registry [default: REGISTRY_NAME] Moodle image registry
 ## @param image.repository [default: REPOSITORY_NAME/moodle] Moodle image repository
@@ -112,32 +112,32 @@ autoscaling:
   targetCPU: 80
   targetMemory: 80
 ## @param moodleSkipInstall Skip Moodle&trade; installation wizard. Useful for migrations and restoring from SQL dump
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodleSkipInstall: false
 ## @param moodleSiteName Site name
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodleSiteName: ""
 ## @param moodleLang Site language
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodleLang: ""
 ## @param moodleUsername User of the application
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodleUsername: user
 ## @param moodlePassword Application password
 ## Defaults to a random 10-character alphanumeric string if not set
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodlePassword: ""
 ## @param moodleEmail Admin email
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle#configuration
 ##
 moodleEmail: user@example.com
 ## @param allowEmptyPassword Allow DB blank passwords
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle#environment-variables
 ##
 allowEmptyPassword: true
 ## @param command Override default container command (useful when using custom images)
@@ -217,7 +217,7 @@ topologySpreadConstraints: []
 ##
 existingSecret: ""
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/moodle/#smtp-configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/moodle/#smtp-configuration
 ## @param smtpHost SMTP host
 ## @param smtpPort SMTP port
 ## @param smtpUser SMTP user
@@ -658,15 +658,15 @@ mariadb:
   ##
   auth:
     ## @param mariadb.auth.rootPassword Password for the MariaDB `root` user
-    ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb#setting-the-root-password-on-first-run
+    ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb#setting-the-root-password-on-first-run
     ##
     rootPassword: ""
     ## @param mariadb.auth.database Database name to create
-    ## ref: https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-on-first-run
+    ## ref: https://github.com/helmhub-io/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-on-first-run
     ##
     database: bitnami_moodle
     ## @param mariadb.auth.username Database user to create
-    ## ref: https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-user-on-first-run
+    ## ref: https://github.com/helmhub-io/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-user-on-first-run
     ##
     username: bn_moodle
     ## @param mariadb.auth.password Password for the database

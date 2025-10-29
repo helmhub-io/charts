@@ -62,7 +62,7 @@ Usage:
 {{- end -}}
 
 {{- if and (or (gt (len $relocatedImages) 0) (gt (len $replacedImages) 0)) (((.context.Values.global).security).allowInsecureImages) -}}
-  {{- print "\n\n⚠ SECURITY WARNING: Verifying original container images was skipped. Please note this Helm chart was designed, tested, and validated on multiple platforms using a specific set of Bitnami and Bitnami Secure Images containers. Substituting other containers is likely to cause degraded security and performance, broken chart features, and missing environment variables.\n" -}}
+  {{- print "\n\n⚠ SECURITY WARNING: Verifying original container images was skipped. Please note this Helm chart was designed, tested, and validated on multiple platforms using a specific set of HelmHubIO and HelmHubIO Secure Images containers. Substituting other containers is likely to cause degraded security and performance, broken chart features, and missing environment variables.\n" -}}
 {{- else if (or (gt (len $relocatedImages) 0) (gt (len $replacedImages) 0)) -}}
   {{- $errorString := "Original containers have been substituted for unrecognized ones. Deploying this chart with non-standard containers is likely to cause degraded security and performance, broken chart features, and missing environment variables." -}}
   {{- $errorString = print $errorString "\n\nUnrecognized images:" -}}
@@ -82,7 +82,7 @@ Usage:
     {{- print $errorString -}}
   {{- end -}}
 {{- else if gt (len $retaggedImages) 0 -}}
-  {{- $warnString := "\n\n⚠ WARNING: Original containers have been retagged. Please note this Helm chart was tested, and validated on multiple platforms using a specific set of Bitnami and Bitnami Secure Images containers. Substituting original image tags could cause unexpected behavior." -}}
+  {{- $warnString := "\n\n⚠ WARNING: Original containers have been retagged. Please note this Helm chart was tested, and validated on multiple platforms using a specific set of HelmHubIO and HelmHubIO Secure Images containers. Substituting original image tags could cause unexpected behavior." -}}
   {{- $warnString = print $warnString "\n\nRetagged images:" -}}
   {{- range $retaggedImages -}}
     {{- $warnString = print $warnString "\n  - " . -}}

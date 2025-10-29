@@ -82,7 +82,7 @@ diagnosticMode:
 
 ## @section Airflow common parameters
 
-## Bitnami Airflow image version
+## HelmHubIO Airflow image version
 ## ref: https://hub.docker.com/r/bitnami/airflow/tags
 ## @param image.registry [default: REGISTRY_NAME] Airflow image registry
 ## @param image.repository [default: REPOSITORY_NAME/airflow] Airflow image repository
@@ -114,7 +114,7 @@ image:
   debug: false
 
 ## Authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/airflow#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/airflow#environment-variables
 ##
 auth:
   ## @param auth.username Username to access web UI
@@ -2878,7 +2878,7 @@ metrics:
   ## @param metrics.enabled Enable a StatsD exporter that collects StatsD metrics from Airflow components and expose them as Prometheus metrics
   ##
   enabled: false
-  ## Bitnami StatsD exporter image
+  ## HelmHubIO StatsD exporter image
   ## ref: https://hub.docker.com/r/bitnami/statsd-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] StatsD exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/statsd-exporter] StatsD exporter image repository

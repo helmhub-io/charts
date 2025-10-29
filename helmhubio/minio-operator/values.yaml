@@ -63,7 +63,7 @@ clusterDomain: cluster.local
 ## @param extraDeploy Array of extra objects to deploy with the release
 ##
 extraDeploy: []
-## Bitnami MinIO&reg; Operator image
+## HelmHubIO MinIO&reg; Operator image
 ## ref: https://hub.docker.com/r/bitnami/minio-operator/tags/
 ## @param image.registry [default: REGISTRY_NAME] MinIO&reg; Operator image registry
 ## @param image.repository [default: REPOSITORY_NAME/minio-operator] MinIO&reg; Operator image repository
@@ -93,7 +93,7 @@ image:
   ## Enable debug mode
   ##
   debug: false
-## Bitnami MinIO&reg; Operator sidecar image
+## HelmHubIO MinIO&reg; Operator sidecar image
 ## ref: https://hub.docker.com/r/bitnami/minio-operator-sidecar/tags/
 ## @param sidecarImage.registry [default: REGISTRY_NAME] MinIO&reg; Operator sidecar image registry
 ## @param sidecarImage.repository [default: REPOSITORY_NAME/minio-operator-sidecar] MinIO&reg; Operator sidecar image repository
@@ -105,7 +105,7 @@ sidecarImage:
   repository: helmhubio/minio-operator-sidecar
   tag: 7.1.1-debian-12-r7
   digest: ""
-## Bitnami MinIO&reg; image version
+## HelmHubIO MinIO&reg; image version
 ## ref: https://hub.docker.com/r/bitnami/minio/tags/
 ## @param minioImage.registry [default: REGISTRY_NAME] MinIO&reg; image registry
 ## @param minioImage.repository [default: REPOSITORY_NAME/minio] MinIO&reg; image repository

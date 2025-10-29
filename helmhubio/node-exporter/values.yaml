@@ -114,7 +114,7 @@ serviceAccount:
   name: ""
   automountServiceAccountToken: false
   annotations: {}
-## Bitnami Node Exporter image version
+## HelmHubIO Node Exporter image version
 ## ref: https://hub.docker.com/r/bitnami/node-exporter/tags/
 ## @param image.registry [default: REGISTRY_NAME] Node Exporter image registry
 ## @param image.repository [default: REPOSITORY_NAME/node-exporter] Node Exporter image repository

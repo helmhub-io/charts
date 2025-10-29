@@ -75,7 +75,7 @@ diagnosticMode:
   args:
   - infinity
 ## @section Schema Registry parameters
-## Bitnami Schema Registry image
+## HelmHubIO Schema Registry image
 ## ref: https://hub.docker.com/r/bitnami/schema-registry/tags/
 ## @param image.registry [default: REGISTRY_NAME] Schema Registry image registry
 ## @param image.repository [default: REPOSITORY_NAME/schema-registry] Schema Registry image repository
@@ -147,7 +147,7 @@ log4j: {}
 ##
 existingLog4jConfigMap: ""
 ## Authentication parameteres
-## https://github.com/bitnami/bitnami-docker-kafka#security
+## https://github.com/helmhub-io/bitnami-docker-kafka#security
 ##
 auth:
   ## TLS parameters to be used when a listener uses HTTPS

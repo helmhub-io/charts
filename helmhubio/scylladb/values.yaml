@@ -82,7 +82,7 @@ diagnosticMode:
 ## @section Scylladb parameters
 ##
 
-## Bitnami Scylladb image
+## HelmHubIO Scylladb image
 ## ref: https://hub.docker.com/r/bitnami/scylladb/tags/
 ## @param image.registry [default: REGISTRY_NAME] Scylladb image registry
 ## @param image.repository [default: REPOSITORY_NAME/scylladb] Scylladb image repository
@@ -877,7 +877,7 @@ persistence:
   storageClass: ""
   ## @param persistence.commitStorageClass PVC Storage Class for Scylladb Commit Log volume
   ## Storage class to use with SCYLLADB_COMMITLOG_DIR to reduce the concurrence for writing data and commit logs
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/scylladb
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/scylladb
   ## If set to "-", commitStorageClass: "", which disables dynamic provisioning
   ## If undefined (the default) or set to null, no storageClassName spec is
   ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
@@ -900,7 +900,7 @@ persistence:
   commitLog:
     ## @param persistence.commitLog.storageClass PVC Storage Class for Scylladb Commit Log volume
     ## Storage class to use with SCYLLADB_COMMITLOG_DIR to reduce the concurrence for writing data and commit logs
-    ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/scylladb
+    ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/scylladb
     ## If set to "-", commitStorageClass: "", which disables dynamic provisioning
     ## If undefined (the default) or set to null, no storageClassName spec is
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on

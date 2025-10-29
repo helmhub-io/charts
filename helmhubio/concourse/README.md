@@ -12,7 +12,7 @@ Concourse is an automation system written in Go. It is most commonly used for CI
 helm install my-release oci://registry-1.docker.io/helmhubiocharts/concourse
 ```
 
-Looking to use Concourse in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the HelmHubIO catalog.
+Looking to use Concourse in production? Try [VMware Tanzu Application Catalog](https://helmhub.io/enterprise), the commercial edition of the HelmHubIO catalog.
 
 ## ⚠️ Important Notice: Upcoming changes to the HelmHubIO Catalog
 

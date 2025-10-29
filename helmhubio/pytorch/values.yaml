@@ -73,7 +73,7 @@ diagnosticMode:
 ## @section PyTorch parameters
 ##
 
-## Bitnami PyTorch image version
+## HelmHubIO PyTorch image version
 ## ref: https://hub.docker.com/r/bitnami/pytorch/tags/
 ## @param image.registry [default: REGISTRY_NAME] PyTorch image registry
 ## @param image.repository [default: REPOSITORY_NAME/pytorch] PyTorch image repository
@@ -552,7 +552,7 @@ networkPolicy:
 ## @section Init Container Parameters
 ##
 
-## Bitnami git image version
+## HelmHubIO git image version
 ## ref: https://hub.docker.com/r/bitnami/git/tags/
 ## @param git.registry [default: REGISTRY_NAME] Git image registry
 ## @param git.repository [default: REPOSITORY_NAME/git] Git image repository

@@ -79,7 +79,7 @@ loggerFormat: json
 ## @section VictoriaMetrics Select Parameters
 ##
 vmselect:
-  ## Bitnami VictoriaMetrics Select image
+  ## HelmHubIO VictoriaMetrics Select image
   ## ref: https://hub.docker.com/r/bitnami/victoriametrics-vmselect/tags/
   ## @param vmselect.image.registry [default: REGISTRY_NAME] VictoriaMetrics Select image registry
   ## @param vmselect.image.repository [default: REPOSITORY_NAME/victoriametrics-vmselect] VictoriaMetrics Select image repository
@@ -702,7 +702,7 @@ vmselect:
 ## @section VictoriaMetrics Insert Parameters
 ##
 vminsert:
-  ## Bitnami VictoriaMetrics Insert image
+  ## HelmHubIO VictoriaMetrics Insert image
   ## ref: https://hub.docker.com/r/bitnami/victoriametrics-vminsert/tags/
   ## @param vminsert.image.registry [default: REGISTRY_NAME] VictoriaMetrics Insert image registry
   ## @param vminsert.image.repository [default: REPOSITORY_NAME/victoriametrics-vminsert] VictoriaMetrics Insert image repository
@@ -1310,7 +1310,7 @@ vminsert:
 ## @section VictoriaMetrics Storage Parameters
 ##
 vmstorage:
-  ## Bitnami VictoriaMetrics Storage image
+  ## HelmHubIO VictoriaMetrics Storage image
   ## ref: https://hub.docker.com/r/bitnami/victoriametrics-vmstorage/tags/
   ## @param vmstorage.image.registry [default: REGISTRY_NAME] VictoriaMetrics Storage image registry
   ## @param vmstorage.image.repository [default: REPOSITORY_NAME/victoriametrics-vmstorage] VictoriaMetrics Storage image repository
@@ -1877,7 +1877,7 @@ vmauth:
   ## @param vmauth.enabled Enable VictoriaMetrics Auth
   ##
   enabled: true
-  ## Bitnami VictoriaMetrics Auth image
+  ## HelmHubIO VictoriaMetrics Auth image
   ## ref: https://hub.docker.com/r/bitnami/victoriametrics-vmauth/tags/
   ## @param vmauth.image.registry [default: REGISTRY_NAME] VictoriaMetrics Auth image registry
   ## @param vmauth.image.repository [default: REPOSITORY_NAME/victoriametrics-vmauth] VictoriaMetrics Auth image repository
@@ -2503,7 +2503,7 @@ vmagent:
   ## @param vmagent.enabled Enable VictoriaMetrics Agent
   ##
   enabled: true
-  ## Bitnami VictoriaMetrics Agent image
+  ## HelmHubIO VictoriaMetrics Agent image
   ## ref: https://hub.docker.com/r/bitnami/victoriametrics-vmagent/tags/
   ## @param vmagent.image.registry [default: REGISTRY_NAME] VictoriaMetrics Agent image registry
   ## @param vmagent.image.repository [default: REPOSITORY_NAME/victoriametrics-vmagent] VictoriaMetrics Agent image repository
@@ -3076,7 +3076,7 @@ vmalert:
   ## @param vmalert.enabled Enable VictoriaMetrics Alert
   ##
   enabled: false
-  ## Bitnami VictoriaMetrics Alert image
+  ## HelmHubIO VictoriaMetrics Alert image
   ## ref: https://hub.docker.com/r/bitnami/victoriametrics-vmalert/tags/
   ## @param vmalert.image.registry [default: REGISTRY_NAME] VictoriaMetrics Alert image registry
   ## @param vmalert.image.repository [default: REPOSITORY_NAME/victoriametrics-vmalert] VictoriaMetrics Alert image repository

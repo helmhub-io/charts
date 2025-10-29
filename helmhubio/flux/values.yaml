@@ -88,7 +88,7 @@ kustomizeController:
   ## @param kustomizeController.watchAllNamespaces Watch for custom resources in all namespaces
   ##
   watchAllNamespaces: true
-  ## Bitnami Kustomize Controller image
+  ## HelmHubIO Kustomize Controller image
   ## ref: https://hub.docker.com/r/bitnami/fluxcd-kustomize-controller/tags/
   ## @param kustomizeController.image.registry [default: REGISTRY_NAME] Kustomize Controller image registry
   ## @param kustomizeController.image.repository [default: REPOSITORY_NAME/fluxcd-kustomize-controller] Kustomize Controller image repository
@@ -602,7 +602,7 @@ helmController:
   ## @param helmController.watchAllNamespaces Watch for custom resources in all namespaces
   ##
   watchAllNamespaces: true
-  ## Bitnami Helm Controller image
+  ## HelmHubIO Helm Controller image
   ## ref: https://hub.docker.com/r/bitnami/fluxcd-helm-controller/tags/
   ## @param helmController.image.registry [default: REGISTRY_NAME] Helm Controller image registry
   ## @param helmController.image.repository [default: REPOSITORY_NAME/fluxcd-helm-controller] Helm Controller image repository
@@ -1116,7 +1116,7 @@ sourceController:
   ## @param sourceController.watchAllNamespaces Watch for custom resources in all namespaces
   ##
   watchAllNamespaces: true
-  ## Bitnami Source Controller image
+  ## HelmHubIO Source Controller image
   ## ref: https://hub.docker.com/r/bitnami/fluxcd-helm-controller/tags/
   ## @param sourceController.image.registry [default: REGISTRY_NAME] Source Controller image registry
   ## @param sourceController.image.repository [default: REPOSITORY_NAME/fluxcd-source-controller] Source Controller image repository
@@ -1729,7 +1729,7 @@ notificationController:
   ## @param notificationController.watchAllNamespaces Watch for custom resources in all namespaces
   ##
   watchAllNamespaces: true
-  ## Bitnami Notification Controller image
+  ## HelmHubIO Notification Controller image
   ## ref: https://hub.docker.com/r/bitnami/fluxcd-notification-controller/tags/
   ## @param notificationController.image.registry [default: REGISTRY_NAME] Notification Controller image registry
   ## @param notificationController.image.repository [default: REPOSITORY_NAME/fluxcd-notification-controller] Notification Controller image repository
@@ -2355,7 +2355,7 @@ imageAutomationController:
   ## @param imageAutomationController.watchAllNamespaces Watch for custom resources in all namespaces
   ##
   watchAllNamespaces: true
-  ## Bitnami Image Automation Controller image
+  ## HelmHubIO Image Automation Controller image
   ## ref: https://hub.docker.com/r/bitnami/fluxcd-image-automation-controller/tags/
   ## @param imageAutomationController.image.registry [default: REGISTRY_NAME] Image Automation Controller image registry
   ## @param imageAutomationController.image.repository [default: REPOSITORY_NAME/fluxcd-image-automation-controller] Image Automation Controller image repository
@@ -2869,7 +2869,7 @@ imageReflectorController:
   ## @param imageReflectorController.watchAllNamespaces Watch for custom resources in all namespaces
   ##
   watchAllNamespaces: true
-  ## Bitnami Image Reflector Controller image
+  ## HelmHubIO Image Reflector Controller image
   ## ref: https://hub.docker.com/r/bitnami/fluxcd-helm-controller/tags/
   ## @param imageReflectorController.image.registry [default: REGISTRY_NAME] Image Reflector Controller image registry
   ## @param imageReflectorController.image.repository [default: REPOSITORY_NAME/fluxcd-image-reflector-controller] Image Reflector Controller image repository

@@ -63,7 +63,7 @@ clusterDomain: cluster.local
 ## @param extraDeploy Array of extra objects to deploy with the release
 ##
 extraDeploy: []
-## Bitnami Grafana k6 Operator image
+## HelmHubIO Grafana k6 Operator image
 ## ref: https://hub.docker.com/r/bitnami/grafana-k6-operator/tags/
 ## @param image.registry [default: REGISTRY_NAME] Grafana k6 Operator image registry
 ## @param image.repository [default: REPOSITORY_NAME/grafana-k6-operator] Grafana k6 Operator image repository
@@ -89,7 +89,7 @@ image:
   ##   - myRegistryKeySecretName
   ##
   pullSecrets: []
-## Bitnami os-shell image
+## HelmHubIO os-shell image
 ## ref: https://hub.docker.com/r/bitnami/os-shell/tags/
 ## @param starterImage.registry [default: REGISTRY_NAME] os-shell image registry
 ## @param starterImage.repository [default: REPOSITORY_NAME/os-shell] os-shell image repository
@@ -101,7 +101,7 @@ starterImage:
   repository: helmhubio/os-shell
   tag: 12-debian-12-r51
   digest: ""
-## Bitnami Grafana k6 image version
+## HelmHubIO Grafana k6 image version
 ## ref: https://hub.docker.com/r/bitnami/grafana-k6/tags/
 ## @param runnerImage.registry [default: REGISTRY_NAME] Grafana k6 image registry
 ## @param runnerImage.repository [default: REPOSITORY_NAME/grafana-k6] Grafana k6 image repository

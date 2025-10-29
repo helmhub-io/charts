@@ -84,7 +84,7 @@ serviceBindings:
 
 ## @section Kafka common parameters
 
-## Bitnami Kafka image version
+## HelmHubIO Kafka image version
 ## ref: https://hub.docker.com/r/bitnami/kafka/tags/
 ## @param image.registry [default: REGISTRY_NAME] Kafka image registry
 ## @param image.repository [default: REPOSITORY_NAME/kafka] Kafka image repository
@@ -395,7 +395,7 @@ tls:
   ##
   sslClientAuth: "required"
 ## @param extraEnvVars Extra environment variables to add to Kafka pods
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/kafka#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/kafka#configuration
 ## e.g:
 ## extraEnvVars:
 ##   - name: KAFKA_CFG_BACKGROUND_THREADS
@@ -598,7 +598,7 @@ defaultInitContainers:
     ## @param defaultInitContainers.autoDiscovery.enabled Enable init container that auto-detects external IPs/ports by querying the K8s API
     ##
     enabled: false
-    ## Bitnami Kubectl image
+    ## HelmHubIO Kubectl image
     ## @param defaultInitContainers.autoDiscovery.image.registry [default: REGISTRY_NAME] "auto-discovery" init-containers' image registry
     ## @param defaultInitContainers.autoDiscovery.image.repository [default: REPOSITORY_NAME/os-shell] "auto-discovery" init-containers' image repository
     ## @skip defaultInitContainers.autoDiscovery.image.tag "auto-discovery" init-containers' image tag (immutable tags are recommended)
@@ -717,7 +717,7 @@ controller:
   ##
   args: []
   ## @param controller.extraEnvVars Extra environment variables to add to Kafka pods
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/kafka#configuration
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/kafka#configuration
   ## e.g:
   ## extraEnvVars:
   ##   - name: KAFKA_CFG_BACKGROUND_THREADS
@@ -1178,7 +1178,7 @@ broker:
   ##
   args: []
   ## @param broker.extraEnvVars Extra environment variables to add to Kafka pods
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/kafka#configuration
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/kafka#configuration
   ## e.g:
   ## extraEnvVars:
   ##   - name: KAFKA_CFG_BACKGROUND_THREADS
@@ -1989,7 +1989,7 @@ metrics:
     ## @param metrics.jmx.kafkaJmxPort JMX port where the exporter will collect metrics, exposed in the Kafka container.
     ##
     kafkaJmxPort: 5555
-    ## Bitnami JMX exporter image
+    ## HelmHubIO JMX exporter image
     ## ref: https://hub.docker.com/r/bitnami/jmx-exporter/tags/
     ## @param metrics.jmx.image.registry [default: REGISTRY_NAME] JMX exporter image registry
     ## @param metrics.jmx.image.repository [default: REPOSITORY_NAME/jmx-exporter] JMX exporter image repository

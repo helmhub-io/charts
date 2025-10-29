@@ -65,7 +65,7 @@ usePasswordFiles: true
 ## @section Tomcat parameters
 ##
 
-## Bitnami Tomcat image version
+## HelmHubIO Tomcat image version
 ## ref: https://hub.docker.com/r/bitnami/tomcat/tags/
 ## @param image.registry [default: REGISTRY_NAME] Tomcat image registry
 ## @param image.repository [default: REPOSITORY_NAME/tomcat] Tomcat image repository
@@ -103,11 +103,11 @@ automountServiceAccountToken: false
 ##
 hostAliases: []
 ## @param tomcatUsername Tomcat admin user
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/tomcat#creating-a-custom-user
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/tomcat#creating-a-custom-user
 ##
 tomcatUsername: user
 ## @param tomcatPassword Tomcat admin password
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/tomcat#creating-a-custom-user
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/tomcat#creating-a-custom-user
 ##
 tomcatPassword: ""
 ## @param existingSecret Use existing secret for credentials details (`tomcatUsername` and `tomcatPassword` will be ignored and picked up from this secret)
@@ -739,7 +739,7 @@ metrics:
     ## @param metrics.jmx.catalinaOpts custom option used to enabled JMX on tomcat jvm evaluated as template
     ##
     catalinaOpts: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=5555 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.local.only=true
-    ## Bitnami JMX exporter image
+    ## HelmHubIO JMX exporter image
     ## ref: https://hub.docker.com/r/bitnami/jmx-exporter/tags/
     ## @param metrics.jmx.image.registry [default: REGISTRY_NAME] JMX exporter image registry
     ## @param metrics.jmx.image.repository [default: REPOSITORY_NAME/jmx-exporter] JMX exporter image repository

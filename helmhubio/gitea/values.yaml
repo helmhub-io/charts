@@ -65,7 +65,7 @@ usePasswordFiles: true
 ## @section Gitea parameters
 ##
 
-## Bitnami Gitea image version
+## HelmHubIO Gitea image version
 ## ref: https://hub.docker.com/r/bitnami/gitea/tags/
 ## @param image.registry [default: REGISTRY_NAME] Gitea image registry
 ## @param image.repository [default: REPOSITORY_NAME/gitea] Gitea Image name
@@ -96,24 +96,24 @@ image:
   ##
   debug: false
 ## @param adminUsername User of the application
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/gitea#configuration
 ##
 adminUsername: bn_user
 ## @param adminPassword Application password
 ## Defaults to a random 10-character alphanumeric string if not set
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/gitea#configuration
 ##
 adminPassword: ""
 ## @param adminEmail Admin email
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/gitea#configuration
 ##
 adminEmail: user@example.com
 ## @param appName Gitea application name
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/gitea#configuration
 ##
 appName: example
 ## @param runMode Gitea application host
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/gitea#configuration
 ##
 runMode: prod
 ## @param exposeSSH Make the SSH server accesible
@@ -199,7 +199,7 @@ existingSecret: ""
 ##
 existingSecretKey: "admin-password"
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/gitea/#smtp-configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/gitea/#smtp-configuration
 ## @param smtpHost SMTP host
 ## @param smtpPort SMTP port
 ## @param smtpUser SMTP user

@@ -79,7 +79,7 @@ diagnosticMode:
   args:
   - infinity
 
-## Bitnami kube-arangodb Operator image
+## HelmHubIO kube-arangodb Operator image
 ## ref: https://hub.docker.com/r/bitnami/kube-arangodb/tags/
 ## @param image.registry [default: REGISTRY_NAME] kube-arangodb Operator image registry
 ## @param image.repository [default: REPOSITORY_NAME/kube-arangodb] kube-arangodb Operator image repository
@@ -109,7 +109,7 @@ image:
   ## Enable debug mode
   ##
   debug: false
-## Bitnami ArangoDB image version
+## HelmHubIO ArangoDB image version
 ## ref: https://hub.docker.com/r/bitnami/arangodb/tags/
 ## @param arangodbImage.registry [default: REGISTRY_NAME] ArangoDB image registry
 ## @param arangodbImage.repository [default: REPOSITORY_NAME/arangodb] ArangoDB image repository

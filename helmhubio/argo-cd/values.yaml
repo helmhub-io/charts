@@ -57,7 +57,7 @@ clusterDomain: cluster.local
 extraDeploy: []
 ## @section Argo CD image parameters
 
-## Bitnami Argo CD image
+## HelmHubIO Argo CD image
 ## ref: https://hub.docker.com/r/bitnami/argo-cd/tags/
 ## @param image.registry [default: REGISTRY_NAME] Argo CD image registry
 ## @param image.repository [default: REPOSITORY_NAME/argo-cd] Argo CD image repository
@@ -3286,7 +3286,7 @@ repoServer:
 ## Dex configuration
 ##
 dex:
-  ## Bitnami Dex image
+  ## HelmHubIO Dex image
   ## ref: https://hub.docker.com/r/bitnami/argo-cd/tags/
   ## @param dex.image.registry [default: REGISTRY_NAME] Dex image registry
   ## @param dex.image.repository [default: REPOSITORY_NAME/dex] Dex image repository
@@ -4046,7 +4046,7 @@ rbac:
 ## Redis parameters
 ##
 redis:
-  ## Bitnami Redis image
+  ## HelmHubIO Redis image
   ## ref: https://hub.docker.com/r/bitnami/redis/tags/
   ## @param redis.image.registry [default: REGISTRY_NAME] Redis image registry
   ## @param redis.image.repository [default: REPOSITORY_NAME/redis] Redis image repository

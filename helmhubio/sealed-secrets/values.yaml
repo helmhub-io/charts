@@ -61,7 +61,7 @@ extraDeploy: []
 ## @section Sealed Secrets Parameters
 ##
 
-## Bitnami Sealed Secrets image
+## HelmHubIO Sealed Secrets image
 ## ref: https://hub.docker.com/r/bitnami/redis/tags/
 ## @param image.registry [default: REGISTRY_NAME] Sealed Secrets image registry
 ## @param image.repository [default: REPOSITORY_NAME/sealed-secrets] Sealed Secrets image repository

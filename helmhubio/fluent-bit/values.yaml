@@ -73,7 +73,7 @@ diagnosticMode:
 ## @section Fluent Bit parameters
 ##
 
-## Bitnami Fluent Bit image
+## HelmHubIO Fluent Bit image
 ## ref: https://hub.docker.com/r/bitnami/fluent-bit/tags/
 ## @param image.registry [default: REGISTRY_NAME] Fluent Bit image registry
 ## @param image.repository [default: REPOSITORY_NAME/fluent-bit] Fluent Bit image repository

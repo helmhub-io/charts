@@ -33,5 +33,5 @@ maintainers:
 name: keydb
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/keydb
-- https://github.com/bitnami/containers/tree/main/helmhubio/keydb
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/keydb
 version: 0.5.23

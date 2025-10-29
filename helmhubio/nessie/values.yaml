@@ -111,7 +111,7 @@ existingSecret: ""
 ##
 javaOpts: ""
 
-## Bitnami nessie image
+## HelmHubIO nessie image
 ## ref: https://hub.docker.com/r/bitnami/nessie/tags/
 ## @param image.registry [default: REGISTRY_NAME] nessie image registry
 ## @param image.repository [default: REPOSITORY_NAME/nessie] nessie image repository
@@ -794,7 +794,7 @@ volumePermissions:
 ## Wait for Database init container
 ##
 waitContainer:
-  ## Bitnami PostgreSQL image
+  ## HelmHubIO PostgreSQL image
   ## ref: https://hub.docker.com/r/bitnami/supabase-postgres/tags/
   ## @param waitContainer.image.registry [default: REGISTRY_NAME] PostgreSQL client image registry
   ## @param waitContainer.image.repository [default: REPOSITORY_NAME/supabase-postgres] PostgreSQL client image repository

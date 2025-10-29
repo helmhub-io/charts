@@ -76,7 +76,7 @@ diagnosticMode:
   - infinity
 ## @section Kibana parameters
 
-## Bitnami Kibana image version
+## HelmHubIO Kibana image version
 ## ref: https://hub.docker.com/r/bitnami/kibana/tags/
 ## @param image.registry [default: REGISTRY_NAME] Kibana image registry
 ## @param image.repository [default: REPOSITORY_NAME/kibana] Kibana image repository

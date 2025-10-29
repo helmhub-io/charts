@@ -49,5 +49,5 @@ maintainers:
 name: seaweedfs
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/seawwedfs
-- https://github.com/bitnami/containers/tree/main/helmhubio/seaweedfs
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/seaweedfs
 version: 6.0.2

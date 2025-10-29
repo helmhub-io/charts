@@ -174,7 +174,7 @@ janusgraphProperties: ""
 ##
 javaOptions: ""
 
-## Bitnami JanusGraph image
+## HelmHubIO JanusGraph image
 ## ref: https://hub.docker.com/r/bitnami/janusgraph/tags/
 ## @param image.registry [default: REGISTRY_NAME] JanusGraph image registry
 ## @param image.repository [default: REPOSITORY_NAME/janusgraph] JanusGraph image repository
@@ -632,7 +632,7 @@ metrics:
   ## @param metrics.enabled Enable the export of Prometheus metrics
   ##
   enabled: false
-  ## Bitnami JMX exporter image
+  ## HelmHubIO JMX exporter image
   ## ref: https://hub.docker.com/r/bitnami/jmx-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] JMX exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/jmx-exporter] JMX exporter image repository

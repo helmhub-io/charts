@@ -34,5 +34,5 @@ maintainers:
 name: clickhouse-operator
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/clickhouse-operator
-- https://github.com/bitnami/containers/tree/main/helmhubio/clickhouse-operator
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/clickhouse-operator
 version: 0.2.34

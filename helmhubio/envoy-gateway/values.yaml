@@ -79,7 +79,7 @@ clusterDomain: cluster.local
 extraDeploy: []
 ## @section Envoy Gateway parameters
 ##
-## Bitnami Envoy Gateway image
+## HelmHubIO Envoy Gateway image
 ## ref: https://hub.docker.com/r/bitnami/envoy-gateway/tags/
 ## @param image.registry [default: REGISTRY_NAME] Envoy Gateway image registry
 ## @param image.repository [default: REPOSITORY_NAME/envoy-gateway] Envoy Gateway image repository
@@ -105,7 +105,7 @@ image:
   ##   - myRegistryKeySecretName
   ##
   pullSecrets: []
-## Bitnami Envoy Rate Limit image version
+## HelmHubIO Envoy Rate Limit image version
 ## ref: https://hub.docker.com/r/bitnami/postgresql/tags/
 ## @param ratelimitImage.registry [default: REGISTRY_NAME] Envoy Rate Limit image registry
 ## @param ratelimitImage.repository [default: REPOSITORY_NAME/postgresql] Envoy Rate Limit image repository
@@ -122,7 +122,7 @@ ratelimitImage:
   ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
   ##
   pullPolicy: IfNotPresent
-## Bitnami Envoy image version
+## HelmHubIO Envoy image version
 ## ref: https://hub.docker.com/r/bitnami/postgresql/tags/
 ## @param envoyImage.registry [default: REGISTRY_NAME] Envoy image registry
 ## @param envoyImage.repository [default: REPOSITORY_NAME/postgresql] Envoy image repository

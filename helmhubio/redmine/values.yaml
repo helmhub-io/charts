@@ -76,9 +76,9 @@ diagnosticMode:
   - infinity
 ## @section Redmine Configuration parameters
 ## Redmine settings based on environment variables
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/redmine#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/redmine#environment-variables
 
-## Bitnami Redmine image
+## HelmHubIO Redmine image
 ## ref: https://hub.docker.com/r/bitnami/redmine/tags/
 ## @param image.registry [default: REGISTRY_NAME] Redmine image registry
 ## @param image.repository [default: REPOSITORY_NAME/redmine] Redmine image repository
@@ -125,7 +125,7 @@ redmineLanguage: en
 ##
 allowEmptyPassword: false
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/redmine/#smtp-configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/redmine/#smtp-configuration
 ## @param smtpHost SMTP server host
 ## @param smtpPort SMTP server port
 ## @param smtpUser SMTP username
@@ -685,7 +685,7 @@ autoscaling:
 ## @section Database Parameters
 
 ## @param databaseType Redmine database type. Allowed values: `mariadb` and `postgresql`
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/redmine/#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/redmine/#environment-variables
 ##
 databaseType: mariadb
 ## MariaDB chart configuration

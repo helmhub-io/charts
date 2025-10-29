@@ -75,7 +75,7 @@ diagnosticMode:
   - infinity
 ## @section Source code parameters
 
-## Bitnami Deepspeed image version
+## HelmHubIO Deepspeed image version
 ## ref: https://hub.docker.com/r/bitnami/deepspeed/tags/
 ## @param image.registry [default: REGISTRY_NAME] Deepspeed image registry
 ## @param image.repository [default: REPOSITORY_NAME/deepspeed] Deepspeed image repository
@@ -1029,7 +1029,7 @@ worker:
     create: true
     minAvailable: ""
     maxUnavailable: ""
-## Bitnami git image version
+## HelmHubIO git image version
 ## ref: https://hub.docker.com/r/bitnami/git/tags/
 ## @param gitImage.registry [default: REGISTRY_NAME] Git image registry
 ## @param gitImage.repository [default: REPOSITORY_NAME/git] Git image repository

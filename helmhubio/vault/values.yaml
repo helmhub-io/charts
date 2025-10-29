@@ -82,7 +82,7 @@ server:
   ## @param server.enabled Enable Vault Server
   ##
   enabled: true
-  ## Bitnami Vault Server image
+  ## HelmHubIO Vault Server image
   ## ref: https://hub.docker.com/r/bitnami/vault/tags/
   ## @param server.image.registry [default: REGISTRY_NAME] Vault Server image registry
   ## @param server.image.repository [default: REPOSITORY_NAME/vault] Vault Server image repository
@@ -896,7 +896,7 @@ csiProvider:
   ## (NOTE: This is disabled in upstream Vault chart because it requires plugins in the K8s cluster)
   ##
   enabled: false
-  ## Bitnami Vault CSI Provider image
+  ## HelmHubIO Vault CSI Provider image
   ## ref: https://hub.docker.com/r/bitnami/vault-csi-provider/tags/
   ## @param csiProvider.image.registry [default: REGISTRY_NAME] Vault CSI Provider image registry
   ## @param csiProvider.image.repository [default: REPOSITORY_NAME/vault-csi-provider] Vault CSI Provider image repository
@@ -1400,7 +1400,7 @@ injector:
   ## @param injector.enabled Enable Vault Kubernetes Injector
   ##
   enabled: true
-  ## Bitnami Vault Kubernetes Injector image
+  ## HelmHubIO Vault Kubernetes Injector image
   ## ref: https://hub.docker.com/r/bitnami/vault-k8s/tags/
   ## @param injector.image.registry [default: REGISTRY_NAME] Vault Kubernetes Injector image registry
   ## @param injector.image.repository [default: REPOSITORY_NAME/vault-k8s] Vault Kubernetes Injector image repository

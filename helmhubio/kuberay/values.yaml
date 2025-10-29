@@ -79,7 +79,7 @@ diagnosticMode:
   ##
   args:
   - infinity
-## Bitnami Ray Image
+## HelmHubIO Ray Image
 ## ref: https://hub.docker.com/r/bitnami/ray/tags/
 ## @param rayImage.registry [default: REGISTRY_NAME] Ray registry
 ## @param rayImage.repository [default: REPOSITORY_NAME/ray] Ray repository
@@ -115,7 +115,7 @@ operator:
   ## @param operator.enabled Enable Kuberay Operator
   ##
   enabled: true
-  ## Bitnami Kuberay Operator image
+  ## HelmHubIO Kuberay Operator image
   ## ref: https://hub.docker.com/r/bitnami/kuberay-operator/tags/
   ## @param operator.image.registry [default: REGISTRY_NAME] Kuberay Operator image registry
   ## @param operator.image.repository [default: REPOSITORY_NAME/kuberay-operator] Kuberay Operator image repository
@@ -769,7 +769,7 @@ apiserver:
   ## @param apiserver.enabled Enable Kuberay API Server
   ##
   enabled: true
-  ## Bitnami Kuberay API Server image
+  ## HelmHubIO Kuberay API Server image
   ## ref: https://hub.docker.com/r/bitnami/vault/tags/
   ## @param apiserver.image.registry [default: REGISTRY_NAME] Kuberay API Server image registry
   ## @param apiserver.image.repository [default: REPOSITORY_NAME/kuberay-apiserver] Kuberay API Server image repository

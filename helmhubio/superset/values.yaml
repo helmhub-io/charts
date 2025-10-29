@@ -76,7 +76,7 @@ diagnosticMode:
 
 ## @section Superset Parameters
 
-## Bitnami Superset image
+## HelmHubIO Superset image
 ## ref: https://hub.docker.com/r/bitnami/superset/tags/
 ## @param image.registry [default: REGISTRY_NAME] Superset image registry
 ## @param image.repository [default: REPOSITORY_NAME/superset] Superset image repository
@@ -117,7 +117,7 @@ existingConfigmap: ""
 loadExamples: false
 
 ## Authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/superset#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/superset#environment-variables
 ##
 auth:
   ## @param auth.username Username to access web UI

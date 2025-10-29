@@ -80,7 +80,7 @@ diagnosticMode:
 ## @section etcd parameters
 ##
 
-## Bitnami etcd image version
+## HelmHubIO etcd image version
 ## ref: https://hub.docker.com/r/bitnami/etcd/tags/
 ## @param image.registry [default: REGISTRY_NAME] etcd image registry
 ## @param image.repository [default: REPOSITORY_NAME/etcd] etcd image name

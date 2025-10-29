@@ -36,6 +36,6 @@ maintainers:
 name: janusgraph
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/janusgraph
-- https://github.com/bitnami/containers/tree/main/helmhubio/janusgraph
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/janusgraph
 - https://github.com/janusgraph/janusgraph
 version: 1.4.11

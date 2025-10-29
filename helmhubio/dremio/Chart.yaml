@@ -39,6 +39,6 @@ maintainers:
 name: dremio
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/dremio
-- https://github.com/bitnami/containers/tree/main/helmhubio/dremio
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/dremio
 - https://github.com/dremio/dremio-oss
 version: 3.0.14

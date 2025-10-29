@@ -117,7 +117,7 @@ Init container definition for generating the configuration
 {{- end -}}
 
 {{- define "dremio.init-containers.volume-permissions" -}}
-{{- /* As most Bitnami charts have volumePermissions in the root, we add this overwrite to maintain a similar UX */}}
+{{- /* As most HelmHubIO charts have volumePermissions in the root, we add this overwrite to maintain a similar UX */}}
 {{- $volumePermissionsValues := mustMergeOverwrite .context.Values.defaultInitContainers.volumePermissions .context.Values.volumePermissions }}
 - name: volume-permissions
   image: {{ include "dremio.init-containers.default-image" . }}

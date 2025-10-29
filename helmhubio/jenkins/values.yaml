@@ -79,7 +79,7 @@ diagnosticMode:
   - infinity
 ## @section Jenkins Image parameters
 
-## Bitnami Jenkins image
+## HelmHubIO Jenkins image
 ## ref: https://hub.docker.com/r/bitnami/jenkins/tags/
 ## @param image.registry [default: REGISTRY_NAME] Jenkins image registry
 ## @param image.repository [default: REPOSITORY_NAME/jenkins] Jenkins image repository
@@ -111,7 +111,7 @@ image:
   debug: false
 ## @section Jenkins Configuration parameters
 ## Jenkins settings based on environment variables
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/jenkins#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/jenkins#configuration
 
 ## @param jenkinsUser Jenkins username
 ##
@@ -375,7 +375,7 @@ agent:
   ## @param agent.enabled Set to true to enable the configuration of Jenkins kubernetes agents
   ##
   enabled: false
-  ## Bitnami Jenkins agent image
+  ## HelmHubIO Jenkins agent image
   ## ref: https://hub.docker.com/r/bitnami/jenkins/tags/
   ## @param agent.image.registry [default: REGISTRY_NAME] Jenkins image registry
   ## @param agent.image.repository [default: REPOSITORY_NAME/jenkins-agent] Jenkins image repository

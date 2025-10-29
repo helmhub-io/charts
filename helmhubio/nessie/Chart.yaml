@@ -36,6 +36,6 @@ maintainers:
 name: nessie
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/nessie
-- https://github.com/bitnami/containers/tree/main/helmhubio/nessie
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/nessie
 - https://github.com/nessie/nessie
 version: 2.0.35

@@ -84,7 +84,7 @@ diagnosticMode:
 ## @section neo4j Parameters
 ##
 
-## Bitnami neo4j image
+## HelmHubIO neo4j image
 ## ref: https://hub.docker.com/r/bitnami/neo4j/tags/
 ## @param image.registry [default: REGISTRY_NAME] neo4j image registry
 ## @param image.repository [default: REPOSITORY_NAME/neo4j] neo4j image repository

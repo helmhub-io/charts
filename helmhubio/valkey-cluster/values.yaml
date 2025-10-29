@@ -73,7 +73,7 @@ diagnosticMode:
   ##
   args:
   - infinity
-## Bitnami Valkey image version
+## HelmHubIO Valkey image version
 ## ref: https://hub.docker.com/r/bitnami/valkey/tags/
 ## @param image.registry [default: REGISTRY_NAME] Valkey cluster image registry
 ## @param image.repository [default: REPOSITORY_NAME/valkey-cluster] Valkey cluster image repository
@@ -256,7 +256,7 @@ containerSecurityContext:
 usePassword: true
 ## @param password Valkey password (ignored if existingSecret set)
 ## Defaults to a random 10-character alphanumeric string if not set and usePassword is true
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/valkey#setting-the-server-password-on-first-run
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/valkey#setting-the-server-password-on-first-run
 ##
 password: ""
 ## @param existingSecret Name of existing secret object (for password authentication)

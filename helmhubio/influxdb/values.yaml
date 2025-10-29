@@ -82,7 +82,7 @@ diagnosticMode:
 
 ## @section InfluxDB(TM) Core parameters
 
-## Bitnami InfluxDB(TM) Core image
+## HelmHubIO InfluxDB(TM) Core image
 ## ref: https://hub.docker.com/r/bitnami/influxdb/tags/
 ## @param image.registry [default: REGISTRY_NAME] InfluxDB(TM) Core image registry
 ## @param image.repository [default: REPOSITORY_NAME/influxdb] InfluxDB(TM) Core image repository
@@ -924,7 +924,7 @@ createAdminTokenJob:
   ## @param createAdminTokenJob.cleanup Whether to create a K8s job to delete the admin token during Helm uninstall
   ##
   cleanup: true
-  ## Bitnami Kubectl image
+  ## HelmHubIO Kubectl image
   ## @param createAdminTokenJob.image.registry [default: REGISTRY_NAME] Kubectl image registry
   ## @param createAdminTokenJob.image.repository [default: REPOSITORY_NAME/os-shell] Kubectl image repository
   ## @skip createAdminTokenJob.image.tag Kubectl image tag (immutable tags are recommended)

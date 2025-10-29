@@ -14,7 +14,7 @@ Trademarks: This software listing is packaged by HelmHubIO. The respective trade
 helm install my-release oci://registry-1.docker.io/helmhubiocharts/kibana --set elasticsearch.hosts[0]=<Hostname of your ES instance> --set elasticsearch.port=<port of your ES instance>
 ```
 
-Looking to use Kibana in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the HelmHubIO catalog.
+Looking to use Kibana in production? Try [VMware Tanzu Application Catalog](https://helmhub.io/enterprise), the commercial edition of the HelmHubIO catalog.
 
 ## ⚠️ Important Notice: Upcoming changes to the HelmHubIO Catalog
 

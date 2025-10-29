@@ -73,7 +73,7 @@ controller:
   ## @param controller.replicaCount Number of Controller replicas
   ##
   replicaCount: 1
-  ## Bitnami cert-manager image
+  ## HelmHubIO cert-manager image
   ## ref: https://hub.docker.com/r/bitnami/cert-manager/tags/
   ## @param controller.image.registry [default: REGISTRY_NAME] Controller image registry
   ## @param controller.image.repository [default: REPOSITORY_NAME/cert-manager] Controller image repository
@@ -484,7 +484,7 @@ webhook:
   ## @param webhook.replicaCount Number of Webhook replicas
   ##
   replicaCount: 1
-  ## Bitnami cert-manager Webhook image
+  ## HelmHubIO cert-manager Webhook image
   ## ref: https://hub.docker.com/r/bitnami/cert-manager-webhook/tags/
   ## @param webhook.image.registry [default: REGISTRY_NAME] Webhook image registry
   ## @param webhook.image.repository [default: REPOSITORY_NAME/cert-manager-webhook] Webhook image repository
@@ -856,7 +856,7 @@ cainjector:
   ## @param cainjector.replicaCount Number of CAInjector replicas
   ##
   replicaCount: 1
-  ## Bitnami CAInjector image
+  ## HelmHubIO CAInjector image
   ## ref: https://hub.docker.com/r/bitnami/cainjector/tags/
   ## @param cainjector.image.registry [default: REGISTRY_NAME] CAInjector image registry
   ## @param cainjector.image.repository [default: REPOSITORY_NAME/cainjector] CAInjector image repository

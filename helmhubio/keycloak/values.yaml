@@ -80,7 +80,7 @@ usePasswordFiles: true
 
 ## @section Keycloak parameters
 
-## Bitnami Keycloak image version
+## HelmHubIO Keycloak image version
 ## ref: https://hub.docker.com/r/bitnami/keycloak/tags/
 ## @param image.registry [default: REGISTRY_NAME] Keycloak image registry
 ## @param image.repository [default: REPOSITORY_NAME/keycloak] Keycloak image repository
@@ -108,7 +108,7 @@ image:
   pullSecrets: []
   debug: false
 ## Keycloak authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/keycloak#admin-credentials
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/keycloak#admin-credentials
 ##
 auth:
   ## @param auth.adminUser Keycloak administrator user
@@ -240,7 +240,7 @@ existingConfigmap: ""
 extraStartupArgs: ""
 ## @param initdbScripts Dictionary of initdb scripts
 ## Specify dictionary of scripts to be run at first boot
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/keycloak#initializing-a-new-instance
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/keycloak#initializing-a-new-instance
 ## Example:
 ## initdbScripts:
 ##   my_init_script.sh: |
@@ -889,7 +889,7 @@ autoscaling:
 
 metrics:
   ## @param metrics.enabled Enable exposing Keycloak metrics
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/keycloak#enabling-metrics
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/keycloak#enabling-metrics
   ##
   enabled: false
   ## Keycloak metrics service parameters
@@ -991,7 +991,7 @@ keycloakConfigCli:
   ## @param keycloakConfigCli.enabled Whether to enable keycloak-config-cli job
   ##
   enabled: false
-  ## Bitnami keycloak-config-cli image
+  ## HelmHubIO keycloak-config-cli image
   ## ref: https://hub.docker.com/r/bitnami/keycloak-config-cli/tags/
   ## @param keycloakConfigCli.image.registry [default: REGISTRY_NAME] keycloak-config-cli container image registry
   ## @param keycloakConfigCli.image.repository [default: REPOSITORY_NAME/keycloak-config-cli] keycloak-config-cli container image repository

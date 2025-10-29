@@ -77,7 +77,7 @@ diagnosticMode:
   ##
   args:
   - infinity
-## Bitnami Mastodon image
+## HelmHubIO Mastodon image
 ## ref: https://hub.docker.com/r/bitnami/mastodon/tags/
 ## @param image.registry [default: REGISTRY_NAME] Mastodon image registry
 ## @param image.repository [default: REPOSITORY_NAME/mastodon] Mastodon image repository

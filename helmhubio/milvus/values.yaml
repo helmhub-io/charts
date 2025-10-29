@@ -85,7 +85,7 @@ diagnosticMode:
 ## @section Common Milvus Parameters
 ##
 milvus:
-  ## Bitnami Milvus image
+  ## HelmHubIO Milvus image
   ## ref: https://hub.docker.com/r/bitnami/milvus/tags/
   ## @param milvus.image.registry [default: REGISTRY_NAME] Milvus image registry
   ## @param milvus.image.repository [default: REPOSITORY_NAME/milvus] Milvus image repository
@@ -246,7 +246,7 @@ initJob:
   ## @param initJob.forceRun Force the run of the credential job
   ##
   forceRun: false
-  ## Bitnami PyMilvus image
+  ## HelmHubIO PyMilvus image
   ## ref: https://hub.docker.com/r/bitnami/jwt-cli/tags/
   ## @param initJob.image.registry [default: REGISTRY_NAME] PyMilvus image registry
   ## @param initJob.image.repository [default: REPOSITORY_NAME/pymilvus] PyMilvus image repository
@@ -3053,7 +3053,7 @@ attu:
   ## @param attu.enabled Enable Attu deployment
   ##
   enabled: true
-  ## Bitnami Attu image
+  ## HelmHubIO Attu image
   ## ref: https://hub.docker.com/r/bitnami/attu/tags/
   ## @param attu.image.registry [default: REGISTRY_NAME] Attu image registry
   ## @param attu.image.repository [default: REPOSITORY_NAME/attu] Attu image repository

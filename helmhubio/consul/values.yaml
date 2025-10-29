@@ -76,7 +76,7 @@ diagnosticMode:
 ## @section HashiCorp Consul parameters
 ##
 
-## Bitnami HashiCorp Consul image
+## HelmHubIO HashiCorp Consul image
 ## ref: https://hub.docker.com/r/bitnami/consul/tags/
 ## @param image.registry [default: REGISTRY_NAME] HashiCorp Consul image registry
 ## @param image.repository [default: REPOSITORY_NAME/consul] HashiCorp Consul image repository
@@ -763,7 +763,7 @@ metrics:
   ## @param metrics.enabled Start a side-car prometheus exporter
   ##
   enabled: false
-  ## Bitnami HashiCorp Consul Prometheus Exporter image
+  ## HelmHubIO HashiCorp Consul Prometheus Exporter image
   ## ref: https://hub.docker.com/r/bitnami/consul-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] HashiCorp Consul Prometheus Exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/consul-exporter] HashiCorp Consul Prometheus Exporter image repository

@@ -68,7 +68,7 @@ diagnosticMode:
 ## @section Jaeger parameters
 ##
 
-## Bitnami Jaeger image
+## HelmHubIO Jaeger image
 ## ref: https://hub.docker.com/r/bitnami/jaeger/tags/
 ## @param image.registry [default: REGISTRY_NAME] Jaeger image registry
 ## @param image.repository [default: REPOSITORY_NAME/jaeger] Jaeger image repository

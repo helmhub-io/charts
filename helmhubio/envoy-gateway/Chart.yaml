@@ -21,7 +21,7 @@ dependencies:
   version: 2.x.x
 description: Envoy Gateway simplifies traffic management by extending Envoy Proxy's features, offering Kubernetes Gateway API integration for secure, scalable, and observable application routing
 home: https://github.com/helmhub-io/charts
-icon: https://bitnami.com/assets/stacks/envoy-gateway/img/envoy-gateway-stack-220x234.png
+icon: https://helmhub.io/assets/stacks/envoy-gateway/img/envoy-gateway-stack-220x234.png
 keywords:
 - envoy-gateway
 - traffic

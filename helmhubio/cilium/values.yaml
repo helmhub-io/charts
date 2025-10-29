@@ -119,7 +119,7 @@ gcp:
 ## @section Cilium Agent Parameters
 ##
 agent:
-  ## Bitnami Cilium Agent image
+  ## HelmHubIO Cilium Agent image
   ## ref: https://hub.docker.com/r/bitnami/cilium/tags/
   ## @param agent.image.registry [default: REGISTRY_NAME] Cilium Agent image registry
   ## @param agent.image.repository [default: REPOSITORY_NAME/cilium] Cilium Agent image repository
@@ -996,7 +996,7 @@ agent:
 ## @section Cilium Operator Parameters
 ##
 operator:
-  ## Bitnami Cilium Operator image
+  ## HelmHubIO Cilium Operator image
   ## ref: https://hub.docker.com/r/bitnami/cilium/tags/
   ## @param operator.image.registry [default: REGISTRY_NAME] Cilium Operator image registry
   ## @param operator.image.repository [default: REPOSITORY_NAME/cilium] Cilium Operator image repository
@@ -1499,7 +1499,7 @@ envoy:
   ## @param envoy.useDaemonSet Run Cilium Envoy as an independent DaemonSet instead of a sidecar in the Cilium Agent
   ##
   useDaemonSet: false
-  ## Bitnami Cilium Proxy image
+  ## HelmHubIO Cilium Proxy image
   ## ref: https://hub.docker.com/r/bitnami/cilium-proxy/tags/
   ## @param envoy.image.registry [default: REGISTRY_NAME] Cilium Proxy image registry
   ## @param envoy.image.repository [default: REPOSITORY_NAME/cilium] Cilium Proxy image repository
@@ -2096,7 +2096,7 @@ hubble:
     ## @param hubble.relay.enabled Enable Hubble Relay
     ##
     enabled: false
-    ## Bitnami Hubble Relay image
+    ## HelmHubIO Hubble Relay image
     ## ref: https://hub.docker.com/r/bitnami/hubble-relay/tags/
     ## @param hubble.relay.image.registry [default: REGISTRY_NAME] Hubble Relay image registry
     ## @param hubble.relay.image.repository [default: REPOSITORY_NAME/hubble-relay] Hubble Relay image repository
@@ -2689,7 +2689,7 @@ hubble:
     ## Frontend specific parameters
     ##
     frontend:
-      ## Bitnami Hubble UI image
+      ## HelmHubIO Hubble UI image
       ## ref: https://hub.docker.com/r/bitnami/hubble-ui/tags/
       ## @param hubble.ui.frontend.image.registry [default: REGISTRY_NAME] Hubble UI image registry
       ## @param hubble.ui.frontend.image.repository [default: REPOSITORY_NAME/hubble-ui] Hubble UI image repository
@@ -2870,7 +2870,7 @@ hubble:
     ## Backend specific parameters
     ##
     backend:
-      ## Bitnami Hubble UI Backend image
+      ## HelmHubIO Hubble UI Backend image
       ## ref: https://hub.docker.com/r/bitnami/hubble-ui-backend/tags/
       ## @param hubble.ui.backend.image.registry [default: REGISTRY_NAME] Hubble UI Backend image registry
       ## @param hubble.ui.backend.image.repository [default: REPOSITORY_NAME/hubble-ui-backend] Hubble UI Backend image repository

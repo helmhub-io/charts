@@ -35,6 +35,6 @@ maintainers:
 name: superset
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/superset
-- https://github.com/bitnami/containers/tree/main/helmhubio/superset
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/superset
 - https://github.com/apache/superset
 version: 5.0.1

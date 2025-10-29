@@ -66,7 +66,7 @@ extraDeploy: []
 ## @section cloudnative-pg operator parameters
 ##
 operator:
-  ## Bitnami cloudnative-pg Operator image
+  ## HelmHubIO cloudnative-pg Operator image
   ## ref: https://hub.docker.com/r/bitnami/cloudnative-pg/tags/
   ## @param operator.image.registry [default: REGISTRY_NAME] cloudnative-pg Operator image registry
   ## @param operator.image.repository [default: REPOSITORY_NAME/cloudnative-pg] cloudnative-pg Operator image repository
@@ -96,7 +96,7 @@ operator:
     ## Enable debug mode
     ##
     debug: false
-  ## Bitnami PostgreSQL image version
+  ## HelmHubIO PostgreSQL image version
   ## ref: https://hub.docker.com/r/bitnami/postgresql/tags/
   ## @param operator.postgresqlImage.registry [default: REGISTRY_NAME] PostgreSQL image registry
   ## @param operator.postgresqlImage.repository [default: REPOSITORY_NAME/postgresql] PostgreSQL image repository
@@ -697,7 +697,7 @@ pluginBarmanCloud:
   ## @param pluginBarmanCloud.enabled Enable the plugin for Barman Cloud
   ##
   enabled: true
-  ## Bitnami plugin-barman-cloud image
+  ## HelmHubIO plugin-barman-cloud image
   ## ref: https://hub.docker.com/r/bitnami/plugin-barman-cloud/tags/
   ## @param pluginBarmanCloud.image.registry [default: REGISTRY_NAME] plugin-barman-cloud image registry
   ## @param pluginBarmanCloud.image.repository [default: REPOSITORY_NAME/plugin-barman-cloud] plugin-barman-cloud image repository
@@ -727,7 +727,7 @@ pluginBarmanCloud:
     ## Enable debug mode
     ##
     debug: false
-  ## Bitnami plugin-barman-cloud-sidecar image version
+  ## HelmHubIO plugin-barman-cloud-sidecar image version
   ## ref: https://hub.docker.com/r/bitnami/plugin-barman-cloud/tags/
   ## @param pluginBarmanCloud.sidecarImage.registry [default: REGISTRY_NAME] plugin-barman-cloud-sidecar image registry
   ## @param pluginBarmanCloud.sidecarImage.repository [default: REPOSITORY_NAME/plugin-barman-cloud-sidecar] plugin-barman-cloud-sidecar image repository

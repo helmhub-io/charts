@@ -19,7 +19,7 @@ dependencies:
   version: 2.x.x
 description: kube-arangodb is a Kubernetes Operator that manages ArangoDB clusters, ensuring automatic deployment, scaling, and healing of database instances.
 home: https://github.com/helmhub-io/charts
-icon: https://bitnami.com/assets/stacks/kube-arangodb/img/kube-arangodb-stack-220x234.png
+icon: https://helmhub.io/assets/stacks/kube-arangodb/img/kube-arangodb-stack-220x234.png
 keywords:
 - kube-arangodb
 - operator

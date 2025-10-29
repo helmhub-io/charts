@@ -656,7 +656,7 @@ envoy:
   ## @param envoy.enabled Envoy Proxy creation
   ##
   enabled: true
-  ## Bitnami Envoy image
+  ## HelmHubIO Envoy image
   ## ref: https://hub.docker.com/r/bitnami/envoy/tags/
   ## @param envoy.image.registry [default: REGISTRY_NAME] Envoy Proxy image registry
   ## @param envoy.image.repository [default: REPOSITORY_NAME/envoy] Envoy Proxy image repository
@@ -1361,7 +1361,7 @@ defaultBackend:
   ## @param defaultBackend.enabled Enable a default backend based on NGINX
   ##
   enabled: false
-  ## Bitnami NGINX image
+  ## HelmHubIO NGINX image
   ## ref: https://hub.docker.com/r/bitnami/nginx/tags/
   ## @param defaultBackend.image.registry [default: REGISTRY_NAME] Default backend image registry
   ## @param defaultBackend.image.repository [default: REPOSITORY_NAME/nginx] Default backend image name

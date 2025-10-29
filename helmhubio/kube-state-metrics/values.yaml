@@ -114,7 +114,7 @@ serviceAccount:
   name: ""
   automountServiceAccountToken: false
   annotations: {}
-## Bitnami kube-state-metrics image version
+## HelmHubIO kube-state-metrics image version
 ## ref: https://hub.docker.com/r/bitnami/kube-state-metrics/tags/
 ## @param image.registry [default: REGISTRY_NAME] kube-state-metrics image registry
 ## @param image.repository [default: REPOSITORY_NAME/kube-state-metrics] kube-state-metrics image repository

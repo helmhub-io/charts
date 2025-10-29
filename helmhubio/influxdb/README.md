@@ -14,7 +14,7 @@ InfluxDB&trade; is a trademark owned by InfluxData, which is not affiliated with
 helm install my-release oci://registry-1.docker.io/helmhubiocharts/influxdb
 ```
 
-Looking to use InfluxDB&trade; Core in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the HelmHubIO catalog.
+Looking to use InfluxDB&trade; Core in production? Try [VMware Tanzu Application Catalog](https://helmhub.io/enterprise), the commercial edition of the HelmHubIO catalog.
 
 ## ⚠️ Important Notice: Upcoming changes to the HelmHubIO Catalog
 

@@ -296,7 +296,7 @@ ingress:
 ## @section OAuth2 Proxy Image parameters
 ##
 
-## Bitnami OAuth2 Proxy image
+## HelmHubIO OAuth2 Proxy image
 ## ref: https://hub.docker.com/r/bitnami/redis/tags/
 ## @param image.registry [default: REGISTRY_NAME] OAuth2 Proxy image registry
 ## @param image.repository [default: REPOSITORY_NAME/oauth2-proxy] OAuth2 Proxy image repository

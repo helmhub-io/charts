@@ -65,7 +65,7 @@ commonAnnotations: {}
 usePasswordFiles: true
 ## @section Grafana parameters
 
-## Bitnami Grafana image version
+## HelmHubIO Grafana image version
 ## ref: https://hub.docker.com/r/bitnami/grafana/tags/
 ## @param image.registry [default: REGISTRY_NAME] Grafana image registry
 ## @param image.repository [default: REPOSITORY_NAME/grafana] Grafana image repository

@@ -81,7 +81,7 @@ diagnosticMode:
 ## @section Kong common parameters
 ##
 
-## Bitnami kong image version
+## HelmHubIO kong image version
 ## ref: https://hub.docker.com/r/bitnami/kong/tags/
 ## @param image.registry [default: REGISTRY_NAME] kong image registry
 ## @param image.repository [default: REPOSITORY_NAME/kong] kong image repository

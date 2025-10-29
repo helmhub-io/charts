@@ -100,11 +100,11 @@ containerPorts:
   restAPI: 9200
   transport: 9300
 ## @param plugins Comma, semi-colon or space separated list of plugins to install at initialization
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/elasticsearch#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/elasticsearch#environment-variables
 ##
 plugins: ""
 ## @param snapshotRepoPath File System snapshot repository path
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/elasticsearch#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/elasticsearch#environment-variables
 ##
 snapshotRepoPath: ""
 ## @param config Override elasticsearch configuration
@@ -197,7 +197,7 @@ enableDefaultInitContainers: true
 ## @param useIstioLabels Use this variable to add Istio labels to all pods
 ##
 useIstioLabels: true
-## Bitnami Elasticsearch image
+## HelmHubIO Elasticsearch image
 ## @param image.registry [default: REGISTRY_NAME] Elasticsearch image registry
 ## @param image.repository [default: REPOSITORY_NAME/elasticsearch] Elasticsearch image repository
 ## @skip image.tag Elasticsearch image tag (immutable tags are recommended)
@@ -234,7 +234,7 @@ security:
   ##
   enabled: false
   ## @param security.elasticPassword Password for 'elastic' user
-  ## Ref: https://github.com/bitnami/containers/tree/main/helmhubio/elasticsearch#security
+  ## Ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/elasticsearch#security
   ##
   elasticPassword: ""
   ## @param security.existingSecret Name of the existing secret containing the Elasticsearch password (expected key: `elasticsearch-password`)

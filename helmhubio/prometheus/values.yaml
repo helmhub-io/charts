@@ -82,7 +82,7 @@ ingress:
   apiVersion: ""
 ## @section Alertmanager Parameters
 ##
-## Bitnami Alertmanager image
+## HelmHubIO Alertmanager image
 ## ref: https://hub.docker.com/r/bitnami/alertmanager/tags/
 ## @param alertmanager.enabled Alertmanager enabled
 ## @param alertmanager.image.registry [default: REGISTRY_NAME] Alertmanager image registry
@@ -668,7 +668,7 @@ alertmanager:
     selector: {}
 ## @section Prometheus server Parameters
 ##
-## Bitnami Prometheus image
+## HelmHubIO Prometheus image
 ## ref: https://hub.docker.com/r/bitnami/prometheus/tags/
 ## @param server.image.registry [default: REGISTRY_NAME] Prometheus image registry
 ## @param server.image.repository [default: REPOSITORY_NAME/prometheus] Prometheus image repository
@@ -1070,7 +1070,7 @@ server:
     ## @param server.thanos.create Create a Thanos sidecar container
     ##
     create: false
-    ## Bitnami Thanos image
+    ## HelmHubIO Thanos image
     ## ref: https://hub.docker.com/r/bitnami/thanos/tags/
     ## @param server.thanos.image.registry [default: REGISTRY_NAME] Thanos image registry
     ## @param server.thanos.image.repository [default: REPOSITORY_NAME/thanos] Thanos image name

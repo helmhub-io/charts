@@ -21,7 +21,7 @@ dependencies:
   version: 2.x.x
 description: MinIO(R) Operator is a Kubernetes-native tool for deploying and managing high-performance, S3-compatible MinIO(R) object storage across hybrid cloud infrastructures.
 home: https://github.com/helmhub-io/charts
-icon: https://bitnami.com/assets/stacks/minio-operator/img/minio-operator-stack-220x234.png
+icon: https://helmhub.io/assets/stacks/minio-operator/img/minio-operator-stack-220x234.png
 keywords:
 - minio-operator
 - operator

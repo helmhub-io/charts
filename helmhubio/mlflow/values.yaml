@@ -80,7 +80,7 @@ diagnosticMode:
 ## @section MLflow common Parameters
 ##
 
-## Bitnami mlflow image
+## HelmHubIO mlflow image
 ## ref: https://hub.docker.com/r/bitnami/mlflow/tags/
 ## @param image.registry [default: REGISTRY_NAME] mlflow image registry
 ## @param image.repository [default: REPOSITORY_NAME/mlflow] mlflow image repository
@@ -110,7 +110,7 @@ image:
   ## Enable debug mode
   ##
   debug: false
-## Bitnami git image version
+## HelmHubIO git image version
 ## ref: https://hub.docker.com/r/bitnami/git/tags/
 ## @param gitImage.registry [default: REGISTRY_NAME] Git image registry
 ## @param gitImage.repository [default: REPOSITORY_NAME/git] Git image repository

@@ -71,7 +71,7 @@ diagnosticMode:
   - infinity
 ## @section Discourse Common parameters
 
-## Bitnami Discourse image version
+## HelmHubIO Discourse image version
 ## ref: https://hub.docker.com/r/bitnami/discourse/tags/
 ## @param image.registry [default: REGISTRY_NAME] Discourse image registry
 ## @param image.repository [default: REPOSITORY_NAME/discourse] Discourse image repository
@@ -102,7 +102,7 @@ image:
   ##
   debug: false
 ## Authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/discourse#user-and-site-configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/discourse#user-and-site-configuration
 ##
 auth:
   ## @param auth.email Discourse admin user email

@@ -14,7 +14,7 @@ Disclaimer: The respective trademarks mentioned in the offering are owned by the
 helm install my-release oci://registry-1.docker.io/helmhubiocharts/moodle
 ```
 
-Looking to use HelmHubIO LMS powered by Moodle&trade; LMS in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the HelmHubIO catalog.
+Looking to use HelmHubIO LMS powered by Moodle&trade; LMS in production? Try [VMware Tanzu Application Catalog](https://helmhub.io/enterprise), the commercial edition of the HelmHubIO catalog.
 
 ## ⚠️ Important Notice: Upcoming changes to the HelmHubIO Catalog
 

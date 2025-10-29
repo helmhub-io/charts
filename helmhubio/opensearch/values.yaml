@@ -94,11 +94,11 @@ containerPorts:
   restAPI: 9200
   transport: 9300
 ## @param plugins Comma, semi-colon or space separated list of plugins to install at initialization
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/opensearch#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/opensearch#environment-variables
 ##
 plugins: ""
 ## @param snapshotRepoPath File System snapshot repository path
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/opensearch#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/opensearch#environment-variables
 ##
 snapshotRepoPath: ""
 ## @param config Override opensearch configuration
@@ -187,7 +187,7 @@ initContainers: []
 ## @param useIstioLabels Use this variable to add Istio labels to all pods
 ##
 useIstioLabels: true
-## Bitnami OpenSearch image
+## HelmHubIO OpenSearch image
 ## @param image.registry [default: REGISTRY_NAME] OpenSearch image registry
 ## @param image.repository [default: REPOSITORY_NAME/opensearch] OpenSearch image repository
 ## @skip image.tag OpenSearch image tag (immutable tags are recommended)
@@ -224,7 +224,7 @@ security:
   ##
   enabled: false
   ## @param security.adminPassword Password for 'admin' user
-  ## Ref: https://github.com/bitnami/containers/tree/main/helmhubio/opensearch#security
+  ## Ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/opensearch#security
   ##
   adminPassword: ""
   ## @param security.logstashPassword Password for Logstash
@@ -2886,7 +2886,7 @@ dashboards:
   ## @param dashboards.enabled Enables OpenSearch Dashboards deployment
   ##
   enabled: false
-  ## Bitnami OpenSearch Dashboards image
+  ## HelmHubIO OpenSearch Dashboards image
   ## @param dashboards.image.registry [default: REGISTRY_NAME] OpenSearch Dashboards image registry
   ## @param dashboards.image.repository [default: REPOSITORY_NAME/opensearch-dashboards] OpenSearch Dashboards image repository
   ## @skip dashboards.image.tag OpenSearch Dashboards image tag (immutable tags are recommended)
@@ -3548,7 +3548,7 @@ snapshots:
   ## @param snapshots.fullnameOverride String to fully override opensearch.snapshots.fullname
   ##
   fullnameOverride: ""
-  ## Bitnami OpenSearch Snapshots image
+  ## HelmHubIO OpenSearch Snapshots image
   ## @param snapshots.image.registry [default: REGISTRY_NAME] OpenSearch Snapshots image registry
   ## @param snapshots.image.repository [default: REPOSITORY_NAME/os-shell] OpenSearch Snapshots image repository
   ## @skip snapshots.image.tag OpenSearch Snapshots image tag (immutable tags are recommended)

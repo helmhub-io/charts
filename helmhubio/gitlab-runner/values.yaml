@@ -75,7 +75,7 @@ diagnosticMode:
   - infinity
 ## @section Gitlab Runner parameters
 
-## Bitnami Gitlab Runner image version
+## HelmHubIO Gitlab Runner image version
 ## ref: https://hub.docker.com/r/bitnami/gitlab-runner/tags/
 ## @param image.registry [default: REGISTRY_NAME] Gitlab Runner image registry
 ## @param image.repository [default: REPOSITORY_NAME/gitlab-runner] Gitlab Runner image repository
@@ -101,7 +101,7 @@ image:
   ##   - myRegistryKeySecretName
   ##
   pullSecrets: []
-## Bitnami Gitlab Runner Helper image
+## HelmHubIO Gitlab Runner Helper image
 ## ref: https://hub.docker.com/r/bitnami/gitlab-runner-helper/tags/
 ## @param helperImage.registry [default: REGISTRY_NAME] Gitlab Runner Helper image registry
 ## @param helperImage.repository [default: REPOSITORY_NAME/gitlab-runner-helper] Gitlab Runner Helper image repository

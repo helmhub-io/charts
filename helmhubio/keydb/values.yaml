@@ -109,7 +109,7 @@ image:
   debug: false
 
 ## @section KeyDB common configuration parameters
-## https://github.com/bitnami/containers/tree/main/helmhubio/keydb#configuration
+## https://github.com/helmhub-io/containers/tree/main/helmhubio/keydb#configuration
 ##
 
 ## @param architecture KeyDB architecture. Allowed values: `standalone` or `replication`
@@ -119,7 +119,7 @@ image:
 ##
 architecture: replication
 ## KeyDB Authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/keydb#setting-the-server-password-on-first-run
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/keydb#setting-the-server-password-on-first-run
 ##
 auth:
   ## @param auth.enabled Enable password authentication
@@ -1185,7 +1185,7 @@ metrics:
   ## @param metrics.enabled Start a sidecar Prometheus exporter to expose KeyDB metrics
   ##
   enabled: false
-  ## Bitnami Redis Exporter image
+  ## HelmHubIO Redis Exporter image
   ## ref: https://hub.docker.com/r/bitnami/redis-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] Redis Exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/redis-exporter] Redis Exporter image repository

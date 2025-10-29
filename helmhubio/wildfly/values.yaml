@@ -76,7 +76,7 @@ diagnosticMode:
   - infinity
 ## @section WildFly Image parameters
 
-## Bitnami WildFly image
+## HelmHubIO WildFly image
 ## ref: https://hub.docker.com/r/bitnami/redis/tags/
 ## @param image.registry [default: REGISTRY_NAME] WildFly image registry
 ## @param image.repository [default: REPOSITORY_NAME/wildfly] WildFly image repository
@@ -108,7 +108,7 @@ image:
   debug: false
 ## @section WildFly Configuration parameters
 ## WildFly settings based on environment variables
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/wildfly#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/wildfly#configuration
 
 ## @param wildflyUsername WildFly username
 ##

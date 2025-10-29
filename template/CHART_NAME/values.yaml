@@ -78,7 +78,7 @@ diagnosticMode:
 ## %%MAIN_CONTAINER/POD_DESCRIPTION%%
 ##
 %%MAIN_OBJECT_BLOCK%%:
-  ## Bitnami %%MAIN_CONTAINER%% image
+  ## HelmHubIO %%MAIN_CONTAINER%% image
   ## ref: https://hub.docker.com/r/bitnami/%%IMAGE_NAME%%/tags/
   ## @param %%MAIN_OBJECT_BLOCK%%.image.registry [default: REGISTRY_NAME] %%MAIN_CONTAINER%% image registry
   ## @param %%MAIN_OBJECT_BLOCK%%.image.repository [default: REPOSITORY_NAME/%%IMAGE_NAME%%] %%MAIN_CONTAINER%% image repository

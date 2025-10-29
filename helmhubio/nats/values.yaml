@@ -73,7 +73,7 @@ diagnosticMode:
 
 ## @section NATS parameters
 
-## Bitnami NATS image version
+## HelmHubIO NATS image version
 ## ref: https://hub.docker.com/r/bitnami/nats/tags/
 ## @param image.registry [default: REGISTRY_NAME] NATS image registry
 ## @param image.repository [default: REPOSITORY_NAME/nats] NATS image repository

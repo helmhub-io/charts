@@ -80,7 +80,7 @@ diagnosticMode:
   - infinity
 ## @section MariaDB Galera parameters
 
-## Bitnami MariaDB Galera image
+## HelmHubIO MariaDB Galera image
 ## ref: https://hub.docker.com/r/bitnami/mariadb-galera/tags/
 ## @param image.registry [default: REGISTRY_NAME] MariaDB Galera image registry
 ## @param image.repository [default: REPOSITORY_NAME/mariadb-galera] MariaDB Galera image repository
@@ -332,7 +332,7 @@ rootUser:
   user: root
   ## @param rootUser.password Password for the admin user. Ignored if existing secret is provided.
   ## Password is ignored if existingSecret is specified.
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb-galera#setting-the-root-password-on-first-run
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera#setting-the-root-password-on-first-run
   ##
   password: ""
   ## @param rootUser.forcePassword Option to force users to specify a password. That is required for 'helm upgrade' to work properly.
@@ -358,14 +358,14 @@ customPasswordFiles: {}
 ##
 db:
   ## @param db.user Username of new user to create
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb-galera#creating-a-database-user-on-first-run
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera#creating-a-database-user-on-first-run
   ##
   user: ""
   ## @param db.password Password for the new user. Ignored if existing secret is provided.
   ##
   password: ""
   ## @param db.name Name for new database to create
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb-galera#creating-a-database-on-first-run
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera#creating-a-database-on-first-run
   ##
   name: my_database
   ## @param db.forcePassword Option to force users to specify a password. That is required for 'helm upgrade' to work properly.
@@ -379,7 +379,7 @@ galera:
   ##
   name: galera
   ## Bootstraping options
-  ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb-galera#bootstraping
+  ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera#bootstraping
   ##
   bootstrap:
     ## @param galera.bootstrap.forceBootstrap Option to force the boostraping from the indicated node in `galera.bootstarp.bootstrapFromNode`
@@ -396,7 +396,7 @@ galera:
   ##
   mariabackup:
     ## @param galera.mariabackup.user MariaBackup username
-    ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb-galera#setting-up-a-multi-master-cluster
+    ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb-galera#setting-up-a-multi-master-cluster
     ##
     user: mariabackup
     ## @param galera.mariabackup.password MariaBackup password. Password is ignored if existingSecret is specified.
@@ -879,7 +879,7 @@ metrics:
   ## @param metrics.enabled Start a side-car prometheus exporter
   ##
   enabled: false
-  ## Bitnami MySQL Prometheus exporter image
+  ## HelmHubIO MySQL Prometheus exporter image
   ## ref: https://hub.docker.com/r/bitnami/mysqld-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] MariaDB Prometheus exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/mysqld-exporter] MariaDB Prometheus exporter image repository

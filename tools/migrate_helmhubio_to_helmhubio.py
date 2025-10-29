@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Safer Bitnami -> HelmHubIO migrator for this charts repo.
+Safer HelmHubIO -> HelmHubIO migrator for this charts repo.
 
 Goals:
 - Replace image repositories and chart registries:
-  * docker.io/bitnami/*            -> docker.io/helmhubio/*
-  * oci://registry-1.docker.io/bitnamicharts -> oci://registry-1.docker.io/helmhubiocharts
+  * docker.io/helmhubio/*            -> docker.io/helmhubio/*
+  * oci://registry-1.docker.io/helmhubiocharts -> oci://registry-1.docker.io/helmhubiocharts
 - Update GitHub repo links to the new org:
-  * github.com/bitnami/charts      -> github.com/helmhub-io/charts
+  * github.com/helmhub-io/charts      -> github.com/helmhub-io/charts
   * /tree|/blob/(main|master)/bitnami/ -> same with helmhubio/
 - Update values.yaml image.repository fields from bitnami/<img> -> helmhubio/<img>
 - Keep in-container paths (/opt/bitnami, /bitnami) untouched.
@@ -90,8 +90,8 @@ def update_chart_yaml(path: Path) -> bool:
         new_images = []
         for item in images:
             if isinstance(item, str):
-                new = item.replace("docker.io/bitnami/", "docker.io/helmhubio/")
-                new = new.replace("docker.io/bitnamilegacy/", "docker.io/helmhubio/")
+                new = item.replace("docker.io/helmhubio/", "docker.io/helmhubio/")
+                new = new.replace("docker.io/helmhubiolegacy/", "docker.io/helmhubio/")
                 if new != item:
                     changed = True
                 new_images.append(new)
@@ -101,8 +101,8 @@ def update_chart_yaml(path: Path) -> bool:
             annotations["images"] = new_images
             data["annotations"] = annotations
     elif isinstance(images, str):
-        new_images = images.replace("docker.io/bitnami/", "docker.io/helmhubio/")
-        new_images = new_images.replace("docker.io/bitnamilegacy/", "docker.io/helmhubio/")
+        new_images = images.replace("docker.io/helmhubio/", "docker.io/helmhubio/")
+        new_images = new_images.replace("docker.io/helmhubiolegacy/", "docker.io/helmhubio/")
         if new_images != images:
             annotations["images"] = new_images
             data["annotations"] = annotations
@@ -113,7 +113,7 @@ def update_chart_yaml(path: Path) -> bool:
         if isinstance(dep, dict) and isinstance(dep.get("repository"), str):
             repo = dep["repository"]
             new_repo = repo.replace(
-                "oci://registry-1.docker.io/bitnamicharts",
+                "oci://registry-1.docker.io/helmhubiocharts",
                 "oci://registry-1.docker.io/helmhubiocharts",
             )
             if new_repo != repo:
@@ -127,7 +127,7 @@ def update_chart_yaml(path: Path) -> bool:
         if "bitnami" in home:
             # Point to HelmHubIO repo if old home referenced bitnami
             new_home = "https://github.com/helmhub-io/charts"
-        new_home = new_home.replace("github.com/bitnami/charts", "github.com/helmhub-io/charts")
+        new_home = new_home.replace("github.com/helmhub-io/charts", "github.com/helmhub-io/charts")
         new_home = re.sub(r"/(tree|blob)/(main|master)/bitnami/", r"/\1/\2/helmhubio/", new_home)
         if new_home != home:
             data["home"] = new_home
@@ -137,7 +137,7 @@ def update_chart_yaml(path: Path) -> bool:
         new_sources = []
         for s in data["sources"]:
             if isinstance(s, str):
-                s2 = s.replace("github.com/bitnami/charts", "github.com/helmhub-io/charts")
+                s2 = s.replace("github.com/helmhub-io/charts", "github.com/helmhub-io/charts")
                 s2 = re.sub(r"/(tree|blob)/(main|master)/bitnami/", r"/\1/\2/helmhubio/", s2)
                 if s2 != s:
                     changed = True
@@ -151,7 +151,7 @@ def update_chart_yaml(path: Path) -> bool:
         for m in data["maintainers"]:
             if isinstance(m, dict) and isinstance(m.get("url"), str):
                 old = m["url"]
-                new = old.replace("github.com/bitnami/charts", "github.com/helmhub-io/charts")
+                new = old.replace("github.com/helmhub-io/charts", "github.com/helmhub-io/charts")
                 if new != old:
                     m["url"] = new
                     changed = True
@@ -196,11 +196,11 @@ def update_values_yaml(path: Path) -> bool:
                     elif repo.startswith("bitnamilegacy/"):
                         img["repository"] = "helmhubio/" + repo.split("/", 1)[1]
                         changed = True
-                    elif repo.startswith("docker.io/bitnami/"):
-                        img["repository"] = repo.replace("docker.io/bitnami/", "docker.io/helmhubio/")
+                    elif repo.startswith("docker.io/helmhubio/"):
+                        img["repository"] = repo.replace("docker.io/helmhubio/", "docker.io/helmhubio/")
                         changed = True
-                    elif repo.startswith("docker.io/bitnamilegacy/"):
-                        img["repository"] = repo.replace("docker.io/bitnamilegacy/", "docker.io/helmhubio/")
+                    elif repo.startswith("docker.io/helmhubiolegacy/"):
+                        img["repository"] = repo.replace("docker.io/helmhubiolegacy/", "docker.io/helmhubio/")
                         changed = True
             # Recurse
             for k, v in list(obj.items()):
@@ -235,8 +235,8 @@ def update_values_schema_json(path: Path) -> bool:
                         new = "helmhubio/" + new.split("/", 1)[1]
                     if new.startswith("bitnamilegacy/"):
                         new = "helmhubio/" + new.split("/", 1)[1]
-                    new = new.replace("docker.io/bitnami/", "docker.io/helmhubio/")
-                    new = new.replace("docker.io/bitnamilegacy/", "docker.io/helmhubio/")
+                    new = new.replace("docker.io/helmhubio/", "docker.io/helmhubio/")
+                    new = new.replace("docker.io/helmhubiolegacy/", "docker.io/helmhubio/")
                     if new != v:
                         obj[k] = new
                         changed = True

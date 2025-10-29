@@ -66,7 +66,7 @@ operator:
   ## @param operator.enabled Deploy Prometheus Operator to the cluster
   ##
   enabled: true
-  ## Bitnami Prometheus Operator image version
+  ## HelmHubIO Prometheus Operator image version
   ## ref: https://hub.docker.com/r/bitnami/prometheus-operator/tags/
   ## @param operator.image.registry [default: REGISTRY_NAME] Prometheus Operator image registry
   ## @param operator.image.repository [default: REPOSITORY_NAME/prometheus-operator] Prometheus Operator image repository
@@ -532,7 +532,7 @@ operator:
     enabled: true
     namespace: kube-system
   ## Prometheus Configmap-reload image to use for reloading configmaps
-  ## defaults to Bitnami Prometheus Operator (ref: https://hub.docker.com/r/bitnami/prometheus-operator/tags/)
+  ## defaults to HelmHubIO Prometheus Operator (ref: https://hub.docker.com/r/bitnami/prometheus-operator/tags/)
   ##
   prometheusConfigReloader:
     ## @param operator.prometheusConfigReloader.image Prometheus Config Reloader image. If not set, the same as `operator.image.registry`
@@ -626,7 +626,7 @@ prometheus:
   ## @param prometheus.enabled Deploy Prometheus to the cluster
   ##
   enabled: true
-  ## Bitnami Prometheus image version
+  ## HelmHubIO Prometheus image version
   ## ref: https://hub.docker.com/r/bitnami/prometheus/tags/
   ## @param prometheus.image.registry [default: REGISTRY_NAME] Prometheus image registry
   ## @param prometheus.image.repository [default: REPOSITORY_NAME/prometheus] Prometheus image repository
@@ -1428,7 +1428,7 @@ prometheus:
     ## @param prometheus.thanos.create Create a Thanos sidecar container
     ##
     create: false
-    ## Bitnami Thanos image
+    ## HelmHubIO Thanos image
     ## ref: https://hub.docker.com/r/bitnami/thanos/tags/
     ## @param prometheus.thanos.image.registry [default: REGISTRY_NAME] Thanos image registry
     ## @param prometheus.thanos.image.repository [default: REPOSITORY_NAME/thanos] Thanos image name
@@ -1886,7 +1886,7 @@ alertmanager:
   ## @param alertmanager.enabled Deploy Alertmanager to the cluster
   ##
   enabled: true
-  ## Bitnami Alertmanager image version
+  ## HelmHubIO Alertmanager image version
   ## ref: https://hub.docker.com/r/bitnami/alertmanager/tags/
   ## @param alertmanager.image.registry [default: REGISTRY_NAME] Alertmanager image registry
   ## @param alertmanager.image.repository [default: REPOSITORY_NAME/alertmanager] Alertmanager image repository
@@ -2575,7 +2575,7 @@ blackboxExporter:
   ## @param blackboxExporter.enabled Enable Blackbox Exporter deployment
   ##
   enabled: true
-  ## Bitnami Alertmanager image version
+  ## HelmHubIO Alertmanager image version
   ## ref: https://hub.docker.com/r/bitnami/prometheus-operator/tags/
   ## @param blackboxExporter.image.registry [default: REGISTRY_NAME] Blackbox Exporter image registry
   ## @param blackboxExporter.image.repository [default: REPOSITORY_NAME/blackbox-exporter] Blackbox Exporter image repository
@@ -3360,7 +3360,7 @@ thanosRuler:
   ## @param thanosRuler.enabled Enable/disable Thanos Ruler component
   ##
   enabled: false
-  ## Bitnami Thanos image
+  ## HelmHubIO Thanos image
   ## ref: https://hub.docker.com/r/bitnami/thanos/tags/
   ## @param thanosRuler.image.registry [default: REGISTRY_NAME] Thanos image registry
   ## @param thanosRuler.image.repository Thanos image repository

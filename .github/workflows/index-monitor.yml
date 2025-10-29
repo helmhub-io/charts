@@ -31,7 +31,7 @@ jobs:
           # A single success is enough to pass
           while [[ "${status}" != "ok" && $attempts -lt 3 ]]; do
             # Check the index.yaml integrity
-            REMOTE_MD5=($(curl -Ls https://charts.bitnami.com/helmhub-io/index.yaml | md5sum))
+            REMOTE_MD5=($(curl -Ls https://helmhub.io/helmhub-io/index.yaml | md5sum))
             REPOSITORY_MD5=($(md5sum helmhub-io/index.yaml))
             # Compare the index.yaml checksums remote and locally
             if [[ "${REPOSITORY_MD5[0]}" == "${REMOTE_MD5[0]}" ]]; then
@@ -72,7 +72,7 @@ jobs:
       - name: Validate helm repository
         id: validation-check
         run: |
-          repo="https://charts.bitnami.com/bitnami"
+          repo="https://helmhub.io/bitnami"
           status="fail"
           attempts=0
           # We want to check for consistent failures

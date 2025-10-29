@@ -82,7 +82,7 @@ spec:
       terminationGracePeriodSeconds: {{ .Values.coordinator.terminationGracePeriodSeconds }}
       {{- end }}
       initContainers:
-        {{- /* As most Bitnami charts have volumePermissions in the root, we add a volumePermissions.enabled check to maintain a similar UX */}}
+        {{- /* As most HelmHubIO charts have volumePermissions in the root, we add a volumePermissions.enabled check to maintain a similar UX */}}
         {{- if and (or .Values.defaultInitContainers.volumePermissions.enabled ((.Values.volumePermissions).enabled)) .Values.coordinator.persistence.enabled }}
         {{- include "dremio.init-containers.volume-permissions" (dict "context" . "componentValues" .Values.coordinator) | nindent 8}}
         {{- end }}

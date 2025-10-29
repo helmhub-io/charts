@@ -264,7 +264,7 @@ autoscaling:
 ## @section Grafana Alloy parameters
 
 alloy:
-## Bitnami Grafana Alloy image version
+## HelmHubIO Grafana Alloy image version
 ## ref: https://hub.docker.com/r/bitnami/grafana-alloy/tags/
 ## @param alloy.image.registry [default: REGISTRY_NAME] Grafana Alloy image registry
 ## @param alloy.image.repository [default: REPOSITORY_NAME/grafana-alloy] Grafana Alloy image repository
@@ -470,7 +470,7 @@ alloy:
 configReloader:
   ## @param configReloader.enabled Enables automatically reloading when the Grafana Alloy config changes.
   enabled: true
-  ## Bitnami ConfigMap Reload image version
+  ## HelmHubIO ConfigMap Reload image version
   ## ref: https://hub.docker.com/r/bitnami/configmap-reload/tags/
   ## @param configReloader.image.registry [default: REGISTRY_NAME] ConfigMap Reload image registry
   ## @param configReloader.image.repository [default: REPOSITORY_NAME/grafana-configmap-reload] ConfigMap Reload image repository

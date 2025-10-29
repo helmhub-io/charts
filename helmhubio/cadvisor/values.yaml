@@ -74,7 +74,7 @@ diagnosticMode:
 ## @section cAdvisor parameters
 ##
 
-## Bitnami cAdvisor image version
+## HelmHubIO cAdvisor image version
 ## ref: https://hub.docker.com/r/bitnami/cadvisor/tags/
 ## @param image.registry [default: REGISTRY_NAME] cAdvisor image registry
 ## @param image.repository [default: REPOSITORY_NAME/cadvisor] cAdvisor Image name

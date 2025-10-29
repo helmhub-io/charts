@@ -57,7 +57,7 @@ clusterDomain: cluster.local
 extraDeploy: []
 ## @section Thanos common parameters
 
-## Bitnami Thanos image
+## HelmHubIO Thanos image
 ## ref: https://hub.docker.com/r/bitnami/thanos/tags/
 ## @param image.registry [default: REGISTRY_NAME] Thanos image registry
 ## @param image.repository [default: REPOSITORY_NAME/thanos] Thanos image repository

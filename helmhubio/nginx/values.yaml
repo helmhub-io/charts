@@ -73,7 +73,7 @@ diagnosticMode:
   - infinity
 ## @section NGINX parameters
 
-## Bitnami NGINX image version
+## HelmHubIO NGINX image version
 ## ref: https://hub.docker.com/r/bitnami/nginx/tags/
 ## @param image.registry [default: REGISTRY_NAME] NGINX image registry
 ## @param image.repository [default: REPOSITORY_NAME/nginx] NGINX image repository
@@ -504,7 +504,7 @@ cloneStaticSiteFromGit:
   ## @param cloneStaticSiteFromGit.enabled Get the server static content from a Git repository
   ##
   enabled: false
-  ## Bitnami Git image version
+  ## HelmHubIO Git image version
   ## ref: https://hub.docker.com/r/bitnami/git/tags/
   ## @param cloneStaticSiteFromGit.image.registry [default: REGISTRY_NAME] Git image registry
   ## @param cloneStaticSiteFromGit.image.repository [default: REPOSITORY_NAME/git] Git image repository
@@ -977,7 +977,7 @@ metrics:
   ## @param metrics.enabled Start a Prometheus exporter sidecar container
   ##
   enabled: false
-  ## Bitnami NGINX Prometheus Exporter image
+  ## HelmHubIO NGINX Prometheus Exporter image
   ## ref: https://hub.docker.com/r/bitnami/nginx-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] NGINX Prometheus exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/nginx-exporter] NGINX Prometheus exporter image repository

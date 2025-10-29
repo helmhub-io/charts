@@ -72,7 +72,7 @@ diagnosticMode:
   - infinity
 ## @section Metrics Server parameters
 
-## Bitnami Metrics Server image version
+## HelmHubIO Metrics Server image version
 ## ref: https://hub.docker.com/r/bitnami/metrics-server/tags/
 ## @param image.registry [default: REGISTRY_NAME] Metrics Server image registry
 ## @param image.repository [default: REPOSITORY_NAME/metrics-server] Metrics Server image repository

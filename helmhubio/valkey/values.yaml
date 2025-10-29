@@ -97,7 +97,7 @@ diagnosticMode:
 ## @section Valkey Image parameters
 ##
 
-## Bitnami Valkey image
+## HelmHubIO Valkey image
 ## ref: https://hub.docker.com/r/bitnami/valkey/tags/
 ## @param image.registry [default: REGISTRY_NAME] Valkey image registry
 ## @param image.repository [default: REPOSITORY_NAME/valkey] Valkey image repository
@@ -128,14 +128,14 @@ image:
   ##
   debug: false
 ## @section Valkey common configuration parameters
-## https://github.com/bitnami/containers/tree/main/helmhubio/valkey#configuration
+## https://github.com/helmhub-io/containers/tree/main/helmhubio/valkey#configuration
 ##
 
 ## @param architecture Valkey architecture. Allowed values: `standalone` or `replication`
 ##
 architecture: replication
 ## Valkey Authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/valkey#setting-the-server-password-on-first-run
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/valkey#setting-the-server-password-on-first-run
 ##
 auth:
   ## @param auth.enabled Enable password authentication
@@ -1160,7 +1160,7 @@ sentinel:
   ## create a single Valkey service exposing both the Valkey and Sentinel ports
   ##
   enabled: false
-  ## Bitnami Valkey Sentinel image version
+  ## HelmHubIO Valkey Sentinel image version
   ## ref: https://hub.docker.com/r/bitnami/valkey-sentinel/tags/
   ## @param sentinel.image.registry [default: REGISTRY_NAME] Valkey Sentinel image registry
   ## @param sentinel.image.repository [default: REPOSITORY_NAME/valkey-sentinel] Valkey Sentinel image repository
@@ -1648,7 +1648,7 @@ metrics:
   ## @param metrics.enabled Start a sidecar Prometheus Exporter to expose Valkey metrics
   ##
   enabled: false
-  ## Bitnami Redis(R) Exporter image
+  ## HelmHubIO Redis(R) Exporter image
   ## ref: https://hub.docker.com/r/bitnami/redis-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] Redis(R) Exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/redis-exporter] Redis(R) Exporter image repository
@@ -2075,7 +2075,7 @@ volumePermissions:
 ## used by Sentinel to update the isPrimary label on the Valkey(TM) pods
 ##
 kubectl:
-  ## Bitnami Kubectl image version
+  ## HelmHubIO Kubectl image version
   ## ref: https://hub.docker.com/r/bitnami/kubectl/tags/
   ## @param kubectl.image.registry [default: REGISTRY_NAME] Kubectl image registry
   ## @param kubectl.image.repository [default: REPOSITORY_NAME/kubectl] Kubectl image repository
@@ -2128,7 +2128,7 @@ kubectl:
       type: RuntimeDefault
     capabilities:
       drop: ["ALL"]
-  ## Bitnami Kubectl resource requests and limits
+  ## HelmHubIO Kubectl resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param kubectl.resources.limits The resources limits for the kubectl containers
   ## @param kubectl.resources.requests The requested resources for the kubectl containers

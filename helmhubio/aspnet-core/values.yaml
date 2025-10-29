@@ -65,7 +65,7 @@ extraDeploy: []
 ## @section ASP.NET Core parameters
 ##
 
-## Bitnami ASP.NET Core image
+## HelmHubIO ASP.NET Core image
 ## ref: https://hub.docker.com/r/bitnami/aspnet-core/tags/
 ## @param image.registry [default: REGISTRY_NAME] ASP.NET Core image registry
 ## @param image.repository [default: REPOSITORY_NAME/aspnet-core] ASP.NET Core image repository
@@ -402,7 +402,7 @@ appFromExternalRepo:
   ##
   enabled: true
   clone:
-    ## Bitnami Git image version
+    ## HelmHubIO Git image version
     ## ref: https://hub.docker.com/r/bitnami/git/tags/
     ## @param appFromExternalRepo.clone.image.registry [default: REGISTRY_NAME] Git image registry
     ## @param appFromExternalRepo.clone.image.repository [default: REPOSITORY_NAME/git] Git image repository
@@ -446,7 +446,7 @@ appFromExternalRepo:
     ##
     extraVolumeMounts: []
   publish:
-    ## Bitnami .NET SDK image version
+    ## HelmHubIO .NET SDK image version
     ## ref: https://hub.docker.com/r/bitnami/dotnet-sdk/tags/
     ## @param appFromExternalRepo.publish.image.registry [default: REGISTRY_NAME] .NET SDK image registry
     ## @param appFromExternalRepo.publish.image.repository [default: REPOSITORY_NAME/dotnet-sdk] .NET SDK image repository

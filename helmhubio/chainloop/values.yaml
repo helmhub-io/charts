@@ -169,7 +169,7 @@ controlplane:
   ## @param controlplane.replicaCount Number of replicas
   replicaCount: 2
 
-  ## Bitnami Chainloop Controlplane image
+  ## HelmHubIO Chainloop Controlplane image
   ## ref: https://hub.docker.com/r/bitnami/chainloop-control-plane/tags/
   ## @param controlplane.image.registry [default: REGISTRY_NAME] image registry
   ## @param controlplane.image.repository [default: REPOSITORY_NAME/chainloop-control-plane] image repository
@@ -246,7 +246,7 @@ controlplane:
   ## @param controlplane.migration.ssl Connect to the database using SSL (required fro AWS RDS, etc)
   ## @skip controlplane.migration.image.tag
   migration:
-    ## Bitnami Chainloop Controlplane migration image
+    ## HelmHubIO Chainloop Controlplane migration image
     ## ref: https://hub.docker.com/r/bitnami/chainloop-control-plane-migrations/tags/
     ## @param controlplane.migration.image.registry [default: REGISTRY_NAME] image registry
     ## @param controlplane.migration.image.repository [default: REPOSITORY_NAME/chainloop-control-plane-migrations] image repository
@@ -993,7 +993,7 @@ cas:
   ## @param cas.replicaCount Number of replicas
   replicaCount: 2
 
-  ## Bitnami Chainloop Artifact CAS image
+  ## HelmHubIO Chainloop Artifact CAS image
   ## ref: https://hub.docker.com/r/bitnami/chainloop-artifact-cas/tags/
   ## @param cas.image.registry [default: REGISTRY_NAME] image registry
   ## @param cas.image.repository [default: REPOSITORY_NAME/chainloop-artifact-cas] image repository
@@ -1710,10 +1710,10 @@ postgresql:
 # Vault server running in development mode --set development=true
 # IMPORTANT: This is not meant to run in production
 
-## Bitnami Hashicorp Vault chart configuration
+## HelmHubIO Hashicorp Vault chart configuration
 ## ref: https://github.com/helmhub-io/charts/blob/main/helmhubio/vault/values.yaml
 ## @param vault.server.args Arguments to pass to the vault server. This is useful for setting the server in development mode
-## @param vault.server.config Configuration for the vault server. Small override of default Bitnami configuration
+## @param vault.server.config Configuration for the vault server. Small override of default HelmHubIO configuration
 ## @param vault.server.extraEnvVars[0].name Root token for the vault server
 ## @param vault.server.extraEnvVars[0].value The value of the root token. Default: notasecret
 ## @param vault.server.extraEnvVars[1].name Address to listen on development mode
@@ -1733,7 +1733,7 @@ vault:
 ## Dex configuration running in development mode --set development=true
 ##
 dex:
-  ## Bitnami Dex image
+  ## HelmHubIO Dex image
   ## @skip dex.staticUsers[0].email
   ## @skip dex.staticUsers[0].hash
   ## @skip dex.staticUsers[1].email

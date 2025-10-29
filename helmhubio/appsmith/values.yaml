@@ -77,7 +77,7 @@ diagnosticMode:
   ##
   args:
   - infinity
-## Bitnami Appsmith image
+## HelmHubIO Appsmith image
 ## ref: https://hub.docker.com/r/bitnami/appsmith/tags/
 ## @param image.registry [default: REGISTRY_NAME] Appsmith image registry
 ## @param image.repository [default: REPOSITORY_NAME/appsmith] Appsmith image repository

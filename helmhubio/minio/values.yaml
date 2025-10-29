@@ -65,7 +65,7 @@ extraDeploy: []
 
 ## @section MinIO&reg; parameters
 
-## Bitnami MinIO&reg; image version
+## HelmHubIO MinIO&reg; image version
 ## ref: https://hub.docker.com/r/bitnami/minio/tags/
 ## @param image.registry [default: REGISTRY_NAME] MinIO&reg; image registry
 ## @param image.repository [default: REPOSITORY_NAME/minio] MinIO&reg; image repository
@@ -95,7 +95,7 @@ image:
   ## Set to true if you would like to see extra information on logs
   ##
   debug: false
-## Bitnami MinIO&reg; Client image version
+## HelmHubIO MinIO&reg; Client image version
 ## ref: https://hub.docker.com/r/bitnami/minio-client/tags/
 ## @param clientImage.registry [default: REGISTRY_NAME] MinIO&reg; Client image registry
 ## @param clientImage.repository [default: REPOSITORY_NAME/minio-client] MinIO&reg; Client image repository
@@ -932,7 +932,7 @@ console:
   ## @param console.enabled Enable MinIO&reg; Console
   ##
   enabled: true
-  ## Bitnami MinIO&reg; Console image
+  ## HelmHubIO MinIO&reg; Console image
   ## ref: https://hub.docker.com/r/bitnami/minio-object-browser/tags/
   ## @param console.image.registry [default: REGISTRY_NAME] MinIO&reg; Console image registry
   ## @param console.image.repository [default: REPOSITORY_NAME/minio-object-browser] MinIO&reg; Console image repository

@@ -63,7 +63,7 @@ kubeVersion: ""
 ## @section external-dns parameters
 ##
 
-## Bitnami external-dns image version
+## HelmHubIO external-dns image version
 ## ref: https://hub.docker.com/r/bitnami/external-dns/tags/
 ## @param image.registry [default: REGISTRY_NAME] ExternalDNS image registry
 ## @param image.repository [default: REPOSITORY_NAME/external-dns] ExternalDNS image repository

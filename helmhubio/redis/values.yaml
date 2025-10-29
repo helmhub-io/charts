@@ -101,7 +101,7 @@ diagnosticMode:
 ## @section Redis(R) Image parameters
 ##
 
-## Bitnami Redis(R) image
+## HelmHubIO Redis(R) image
 ## ref: https://hub.docker.com/r/bitnami/redis/tags/
 ## @param image.registry [default: REGISTRY_NAME] Redis(R) image registry
 ## @param image.repository [default: REPOSITORY_NAME/redis] Redis(R) image repository
@@ -132,14 +132,14 @@ image:
   ##
   debug: false
 ## @section Redis(R) common configuration parameters
-## https://github.com/bitnami/containers/tree/main/helmhubio/redis#configuration
+## https://github.com/helmhub-io/containers/tree/main/helmhubio/redis#configuration
 ##
 
 ## @param architecture Redis(R) architecture. Allowed values: `standalone` or `replication`
 ##
 architecture: replication
 ## Redis(R) Authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/redis#setting-the-server-password-on-first-run
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/redis#setting-the-server-password-on-first-run
 ##
 auth:
   ## @param auth.enabled Enable password authentication
@@ -1173,7 +1173,7 @@ sentinel:
   ## create a single Redis(R) service exposing both the Redis and Sentinel ports
   ##
   enabled: false
-  ## Bitnami Redis(R) Sentinel image version
+  ## HelmHubIO Redis(R) Sentinel image version
   ## ref: https://hub.docker.com/r/bitnami/redis-sentinel/tags/
   ## @param sentinel.image.registry [default: REGISTRY_NAME] Redis(R) Sentinel image registry
   ## @param sentinel.image.repository [default: REPOSITORY_NAME/redis-sentinel] Redis(R) Sentinel image repository
@@ -1773,7 +1773,7 @@ metrics:
   ## @param metrics.enabled Start a sidecar prometheus exporter to expose Redis(R) metrics
   ##
   enabled: false
-  ## Bitnami Redis(R) Exporter image
+  ## HelmHubIO Redis(R) Exporter image
   ## ref: https://hub.docker.com/r/bitnami/redis-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] Redis(R) Exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/redis-exporter] Redis(R) Exporter image repository
@@ -2215,7 +2215,7 @@ volumePermissions:
 ## used by Sentinel to update the isMaster label on the Redis(TM) pods
 ##
 kubectl:
-  ## Bitnami Kubectl image version
+  ## HelmHubIO Kubectl image version
   ## ref: https://hub.docker.com/r/bitnami/kubectl/tags/
   ## @param kubectl.image.registry [default: REGISTRY_NAME] Kubectl image registry
   ## @param kubectl.image.repository [default: REPOSITORY_NAME/kubectl] Kubectl image repository
@@ -2268,7 +2268,7 @@ kubectl:
       type: RuntimeDefault
     capabilities:
       drop: ["ALL"]
-  ## Bitnami Kubectl resource requests and limits
+  ## HelmHubIO Kubectl resource requests and limits
   ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
   ## @param kubectl.resources.limits The resources limits for the kubectl containers
   ## @param kubectl.resources.requests The requested resources for the kubectl containers

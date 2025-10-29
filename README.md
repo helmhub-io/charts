@@ -4,15 +4,15 @@
 </p>
 
 <p align="center">
-    <a href="https://twitter.com/bitnami"><img src="https://badgen.net/badge/twitter/@helmhubio/1DA1F2?icon&label" /></a>
+    <a href="https://x.com/helmhubio"><img src="https://badgen.net/badge/twitter/@helmhubio/1DA1F2?icon&label" /></a>
     <a href="https://github.com/helmhub-io/charts"><img src="https://badgen.net/github/stars/helmhubio/charts?icon=github" /></a>
     <a href="https://github.com/helmhub-io/charts"><img src="https://badgen.net/github/forks/helmhubio/charts?icon=github" /></a>
-    <a href="https://artifacthub.io/packages/search?repo=bitnami"><img src="https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/bitnami" /></a>
+    <a href="https://artifacthub.io/packages/search?repo=helmhubio"><img src="https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/helmhubio" /></a>
 </p>
 
 # The HelmHubIO Library for Kubernetes
 
-Popular applications, provided by [HelmHubIO](https://bitnami.com), ready to launch on Kubernetes using [Kubernetes Helm](https://github.com/helm/helm).
+Popular applications, provided by [HelmHubIO](https://helmhub.io), ready to launch on Kubernetes using [Kubernetes Helm](https://github.com/helm/helm).
 
 ## TL;DR
 

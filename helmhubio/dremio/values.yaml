@@ -84,7 +84,7 @@ usePasswordFiles: true
 ##
 ##
 dremio:
-  ## Bitnami Dremio image
+  ## HelmHubIO Dremio image
   ## ref: https://hub.docker.com/r/bitnami/dremio/tags/
   ## @param dremio.image.registry [default: REGISTRY_NAME] Dremio image registry
   ## @param dremio.image.repository [default: REPOSITORY_NAME/dremio] Dremio image repository
@@ -2325,7 +2325,7 @@ metrics:
   ## @param metrics.enabled Enable the export of Prometheus metrics
   ##
   enabled: false
-  ## Bitnami JMX exporter image
+  ## HelmHubIO JMX exporter image
   ## ref: https://hub.docker.com/r/bitnami/jmx-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] JMX exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/jmx-exporter] JMX exporter image repository

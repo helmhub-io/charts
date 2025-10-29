@@ -73,7 +73,7 @@ diagnosticMode:
   - infinity
 ## @section Memcached parameters
 
-## Bitnami Memcached image version
+## HelmHubIO Memcached image version
 ## ref: https://hub.docker.com/r/bitnami/memcached/tags/
 ## @param image.registry [default: REGISTRY_NAME] Memcached image registry
 ## @param image.repository [default: REPOSITORY_NAME/memcached] Memcached image repository
@@ -107,7 +107,7 @@ image:
 ##
 architecture: standalone
 ## Authentication parameters
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/memcached#creating-the-memcached-admin-user
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/memcached#creating-the-memcached-admin-user
 ##
 auth:
   ## @param auth.enabled Enable Memcached authentication
@@ -678,7 +678,7 @@ metrics:
   ## @param metrics.enabled Start a side-car prometheus exporter
   ##
   enabled: false
-  ## Bitnami Memcached Prometheus Exporter image
+  ## HelmHubIO Memcached Prometheus Exporter image
   ## ref: https://hub.docker.com/r/bitnami/memcached-exporter/tags/
   ## @param metrics.image.registry [default: REGISTRY_NAME] Memcached exporter image registry
   ## @param metrics.image.repository [default: REPOSITORY_NAME/memcached-exporter] Memcached exporter image repository

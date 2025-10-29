@@ -75,7 +75,7 @@ diagnosticMode:
 ## @section Common Grafana Loki Parameters
 ##
 loki:
-  ## Bitnami Grafana Loki image
+  ## HelmHubIO Grafana Loki image
   ## ref: https://hub.docker.com/r/bitnami/grafana-loki/tags/
   ## @param loki.image.registry [default: REGISTRY_NAME] Grafana Loki image registry
   ## @param loki.image.repository [default: REPOSITORY_NAME/grafana-loki] Grafana Loki image repository
@@ -730,7 +730,7 @@ gateway:
   ## @param gateway.enabled Enable Gateway deployment
   ##
   enabled: true
-  ## Bitnami Nginx image
+  ## HelmHubIO Nginx image
   ## ref: https://hub.docker.com/r/bitnami/grafana-nginx/tags/
   ## @param gateway.image.registry [default: REGISTRY_NAME] Nginx image registry
   ## @param gateway.image.repository [default: REPOSITORY_NAME/nginx] Nginx image repository

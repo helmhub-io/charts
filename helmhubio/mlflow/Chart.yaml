@@ -42,6 +42,6 @@ maintainers:
 name: mlflow
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/mlflow
-- https://github.com/bitnami/containers/tree/main/helmhubio/mlflow
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/mlflow
 - https://github.com/mlflow/mlflow
 version: 5.2.0

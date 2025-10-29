@@ -62,7 +62,7 @@ data:
 
     # Connect to a proxy running in a different pod. Note that *_SERVICE_*
     # environment variables are set by Kubernetes for Services
-    # Adapted by Bitnami to allow other service names
+    # Adapted by HelmHubIO to allow other service names
     c.ConfigurableHTTPProxy.api_url = (
         f"http://{{ template "common.names.fullname" . }}-proxy-api:{os.environ['PROXY_API_SERVICE_PORT']}"
     )

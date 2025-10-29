@@ -37,7 +37,7 @@ spec:
         checksum/configuration: {{ include (print $.Template.BasePath "/arbiter/configmap.yaml") . | sha256sum }}
         {{- end }}
         {{- if .Values.passwordUpdateJob.enabled }}
-        charts.bitnami.com/password-last-update: {{ now | date "20060102150405" | quote }}
+        helmhub.io/password-last-update: {{ now | date "20060102150405" | quote }}
         {{- end }}
         {{- if .Values.arbiter.podAnnotations }}
         {{- include "common.tplvalues.render" (dict "value" .Values.arbiter.podAnnotations "context" $) | nindent 8 }}

@@ -58,7 +58,7 @@ extraDeploy: []
 clusterDomain: cluster.local
 ## @section Nginx Ingress Controller parameters
 
-## Bitnami NGINX Ingress controller image version
+## HelmHubIO NGINX Ingress controller image version
 ## ref: https://hub.docker.com/r/bitnami/nginx-ingress-controller/tags/
 ## @param image.registry [default: REGISTRY_NAME] Nginx Ingress Controller image registry
 ## @param image.repository [default: REPOSITORY_NAME/nginx-ingress-controller] Nginx Ingress Controller image repository
@@ -525,7 +525,7 @@ defaultBackend:
   ## https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/
   ##
   hostAliases: []
-  ## Bitnami NGINX image
+  ## HelmHubIO NGINX image
   ## ref: https://hub.docker.com/r/bitnami/nginx/tags/
   ## @param defaultBackend.image.registry [default: REGISTRY_NAME] Default backend image registry
   ## @param defaultBackend.image.repository [default: REPOSITORY_NAME/nginx] Default backend image repository

@@ -187,7 +187,7 @@ spec:
               containerPort: {{ .Values.containerPorts.http }}
             - name: https
               containerPort: {{ .Values.containerPorts.https }}
-            {{- /* Currently hardcoded in EJBCA logic: https://github.com/bitnami/containers/blob/main/helmhubio/ejbca/8/debian-12/rootfs/opt/bitnami/scripts/libejbca.sh#L212 */}}
+            {{- /* Currently hardcoded in EJBCA logic: https://github.com/helmhub-io/containers/blob/main/helmhubio/ejbca/8/debian-12/rootfs/opt/bitnami/scripts/libejbca.sh#L212 */}}
             - name: https-pub
               containerPort: 8442
             - name: ajp

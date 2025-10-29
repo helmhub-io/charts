@@ -59,8 +59,8 @@ maintainers:
 name: chainloop
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/chainloop
-- https://github.com/bitnami/containers/tree/main/helmhubio/chainloop-control-plane
-- https://github.com/bitnami/containers/tree/main/helmhubio/chainloop-control-plane-migrations
-- https://github.com/bitnami/containers/tree/main/helmhubio/chainloop-artifact-cas
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/chainloop-control-plane
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/chainloop-control-plane-migrations
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/chainloop-artifact-cas
 - https://github.com/chainloop-dev/chainloop
 version: 4.0.76

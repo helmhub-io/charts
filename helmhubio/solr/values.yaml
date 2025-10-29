@@ -79,7 +79,7 @@ diagnosticMode:
 ## @section Solr parameters
 ##
 
-## Bitnami Solr image version
+## HelmHubIO Solr image version
 ## ref: https://hub.docker.com/r/bitnami/solr/tags
 ## @param image.registry [default: REGISTRY_NAME] Solr image registry
 ## @param image.repository [default: REPOSITORY_NAME/solr] Solr image repository

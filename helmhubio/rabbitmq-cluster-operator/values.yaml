@@ -68,7 +68,7 @@ diagnosticMode:
 ## @section RabbitMQ Cluster Operator Parameters
 ##
 
-## Bitnami RabbitMQ Image
+## HelmHubIO RabbitMQ Image
 ## ref: https://hub.docker.com/r/bitnami/rabbitmq/tags/
 ## @param rabbitmqImage.registry [default: REGISTRY_NAME] RabbitMQ Image registry
 ## @param rabbitmqImage.repository [default: REPOSITORY_NAME/rabbitmq] RabbitMQ Image repository
@@ -89,7 +89,7 @@ rabbitmqImage:
   ##   - myRegistryKeySecretName
   ##
   pullSecrets: []
-## Bitnami RabbitMQ Default User Credential Updater Image
+## HelmHubIO RabbitMQ Default User Credential Updater Image
 ## ref: https://hub.docker.com/r/bitnami/rmq-default-credential-updater/tags/
 ## @param credentialUpdaterImage.registry [default: REGISTRY_NAME] RabbitMQ Default User Credential Updater image registry
 ## @param credentialUpdaterImage.repository [default: REPOSITORY_NAME/rmq-default-credential-updater] RabbitMQ Default User Credential Updater image repository
@@ -111,7 +111,7 @@ credentialUpdaterImage:
   ##
   pullSecrets: []
 clusterOperator:
-  ## Bitnami RabbitMQ Cluster Operator image
+  ## HelmHubIO RabbitMQ Cluster Operator image
   ## ref: https://hub.docker.com/r/bitnami/rabbitmq-cluster-operator/tags/
   ## @param clusterOperator.image.registry [default: REGISTRY_NAME] RabbitMQ Cluster Operator image registry
   ## @param clusterOperator.image.repository [default: REPOSITORY_NAME/rabbitmq-cluster-operator] RabbitMQ Cluster Operator image repository
@@ -653,7 +653,7 @@ msgTopologyOperator:
   ## @param msgTopologyOperator.enabled Deploy RabbitMQ Messaging Topology Operator as part of the installation
   ##
   enabled: true
-  ## Bitnami RabbitMQ Messaging Topology Operator image
+  ## HelmHubIO RabbitMQ Messaging Topology Operator image
   ## ref: https://hub.docker.com/r/bitnami/rmq-messaging-topology-operator/tags/
   ## @param msgTopologyOperator.image.registry [default: REGISTRY_NAME] RabbitMQ Messaging Topology Operator image registry
   ## @param msgTopologyOperator.image.repository [default: REPOSITORY_NAME/rmq-messaging-topology-operator] RabbitMQ Messaging Topology Operator image repository

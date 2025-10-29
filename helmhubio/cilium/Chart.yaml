@@ -46,10 +46,10 @@ maintainers:
 name: cilium
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/cilium
-- https://github.com/bitnami/containers/tree/main/helmhubio/cilium
-- https://github.com/bitnami/containers/tree/main/helmhubio/cilium-operator
-- https://github.com/bitnami/containers/tree/main/helmhubio/cilium-proxy
-- https://github.com/bitnami/containers/tree/main/helmhubio/hubble-relay
-- https://github.com/bitnami/containers/tree/main/helmhubio/hubble-ui
-- https://github.com/bitnami/containers/tree/main/helmhubio/hubble-ui-backend
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/cilium
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/cilium-operator
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/cilium-proxy
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/hubble-relay
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/hubble-ui
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/hubble-ui-backend
 version: 3.1.10

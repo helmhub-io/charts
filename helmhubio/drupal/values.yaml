@@ -60,7 +60,7 @@ extraDeploy: []
 usePasswordFiles: true
 ## @section Drupal parameters
 
-## Bitnami Drupal image version
+## HelmHubIO Drupal image version
 ## ref: https://hub.docker.com/r/bitnami/drupal/tags/
 ## @param image.registry [default: REGISTRY_NAME] Drupal image registry
 ## @param image.repository [default: REPOSITORY_NAME/drupal] Drupal Image name
@@ -94,28 +94,28 @@ image:
 ##
 replicaCount: 1
 ## @param drupalProfile Drupal installation profile
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/drupal#configuration
 ##
 drupalProfile: standard
 ## @param drupalSkipInstall Skip Drupal installation wizard. Useful for migrations and restoring from SQL dump
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/drupal#configuration
 ##
 drupalSkipInstall: false
 ## @param drupalUsername User of the application
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/drupal#configuration
 ##
 drupalUsername: user
 ## @param drupalPassword Application password
 ## Defaults to a random 10-character alphanumeric string if not set
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/drupal#configuration
 ##
 drupalPassword: ""
 ## @param drupalEmail Admin email
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/drupal#configuration
 ##
 drupalEmail: user@example.com
 ## @param allowEmptyPassword Allow DB blank passwords
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/drupal#environment-variables
 ##
 allowEmptyPassword: true
 ## @param command Override default container command (useful when using custom images)
@@ -210,7 +210,7 @@ serviceAccount:
 ##
 existingSecret: ""
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/drupal/#smtp-configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/drupal/#smtp-configuration
 ## @param smtpHost SMTP host
 ## @param smtpPort SMTP port
 ## @param smtpUser SMTP user
@@ -627,13 +627,13 @@ mariadb:
   ## @param mariadb.auth.password Password for the database
   ##
   auth:
-    ## ref: https://github.com/bitnami/containers/tree/main/helmhubio/mariadb#setting-the-root-password-on-first-run
+    ## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/mariadb#setting-the-root-password-on-first-run
     ##
     rootPassword: ""
-    ## ref: https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-on-first-run
+    ## ref: https://github.com/helmhub-io/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-on-first-run
     ##
     database: bitnami_drupal
-    ## ref: https://github.com/bitnami/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-user-on-first-run
+    ## ref: https://github.com/helmhub-io/containers/blob/main/helmhubio/mariadb/README.md#creating-a-database-user-on-first-run
     ##
     username: bn_drupal
     password: ""

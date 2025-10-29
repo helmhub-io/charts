@@ -14,7 +14,7 @@ Trademarks: This software listing is packaged by HelmHubIO. The respective trade
 helm install my-release oci://registry-1.docker.io/helmhubiocharts/dremio
 ```
 
-Looking to use dremio in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the enterprise edition of HelmHubIO Application Catalog.
+Looking to use dremio in production? Try [VMware Tanzu Application Catalog](https://helmhub.io/enterprise), the enterprise edition of HelmHubIO Application Catalog.
 
 ## ⚠️ Important Notice: Upcoming changes to the HelmHubIO Catalog
 

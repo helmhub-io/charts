@@ -82,7 +82,7 @@ diagnosticMode:
   - infinity
 ## @section ZooKeeper chart parameters
 
-## Bitnami ZooKeeper image version
+## HelmHubIO ZooKeeper image version
 ## ref: https://hub.docker.com/r/bitnami/zookeeper/tags/
 ## @param image.registry [default: REGISTRY_NAME] ZooKeeper image registry
 ## @param image.repository [default: REPOSITORY_NAME/zookeeper] ZooKeeper image repository

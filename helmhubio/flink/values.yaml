@@ -76,7 +76,7 @@ diagnosticMode:
 ## @section Apache Flink parameters
 ##
 
-## Bitnami Apache Flink image
+## HelmHubIO Apache Flink image
 ## ref: https://hub.docker.com/r/bitnami/flink/tags/
 ## @param image.registry [default: REGISTRY_NAME] Apache Flink image registry
 ## @param image.repository [default: REPOSITORY_NAME/flink] Apache Flink image repository

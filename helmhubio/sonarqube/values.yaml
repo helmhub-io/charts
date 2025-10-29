@@ -79,7 +79,7 @@ diagnosticMode:
 ## @section SonarQube(TM) Image parameters
 ##
 
-## Bitnami SonarQube(TM) image
+## HelmHubIO SonarQube(TM) image
 ## ref: https://hub.docker.com/r/bitnami/sonarqube/tags/
 ## @param image.registry [default: REGISTRY_NAME] SonarQube(TM) image registry
 ## @param image.repository [default: REPOSITORY_NAME/sonarqube] SonarQube(TM) image repository
@@ -111,7 +111,7 @@ image:
   debug: false
 ## @section SonarQube(TM) Configuration parameters
 ## SonarQube(TM) settings based on environment variables
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/sonarqube#environment-variables
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/sonarqube#environment-variables
 ## @param sonarqubeUsername SonarQube(TM) username
 ##
 sonarqubeUsername: user
@@ -154,7 +154,7 @@ startTimeout: 300
 extraProperties: []
 ## @param sonarqubeSkipInstall Skip wizard installation
 ## NOTE: useful if you use an external database that already contains SonarQube(TM) data
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/sonarqube#connect-sonarqube-container-to-an-existing-database
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/sonarqube#connect-sonarqube-container-to-an-existing-database
 ##
 sonarqubeSkipInstall: false
 ## @param sonarSecurityRealm Set this to LDAP authenticate first against the external sytem. If the external system is not
@@ -212,7 +212,7 @@ ldap:
     request: (&(objectClass=groupOfUniqueNames)(uniqueMember={dn}))
     idAttribute: cn
 ## SMTP mail delivery configuration
-## ref: https://github.com/bitnami/containers/tree/main/helmhubio/sonarqube/#smtp-configuration
+## ref: https://github.com/helmhub-io/containers/tree/main/helmhubio/sonarqube/#smtp-configuration
 ## @param smtpHost SMTP server host
 ## @param smtpPort SMTP server port
 ## @param smtpUser SMTP username
@@ -1072,7 +1072,7 @@ metrics:
     ## @param metrics.jmx.enabled Whether or not to expose JMX metrics to Prometheus
     ##
     enabled: false
-    ## Bitnami JMX exporter image
+    ## HelmHubIO JMX exporter image
     ## ref: https://hub.docker.com/r/bitnami/jmx-exporter/tags/
     ## @param metrics.jmx.image.registry [default: REGISTRY_NAME] JMX exporter image registry
     ## @param metrics.jmx.image.repository [default: REPOSITORY_NAME/jmx-exporter] JMX exporter image repository

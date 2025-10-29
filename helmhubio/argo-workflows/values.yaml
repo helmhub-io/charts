@@ -68,7 +68,7 @@ createAggregateRoles: true
 ## Argo Workflows server (based on the CLI) image
 ##
 server:
-  ## Bitnami Argo Workflow CLI image
+  ## HelmHubIO Argo Workflow CLI image
   ## ref: https://hub.docker.com/r/bitnami/argo-workflow-cli/tags/
   ## @param server.image.registry [default: REGISTRY_NAME] server image registry
   ## @param server.image.repository [default: REPOSITORY_NAME/argo-workflow-cli] server image repository
@@ -555,7 +555,7 @@ server:
 ## Argo Workflows Controller
 ##
 controller:
-  ## Bitnami Argo Workflow Controller image
+  ## HelmHubIO Argo Workflow Controller image
   ## ref: https://hub.docker.com/r/bitnami/argo-workflow-controller/tags/
   ## @param controller.image.registry [default: REGISTRY_NAME] controller image registry
   ## @param controller.image.repository [default: REPOSITORY_NAME/argo-workflow-controller] controller image repository
@@ -1108,7 +1108,7 @@ controller:
 ## @section Executor configuration section
 ##
 executor:
-  ## Bitnami Argo Workflow Executor image
+  ## HelmHubIO Argo Workflow Executor image
   ## ref: https://hub.docker.com/r/bitnami/argo-workflow-exec/tags/
   ## @param executor.image.registry [default: REGISTRY_NAME] executor image registry
   ## @param executor.image.repository [default: REPOSITORY_NAME/argo-workflow-exec] executor image repository

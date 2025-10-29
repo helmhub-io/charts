@@ -73,7 +73,7 @@ jobs:
         run: |
           cd index
           # Configure git
-          git config user.name "Bitnami Bot"
+          git config user.name "HelmHubIO Bot"
           git config user.email "bitnami.bot@broadcom.com"
 
           read -r -a new_releases_arr <<< $NEW_RELEASES

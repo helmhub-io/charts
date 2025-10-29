@@ -33,6 +33,6 @@ maintainers:
 name: neo4j
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/neo4j
-- https://github.com/bitnami/containers/tree/main/helmhubio/neo4j
+- https://github.com/helmhub-io/containers/tree/main/helmhubio/neo4j
 - https://github.com/neo4j/neo4j
 version: 0.4.15

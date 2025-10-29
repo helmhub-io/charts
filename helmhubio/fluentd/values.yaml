@@ -73,7 +73,7 @@ diagnosticMode:
   - infinity
 ## @section Fluentd parameters
 
-## Bitnami Fluentd image version
+## HelmHubIO Fluentd image version
 ## ref: https://hub.docker.com/r/bitnami/fluentd/tags/
 ## @param image.registry [default: REGISTRY_NAME] Fluentd image registry
 ## @param image.repository [default: REPOSITORY_NAME/fluentd] Fluentd image repository
