@@ -202,7 +202,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 The [HelmHubIO %%CHART_NAME%%](https://github.com/helmhub-io/containers/tree/main/helmhubio/%%CHART_NAME%%) image stores the %%CHART_NAME%% data and configurations at the `/bitnami` path of the container. Persistent Volume Claims are used to keep the data across deployments.
 
-If you encounter errors when working with persistent volumes, refer to our [troubleshooting guide for persistent volumes](https://docs.bitnami.com/kubernetes/faq/troubleshooting/troubleshooting-persistence-volumes/).
+If you encounter errors when working with persistent volumes, refer to our [troubleshooting guide for persistent volumes](https://helmhub.io/docs/troubleshooting/persistence-volumes).
 
 ## Parameters
 
@@ -237,7 +237,7 @@ helm install my-release -f values.yaml oci://REGISTRY_NAME/REPOSITORY_NAME/%%CHA
 
 ## Troubleshooting
 
-Find more information about how to deal with common errors related to HelmHubIO's Helm charts in [this troubleshooting guide](https://docs.bitnami.com/general/how-to/troubleshoot-helm-chart-issues).
+Find more information about how to deal with common errors related to HelmHubIO's Helm charts in [this troubleshooting guide](https://helmhub.io/docs/troubleshooting).
 
 ## License
 

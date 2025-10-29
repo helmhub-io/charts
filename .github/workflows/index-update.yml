@@ -12,7 +12,7 @@ jobs:
       new-releases: ${{ steps.get-new-releases.outputs.new-releases }}
     permissions:
       contents: read
-    if: ${{ github.repository_owner == 'bitnami' }}
+    if: "${{ github.repository_owner == 'helmhub-io' }}"
     steps:
       - id: checkout-repo
         name: Checkout repo
@@ -65,7 +65,7 @@ jobs:
           ref: 'index'
           path: index
           # The token is persisted in the local git config and enables scripts to run authenticated git commands.
-          token: ${{ secrets.BITNAMI_BOT_TOKEN }}
+          token: ${{ secrets.HELMHUBIO_BOT_TOKEN }}
       - id: update-index
         name: Pull charts and update index
         env:
@@ -74,7 +74,7 @@ jobs:
           cd index
           # Configure git
           git config user.name "HelmHubIO Bot"
-          git config user.email "bitnami.bot@broadcom.com"
+          git config user.email "bot@helmhub.io"
 
           read -r -a new_releases_arr <<< $NEW_RELEASES
           for release in "${new_releases_arr[@]}"; do

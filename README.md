@@ -50,11 +50,11 @@ Since the container image is an immutable artifact that is already analyzed, as 
 
 The quickest way to set up a Kubernetes cluster to install HelmHubIO Charts is by following the "HelmHubIO Get Started" guides for the different services:
 
-- [Get Started with HelmHubIO Charts using VMware Tanzu Kubernetes Grid (TKG)](https://docs.bitnami.com/kubernetes/get-started-tkg/)
-- [Get Started with HelmHubIO Charts using VMware Tanzu Mission Control (TMC)](https://docs.bitnami.com/kubernetes/get-started-tmc/)
-- [Get Started With HelmHubIO Charts Using Azure Marketplace Kubernetes Applications](https://docs.bitnami.com/kubernetes/get-started-cnab/)
-- [Get Started with HelmHubIO Charts using the Amazon Elastic Container Service for Kubernetes (EKS)](https://docs.bitnami.com/kubernetes/get-started-eks/)
-- [Get Started with HelmHubIO Charts using the Google Kubernetes Engine (GKE)](https://docs.bitnami.com/kubernetes/get-started-gke/)
+- [Get Started with HelmHubIO Charts using VMware Tanzu Kubernetes Grid (TKG)](https://helmhub.io/docs/get-started)
+- [Get Started with HelmHubIO Charts using VMware Tanzu Mission Control (TMC)](https://helmhub.io/docs/get-started)
+- [Get Started With HelmHubIO Charts Using Azure Marketplace Kubernetes Applications](https://helmhub.io/docs/get-started)
+- [Get Started with HelmHubIO Charts using the Amazon Elastic Container Service for Kubernetes (EKS)](https://helmhub.io/docs/get-started)
+- [Get Started with HelmHubIO Charts using the Google Kubernetes Engine (GKE)](https://helmhub.io/docs/get-started)
 
 For setting up Kubernetes on other cloud platforms or bare-metal servers refer to the Kubernetes [getting started guide](https://kubernetes.io/docs/getting-started-guides/).
 
