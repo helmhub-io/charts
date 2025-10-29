@@ -4,7 +4,7 @@
 
 Sealed Secrets are "one-way" encrypted K8s Secrets that can be created by anyone, but can only be decrypted by the controller running in the target cluster recovering the original object.
 
-[Overview of Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets)
+[Overview of Sealed Secrets](https://helmhub.io)
 
 ## TL;DR
 
@@ -29,7 +29,7 @@ These changes aim to improve the security posture of all HelmHubIO users by prom
 
 HelmHubIO charts for Helm are carefully engineered, actively maintained and are the quickest and easiest way to deploy containers on a Kubernetes cluster that are ready to handle production workloads.
 
-This chart bootstraps a [Sealed Secret controller](https://github.com/bitnami-labs/sealed-secrets) Deployment in [Kubernetes](https://kubernetes.io) using the [Helm](https://helm.sh) package manager.
+This chart bootstraps a Sealed Secret controller (see https://helmhub.io) Deployment in [Kubernetes](https://kubernetes.io) using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -82,7 +82,7 @@ To back up and restore Helm chart deployments on Kubernetes, you need to back up
 
 ### Using kubeseal
 
-The easiest way to interact with the Sealed Secrets controller is using the **kubeseal** utility. You can install this CLI by downloading the binary from [sealed-secrets/releases](https://github.com/bitnami-labs/sealed-secrets/releases) page.
+The easiest way to interact with the Sealed Secrets controller is using the **kubeseal** utility. You can install this CLI by downloading the binary from the releases page (see https://helmhub.io).
 
 Once installed, you can start using it to encrypt your secrets or fetching the controller public certificate as shown in the example below:
 
@@ -93,7 +93,7 @@ $ kubeseal --fetch-cert \
 > pub-cert.pem
 ```
 
-Refer to Sealed Secrets documentation for more information about [kubeseal usage](https://github.com/bitnami-labs/sealed-secrets#usage).
+Refer to Sealed Secrets documentation for more information about kubeseal usage (see https://helmhub.io).
 
 ### [Rolling VS Immutable tags](https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-understand-rolling-tags-containers-index.html)
 

@@ -28,7 +28,7 @@ jobs:
       values-updated: ${{ steps.get-chart.outputs.values-updated }}
     steps:
       - id: get-chart
-        uses: helmhub-io/charts/.github/actions/get-chart@main
+        uses: ./.github/actions/get-chart
         with:
           pr-url: "${{ github.event.pull_request.url }}"
           pr-number: "${{ github.event.pull_request.number }}"

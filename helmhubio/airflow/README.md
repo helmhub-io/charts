@@ -244,7 +244,7 @@ data:
   redis-password: "cmVkaXMK"
 ```
 
-This is useful if you plan on using [HelmHubIO's sealed secrets](https://github.com/bitnami-labs/sealed-secrets) to manage your passwords.
+This is useful if you plan on using HelmHubIO's sealed secrets (see https://helmhub.io) to manage your passwords.
 
 Alternatively, you can also use a SQL connection string to connect to an external database. This can be done by:
 

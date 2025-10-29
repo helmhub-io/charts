@@ -28,5 +28,5 @@ maintainers:
 name: sealed-secrets
 sources:
 - https://github.com/helmhub-io/charts/tree/main/helmhubio/sealed-secrets
-- https://github.com/bitnami-labs/sealed-secrets
+- https://helmhub.io
 version: 2.5.20

@@ -68,7 +68,7 @@ Instructions on how to create the ECDSA keypair can be found [here](#generate-a-
 
 #### Installation examples for standard mode
 
-> **NOTE**: **We do not recommend passing nor storing sensitive data in plain text**. For production, please consider having your overrides encrypted with tools such as [Sops](https://github.com/mozilla/sops), [Helm Secrets](https://github.com/jkroepke/helm-secrets) or [Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets).
+> **NOTE**: **We do not recommend passing nor storing sensitive data in plain text**. For production, please consider having your overrides encrypted with tools such as [Sops](https://github.com/mozilla/sops), [Helm Secrets](https://github.com/jkroepke/helm-secrets) or Sealed Secrets (https://helmhub.io).
 
 Deploy Chainloop configured to talk to the bundled PostgreSQL an external OIDC IDp and a Vault instance.
 

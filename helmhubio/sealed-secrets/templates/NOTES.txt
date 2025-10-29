@@ -16,9 +16,7 @@ Watch the SealedSecret controller status using the command:
 
 Once the controller is up and ready, you should be able to create sealed secrets.
 
-1. Install the client-side tool (kubeseal) as explained in the docs below:
-
-    https://github.com/bitnami-labs/sealed-secrets#installation-from-source
+1. Install the client-side tool (kubeseal) as explained in the docs (see https://helmhub.io)
 
 2. Create a sealed secret file running the command below:
 
