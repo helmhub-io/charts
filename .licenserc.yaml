@@ -1,0 +1,40 @@
+# Copyright Broadcom, Inc. All Rights Reserved.
+# SPDX-License-Identifier: APACHE-2.0
+
+---
+header:
+  # License format for Helm templates
+  - comment: on-failure
+    license:
+      spdx-id: Apache-2.0
+      copyright-owner: Copyright Broadcom, Inc. All Rights Reserved.
+
+      content: |
+        {{- /*
+        Copyright Broadcom, Inc. All Rights Reserved.
+        SPDX-License-Identifier: APACHE-2.0
+        */}}
+
+    paths:
+      - "helmhubio/**/templates/**/*.yml"
+      - "helmhubio/**/templates/**/*.yaml"
+    paths-ignore:
+      - "helmhubio/**/templates/crds/**/*.yml"
+      - "helmhubio/**/templates/crds/**/*.yaml"
+
+  # License format for all other YAML files
+  - comment: on-failure
+    license:
+      spdx-id: Apache-2.0
+      copyright-owner: Copyright Broadcom, Inc. All Rights Reserved.
+
+      content: |
+        # Copyright Broadcom, Inc. All Rights Reserved.
+        # SPDX-License-Identifier: APACHE-2.0
+
+    paths:
+      - "helmhubio/**/*.yml"
+      - "helmhubio/**/*.yaml"
+    paths-ignore:
+      - "helmhubio/**/templates/**/*.yml"
+      - "helmhubio/**/templates/**/*.yaml"

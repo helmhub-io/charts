@@ -1,0 +1,35 @@
+# Copyright Broadcom, Inc. All Rights Reserved.
+# SPDX-License-Identifier: APACHE-2.0
+
+annotations:
+  images: |
+    - name: contour
+      image: docker.io/helmhubio/contour:1.32.1-debian-12-r0
+    - name: envoy
+      image: docker.io/helmhubio/envoy:1.34.5-debian-12-r0
+    - name: nginx
+      image: docker.io/helmhubio/nginx:1.29.1-debian-12-r0
+  licenses: Apache-2.0
+  tanzuCategory: clusterUtility
+apiVersion: v2
+appVersion: 1.32.1
+dependencies:
+- name: common
+  repository: oci://registry-1.docker.io/helmhubiocharts
+  tags:
+  - bitnami-common
+  version: 2.x.x
+description: Contour is an open source Kubernetes ingress controller that works by deploying the Envoy proxy as a reverse proxy and load balancer.
+home: https://github.com/helmhub-io/charts
+icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/contour/img/contour-stack-220x234.png
+keywords:
+- ingress
+- envoy
+- contour
+maintainers:
+- name: Broadcom, Inc. All Rights Reserved.
+  url: https://github.com/helmhub-io/charts
+name: contour
+sources:
+- https://github.com/helmhub-io/charts/tree/main/helmhubio/contour
+version: 21.1.5
