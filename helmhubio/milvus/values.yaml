@@ -3066,7 +3066,7 @@ attu:
   image:
     registry: docker.io
     repository: helmhubio/attu
-    tag: 2.5.12-debian-12-r0
+    tag: 2.5.12-debian-12-r20
     digest: ""
     ## Specify a imagePullPolicy
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
@@ -3624,7 +3624,7 @@ waitContainer:
   image:
     registry: docker.io
     repository: helmhubio/os-shell
-    tag: 12-debian-12-r50
+    tag: 12-debian-12-r51
     digest: ""
     ## @param waitContainer.image.pullPolicy Init container wait-container image pull policy
     ##
@@ -3892,10 +3892,13 @@ kafka:
   ## @param kafka.enabled Enable/disable Kafka chart installation
   ##
   enabled: true
+  broker:
+    replicaCount: 1
   ## @param kafka.controller.replicaCount Number of Kafka controller eligible (controller+broker) nodes
   ##
   controller:
     replicaCount: 1
+    controllerOnly: false
   ## @param kafka.service.ports.client Kafka svc port for client connections
   ##
   service:

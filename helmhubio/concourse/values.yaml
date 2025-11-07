@@ -84,7 +84,7 @@ diagnosticMode:
 image:
   registry: docker.io
   repository: helmhubio/concourse
-  tag: 7.13.2-debian-12-r12
+  tag: 7.14.1-debian-12-r2
   digest: ""
   ## Specify a imagePullPolicy
   ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
@@ -1413,7 +1413,7 @@ volumePermissions:
   image:
     registry: docker.io
     repository: helmhubio/os-shell
-    tag: 12-debian-12-r50
+    tag: 12-debian-12-r51
     digest: ""
     pullPolicy: IfNotPresent
     ## Optionally specify an array of imagePullSecrets.
@@ -1474,6 +1474,8 @@ postgresql:
     database: bitnami_concourse
     existingSecret: ""
   architecture: standalone
+  containerPorts:
+    postgresql: 5432
   primary:
     ## PostgreSQL Primary resource requests and limits
     ## ref: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/

@@ -4,7 +4,7 @@
 annotations:
   images: |
     - name: fluentd
-      image: docker.io/helmhubio/fluentd:1.19.0-debian-12-r1
+      image: docker.io/helmhubio/fluentd:1.19.0-debian-12-r2
   licenses: Apache-2.0
   tanzuCategory: clusterUtility
 apiVersion: v2

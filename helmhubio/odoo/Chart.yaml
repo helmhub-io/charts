@@ -4,7 +4,7 @@
 annotations:
   images: |
     - name: odoo
-      image: docker.io/helmhubio/odoo:18.0.20250805-debian-12-r8
+      image: docker.io/helmhubio/odoo:18.0.20250805-debian-12-r9
   licenses: Apache-2.0
   tanzuCategory: application
 apiVersion: v2

@@ -90,7 +90,7 @@ diagnosticMode:
 image:
   registry: docker.io
   repository: helmhubio/etcd
-  tag: 3.6.4-debian-12-r3
+  tag: 3.6.4-debian-12-r4
   digest: ""
   ## @param image.pullPolicy etcd image pull policy
   ## Specify a imagePullPolicy
@@ -674,7 +674,7 @@ volumePermissions:
   image:
     registry: docker.io
     repository: helmhubio/os-shell
-    tag: 12-debian-12-r50
+    tag: 12-debian-12-r51
     digest: ""
     ## @param volumePermissions.image.pullPolicy Init container volume-permissions image pull policy
     ##

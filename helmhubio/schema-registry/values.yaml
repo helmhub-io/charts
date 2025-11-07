@@ -733,10 +733,13 @@ kafka:
   ## @param kafka.enabled Enable/disable Kafka chart installation
   ##
   enabled: true
+  broker:
+    replicaCount: 1
   ## @param kafka.controller.replicaCount Number of Kafka controller-eligible (controller+broker) nodes
   ##
   controller:
     replicaCount: 1
+    controllerOnly: false
   ## @param kafka.listeners.client.protocol Authentication protocol for communications with clients. Allowed protocols: `PLAINTEXT`, `SASL_PLAINTEXT`, `SASL_SSL`, `SSL`
   ##
   listeners:

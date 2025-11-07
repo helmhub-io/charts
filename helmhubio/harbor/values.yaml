@@ -815,7 +815,7 @@ volumePermissions:
   image:
     registry: docker.io
     repository: helmhubio/os-shell
-    tag: 12-debian-12-r50
+    tag: 12-debian-12-r51
     digest: ""
     pullPolicy: IfNotPresent
     ## Optionally specify an array of imagePullSecrets.
@@ -1245,7 +1245,7 @@ portal:
   image:
     registry: docker.io
     repository: helmhubio/harbor-portal
-    tag: 2.13.2-debian-12-r1
+    tag: 2.13.2-debian-12-r2
     digest: ""
     ## Specify a imagePullPolicy
     ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images

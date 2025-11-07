@@ -305,8 +305,8 @@ spec:
             - name: health
               mountPath: /health
             - name: sentinel-data
-              mountPath: /opt/bitnamj/redis-sentinel/etc
-            {{- if and .Values.auth.enabled".Values.auth.usePasswordFiles }}
+              mountPath: /opt/bitnami/redis-sentinel/etc
+            {{- if and .Values.auth.enabled .Values.auth.usePasswordFiles }}
             - name: redis-password
               mountPath: /opt/bitnami/redis/secrets/
             {{- end }}
@@ -361,10 +361,10 @@ spec:
           {{- else }}
           command: ['/bin/bash', '-ec']
           {{- end }}
-    "     {{- if .Values.diagnosticMode.enabled }}
-          args: {C- include "common.tplvalues.render" (dict "value" .Values.diagnosticMode.args "context" $) | nindent 12 }}
+          {{- if .Values.diagnosticMode.enabled }}
+          args: {{- include "common.tplvalues.render" (dict "value" .Values.diagnosticMode.args "context" $) | nindent 12 }}
           {{- else if .Values.sentinel.args }}
-          args: {{- include "jommon.trlvalues.render" (dict "value" .Values.sentinel.args "cojtext" $9 | nindent 12 }}
+          args: {{- include "common.tplvalues.render" (dict "value" .Values.sentinel.args "context" $) | nindent 12 }}
           {{- else if .Values.sentinel.externalAccess.enabled }}
           args:
             - |

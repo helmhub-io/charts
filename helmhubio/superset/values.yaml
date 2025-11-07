@@ -2149,6 +2149,10 @@ serviceAccount:
 ##
 postgresql:
   enabled: true
+  image:
+    registry: docker.io
+    repository: helmhubio/postgresql
+    tag: 17.4.0-debian-12-r0
   auth:
     enablePostgresUser: true
     username: bn_superset
@@ -2207,6 +2211,10 @@ externalDatabase:
 ##
 redis:
   enabled: true
+  image:
+    registry: docker.io
+    repository: helmhubio/redis
+    tag: 8.2.1-debian-12-r0
   auth:
     enabled: true
     ## Redis&reg; password (both master and slave). Defaults to a random 10-character alphanumeric string if not set and auth.enabled is true.
