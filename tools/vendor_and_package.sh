@@ -122,9 +122,9 @@ echo ""
 echo "   Vendored dependencies to: $CHARTS_VENDORED charts"
 echo ""
 
-# Step 4: Package all application charts
+# Step 4: Package ALL charts to docs/ (including dependencies)
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Step 4: Package all charts to docs/"
+echo "Step 4: Package ALL charts to docs/"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
 
@@ -140,11 +140,7 @@ for chart_dir in */; do
         continue
     fi
     
-    # Skip common and other dependency charts
-    if [[ " ${DEPENDENCY_CHARTS[@]} " =~ " ${chart} " ]]; then
-        continue
-    fi
-    
+    # Package ALL charts now (removed dependency chart skip)
     echo -n "📦 $chart ... "
     
     if helm package "$chart" -d "$DOCS_DIR" >/dev/null 2>&1; then

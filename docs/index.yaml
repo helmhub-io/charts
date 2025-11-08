@@ -11,7 +11,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.0.5
-    created: "2025-11-07T19:39:06.914656628+01:00"
+    created: "2025-11-08T08:47:59.392568264+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -29,7 +29,7 @@ entries:
     description: Apache Airflow is a tool to express and execute workflows as directed
       acyclic graphs (DAGs). It includes utilities to schedule tasks, monitor task
       progress and handle task dependencies.
-    digest: 2c119ca792e58934e7ee04358599f01b71d89c4a6c38f6a5d748accbf9153f22
+    digest: d7b21651fde288cd143300b1f7d34c092c89ab468da83a41c56c4349e121b25e
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/airflow/img/airflow-stack-220x234.png
     keywords:
@@ -59,7 +59,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.4.65
-    created: "2025-11-07T19:39:06.920860621+01:00"
+    created: "2025-11-08T08:47:59.396268914+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -69,7 +69,7 @@ entries:
     description: Apache HTTP Server is an open-source HTTP server. The goal of this
       project is to provide a secure, efficient and extensible server that provides
       HTTP services in sync with the current HTTP standards.
-    digest: 90f921ec7ed4852d6ff44ff801353f362e93d92439d6d01a9f3a138a99b02768
+    digest: b669aaf4da10d4f19fabbd9dc59860592e1265a1e7b66c43e7f6d96c7f347e1d
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/apache/img/apache-stack-220x234.png
     keywords:
@@ -101,7 +101,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.13.0
-    created: "2025-11-07T19:39:06.940051296+01:00"
+    created: "2025-11-08T08:47:59.415823999+01:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
@@ -115,7 +115,7 @@ entries:
     description: Apache APISIX is high-performance, real-time API Gateway. Features
       load balancing, dynamic upstream, canary release, circuit breaking, authentication,
       observability, amongst others.
-    digest: f8b279c9d5d1c32d2e78e4b5e39858a6619e50d21f8cd583a64504e419929832
+    digest: 73e957330e5e14ad96b59f5943dbac7eda797feb45be1ba3b6dcc4a54c0295f2
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/apisix/img/apisix-stack-220x234.png
     keywords:
@@ -151,7 +151,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.85.0
-    created: "2025-11-07T19:39:06.975870145+01:00"
+    created: "2025-11-08T08:47:59.441796886+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -168,7 +168,7 @@ entries:
       version: 2.x.x
     description: Appsmith is an open source platform for building and maintaining
       internal tools, such as custom dashboards, admin panels or CRUD apps.
-    digest: 214d37fa552a23f790a06b9b26defffeea94e9dd126cfe6a5e1ea5487299b1e0
+    digest: 530ac80a20970667d7985fd8b23ee37d526294ddc486c5fe466b99bced0323c5
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/appsmith/img/appsmith-stack-220x234.png
     keywords:
@@ -198,7 +198,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.1.1
-    created: "2025-11-07T19:39:07.00932708+01:00"
+    created: "2025-11-08T08:47:59.474671058+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -210,7 +210,7 @@ entries:
       - bitnami-common
       version: 2.x.x
     description: Argo CD is a continuous delivery tool for Kubernetes based on GitOps.
-    digest: 88d2af75073064a5af28afaa73524eeaf0798e6c2cf5efeef464951bdb9f62e7
+    digest: a5dfe65cc6c1009cbd46bf32931a6c053cf4fb2f59b6bbe27d0d2cd5b4225ba5
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/argo-cd/img/argo-cd-stack-220x234.png
     keywords:
@@ -240,7 +240,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.7.1
-    created: "2025-11-07T19:39:07.035056023+01:00"
+    created: "2025-11-08T08:47:59.497685946+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -257,7 +257,7 @@ entries:
       version: 2.x.x
     description: Argo Workflows is meant to orchestrate Kubernetes jobs in parallel.
       It uses DAG and step-based workflows
-    digest: cad403a942005208b2a12f6abbae6f4f6b32935493931b07e352ff7b8e3b36bf
+    digest: 8724ed36cfc5ef99548e0cf99cfb0a397ff7b7c0029927525fe603382e35b576
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/argo-workflows/img/argo-workflows-stack-220x234.png
     keywords:
@@ -288,7 +288,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 9.0.8
-    created: "2025-11-07T19:39:07.039115569+01:00"
+    created: "2025-11-08T08:47:59.503808481+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -298,7 +298,7 @@ entries:
     description: ASP.NET Core is an open-source framework for web application development
       created by Microsoft. It runs on both the full .NET Framework, on Windows, and
       the cross-platform .NET Core.
-    digest: 8e1f9132c4074d3fcff6b4cd36b574f80547988a7fa66f595a4a8f3769cb547a
+    digest: 1720d63a407f40975efba160927756b5761b5246fc6147ee0662a5c40807f222
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/aspnet-core/img/aspnet-core-stack-220x234.png
     keywords:
@@ -322,7 +322,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.53.0
-    created: "2025-11-07T19:39:07.042808789+01:00"
+    created: "2025-11-08T08:47:59.506975966+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -331,7 +331,7 @@ entries:
       version: 2.x.x
     description: cAdvisor (Container Advisor) is an open-source tool by Google for
       monitoring containers, collecting metrics like CPU, memory, and network usage.
-    digest: 1a40933c378ee61c098284f7911f1c6e34fba861b339620d34876f79b624ff6d
+    digest: 18bbab2ac44ea2fa8ea5a81092c6bb382b842aaf64c3b8e794a485fed490a335
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/cadvisor/img/cadvisor-stack-220x234.png
     keywords:
@@ -347,6 +347,45 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/cadvisor-0.1.14.tgz
     version: 0.1.14
+  cassandra:
+  - annotations:
+      images: |
+        - name: cassandra
+          image: docker.io/helmhubio/cassandra:5.0.5-debian-12-r7
+        - name: cassandra-exporter
+          image: docker.io/helmhubio/cassandra-exporter:2.3.8-debian-12-r51
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 5.0.5
+    created: "2025-11-08T08:47:59.51082367+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Cassandra is an open source distributed database management
+      system designed to handle large amounts of data across many servers, providing
+      high availability with no single point of failure.
+    digest: e870c6bef612fcdc048cb7668ca64d70519f28f78eff56e46395f9ec7b8142c8
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/cassandra/img/cassandra-stack-220x234.png
+    keywords:
+    - cassandra
+    - database
+    - nosql
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: cassandra
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/cassandra
+    urls:
+    - https://helmhub-io.github.io/charts/cassandra-12.3.13.tgz
+    version: 12.3.13
   cert-manager:
   - annotations:
       images: |
@@ -362,7 +401,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.18.2
-    created: "2025-11-07T19:39:07.053942173+01:00"
+    created: "2025-11-08T08:47:59.519207173+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -371,7 +410,7 @@ entries:
       version: 2.x.x
     description: cert-manager is a Kubernetes add-on to automate the management and
       issuance of TLS certificates from various issuing sources.
-    digest: 9441df4e805f26b88f01c28b34d781b162470272fd79b1c83b2fbd7fe92170ea
+    digest: 2dacd653561ea21a7f7d2fbe5fbeb65da7c6b63212ea55ace3d7115de0dd0845
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/cert-manager/img/cert-manager-stack-220x234.png
     keywords:
@@ -407,7 +446,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.18.1
-    created: "2025-11-07T19:39:07.078392545+01:00"
+    created: "2025-11-08T08:47:59.538286934+01:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
@@ -422,7 +461,7 @@ entries:
       version: 2.x.x
     description: Cilium is an eBPF-based networking, observability, and security for
       Linux container management platforms like Docker and Kubernetes.
-    digest: 88358a2ab44121b31f4753d390e31c14c9ad482734e99b8fc8449d1622c27c06
+    digest: b13a8831081ca84d4eb65a89b920f1302cd063e9a70eb289cc1ac9ba35c0386d
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/cilium/img/cilium-stack-220x234.png
     keywords:
@@ -459,7 +498,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 25.7.5
-    created: "2025-11-07T19:39:07.090169756+01:00"
+    created: "2025-11-08T08:47:59.543961395+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -469,7 +508,7 @@ entries:
     description: ClickHouse is an open-source column-oriented OLAP database management
       system. Use it to boost your database performance while providing linear scalability
       and hardware efficiency.
-    digest: fede4bb97f6d149e272bbb487890bc7dfd9d899a17ce7720910d88b4f7e42341
+    digest: 297350dd739005fa47cdd27e277f8b8c39990d20e335eddba6c22de365cb8690
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/clickhouse/img/clickhouse-stack-220x234.png
     keywords:
@@ -498,7 +537,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.25.3
-    created: "2025-11-07T19:39:07.10014972+01:00"
+    created: "2025-11-08T08:47:59.551513708+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -508,7 +547,7 @@ entries:
     description: ClickHouse Operator is a production-ready operator that manages ClickHouse
       databases delivering robust features required for cost-efficient, real-time
       analytic applications.
-    digest: 7d0d6714d1b0e14fe9d944a315f0275360c0fac9f01352280e67581346331fae
+    digest: 1061c42d66f42e85bed0bf339ff0eb78ce8b2069093f4f9e6b280b92a458368c
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/clickhouse-operator/img/clickhouse-operator-stack-220x234.png
     keywords:
@@ -541,7 +580,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 1.27.0
-    created: "2025-11-07T19:39:07.118837269+01:00"
+    created: "2025-11-08T08:47:59.56580481+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -550,7 +589,7 @@ entries:
       version: 2.x.x
     description: CloudNativePG is an open-source tool for managing PostgreSQL databases
       on Kubernetes, from setup to ongoing upkeep.
-    digest: 6276232a037b7dd08c3f203303380d8d8667f0e359e753a0a0d5498edf0cbe19
+    digest: 08d7a3b80615def5f8e9ae5e957365ac5712b24725a3d463c887548e59a1afca
     home: https://github.com/helmhub-io/charts
     icon: https://helmhub.io/assets/stacks/cloudnative-pg/img/cloudnative-pg-stack-220x234.png
     keywords:
@@ -566,6 +605,33 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/cloudnative-pg-1.0.13.tgz
     version: 1.0.13
+  common:
+  - annotations:
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.31.7
+    created: "2025-11-08T08:47:59.567570266+01:00"
+    description: A Library Helm Chart for grouping common logic between bitnami charts.
+      This chart is not deployable by itself.
+    digest: d5120f17aba87dc060f22633ebdaf7f63a0434226ebd2c771799c4706773d699
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/downloads/logos/bitnami-mark.png
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    - bitnami
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: common
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/common
+    type: library
+    urls:
+    - https://helmhub-io.github.io/charts/common-2.31.7.tgz
+    version: 2.31.7
   concourse:
   - annotations:
       images: |
@@ -577,7 +643,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 7.13.2
-    created: "2025-11-07T19:39:07.140476466+01:00"
+    created: "2025-11-08T08:47:59.582400448+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -591,7 +657,7 @@ entries:
     description: Concourse is an automation system written in Go. It is most commonly
       used for CI/CD, and is built to scale to any kind of automation pipeline, from
       simple to complex.
-    digest: b331a4e4b5bdcd79e5a35b071e3ac9c303d4db70465d69a6d543355cc6ab1172
+    digest: 5898240cf7e71bb69b4868fe32d5af7d51c913a4fae4e0c23f946790f6e1c2c9
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/concourse/img/concourse-stack-220x234.png
     keywords:
@@ -623,7 +689,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.21.4
-    created: "2025-11-07T19:39:07.144788405+01:00"
+    created: "2025-11-08T08:47:59.587604456+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -632,7 +698,7 @@ entries:
       version: 2.x.x
     description: HashiCorp Consul is a tool for discovering and configuring services
       in your infrastructure.
-    digest: 3d7f4e56d31abb8d66039d1bbaa0cabe3d6fad2403b29a188e5b59e5972f2d90
+    digest: 46b363e66e4b14b3bd356f75edc244306e755446740cf884061a60eda5b275a0
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/consul/img/consul-stack-220x234.png
     keywords:
@@ -661,7 +727,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.32.1
-    created: "2025-11-07T19:39:07.164532475+01:00"
+    created: "2025-11-08T08:47:59.604922764+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -670,7 +736,7 @@ entries:
       version: 2.x.x
     description: Contour is an open source Kubernetes ingress controller that works
       by deploying the Envoy proxy as a reverse proxy and load balancer.
-    digest: d236a4ccbaf74bd78d637874f6e8377ed891c58599483e692a749e9221ae4989
+    digest: 06ed2183e220a58a2a9f9c6370f75997c038fdb296df367c2da93ff79bb1cf7a
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/contour/img/contour-stack-220x234.png
     keywords:
@@ -699,7 +765,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.17.5
-    created: "2025-11-07T19:39:07.171007039+01:00"
+    created: "2025-11-08T08:47:59.610810837+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -709,7 +775,7 @@ entries:
     description: DeepSpeed is deep learning software suite for empowering ChatGPT-like
       model training. Features dense or sparse model inference, high throughput and
       high compression.
-    digest: 65d2ea24787463259f3cc60794ceb36c12cf6280c637abc4c6857f7e100d3f38
+    digest: d86a3f0d932081de83de6e37f3e3987fafc9891e75f98a5ac363e12673ba84a4
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/deepspeed/img/deepspeed-stack-220x234.png
     keywords:
@@ -739,7 +805,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2025-11-07T19:39:07.20265364+01:00"
+    created: "2025-11-08T08:47:59.642553333+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -757,7 +823,7 @@ entries:
     description: Discourse is an open source discussion platform with built-in moderation
       and governance systems that let discussion communities protect themselves from
       bad actors even without official moderators.
-    digest: 1f2dac7236d8a0c5aab42e08c6760b65f09a4777b297436a0c2dbfa952e0f804
+    digest: 2435c2f7c548ac3204eb5c722aca33ba94bdb3b3ff6f83c95d956347cf442963
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/discourse/img/discourse-stack-220x234.png
     keywords:
@@ -789,7 +855,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 26.0.0
-    created: "2025-11-07T19:39:07.229089335+01:00"
+    created: "2025-11-08T08:47:59.661376273+01:00"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -806,7 +872,7 @@ entries:
       version: 2.x.x
     description: Dremio is an open-source self-service data access tool that provides
       high-performance queries for interactive analytics on data lakes.
-    digest: 0786bc8e37f5ae64f535e329220a23eb84a9de8b9df9476b344902794017125e
+    digest: 7b5c1df0155fdbaa6002714168fa0a54a7b55c1093edcc252c486f859c26aa92
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/dremio/img/dremio-stack-220x234.png
     keywords:
@@ -836,7 +902,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 11.2.3
-    created: "2025-11-07T19:39:07.245051927+01:00"
+    created: "2025-11-08T08:47:59.673197215+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -850,7 +916,7 @@ entries:
     description: Drupal is one of the most versatile open source content management
       systems in the world. It is pre-configured with the Ctools and Views modules,
       Drush and Let's Encrypt auto-configuration support.
-    digest: aeea2203a1ccad906d4d6c316c49553e72f9790a0057a439f307c0d263063b98
+    digest: b43a6a9ff4bc393615d07f6ca357a41501300c5f72e611c2ce41df9a9e8118af
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/drupal/img/drupal-stack-220x234.png
     keywords:
@@ -879,7 +945,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 9.1.1
-    created: "2025-11-07T19:39:07.261899222+01:00"
+    created: "2025-11-08T08:47:59.685843137+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -894,7 +960,7 @@ entries:
       version: 2.x.x
     description: EJBCA is an enterprise class PKI Certificate Authority software,
       built using Java (JEE) technology.
-    digest: 3e85f936a17f79edc4c305e276c5c0340c084b8786b042043da1ef0080a9534e
+    digest: db2a53255ada548218bedc40e43b1af6da329097dfc3f9b96e6bbd7bc2fa75e8
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/ejbca/img/ejbca-stack-220x234.png
     keywords:
@@ -924,7 +990,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 1.5.0
-    created: "2025-11-07T19:39:07.296560568+01:00"
+    created: "2025-11-08T08:47:59.709702137+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -934,7 +1000,7 @@ entries:
     description: Envoy Gateway simplifies traffic management by extending Envoy Proxy's
       features, offering Kubernetes Gateway API integration for secure, scalable,
       and observable application routing
-    digest: b35d36d52dabe152c138e680265ca3e4f378ef33b6c46c4b74dde782b45b3b34
+    digest: 984423d556da5ae30e33635e72fd6d9c454eced650c16e85b23ec16d0d7e796a
     home: https://github.com/helmhub-io/charts
     icon: https://helmhub.io/assets/stacks/envoy-gateway/img/envoy-gateway-stack-220x234.png
     keywords:
@@ -951,6 +1017,45 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/envoy-gateway-2.0.5.tgz
     version: 2.0.5
+  etcd:
+  - annotations:
+      images: |
+        - name: etcd
+          image: docker.io/helmhubio/etcd:3.6.4-debian-12-r4
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 3.6.4
+    created: "2025-11-08T08:47:59.715449977+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: etcd is a distributed key-value store designed to securely store
+      data across a cluster. etcd is widely used in production on account of its reliability,
+      fault-tolerance and ease of use.
+    digest: b0d6538b2c1a88d9ac47fb9dbb7b1bf79dca36429a609144af85638fde8be06f
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/etcd/img/etcd-stack-220x234.png
+    keywords:
+    - etcd
+    - cluster
+    - database
+    - cache
+    - key-value
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: etcd
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/etcd
+    urls:
+    - https://helmhub-io.github.io/charts/etcd-12.0.20.tgz
+    version: 12.0.20
   external-dns:
   - annotations:
       images: |
@@ -960,7 +1065,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.18.0
-    created: "2025-11-07T19:39:07.305755731+01:00"
+    created: "2025-11-08T08:47:59.720010834+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -969,7 +1074,7 @@ entries:
       version: 2.x.x
     description: ExternalDNS is a Kubernetes addon that configures public DNS servers
       with information about exposed Kubernetes services to make them discoverable.
-    digest: d2192fa2bf8611794fcb9fdd4a048090ac9d6745cd6bfce34c36dadf212c6e97
+    digest: 65b884bfce497ab6ce297001992e3cf562cdb9f8ef22f4e2bfd682a45f8b3f84
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/external-dns/img/external-dns-stack-220x234.png
     keywords:
@@ -994,7 +1099,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 2.1.0
-    created: "2025-11-07T19:39:07.311088346+01:00"
+    created: "2025-11-08T08:47:59.723493588+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1003,7 +1108,7 @@ entries:
       version: 2.x.x
     description: Apache Flink is a framework and distributed processing engine for
       stateful computations over unbounded and bounded data streams.
-    digest: f3a74b0097ea6ff213cbc8d0d2dc04b62bd12cd121c80ac9ca9e1dbe1874d5f0
+    digest: 7cdd15451712d4c488e5226818ef23dc6cde965f412291b5181b8c5174222050
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/flink/img/flink-stack-220x234.png
     keywords:
@@ -1028,7 +1133,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 4.0.8
-    created: "2025-11-07T19:39:07.318334977+01:00"
+    created: "2025-11-08T08:47:59.727257566+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1038,7 +1143,7 @@ entries:
     description: Fluent Bit is a Fast and Lightweight Log Processor and Forwarder.
       It has been made with a strong focus on performance to allow the collection
       of events from different sources without complexity.
-    digest: 1455c6e935ab2c9ff23cdf4a6e26fe8aa553b900aa719101f7ed26eeb463bf6e
+    digest: 34c62da5fbb4920a7c79d1cffceda097575760781e566b9317f1a4d71d7dc64d
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/fluent-bit/img/fluent-bit-stack-220x234.png
     keywords:
@@ -1063,7 +1168,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.19.0
-    created: "2025-11-07T19:39:07.326193615+01:00"
+    created: "2025-11-08T08:47:59.734769159+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1072,7 +1177,7 @@ entries:
       version: 2.x.x
     description: Fluentd collects events from various data sources and writes them
       to files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on.
-    digest: aa63e4daa06e71ed2dd41efadd4a98a5ba40309ed601812125edf9be3097fe82
+    digest: 3e61b99b53525d68b659e7491cb341dd7a97ac2e4db12db2d0088f1daeaf8447
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/fluentd/img/fluentd-stack-220x234.png
     keywords:
@@ -1111,7 +1216,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.6.2
-    created: "2025-11-07T19:39:07.346312321+01:00"
+    created: "2025-11-08T08:47:59.750317828+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1120,7 +1225,7 @@ entries:
       version: 2.x.x
     description: Source Controller is a component of Flux. Flux is a tool for keeping
       Kubernetes clusters in sync with sources of configuration.
-    digest: d8bd0931c8d029c27e309d5eee40ac35b085f666d33bb425587b99decb03a9f1
+    digest: 40b9503cb75dad0f68ab9474dcfc007ce2b4badbc5c3fdeab8c913f949ddd7f4
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/fluxcd-kustomize-controller/img/fluxcd-kustomize-controller-stack-220x234.png
     keywords:
@@ -1150,7 +1255,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 6.0.5
-    created: "2025-11-07T19:39:07.371933278+01:00"
+    created: "2025-11-08T08:47:59.761122414+01:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -1166,7 +1271,7 @@ entries:
     description: Ghost is an open source publishing platform designed to create blogs,
       magazines, and news sites. It includes a simple markdown editor with preview,
       theming, and SEO built-in to simplify editing.
-    digest: 665ed2c58631a774ddd126e03906fbbea9b7df90069656e434934f70b2a8ee7c
+    digest: 5db720adaad749a36cfcfec325a4cc26cdc6ccfad3cebf26b99b5cdbab5c076e
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/ghost/img/ghost-stack-220x234.png
     keywords:
@@ -1197,7 +1302,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.24.5
-    created: "2025-11-07T19:39:07.390113378+01:00"
+    created: "2025-11-08T08:47:59.775616193+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1210,7 +1315,7 @@ entries:
       version: 2.x.x
     description: Gitea is a lightweight code hosting solution. Written in Go, features
       low resource consumption, easy upgrades and multiple databases.
-    digest: eb9360e557289be29ba4d93af3b264a6c1e5c6ed1a0da91ab823032b60c09198
+    digest: 4c34c3ae66675807d6c5827f0c78d879a1f80c683ebff4e50a9e65499b352e22
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/gitea/img/gitea-stack-220x234.png
     keywords:
@@ -1240,7 +1345,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 18.3.0
-    created: "2025-11-07T19:39:07.397616322+01:00"
+    created: "2025-11-08T08:47:59.779238359+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1249,7 +1354,7 @@ entries:
       version: 2.x.x
     description: Gitlab Runner is an auxiliary application for Gitlab installations.
       Written in Go, it allows to run CI/CD jobs and send the results back to Gitlab.
-    digest: 220f86e48535d4dfb56cb6121374bb56278d0d1939f76c6e97fd94617303408d
+    digest: 8195edfe483369e066bbeaffaa1aaf549f41c17ddf5a399ea798fb22dff73c34
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/gitlab-runner/img/gitlab-runner-stack-220x234.png
     keywords:
@@ -1276,7 +1381,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 12.1.1
-    created: "2025-11-07T19:39:07.406265931+01:00"
+    created: "2025-11-08T08:47:59.785430077+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1285,7 +1390,7 @@ entries:
       version: 2.x.x
     description: Grafana is an open source metric analytics and visualization suite
       for visualizing time series data that supports various types of data sources.
-    digest: 9d9c02b60ea0b1c7bb1b7b69545c770ce616c208eb3313e4a012b399cb99ce82
+    digest: ed5719ad55dfa120535107842c10caf073ecaf90c54a79588b2ac986e67ddf33
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana/img/grafana-stack-220x234.png
     keywords:
@@ -1312,7 +1417,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.10.2
-    created: "2025-11-07T19:39:07.412426005+01:00"
+    created: "2025-11-08T08:47:59.791842919+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1322,7 +1427,7 @@ entries:
     description: Grafana Alloy is an open source OpenTelemetry Collector distribution
       with built-in Prometheus pipelines and support for metrics, logs, traces, and
       profiles.
-    digest: 37f75cc21f656e9e3ea87ff26c835833b0467824bb3b93918241ee3525cd3939
+    digest: a8a659334116e218fb9fca695a57efe5cf637b045f31e62793f404b915cb32f9
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-alloy/img/grafana-alloy-stack-220x234.png
     keywords:
@@ -1356,7 +1461,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 0.0.23
-    created: "2025-11-07T19:39:07.419939893+01:00"
+    created: "2025-11-08T08:47:59.797057091+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1366,7 +1471,7 @@ entries:
     description: Grafana k6 Operator is a Kubernetes operator that enables running
       distributed k6 load tests in a cluster, automating test execution and scaling
       for performance validation.
-    digest: 714e5ace20767e6aa3e3ff0424bf32d7baeef5cea8705a805edb7e75c8cf1470
+    digest: a3d34f27574a605fe02a524e4084d05f41a88aedc6f726d31619ed1a0b921387
     home: https://github.com/helmhub-io/charts
     icon: https://helmhub.io/assets/stacks/grafana-k6-operator/img/grafana-k6-operator-stack-220x234.png
     keywords:
@@ -1397,7 +1502,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 2.17.0
-    created: "2025-11-07T19:39:07.458092261+01:00"
+    created: "2025-11-08T08:47:59.825432573+01:00"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -1430,7 +1535,7 @@ entries:
       version: 2.x.x
     description: Grafana Mimir is an open source, horizontally scalable, highly available,
       multi-tenant, long-term storage for Prometheus.
-    digest: 7986925281a24ba9ed60228470ae6a5d33c10a3cb53e2bcac8779e24a03a6543
+    digest: abf102432bda6d8ac3c532a363aaf0ac49333028e6519778fc4e33e4b09564e1
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-mimir/img/grafana-mimir-stack-220x234.png
     keywords:
@@ -1458,7 +1563,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 5.19.4
-    created: "2025-11-07T19:39:07.464877715+01:00"
+    created: "2025-11-08T08:47:59.831275685+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1467,7 +1572,7 @@ entries:
       version: 2.x.x
     description: Grafana Operator is a Kubernetes operator that enables the installation
       and management of Grafana instances, dashboards and plugins.
-    digest: 571b7c568b3f9024a54475e477894a10a1811bbefc75b2bc0dc48accdffdd654
+    digest: 0896b378798d91cd7d3fd6f9f23dbc82e37597540bdc8a522ba52e38200acd6a
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana/img/grafana-stack-220x234.png
     keywords:
@@ -1498,7 +1603,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 2.8.2
-    created: "2025-11-07T19:39:07.486612275+01:00"
+    created: "2025-11-08T08:47:59.845170277+01:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -1512,7 +1617,7 @@ entries:
     description: Grafana Tempo is a distributed tracing system that has out-of-the-box
       integration with Grafana. It is highly scalable and works with many popular
       tracing protocols.
-    digest: 2ff83fd7cba475ea07e6650eb5c427016b9efd3aedc8f65aae0d1debe7491a8b
+    digest: 20194d8450e11460e59a2323593f5c0e48bac4684fae511f12a45ed68d8fbaeb
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-tempo/img/grafana-tempo-stack-220x234.png
     keywords:
@@ -1538,7 +1643,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.2.4
-    created: "2025-11-07T19:39:07.490570843+01:00"
+    created: "2025-11-08T08:47:59.849331771+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1548,7 +1653,7 @@ entries:
     description: HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL
       termination and offloading, TCP and HTTP normalization, traffic regulation,
       caching and protection against DDoS attacks.
-    digest: 7c1a719ca73e7f803e25084b643af733d82e7c9ae58e04946972683ae3a987ae
+    digest: 8c3ac2d5fb05fccffa08bcf124a4b077da76184a41601d195713ad17e8737ea4
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/haproxy/img/haproxy-stack-220x234.png
     keywords:
@@ -1589,7 +1694,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 2.13.2
-    created: "2025-11-07T19:39:07.532714008+01:00"
+    created: "2025-11-08T08:47:59.883263029+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -1607,7 +1712,7 @@ entries:
     description: Harbor is an open source trusted cloud-native registry to store,
       sign, and scan content. It adds functionalities like security, identity, and
       management to the open source Docker distribution.
-    digest: 3a08b417851d38a270d8061e5817fefa15b3255ac4c479186386117393316248
+    digest: aa14ee233279e2e419a4db15ceee7bdd1bc4f5f1514b0a9546185e47d5e416dc
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/harbor-core/img/harbor-core-stack-220x234.png
     keywords:
@@ -1637,7 +1742,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.4.1
-    created: "2025-11-07T19:39:07.538694993+01:00"
+    created: "2025-11-08T08:47:59.887734647+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1646,7 +1751,7 @@ entries:
       version: 2.x.x
     description: InfluxDB(TM) Core is an open source time-series database. It is a
       core component of the FDAP (Apache Flight, DataFusion, Arrow, and Parquet) stack.
-    digest: f87e22b9d4dea367aad0bca69397a75f0ee20aab87798fd84bbb30bc62298606
+    digest: aa7891ab377217fc71012c794ddaeda23483c12d6f87d14ba6d910d159abac53
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/influxdb/img/influxdb-stack-220x234.png
     keywords:
@@ -1674,7 +1779,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 2.9.0
-    created: "2025-11-07T19:39:07.551367251+01:00"
+    created: "2025-11-08T08:47:59.897653245+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1687,7 +1792,7 @@ entries:
       version: 12.x.x
     description: Jaeger is a distributed tracing system. It is used for monitoring
       and troubleshooting microservices-based distributed systems.
-    digest: 2cb0aad077371dd09d570d1fd5264146a85ea50aea3beb9104b9a25ab32ea795
+    digest: f4159f01b1b7c063f2cd8942c2b0bdc6e8706ab9fe30c386fb5e0d594621c9fa
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/jaeger/img/jaeger-stack-220x234.png
     keywords:
@@ -1716,7 +1821,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 1.1.0
-    created: "2025-11-07T19:39:07.564825132+01:00"
+    created: "2025-11-08T08:47:59.908465137+01:00"
     dependencies:
     - condition: storageBackend.cassandra.enabled
       name: cassandra
@@ -1730,7 +1835,7 @@ entries:
     description: JanusGraph is a scalable graph database optimized for storing and
       querying graphs containing hundreds of billions of vertices and edges distributed
       across a multi-machine cluster.
-    digest: 449968d388fa9be13a744b61ecf8dd9dd419193ba9abb99770920e4195c1b440
+    digest: dc58528c3f149dfd260e98aae047971d7f1b76c63287a461f38c3fca702feb43
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/janusgraph/img/janusgraph-stack-220x234.png
     keywords:
@@ -1761,7 +1866,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 2.516.2
-    created: "2025-11-07T19:39:07.572493223+01:00"
+    created: "2025-11-08T08:47:59.912624151+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1771,7 +1876,7 @@ entries:
     description: Jenkins is an open source Continuous Integration and Continuous Delivery
       (CI/CD) server designed to automate the building, testing, and deploying of
       any software project.
-    digest: 5081c95b3281c37271e1ce0cd1ce97c2709c9cb8a46ab446c00725f5e13266fa
+    digest: 26969833f12041d9fbfdef229845ba65f8e503e1df1c511dcca93f9475262170
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/jenkins/img/jenkins-stack-220x234.png
     keywords:
@@ -1805,7 +1910,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 5.3.0
-    created: "2025-11-07T19:39:07.59290475+01:00"
+    created: "2025-11-08T08:47:59.929747253+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1819,7 +1924,7 @@ entries:
     description: JupyterHub brings the power of notebooks to groups of users. It gives
       users access to computational environments and resources without burdening the
       users with installation and maintenance tasks.
-    digest: 8b1ed1ac9fd7d964512eda7596d8e28a725af99cad7da6927892311017ef5860
+    digest: 8b7bfc4311c025f45cd7ac6f9db6949a4304b7f00f4b1bb55d0c0bbe8f5a7c1e
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/jupyterhub/img/jupyterhub-stack-220x234.png
     keywords:
@@ -1834,6 +1939,48 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/jupyterhub-10.0.6.tgz
     version: 10.0.6
+  kafka:
+  - annotations:
+      images: |
+        - name: jmx-exporter
+          image: docker.io/helmhubio/jmx-exporter:1.4.0
+        - name: kafka
+          image: docker.io/helmhubio/kafka:4.0.0-debian-12-r10
+        - name: kubectl
+          image: docker.io/helmhubio/kubectl:1.33.4-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 4.0.0
+    created: "2025-11-08T08:47:59.939203943+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Kafka is a distributed streaming platform designed to build
+      real-time pipelines and can be used as a message broker or as a replacement
+      for a log aggregation solution for big data applications.
+    digest: 8d48c9a6342e4c30b9da7fc751781b666e56899fd8b813c882bdb48318f158cd
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kafka/img/kafka-stack-220x234.png
+    keywords:
+    - kafka
+    - streaming
+    - producer
+    - consumer
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: kafka
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/kafka
+    urls:
+    - https://helmhub-io.github.io/charts/kafka-32.4.4.tgz
+    version: 32.4.4
   keycloak:
   - annotations:
       images: |
@@ -1845,7 +1992,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 26.3.3
-    created: "2025-11-07T19:39:07.610704546+01:00"
+    created: "2025-11-08T08:47:59.954044916+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1859,7 +2006,7 @@ entries:
     description: Keycloak is a high performance Java-based identity and access management
       solution. It lets developers add an authentication layer to their applications
       with minimum effort.
-    digest: a689f1ef67d193c3208f0f3b9939ddb028601a72fc3ba72c73af2b789cb8601f
+    digest: a27a54b36f7674670c2e2a00b826be1eac672165744c7d2c31f26b3d31dd74f4
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/keycloak/img/keycloak-stack-220x234.png
     keywords:
@@ -1887,7 +2034,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 6.3.4
-    created: "2025-11-07T19:39:07.617325689+01:00"
+    created: "2025-11-08T08:47:59.959372561+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1896,7 +2043,7 @@ entries:
       version: 2.x.x
     description: KeyDB is a high performance fork of Redis with a focus on multithreading,
       memory efficiency, and high throughput.
-    digest: b831a56fb04563808ad3e98e25f5fc661c16e649968ee5e8edaf0654b39c02cb
+    digest: 3c31d3b75c58f9d654b19e157b59ef3bc5fa7a4ef9343a6b07b29bfabc7c3eee
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/keydb/img/keydb-stack-220x234.png
     keywords:
@@ -1923,7 +2070,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 4.2.0
-    created: "2025-11-07T19:39:07.622611605+01:00"
+    created: "2025-11-08T08:47:59.963824681+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1932,7 +2079,7 @@ entries:
       version: 2.x.x
     description: kiam is a proxy that captures AWS Metadata API requests. It allows
       AWS IAM roles to be set for Kubernetes workloads.
-    digest: 700a8ea9a6ca8d42386e7a3e2c15f6be5946e2a4cb2afe036e37a7f970ba4d78
+    digest: 90ac578d1df8ab9145113b2986a4d7acff1a76d03f1663a562f6dff3e9fe76a4
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kiam/img/kiam-stack-220x234.png
     keywords:
@@ -1959,7 +2106,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 9.1.2
-    created: "2025-11-07T19:39:07.6297368+01:00"
+    created: "2025-11-08T08:47:59.969373281+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -1969,7 +2116,7 @@ entries:
     description: Kibana is an open source, browser based analytics and search dashboard
       for Elasticsearch. Kibana strives to be easy to get started with, while also
       being flexible and powerful.
-    digest: dd832884351ab4592973b5fa9acc4d93d729cdfda14528ec931c38b73a9f5e16
+    digest: df4b77ea8d4ef55f23a56a21a59926cbca53fa01bf72c7b77cbe2479e50e4ccf
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kibana/img/kibana-stack-220x234.png
     keywords:
@@ -1998,7 +2145,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.9.1
-    created: "2025-11-07T19:39:07.65378477+01:00"
+    created: "2025-11-08T08:47:59.987871232+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2016,7 +2163,7 @@ entries:
     description: Kong is an open source Microservice API gateway and platform designed
       for managing microservices requests of high-availability, fault-tolerance, and
       distributed systems.
-    digest: dce161c8101b5c4f80e3587ea6e016cba204339006f5be34d7bf932861fd0794
+    digest: 6681de5f7066318e15ff244be10d329ca69cedab06ba7d8f264ba1d420ddee80
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kong/img/kong-stack-220x234.png
     keywords:
@@ -2048,7 +2195,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 1.3.0
-    created: "2025-11-07T19:39:07.660149135+01:00"
+    created: "2025-11-08T08:47:59.992460228+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2057,7 +2204,7 @@ entries:
       version: 2.x.x
     description: kube-arangodb is a Kubernetes Operator that manages ArangoDB clusters,
       ensuring automatic deployment, scaling, and healing of database instances.
-    digest: 5262594ffb4683020db0e55c07b1ff6d63f4f6708818a7df6c0d763d0160b31f
+    digest: e9199e7442f6568b35854681064c71b8f8d4aaaed0c66ba38d030f74f7088879
     home: https://github.com/helmhub-io/charts
     icon: https://helmhub.io/assets/stacks/kube-arangodb/img/kube-arangodb-stack-220x234.png
     keywords:
@@ -2083,7 +2230,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 2.16.0
-    created: "2025-11-07T19:39:07.664179989+01:00"
+    created: "2025-11-08T08:47:59.995842511+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2092,7 +2239,7 @@ entries:
       version: 2.x.x
     description: kube-state-metrics is a simple service that listens to the Kubernetes
       API server and generates metrics about the state of the objects.
-    digest: dc1b8e5ba66418034f30e5e57ed8ebcc5bf8e05c1478c86e2b5801f782201c9e
+    digest: a82a1f008a63fcaf7ef0be4dfed2f5c57f55ab00efb87cc6048905d3a29162f8
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kube-state-metrics/img/kube-state-metrics-stack-220x234.png
     keywords:
@@ -2121,7 +2268,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 1.4.2
-    created: "2025-11-07T19:39:07.693771226+01:00"
+    created: "2025-11-08T08:48:00.013785869+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2130,7 +2277,7 @@ entries:
       version: 2.x.x
     description: KubeRay is a Kubernetes operator for deploying and management of
       Ray applications on Kubernetes using CustomResourceDefinitions.
-    digest: 6ba7b7ed86697c14021b43b281c9f0af3ae583f94bb56db2b668e01ce3b87b07
+    digest: 365d4e343bafe820a47f6edd2ee78ba0c9a7fbbdf7c97a2f99158751542e1a2b
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kuberay/img/kuberay-stack-220x234.png
     keywords:
@@ -2155,7 +2302,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.7.0
-    created: "2025-11-07T19:39:07.697862124+01:00"
+    created: "2025-11-08T08:48:00.017903717+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2165,7 +2312,7 @@ entries:
     description: Kubernetes Event Exporter makes it easy to export Kubernetes events
       to other tools, thereby enabling better event observability, custom alerts and
       aggregation.
-    digest: 44bab0abeb3d6ede8a191ab05ed401e1b6d56a07990e4ed3feeda9fea845da5f
+    digest: 13139a489015f1ee818bc9b83c6e96e79c6e30fd23e9267b72bd1dfc72f2f8a7
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kubernetes-event-exporter/img/kubernetes-event-exporter-stack-220x234.png
     keywords:
@@ -2195,7 +2342,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 9.1.2
-    created: "2025-11-07T19:39:07.702975893+01:00"
+    created: "2025-11-08T08:48:00.02240445+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2205,7 +2352,7 @@ entries:
     description: Logstash is an open source data processing engine. It ingests data
       from multiple sources, processes it, and sends the output to final destination
       in real-time. It is a core component of the ELK stack.
-    digest: 1bc27ae31e71939ecc236e7a70e427444c33a0134869bb290900d15295957c31
+    digest: 0ce6f381768d8e51f0741cb4883d68de3bc451ce16db20508026c814b54597a2
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/logstash/img/logstash-stack-220x234.png
     keywords:
@@ -2221,6 +2368,47 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/logstash-7.0.12.tgz
     version: 7.0.12
+  mariadb:
+  - annotations:
+      images: |
+        - name: mariadb
+          image: docker.io/helmhubio/mariadb:12.0.2-debian-12-r0
+        - name: mysqld-exporter
+          image: docker.io/helmhubio/mysqld-exporter:0.17.2-debian-12-r16
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 12.0.2
+    created: "2025-11-08T08:48:00.029486852+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MariaDB is an open source, community-developed SQL database server
+      that is widely in use around the world due to its enterprise features, flexibility,
+      and collaboration with leading tech firms.
+    digest: c06c9ce6ecf3cc9fe61537f9d558c7a434e048534fc8872f794354684f24a03c
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mariadb/img/mariadb-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: mariadb
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/mariadb
+    urls:
+    - https://helmhub-io.github.io/charts/mariadb-23.0.0.tgz
+    version: 23.0.0
   mariadb-galera:
   - annotations:
       images: |
@@ -2232,7 +2420,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 12.0.2
-    created: "2025-11-07T19:39:07.710517331+01:00"
+    created: "2025-11-08T08:48:00.034872415+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2241,7 +2429,7 @@ entries:
       version: 2.x.x
     description: MariaDB Galera is a multi-primary database cluster solution for synchronous
       replication and high availability.
-    digest: 95cd9131b7e7562413c9f2c2ab9108ee71e6ee004d24458b2a54d031087993d3
+    digest: f018ad7f2d14a685644cd01291cfb6abd5973dbefaac21d500c7eeb225ed1e6b
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mariadb-galera/img/mariadb-galera-stack-220x234.png
     keywords:
@@ -2273,7 +2461,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 5.3.2
-    created: "2025-11-07T19:39:07.732429368+01:00"
+    created: "2025-11-08T08:48:00.049832699+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -2286,7 +2474,7 @@ entries:
       version: 2.x.x
     description: Matomo, formerly known as Piwik, is a real time web analytics program.
       It provides detailed reports on website visitors.
-    digest: c027beab696810dbc715970f344522f984f521b15b0a9ab0b2c80e3211bec2fb
+    digest: daa5c1b4a2eac09904583e29953a1f785c1190832622695bbd7d0d1fad347c22
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/matomo/img/matomo-stack-220x234.png
     keywords:
@@ -2305,6 +2493,44 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/matomo-11.0.1.tgz
     version: 11.0.1
+  memcached:
+  - annotations:
+      images: |
+        - name: memcached
+          image: docker.io/helmhubio/memcached:1.6.39-debian-12-r1
+        - name: memcached-exporter
+          image: docker.io/helmhubio/memcached-exporter:0.15.3-debian-12-r5
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 1.6.39
+    created: "2025-11-08T08:48:00.053338102+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Memcached is an high-performance, distributed memory object caching
+      system, generic in nature, but intended for use in speeding up dynamic web applications
+      by alleviating database load.
+    digest: f2e22f7e194ec58ac9acccb840ff846d1ab1d29d015b894f9f93671605dd67a4
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/memcached/img/memcached-stack-220x234.png
+    keywords:
+    - memcached
+    - cache
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: memcached
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/memcached
+    urls:
+    - https://helmhub-io.github.io/charts/memcached-8.0.0.tgz
+    version: 8.0.0
   metallb:
   - annotations:
       images: |
@@ -2316,7 +2542,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.15.2
-    created: "2025-11-07T19:39:07.741201085+01:00"
+    created: "2025-11-08T08:48:00.058122231+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2325,7 +2551,7 @@ entries:
       version: 2.x.x
     description: MetalLB is a load-balancer implementation for bare metal Kubernetes
       clusters, using standard routing protocols.
-    digest: 9a19c0e73053e0cff0651ca5a5f3e61fbcc58ace78bcf9f41cc9790791d1e554
+    digest: 5ccddc5bcd2d6761b6b93c39053ba7b884bd1a83b2df3fdbcfabe9e6a6dbe57b
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/metallb-speaker/img/metallb-speaker-stack-220x234.png
     keywords:
@@ -2355,7 +2581,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.8.0
-    created: "2025-11-07T19:39:07.744852002+01:00"
+    created: "2025-11-08T08:48:00.061486256+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2365,7 +2591,7 @@ entries:
     description: Metrics Server aggregates resource usage data, such as container
       CPU and memory usage, in a Kubernetes cluster and makes it available via the
       Metrics API.
-    digest: 037b60ef226b541e63ff386412ebec102e355e365e5dc282fdb096c0c6241f2f
+    digest: bc445edd0551e3c91da7d1dab9347d0c493b2ff454ef51fb0ec581b73d214729
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/metrics-server/img/metrics-server-stack-220x234.png
     keywords:
@@ -2396,7 +2622,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.6.0
-    created: "2025-11-07T19:39:07.795815528+01:00"
+    created: "2025-11-08T08:48:00.101397871+01:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
@@ -2418,7 +2644,7 @@ entries:
     description: Milvus is a cloud-native, open-source vector database solution for
       AI applications and similarity search. Features high scalability, hibrid search
       and unified lambda structure.
-    digest: 6403f9315f1a6ec287e12cc8b97f0f58cf62807f358212fceb62a9bb8663f734
+    digest: 5a507eecb6ea4b2eed17a11bb9ef138eee8be79b1bbf0f6b7f3190ac0c7fde5e
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/milvus/img/milvus-stack-220x234.png
     keywords:
@@ -2436,6 +2662,49 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/milvus-16.0.2.tgz
     version: 16.0.2
+  minio:
+  - annotations:
+      images: |
+        - name: minio
+          image: docker.io/helmhubio/minio:2025.7.23-debian-12-r5
+        - name: minio-client
+          image: docker.io/helmhubio/minio-client:2025.7.21-debian-12-r3
+        - name: minio-object-browser
+          image: docker.io/helmhubio/minio-object-browser:2.0.2-debian-12-r3
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2025.7.23
+    created: "2025-11-08T08:48:00.107370909+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
+      storage service, mainly used for storing unstructured data (such as photos,
+      videos, log files, etc.).
+    digest: c50a08efc16cd93d40a65f0699bf3eb2325a7f3aadcb14be9d4b99fef9c319b3
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: minio
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/minio
+    urls:
+    - https://helmhub-io.github.io/charts/minio-17.0.22.tgz
+    version: 17.0.22
   minio-operator:
   - annotations:
       images: |
@@ -2449,7 +2718,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 7.1.1
-    created: "2025-11-07T19:39:07.80167281+01:00"
+    created: "2025-11-08T08:48:00.111221308+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2459,7 +2728,7 @@ entries:
     description: MinIO(R) Operator is a Kubernetes-native tool for deploying and managing
       high-performance, S3-compatible MinIO(R) object storage across hybrid cloud
       infrastructures.
-    digest: 903d7fba4f6ff1d84eaee9ff3ec0a34c29d2e258d1c1c1449cac9549bd561b86
+    digest: 1f01eff51b6b34d70373a67ccd6fda9819ee05fe4fcb46e8e8998bcfe20e05cd
     home: https://github.com/helmhub-io/charts
     icon: https://helmhub.io/assets/stacks/minio-operator/img/minio-operator-stack-220x234.png
     keywords:
@@ -2488,7 +2757,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.3.2
-    created: "2025-11-07T19:39:07.832559917+01:00"
+    created: "2025-11-08T08:48:00.13519202+01:00"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -2506,7 +2775,7 @@ entries:
     description: MLflow is an open-source platform designed to manage the end-to-end
       machine learning lifecycle. It allows you to track experiments, package code
       into reproducible runs, and share and deploy models.
-    digest: 2991a6019b29e8e8da8690c95d4530c5732bd4194406ad02f28c17ddb1b1a769
+    digest: e8af0068eadaa207f1e9d2664c234f0845ba8ce2d9945761ab2eb563b2612824
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mlflow/img/mlflow-stack-220x234.png
     keywords:
@@ -2526,6 +2795,52 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/mlflow-5.2.0.tgz
     version: 5.2.0
+  mongodb:
+  - annotations:
+      images: |
+        - name: kubectl
+          image: docker.io/helmhubio/kubectl:1.33.4-debian-12-r0
+        - name: mongodb
+          image: docker.io/helmhubio/mongodb:8.0.13-debian-12-r0
+        - name: mongodb-exporter
+          image: docker.io/helmhubio/mongodb-exporter:0.47.0-debian-12-r1
+        - name: nginx
+          image: docker.io/helmhubio/nginx:1.29.1-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 8.0.13
+    created: "2025-11-08T08:48:00.145207892+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 71e7993c6c7ec67c61f7070dbb199cab48f1d61e1b854685e0b9adee6a3783ac
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: mongodb
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/mongodb
+    urls:
+    - https://helmhub-io.github.io/charts/mongodb-17.0.0.tgz
+    version: 17.0.0
   mongodb-sharded:
   - annotations:
       images: |
@@ -2539,7 +2854,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.0.13
-    created: "2025-11-07T19:39:07.846048048+01:00"
+    created: "2025-11-08T08:48:00.151789097+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2549,7 +2864,7 @@ entries:
     description: MongoDB(R) is an open source NoSQL database that uses JSON for data
       storage. MongoDB(TM) Sharded improves scalability and reliability for large
       datasets by distributing data across multiple machines.
-    digest: 330471505e046ec2ba6aceaa47ba5fceff4c7b9eb96babd030141a4598f249d2
+    digest: ab5f53c57e0481839f343c90f9192150b73fc4a963e7290e39a9e021676e2d18
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mongodb/img/mongodb-stack-220x234.png
     keywords:
@@ -2581,7 +2896,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 5.0.2
-    created: "2025-11-07T19:39:07.868519304+01:00"
+    created: "2025-11-08T08:48:00.163442414+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -2595,7 +2910,7 @@ entries:
     description: Moodle(TM) LMS is an open source online Learning Management System
       widely used at universities, schools, and corporations. It is modular and highly
       adaptable to any type of online learning.
-    digest: edaee9f1f76db131adf598a6dc6e78989b17145f23fcea94443ce133c34b6790
+    digest: e72ae1421f7d766493c61a91b4c230bff0b6e7ad7348f31f48b389f19737bc54
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/moodle/img/moodle-stack-220x234.png
     keywords:
@@ -2620,7 +2935,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 4.2.2
-    created: "2025-11-07T19:39:07.87320615+01:00"
+    created: "2025-11-08T08:48:00.166130891+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2629,7 +2944,7 @@ entries:
       version: 2.x.x
     description: Multus is a CNI plugin for Kubernetes clusters. Written in Go, features
       adding multiple network interfaces to pods.
-    digest: 0ac0e49845d9af64b79d00343d1a264ccce91e5ba42f711f5b1f0c5398f03cdc
+    digest: affd4d63757f4a61a6d649e2fe2232a354e1fee2c1d00761802ebfde3060d44f
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/multus-cni/img/multus-cni-stack-220x234.png
     keywords:
@@ -2646,6 +2961,47 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/multus-cni-2.2.22.tgz
     version: 2.2.22
+  mysql:
+  - annotations:
+      images: |
+        - name: mysql
+          image: docker.io/helmhubio/mysql:9.4.0-debian-12-r1
+        - name: mysqld-exporter
+          image: docker.io/helmhubio/mysqld-exporter:0.17.2-debian-12-r16
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 9.4.0
+    created: "2025-11-08T08:48:00.17153431+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: 15f1bfe6a80533994e2c03440dbc57a3b2349736be0917c9d48bdae3fdd8113d
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: mysql
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/mysql
+    urls:
+    - https://helmhub-io.github.io/charts/mysql-14.0.4.tgz
+    version: 14.0.4
   nats:
   - annotations:
       images: |
@@ -2657,7 +3013,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 2.11.8
-    created: "2025-11-07T19:39:07.878326649+01:00"
+    created: "2025-11-08T08:48:00.176571668+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2667,7 +3023,7 @@ entries:
     description: NATS is an open source, lightweight and high-performance messaging
       system. It is ideal for distributed systems and supports modern cloud architectures
       and pub-sub, request-reply and queuing models.
-    digest: e54a05b1f6e4801d9387988c1bd29c01b115a6e7bc3f231ec1c7168633bd4cdb
+    digest: 49668cd0f7bf8207c5a4fddcfe10aefa6a3dac319448953040367a66b703647a
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nats/img/nats-stack-220x234.png
     keywords:
@@ -2695,7 +3051,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 5.26.11
-    created: "2025-11-07T19:39:07.882391047+01:00"
+    created: "2025-11-08T08:48:00.181458097+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2704,7 +3060,7 @@ entries:
       version: 2.x.x
     description: Neo4j is a high performance graph store with all the features expected
       of a mature and robust database, like a friendly query language and ACID transactions.
-    digest: 81b3c91ea0b49bd84f66f4a97a42be8e35fa664558c79a036286446a5eea6b51
+    digest: 4c2215a6ab94533ba7edf2d3bc801f7e1c3f37ec2acbff71098fe083216d2539
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/neo4j/img/neo4j-stack-220x234.png
     keywords:
@@ -2738,7 +3094,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 0.104.10
-    created: "2025-11-07T19:39:07.90000114+01:00"
+    created: "2025-11-08T08:48:00.193347302+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2751,7 +3107,7 @@ entries:
       version: 2.x.x
     description: Nessie is an open-source version control system for data lakes, enabling
       isolated data experimentation before committing changes.
-    digest: 18cc38130e5fa4cefadcb695c14102cbe95ba8b6a2e33de1864cb2e517187664
+    digest: 21662732a6110f084a9bf46420e2890197c19bd4c7e8f1df5a1268cd5f85c016
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nessie/img/nessie-stack-220x234.png
     keywords:
@@ -2782,7 +3138,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.29.1
-    created: "2025-11-07T19:39:07.906573751+01:00"
+    created: "2025-11-08T08:48:00.198406298+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2792,7 +3148,7 @@ entries:
     description: NGINX Open Source is a web server that can be also used as a reverse
       proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due
       to its ability to provide faster content.
-    digest: a54d8d6a37547c6e44c2b532f2322e559dec46c6f80abb9266afec201cd07511
+    digest: ae69bee685fe0470df192a031322b34fc024c665bcf876c31da7169848f4e6f3
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nginx/img/nginx-stack-220x234.png
     keywords:
@@ -2821,7 +3177,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.13.1
-    created: "2025-11-07T19:39:07.914002506+01:00"
+    created: "2025-11-08T08:48:00.204722612+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2830,7 +3186,7 @@ entries:
       version: 2.x.x
     description: NGINX Ingress Controller is an Ingress controller that manages external
       access to HTTP services in a Kubernetes cluster using NGINX.
-    digest: 847785098385410819f54f2556be5f5afaa3f786fec601587b3af6cde5519c35
+    digest: d2db17d0ceaed7031bf7926e274f50c35e92571c5da6168795562d5a8518907e
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nginx-ingress-controller/img/nginx-ingress-controller-stack-220x234.png
     keywords:
@@ -2859,7 +3215,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.9.1
-    created: "2025-11-07T19:39:07.919098174+01:00"
+    created: "2025-11-08T08:48:00.20889987+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2868,7 +3224,7 @@ entries:
       version: 2.x.x
     description: Prometheus exporter for hardware and OS metrics exposed by UNIX kernels,
       with pluggable metric collectors.
-    digest: b29f9498309d736b81968e89171d06248916fec1337029fe9ffb58b075884fa7
+    digest: e563b782bac7434798e502468666e4968e3281ae5aeb5b9622ddc1a2d64de78e
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/node-exporter/img/node-exporter-stack-220x234.png
     keywords:
@@ -2893,7 +3249,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 7.12.0
-    created: "2025-11-07T19:39:07.938967661+01:00"
+    created: "2025-11-08T08:48:00.225519233+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2907,7 +3263,7 @@ entries:
     description: A reverse proxy and static file server that provides authentication
       using Providers (Google, GitHub, and others) to validate accounts by email,
       domain or group.
-    digest: ddc5eb4dc1d5ad95b72171c81710d216396df36e6480e2024115def078a27d50
+    digest: b05539950d65187b0c241916424a920be9b56957210164d05d4ea994ddb8ac36
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/oauth2-proxy/img/oauth2-proxy-stack-220x234.png
     keywords:
@@ -2935,7 +3291,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 18.0.20250805
-    created: "2025-11-07T19:39:07.958583675+01:00"
+    created: "2025-11-08T08:48:00.237363405+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2949,7 +3305,7 @@ entries:
     description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
       that can connect a wide variety of business operations such as sales, supply
       chain, finance, and project management.
-    digest: 10e08fab1b2ae9e4dc5c5633a03457347c98f66d21f942525c71d7193836c59b
+    digest: 62396f3e9d174586da3e3200f350e25300ad6cc502c57e8cdf6cee0cd39682b5
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/odoo/img/odoo-stack-220x234.png
     keywords:
@@ -2980,7 +3336,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 3.2.0
-    created: "2025-11-07T19:39:07.982587622+01:00"
+    created: "2025-11-08T08:48:00.249696566+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -2990,7 +3346,7 @@ entries:
     description: OpenSearch is a scalable open-source solution for search, analytics,
       and observability. Features full-text queries, natural language processing,
       custom dictionaries, amongst others.
-    digest: 03adb4b3b3ce0a2cd8927247f3426e658dfe3bcd209fb547caf004898f437f0a
+    digest: f1edec44a2920984b1226292282be60deb1de7d51cac4fe8ec0f73f97505aebe
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/opensearch/img/opensearch-stack-220x234.png
     keywords:
@@ -3017,7 +3373,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 8.2.3
-    created: "2025-11-07T19:39:08.007519116+01:00"
+    created: "2025-11-08T08:48:00.263734948+01:00"
     dependencies:
     - name: mongodb
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3030,7 +3386,7 @@ entries:
     description: Parse is a platform that enables users to add a scalable and powerful
       backend to launch a full-featured app for iOS, Android, JavaScript, Windows,
       Unity, and more.
-    digest: 5203568021951909eb7321b9d76cb6e97dec47f61661131af569f33eb3d60e40
+    digest: 55f189eca17176cbd2a373ba1fca5d6a747d764a46472ee174c1347e4c707ef5
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/parse/img/parse-stack-220x234.png
     keywords:
@@ -3060,7 +3416,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 5.2.2
-    created: "2025-11-07T19:39:08.025027944+01:00"
+    created: "2025-11-08T08:48:00.274677319+01:00"
     dependencies:
     - condition: db.bundleTestDB
       name: mariadb
@@ -3076,7 +3432,7 @@ entries:
     description: phpMyAdmin is a free software tool written in PHP, intended to handle
       the administration of MySQL over the Web. phpMyAdmin supports a wide range of
       operations on MySQL and MariaDB.
-    digest: 741b481543e7965e7db5b095a4d22ad4fc772f56c03ca3126af28522530ba220
+    digest: 1b07f0bb6602017ff1bd1132e46104b95696c7cafd8155642a77a12a33e0d2aa
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/phpmyadmin/img/phpmyadmin-stack-220x234.png
     keywords:
@@ -3101,7 +3457,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.40.0
-    created: "2025-11-07T19:39:08.031550853+01:00"
+    created: "2025-11-08T08:48:00.281729337+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3111,7 +3467,7 @@ entries:
     description: Pinniped is an identity service provider for Kubernetes. It supplies
       a consistent and unified login experience across all your clusters. Pinniped
       is securely integrated with enterprise IDP protocols.
-    digest: f16136b699df7ece0684f2ef4dbb97a7402870cf7e69b8542b8c7ad78bb2650a
+    digest: 65ca733f388d90fd70ebeb16541a8b3cffaf09349a244e9b678b6c58b3e4a9b1
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/pinniped/img/pinniped-stack-220x234.png
     keywords:
@@ -3126,6 +3482,48 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/pinniped-2.4.24.tgz
     version: 2.4.24
+  postgresql:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: postgres-exporter
+          image: docker.io/helmhubio/postgres-exporter:0.17.1-debian-12-r16
+        - name: postgresql
+          image: docker.io/helmhubio/postgresql:17.6.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 17.6.0
+    created: "2025-11-08T08:48:00.288485737+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 9053e5be35bfb443f28d4942341115f4d736f7878aa582643aded543a7a91b26
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: postgresql
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/postgresql
+    urls:
+    - https://helmhub-io.github.io/charts/postgresql-17.0.0.tgz
+    version: 17.0.0
   postgresql-ha:
   - annotations:
       images: |
@@ -3141,7 +3539,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 17.6.0
-    created: "2025-11-07T19:39:08.043415972+01:00"
+    created: "2025-11-08T08:48:00.297657029+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3151,7 +3549,7 @@ entries:
     description: This PostgreSQL cluster solution includes the PostgreSQL replication
       manager, an open-source tool for managing replication and failover on PostgreSQL
       clusters.
-    digest: 0113a92f20e597119dc494179f491ae39f4e94c6afbf10d1bdbd06a9b7d93e2d
+    digest: 75565d454ec3d9d9e4207e22d4a5ad573480646de83c99276f32067fc0124c15
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -3188,7 +3586,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.5.0
-    created: "2025-11-07T19:39:08.05012626+01:00"
+    created: "2025-11-08T08:48:00.303569958+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3198,7 +3596,7 @@ entries:
     description: Prometheus is an open source monitoring and alerting system. It enables
       sysadmins to monitor their infrastructures by collecting metrics from configured
       targets at given intervals.
-    digest: 4a29fce38f9cb6c6b3d3b60bfcc5595705af11f1b7f2d93a57f42c87146c06b4
+    digest: 462fa7af607c0266cd1726c3595391a73da4f9d87050a1d62ca75d8fbb373bcf
     home: https://github.com/prometheus/prometheus
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/prometheus/img/prometheus-stack-220x234.png
     keywords:
@@ -3229,7 +3627,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 2.8.0
-    created: "2025-11-07T19:39:08.053454091+01:00"
+    created: "2025-11-08T08:48:00.307240817+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3239,7 +3637,7 @@ entries:
     description: PyTorch is a deep learning platform that accelerates the transition
       from research prototyping to production deployment. HelmHubIO image includes
       Torchvision for specific computer vision support.
-    digest: c8ffa21c02fdf349e2b9c5cd1f2805d41ab85bc788311afc1846695d6fc2c428
+    digest: 70c3895af11645fa9451baba156347641a6c3873fb031784cc8f6255cd7f55ac
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/pytorch/img/pytorch-stack-220x234.png
     keywords:
@@ -3267,7 +3665,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 4.1.3
-    created: "2025-11-07T19:39:08.063258917+01:00"
+    created: "2025-11-08T08:48:00.314101688+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3277,7 +3675,7 @@ entries:
     description: RabbitMQ is an open source general-purpose message broker that is
       designed for consistent, highly-available messaging scenarios (both synchronous
       and asynchronous).
-    digest: 9ff0f75c0f69028893b8114785e5c7199c1b9ae14053a7b102487c7bb813f7ef
+    digest: 2d4840d721d16b59bbe9d3904756f25853e568f69df029abf1499d8c4504bfa9
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
     keywords:
@@ -3308,7 +3706,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2.16.1
-    created: "2025-11-07T19:39:08.070010939+01:00"
+    created: "2025-11-08T08:48:00.324182224+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3317,7 +3715,7 @@ entries:
       version: 2.x.x
     description: The RabbitMQ Cluster Kubernetes Operator automates provisioning,
       management, and operations of RabbitMQ clusters running on Kubernetes.
-    digest: d840fd5af07ec565c65771f57686e26995fc8ba4b1cc260da6c905653cb9b69b
+    digest: d53a0daeaea2f14323657b9627f8d4d3b45413f268caee87732da7d12a1d464d
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/rabbitmq-cluster-operator/img/rabbitmq-cluster-operator-stack-220x234.png
     keywords:
@@ -3336,6 +3734,49 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/rabbitmq-cluster-operator-4.4.35.tgz
     version: 4.4.35
+  redis:
+  - annotations:
+      images: |
+        - name: kubectl
+          image: docker.io/helmhubio/kubectl:1.33.4-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: redis
+          image: docker.io/helmhubio/redis:8.2.1-debian-12-r0
+        - name: redis-exporter
+          image: docker.io/helmhubio/redis-exporter:1.76.0-debian-12-r0
+        - name: redis-sentinel
+          image: docker.io/helmhubio/redis-sentinel:8.2.1-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 8.2.1
+    created: "2025-11-08T08:48:00.334422461+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 1cce865666b61f05ca3262959c356d5819666e84558689934cec94ba16f3cb07
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: redis
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/redis
+    urls:
+    - https://helmhub-io.github.io/charts/redis-23.0.2.tgz
+    version: 23.0.2
   redis-cluster:
   - annotations:
       images: |
@@ -3349,7 +3790,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.2.1
-    created: "2025-11-07T19:39:08.07884096+01:00"
+    created: "2025-11-08T08:48:00.342006264+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3359,7 +3800,7 @@ entries:
     description: Redis(R) is an open source, scalable, distributed in-memory cache
       for applications. It can be used to store and serve data in the form of strings,
       hashes, lists, sets and sorted sets.
-    digest: b52d5aeefcf56e71b54ed10c3ecefb7aef066f582526914dcbea124669613204
+    digest: 9b40791ecee051b9bee6a35746b9936f8609bd261b36c7767469aba388bf04b6
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -3386,7 +3827,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 6.0.6
-    created: "2025-11-07T19:39:08.101385293+01:00"
+    created: "2025-11-08T08:48:00.367262042+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -3404,7 +3845,7 @@ entries:
     description: Redmine is an open source management application. It includes a tracking
       issue system, Gantt charts for a visual view of projects and deadlines, and
       supports SCM integration for version control.
-    digest: e2357a38f0851d68eea26071eff2ce2ede36f7b759f32ccb7dd0abf04860ed81
+    digest: 92c4492de530749823fec1bd5d462d3069e0d7b5f149ce496fcdfccb9f3baa4d
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redmine/img/redmine-stack-220x234.png
     keywords:
@@ -3434,7 +3875,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 8.0.0
-    created: "2025-11-07T19:39:08.118987247+01:00"
+    created: "2025-11-08T08:48:00.381675263+01:00"
     dependencies:
     - condition: kafka.enabled
       name: kafka
@@ -3448,7 +3889,7 @@ entries:
     description: Confluent Schema Registry provides a RESTful interface by adding
       a serving layer for your metadata on top of Kafka. It expands Kafka enabling
       support for Apache Avro, JSON, and Protobuf schemas.
-    digest: 811f7c4c8e65aa77eb91aaefbad6bc6353d334e666eb44776f3f98ef0874ddd0
+    digest: af32b340b519d5e83090b27bee57f3b2cde0bfb0847829c53b01562b266b48ea
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/schema-registry/img/schema-registry-stack-220x234.png
     keywords:
@@ -3477,7 +3918,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 2025.2.2
-    created: "2025-11-07T19:39:08.125180683+01:00"
+    created: "2025-11-08T08:48:00.392534765+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3487,7 +3928,7 @@ entries:
     description: ScyllaDB is an open-source, distributed NoSQL wide-column data store.
       Written in C++, it is designed for high throughput and low latency, compatible
       with Apache Cassandra.
-    digest: f9c74dad8dccc9335c76973f81c89015bc5d25ea1ada4842e56c8fe1e81ae27b
+    digest: 990b490d5ba26e030b234ec2f37eedf6cf057d32c1e04b18a8b8e2130a3521bf
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/scylladb/img/scylladb-stack-220x234.png
     keywords:
@@ -3512,7 +3953,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.31.0
-    created: "2025-11-07T19:39:08.129033356+01:00"
+    created: "2025-11-08T08:48:00.399881726+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3522,7 +3963,7 @@ entries:
     description: Sealed Secrets are "one-way" encrypted K8s Secrets that can be created
       by anyone, but can only be decrypted by the controller running in the target
       cluster recovering the original object.
-    digest: 65f935d7dd9e9aff09ff0f95395030a83012331a5d52d34e2e1363b4666543b0
+    digest: 89c34f7a273550b6dfc71dea2d9a6e512144fa903462dfdabeb2266ab4279012
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/sealed-secrets/img/sealed-secrets-stack-220x234.png
     keywords:
@@ -3554,7 +3995,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 3.96.0
-    created: "2025-11-07T19:39:08.16111123+01:00"
+    created: "2025-11-08T08:48:00.451256973+01:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -3574,7 +4015,7 @@ entries:
       - bitnami-common
       version: 2.x.x
     description: SeaweedFS is a simple and highly scalable distributed file system.
-    digest: 12a7311f44b542de75daac267c0f02a7aed0398bc154ce0638beced06bb7e3a6
+    digest: b1bfa372dae2fdc0fe0203a0f1827085e2efd0e3bf4ae75234be5e06aba67999
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/seaweedfs/img/seaweedfs-stack-220x234.png
     keywords:
@@ -3605,7 +4046,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 9.9.0
-    created: "2025-11-07T19:39:08.172354032+01:00"
+    created: "2025-11-08T08:48:00.469019452+01:00"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -3619,7 +4060,7 @@ entries:
     description: Apache Solr is an extremely powerful, open source enterprise search
       platform built on Apache Lucene. It is highly reliable and flexible, scalable,
       and designed to add value very quickly after launch.
-    digest: 4f38e117d5f23718fa4d917f6db5bfe762db0ccece7a964c4f82fb05fdbcc6e6
+    digest: c1d7e0b0c68272fa6d9141525dfd169fd1c094a2cf6c45e1fec91a37b5be1f88
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/solr/img/solr-stack-220x234.png
     keywords:
@@ -3648,7 +4089,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 25.8.0
-    created: "2025-11-07T19:39:08.191529594+01:00"
+    created: "2025-11-08T08:48:00.486244573+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -3662,7 +4103,7 @@ entries:
     description: SonarQube(TM) is an open source quality management platform that
       analyzes and measures code's technical quality. It enables developers to detect
       code issues, vulnerabilities, and bugs in early stages.
-    digest: d89a4037d931e22c34c8da7047bd64a1dbf7196e6d9b1cfee0bef584ee16ce19
+    digest: 6876a5f8ed10382bfa526fe3db3de2006ab40a9466d0c7d83e8386ff44019216
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/sonarqube/img/sonarqube-stack-220x234.png
     keywords:
@@ -3688,7 +4129,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 4.0.0
-    created: "2025-11-07T19:39:08.196874209+01:00"
+    created: "2025-11-08T08:48:00.490491941+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3698,7 +4139,7 @@ entries:
     description: Apache Spark is a high-performance engine for large-scale computing
       tasks, such as data processing, machine learning and real-time data streaming.
       It includes APIs for Java, Python, Scala and R.
-    digest: 0aa697e82288ebc1ad95c6cdf2579a745b4df873880e1c6092879833f830709e
+    digest: 12a279a1f0995e041ebf244ddc8fa204bf95e43562e5b42d61d0b69d3cad8ce1
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/spark/img/spark-stack-220x234.png
     keywords:
@@ -3722,7 +4163,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 5.0.0
-    created: "2025-11-07T19:39:08.24086247+01:00"
+    created: "2025-11-08T08:48:00.517307932+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -3738,7 +4179,7 @@ entries:
       - bitnami-common
       version: 2.x.x
     description: Superset is a modern data exploration and data visualization platform.
-    digest: aa1c07be096c9aeb19908efaf6ca21ea0e947a7685f0bc2ffd8d7bb93ddc87aa
+    digest: d087e916f3ef897047f8150348273eb606b091b9141f927f1c525d760c0aa5de
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/superset/img/superset-stack-220x234.png
     keywords:
@@ -3766,7 +4207,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 2.19.1
-    created: "2025-11-07T19:39:08.246047439+01:00"
+    created: "2025-11-08T08:48:00.520133821+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3775,7 +4216,7 @@ entries:
       version: 2.x.x
     description: TensorFlow ResNet is a client utility for use with TensorFlow Serving
       and ResNet models.
-    digest: ab09a41ec3cb08122469e5f527ad68e27bb316306284d252d8158ec6199acea4
+    digest: 8425408dbd8b0082c5ad95f22ba2bc72488a6bd7452176cc8534aea8a3ffea27
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/tensorflow-inception/img/tensorflow-inception-stack-220x234.png
     keywords:
@@ -3805,7 +4246,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 0.39.2
-    created: "2025-11-07T19:39:08.2774683+01:00"
+    created: "2025-11-08T08:48:00.54606643+01:00"
     dependencies:
     - condition: minio.enabled
       name: minio
@@ -3819,7 +4260,7 @@ entries:
     description: Thanos is a highly available metrics system that can be added on
       top of existing Prometheus deployments, providing a global query view across
       all Prometheus installations.
-    digest: a6d27fa60e903bd42348b114078fe7e56d74b40b01513a0717f516dde3dd5c1d
+    digest: 359c9daa513f63cbef5667086c7d216822d9da46597fa6120268381accafb9aa
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/thanos/img/thanos-stack-220x234.png
     keywords:
@@ -3849,7 +4290,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 11.0.10
-    created: "2025-11-07T19:39:08.282808281+01:00"
+    created: "2025-11-08T08:48:00.551716645+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3859,7 +4300,7 @@ entries:
     description: Apache Tomcat is an open-source web server designed to host and run
       Java-based web applications. It is a lightweight server with a good performance
       for applications running in production environments.
-    digest: 17988340959ab02b9bda98625842e84ef3cfad7f923c380725f22c30a4f93542
+    digest: 085421b2628fb1bf579bf1d499ec314082117ec2ee2b7082015e58c49d9206e5
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/tomcat/img/tomcat-stack-220x234.png
     keywords:
@@ -3895,7 +4336,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.1.3
-    created: "2025-11-07T19:39:08.295973426+01:00"
+    created: "2025-11-08T08:48:00.559484481+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3905,7 +4346,7 @@ entries:
     description: Valkey is an open source (BSD) high-performance key/value datastore
       that supports a variety workloads such as caching, message queues, and can act
       as a primary database.
-    digest: a02f6e79dfac64239f3ce3c709055eff65194a20a1e3aa0a7768208ec361ef59
+    digest: 1b837c24bd595a7a9b30e8716341cc614fe0a6fa1ea8cdfcf06b1a6f3fb3de78
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/valkey/img/valkey-stack-220x234.png
     keywords:
@@ -3934,7 +4375,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.1.3
-    created: "2025-11-07T19:39:08.305658373+01:00"
+    created: "2025-11-08T08:48:00.567909267+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3944,7 +4385,7 @@ entries:
     description: Valkey is an open source (BSD) high-performance key/value datastore
       that supports a variety workloads such as caching, message queues, and can act
       as a primary database.
-    digest: 9ab8729396a059d8fe5406e9f8d747c843892949dade72b2722877937b9d6110
+    digest: 210cdb7f4c8d6c0e66cdfd2572c4e9d69fe9291de02d082f6cf4343d3ebb9326
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/valkey/img/valkey-stack-220x234.png
     keywords:
@@ -3976,7 +4417,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.20.2
-    created: "2025-11-07T19:39:08.31713519+01:00"
+    created: "2025-11-08T08:48:00.574861014+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -3986,7 +4427,7 @@ entries:
     description: Vault is a tool for securely managing and accessing secrets using
       a unified interface. Features secure storage, dynamic secrets, data encryption
       and revocation.
-    digest: 19c7f3a1018a799b3e855d679f060f1e86871d7dd4af086c86510dacf1d3f45f
+    digest: e99dbf8192132e1c6adc9ddd0692c416d1e07d2f4ff7ba0a2ad4172f26a9b452
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/vault/img/vault-stack-220x234.png
     keywords:
@@ -4023,7 +4464,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.124.0
-    created: "2025-11-07T19:39:08.332871391+01:00"
+    created: "2025-11-08T08:48:00.587515278+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -4032,7 +4473,7 @@ entries:
       version: 2.x.x
     description: VictoriaMetrics is a fast, cost-effective, and scalable monitoring
       solution and time series database, compatible with Prometheus and Graphite
-    digest: 5123e42516141cea36111045ac78eacf69df3cf4fb38561b0eacc1b54440e1a2
+    digest: ac80eeb3cc6de84e7f88fd775cce411c3d9971cf349a599ec53c07ee667b34fb
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/victoriametrics/img/victoriametrics-stack-220x234.png
     keywords:
@@ -4056,7 +4497,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 0.9.2
-    created: "2025-11-07T19:39:08.337473551+01:00"
+    created: "2025-11-08T08:48:00.590057322+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -4065,7 +4506,7 @@ entries:
       version: 2.x.x
     description: Whereabouts is a CNI IPAM plugin for Kubernetes clusters. It dynamically
       assigns IP addresses cluster-wide. Features both IPv4 and IPv6 addressing.
-    digest: a7fa35affa92b8c9921e070087f0b754eb6bd5405302aa9524600823c3fc5c41
+    digest: 734e6ad857fd1dffdf5fcd5dcc4571fc8ecdd73f6b4c302e5f7e25c770d872bf
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/whereabouts/img/whereabouts-stack-220x234.png
     keywords:
@@ -4093,7 +4534,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 37.0.0
-    created: "2025-11-07T19:39:08.343957417+01:00"
+    created: "2025-11-08T08:48:00.593785313+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/helmhubiocharts
@@ -4102,7 +4543,7 @@ entries:
       version: 2.x.x
     description: Wildfly is a lightweight, open source application server, formerly
       known as JBoss, that implements the latest enterprise Java standards.
-    digest: bc2e52dc5e2090edd768ab1a6acdb0edb29e89c6b354613c65370ab150a313aa
+    digest: eb1268468149256eda1ca09709864f4f97cd1c376255d7e4a4deee387269a8b6
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/wildfly/img/wildfly-stack-220x234.png
     keywords:
@@ -4134,7 +4575,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 6.8.2
-    created: "2025-11-07T19:39:08.378760921+01:00"
+    created: "2025-11-08T08:48:00.612975219+01:00"
     dependencies:
     - condition: memcached.enabled
       name: memcached
@@ -4152,7 +4593,7 @@ entries:
     description: WordPress is the world's most popular blogging and content management
       platform. Powerful yet simple, everyone from students to global corporations
       use it to build beautiful, functional websites.
-    digest: be8d69775cb31df440ab82cbb8c1b4be5d21f9d7c9b936296a3f92fac0e5d464
+    digest: fb9980330ea9fd8cec0c3fb336ba8626b9de7b86a8248a74bdca29c2dd23fff0
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/wordpress/img/wordpress-stack-220x234.png
     keywords:
@@ -4183,7 +4624,7 @@ entries:
       tanzuCategory: application
     apiVersion: v2
     appVersion: 3.5.1
-    created: "2025-11-07T19:39:08.39424789+01:00"
+    created: "2025-11-08T08:48:00.623503817+01:00"
     dependencies:
     - condition: cassandra.enabled
       name: cassandra
@@ -4197,7 +4638,7 @@ entries:
     description: Zipkin is a distributed tracing system that helps collect and analyze
       timing data to troubleshoot latency issues in service architectures, providing
       visibility into service call performance.
-    digest: 4f38cba41ca1735ffbd9d90938c3ecacab4a361b9d29d4425af38524e5299802
+    digest: ba2947daebe6b15494b6c6079cb4dc360ebccef55f453497858abd01ab0c27f2
     home: https://github.com/helmhub-io/charts
     icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/zipkin/img/zipkin-stack-220x234.png
     keywords:
@@ -4214,4 +4655,38 @@ entries:
     urls:
     - https://helmhub-io.github.io/charts/zipkin-1.3.12.tgz
     version: 1.3.12
-generated: "2025-11-07T19:39:06.876970955+01:00"
+  zookeeper:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: zookeeper
+          image: docker.io/helmhubio/zookeeper:3.9.3-debian-12-r21
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.9.3
+    created: "2025-11-08T08:48:00.627973147+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache ZooKeeper provides a reliable, centralized register of configuration
+      data and services for distributed applications.
+    digest: 51b7d19154aaf49c96299a332cb1b6db0955ea97066ac514f81291329096e3f0
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/zookeeper/img/zookeeper-stack-220x234.png
+    keywords:
+    - zookeeper
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: zookeeper
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/zookeeper
+    urls:
+    - https://helmhub-io.github.io/charts/zookeeper-13.8.8.tgz
+    version: 13.8.8
+generated: "2025-11-08T08:47:59.35964223+01:00"
