@@ -4,7 +4,7 @@
 annotations:
   images: |
     - name: jmx-exporter
-      image: docker.io/helmhubio/jmx-exporter:1.4.0-debian-12-r0
+      image: docker.io/helmhubio/jmx-exporter:1.4.0
     - name: kafka
       image: docker.io/helmhubio/kafka:4.0.0-debian-12-r10
     - name: kubectl

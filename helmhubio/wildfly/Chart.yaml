@@ -4,7 +4,7 @@
 annotations:
   images: |
     - name: os-shell
-      image: docker.io/helmhubio/os-shell:12-debian-12-r50
+      image: docker.io/helmhubio/os-shell:12-debian-12-r51
     - name: wildfly
       image: docker.io/helmhubio/wildfly:37.0.0-debian-12-r0
   licenses: Apache-2.0

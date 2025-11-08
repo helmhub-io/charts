@@ -1,4 +1,6 @@
 *.tgz
+Chart.lock
+charts/
 /.idea/*
 .vscode
 .DS_Store

@@ -199,7 +199,7 @@ useIstioLabels: true
 image:
   registry: docker.io
   repository: helmhubio/opensearch
-  tag: 3.2.0-debian-12-r0
+  tag: 3.2.0
   digest: ""
   ## Specify a imagePullPolicy
   ## ref: http://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
@@ -2898,7 +2898,7 @@ dashboards:
   image:
     registry: docker.io
     repository: helmhubio/opensearch-dashboards
-    tag: 3.2.0-debian-12-r0
+    tag: 3.2.0
     digest: ""
     ## Specify a imagePullPolicy
     ## ref: http://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images

@@ -1,0 +1,4692 @@
+apiVersion: v1
+entries:
+  airflow:
+  - annotations:
+      images: |
+        - name: airflow
+          image: docker.io/helmhubio/airflow:3.0.5-debian-12-r0
+        - name: statsd-exporter
+          image: docker.io/helmhubio/statsd-exporter:0.28.0-debian-12-r24
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 3.0.5
+    created: "2025-11-08T08:47:59.392568264+01:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Airflow is a tool to express and execute workflows as directed
+      acyclic graphs (DAGs). It includes utilities to schedule tasks, monitor task
+      progress and handle task dependencies.
+    digest: d7b21651fde288cd143300b1f7d34c092c89ab468da83a41c56c4349e121b25e
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/airflow/img/airflow-stack-220x234.png
+    keywords:
+    - apache
+    - airflow
+    - workflow
+    - dag
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: airflow
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/airflow
+    urls:
+    - https://helmhub-io.github.io/charts/airflow-25.0.4.tgz
+    version: 25.0.4
+  apache:
+  - annotations:
+      images: |
+        - name: apache
+          image: docker.io/helmhubio/apache:2.4.65-debian-12-r2
+        - name: apache-exporter
+          image: docker.io/helmhubio/apache-exporter:1.0.10-debian-12-r55
+        - name: git
+          image: docker.io/helmhubio/git:2.51.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2.4.65
+    created: "2025-11-08T08:47:59.396268914+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache HTTP Server is an open-source HTTP server. The goal of this
+      project is to provide a secure, efficient and extensible server that provides
+      HTTP services in sync with the current HTTP standards.
+    digest: b669aaf4da10d4f19fabbd9dc59860592e1265a1e7b66c43e7f6d96c7f347e1d
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/apache/img/apache-stack-220x234.png
+    keywords:
+    - apache
+    - http
+    - https
+    - www
+    - web
+    - reverse proxy
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: apache
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/apache
+    urls:
+    - https://helmhub-io.github.io/charts/apache-11.4.30.tgz
+    version: 11.4.30
+  apisix:
+  - annotations:
+      images: |
+        - name: apisix
+          image: docker.io/helmhubio/apisix:3.13.0-debian-12-r4
+        - name: apisix-ingress-controller
+          image: docker.io/helmhubio/apisix-ingress-controller:1.8.4-debian-12-r14
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.13.0
+    created: "2025-11-08T08:47:59.415823999+01:00"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache APISIX is high-performance, real-time API Gateway. Features
+      load balancing, dynamic upstream, canary release, circuit breaking, authentication,
+      observability, amongst others.
+    digest: 73e957330e5e14ad96b59f5943dbac7eda797feb45be1ba3b6dcc4a54c0295f2
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/apisix/img/apisix-stack-220x234.png
+    keywords:
+    - apisix
+    - ingress
+    - openresty
+    - controller
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: apisix
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/apisix
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/apisix-dashboard
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/apisix-ingress-controller
+    urls:
+    - https://helmhub-io.github.io/charts/apisix-6.0.1.tgz
+    version: 6.0.1
+  appsmith:
+  - annotations:
+      images: |
+        - name: appsmith
+          image: docker.io/helmhubio/appsmith:1.85.0
+        - name: haproxy
+          image: docker.io/helmhubio/haproxy:3.2.4-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 1.85.0
+    created: "2025-11-08T08:47:59.441796886+01:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Appsmith is an open source platform for building and maintaining
+      internal tools, such as custom dashboards, admin panels or CRUD apps.
+    digest: 530ac80a20970667d7985fd8b23ee37d526294ddc486c5fe466b99bced0323c5
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/appsmith/img/appsmith-stack-220x234.png
+    keywords:
+    - development
+    - dashboards
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: appsmith
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/appsmith
+    urls:
+    - https://helmhub-io.github.io/charts/appsmith-7.0.4.tgz
+    version: 7.0.4
+  argo-cd:
+  - annotations:
+      images: |
+        - name: argo-cd
+          image: docker.io/helmhubio/argo-cd:3.1.1-debian-12-r0
+        - name: dex
+          image: docker.io/helmhubio/dex:2.43.1-debian-12-r8
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: redis
+          image: docker.io/helmhubio/redis:8.2.1-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.1.1
+    created: "2025-11-08T08:47:59.474671058+01:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Argo CD is a continuous delivery tool for Kubernetes based on GitOps.
+    digest: a5dfe65cc6c1009cbd46bf32931a6c053cf4fb2f59b6bbe27d0d2cd5b4225ba5
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/argo-cd/img/argo-cd-stack-220x234.png
+    keywords:
+    - Continuous delivery
+    - Continuous deployment
+    - Devops
+    - Kubernetes
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: argo-cd
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/argo-cd
+    urls:
+    - https://helmhub-io.github.io/charts/argo-cd-11.0.1.tgz
+    version: 11.0.1
+  argo-workflows:
+  - annotations:
+      images: |
+        - name: argo-workflow-cli
+          image: docker.io/helmhubio/argo-workflow-cli:3.7.1-debian-12-r1
+        - name: argo-workflow-controller
+          image: docker.io/helmhubio/argo-workflow-controller:3.7.1-debian-12-r0
+        - name: argo-workflow-exec
+          image: docker.io/helmhubio/argo-workflow-exec:3.7.1-debian-12-r1
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.7.1
+    created: "2025-11-08T08:47:59.497685946+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - condition: mysql.enabled
+      name: mysql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 14.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Argo Workflows is meant to orchestrate Kubernetes jobs in parallel.
+      It uses DAG and step-based workflows
+    digest: 8724ed36cfc5ef99548e0cf99cfb0a397ff7b7c0029927525fe603382e35b576
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/argo-workflows/img/argo-workflows-stack-220x234.png
+    keywords:
+    - Devops
+    - Kubernetes
+    - Jobs
+    - Continuous delivery
+    - Continous deployment
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: argo-workflows
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/argo-workflows
+    urls:
+    - https://helmhub-io.github.io/charts/argo-workflows-13.0.7.tgz
+    version: 13.0.7
+  aspnet-core:
+  - annotations:
+      images: |
+        - name: aspnet-core
+          image: docker.io/helmhubio/aspnet-core:9.0.8-debian-12-r1
+        - name: dotnet-sdk
+          image: docker.io/helmhubio/dotnet-sdk:9.0.304-debian-12-r1
+        - name: git
+          image: docker.io/helmhubio/git:2.51.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 9.0.8
+    created: "2025-11-08T08:47:59.503808481+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ASP.NET Core is an open-source framework for web application development
+      created by Microsoft. It runs on both the full .NET Framework, on Windows, and
+      the cross-platform .NET Core.
+    digest: 1720d63a407f40975efba160927756b5761b5246fc6147ee0662a5c40807f222
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/aspnet-core/img/aspnet-core-stack-220x234.png
+    keywords:
+    - asp.net
+    - dotnet
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: aspnet-core
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/aspnet-core
+    urls:
+    - https://helmhub-io.github.io/charts/aspnet-core-8.0.0.tgz
+    version: 8.0.0
+  cadvisor:
+  - annotations:
+      images: |
+        - name: cadvisor
+          image: docker.io/helmhubio/cadvisor:0.53.0-debian-12-r9
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 0.53.0
+    created: "2025-11-08T08:47:59.506975966+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: cAdvisor (Container Advisor) is an open-source tool by Google for
+      monitoring containers, collecting metrics like CPU, memory, and network usage.
+    digest: 18bbab2ac44ea2fa8ea5a81092c6bb382b842aaf64c3b8e794a485fed490a335
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/cadvisor/img/cadvisor-stack-220x234.png
+    keywords:
+    - cadvisor
+    - monitoring
+    - kubernetes
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: cadvisor
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/cadvisor
+    urls:
+    - https://helmhub-io.github.io/charts/cadvisor-0.1.14.tgz
+    version: 0.1.14
+  cassandra:
+  - annotations:
+      images: |
+        - name: cassandra
+          image: docker.io/helmhubio/cassandra:5.0.5-debian-12-r7
+        - name: cassandra-exporter
+          image: docker.io/helmhubio/cassandra-exporter:2.3.8-debian-12-r51
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 5.0.5
+    created: "2025-11-08T08:47:59.51082367+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Cassandra is an open source distributed database management
+      system designed to handle large amounts of data across many servers, providing
+      high availability with no single point of failure.
+    digest: e870c6bef612fcdc048cb7668ca64d70519f28f78eff56e46395f9ec7b8142c8
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/cassandra/img/cassandra-stack-220x234.png
+    keywords:
+    - cassandra
+    - database
+    - nosql
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: cassandra
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/cassandra
+    urls:
+    - https://helmhub-io.github.io/charts/cassandra-12.3.13.tgz
+    version: 12.3.13
+  cert-manager:
+  - annotations:
+      images: |
+        - name: acmesolver
+          image: docker.io/helmhubio/acmesolver:1.18.2-debian-12-r5
+        - name: cainjector
+          image: docker.io/helmhubio/cainjector:1.18.2-debian-12-r5
+        - name: cert-manager
+          image: docker.io/helmhubio/cert-manager:1.18.2-debian-12-r5
+        - name: cert-manager-webhook
+          image: docker.io/helmhubio/cert-manager-webhook:1.18.2-debian-12-r5
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.18.2
+    created: "2025-11-08T08:47:59.519207173+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: cert-manager is a Kubernetes add-on to automate the management and
+      issuance of TLS certificates from various issuing sources.
+    digest: 2dacd653561ea21a7f7d2fbe5fbeb65da7c6b63212ea55ace3d7115de0dd0845
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/cert-manager/img/cert-manager-stack-220x234.png
+    keywords:
+    - go
+    - security
+    - tls
+    - certificate
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: cert-manager
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/cert-manager
+    urls:
+    - https://helmhub-io.github.io/charts/cert-manager-1.5.15.tgz
+    version: 1.5.15
+  cilium:
+  - annotations:
+      images: |
+        - name: cilium
+          image: docker.io/helmhubio/cilium:1.18.1-debian-12-r1
+        - name: cilium-operator
+          image: docker.io/helmhubio/cilium-operator:1.18.1-debian-12-r0
+        - name: cilium-proxy
+          image: docker.io/helmhubio/cilium-proxy:1.34.5-debian-12-r0
+        - name: hubble-relay
+          image: docker.io/helmhubio/hubble-relay:1.18.1
+        - name: hubble-ui
+          image: docker.io/helmhubio/hubble-ui:0.13.3-debian-12-r0
+        - name: hubble-ui-backend
+          image: docker.io/helmhubio/hubble-ui-backend:0.13.3-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.18.1
+    created: "2025-11-08T08:47:59.538286934+01:00"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - cilium-database
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Cilium is an eBPF-based networking, observability, and security for
+      Linux container management platforms like Docker and Kubernetes.
+    digest: b13a8831081ca84d4eb65a89b920f1302cd063e9a70eb289cc1ac9ba35c0386d
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/cilium/img/cilium-stack-220x234.png
+    keywords:
+    - cilium
+    - cni
+    - networking
+    - observability
+    - security
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: cilium
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/cilium
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/cilium
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/cilium-operator
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/cilium-proxy
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/hubble-relay
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/hubble-ui
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/hubble-ui-backend
+    urls:
+    - https://helmhub-io.github.io/charts/cilium-3.1.10.tgz
+    version: 3.1.10
+  clickhouse:
+  - annotations:
+      images: |
+        - name: clickhouse
+          image: docker.io/helmhubio/clickhouse:25.7.5-debian-12-r0
+        - name: clickhouse-keeper
+          image: docker.io/helmhubio/clickhouse-keeper:25.7.5-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 25.7.5
+    created: "2025-11-08T08:47:59.543961395+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ClickHouse is an open-source column-oriented OLAP database management
+      system. Use it to boost your database performance while providing linear scalability
+      and hardware efficiency.
+    digest: 297350dd739005fa47cdd27e277f8b8c39990d20e335eddba6c22de365cb8690
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/clickhouse/img/clickhouse-stack-220x234.png
+    keywords:
+    - database
+    - sharding
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: clickhouse
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/clickhouse
+    urls:
+    - https://helmhub-io.github.io/charts/clickhouse-9.4.5.tgz
+    version: 9.4.5
+  clickhouse-operator:
+  - annotations:
+      images: |
+        - name: clickhouse
+          image: docker.io/helmhubio/clickhouse:25.7.5-debian-12-r0
+        - name: clickhouse-keeper
+          image: docker.io/helmhubio/clickhouse-keeper:25.7.5-debian-12-r0
+        - name: clickhouse-operator
+          image: docker.io/helmhubio/clickhouse-operator:0.25.3-debian-12-r1
+        - name: clickhouse-operator-metrics-exporter
+          image: docker.io/helmhubio/clickhouse-operator-metrics-exporter:0.25.3-debian-12-r1
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.25.3
+    created: "2025-11-08T08:47:59.551513708+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ClickHouse Operator is a production-ready operator that manages ClickHouse
+      databases delivering robust features required for cost-efficient, real-time
+      analytic applications.
+    digest: 1061c42d66f42e85bed0bf339ff0eb78ce8b2069093f4f9e6b280b92a458368c
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/clickhouse-operator/img/clickhouse-operator-stack-220x234.png
+    keywords:
+    - database
+    - sharding
+    - clickhouse
+    - operator
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: clickhouse-operator
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/clickhouse-operator
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/clickhouse-operator
+    urls:
+    - https://helmhub-io.github.io/charts/clickhouse-operator-0.2.34.tgz
+    version: 0.2.34
+  cloudnative-pg:
+  - annotations:
+      images: |
+        - name: cloudnative-pg
+          image: docker.io/helmhubio/cloudnative-pg:1.27.0-debian-12-r1
+        - name: plugin-barman-cloud
+          image: docker.io/helmhubio/plugin-barman-cloud:0.6.0-debian-12-r0
+        - name: plugin-barman-cloud-sidecar
+          image: docker.io/helmhubio/plugin-barman-cloud-sidecar:0.6.0-debian-12-r0
+        - name: postgresql
+          image: docker.io/helmhubio/postgresql:17.6.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 1.27.0
+    created: "2025-11-08T08:47:59.56580481+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: CloudNativePG is an open-source tool for managing PostgreSQL databases
+      on Kubernetes, from setup to ongoing upkeep.
+    digest: 08d7a3b80615def5f8e9ae5e957365ac5712b24725a3d463c887548e59a1afca
+    home: https://github.com/helmhub-io/charts
+    icon: https://helmhub.io/assets/stacks/cloudnative-pg/img/cloudnative-pg-stack-220x234.png
+    keywords:
+    - cloudnative-pg
+    - operator
+    - postgresql
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: cloudnative-pg
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/cloudnative-pg
+    urls:
+    - https://helmhub-io.github.io/charts/cloudnative-pg-1.0.13.tgz
+    version: 1.0.13
+  common:
+  - annotations:
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.31.7
+    created: "2025-11-08T08:47:59.567570266+01:00"
+    description: A Library Helm Chart for grouping common logic between bitnami charts.
+      This chart is not deployable by itself.
+    digest: d5120f17aba87dc060f22633ebdaf7f63a0434226ebd2c771799c4706773d699
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/downloads/logos/bitnami-mark.png
+    keywords:
+    - common
+    - helper
+    - template
+    - function
+    - bitnami
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: common
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/common
+    type: library
+    urls:
+    - https://helmhub-io.github.io/charts/common-2.31.7.tgz
+    version: 2.31.7
+  concourse:
+  - annotations:
+      images: |
+        - name: concourse
+          image: docker.io/helmhubio/concourse:7.14.1-debian-12-r2
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 7.13.2
+    created: "2025-11-08T08:47:59.582400448+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.X.X
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Concourse is an automation system written in Go. It is most commonly
+      used for CI/CD, and is built to scale to any kind of automation pipeline, from
+      simple to complex.
+    digest: 5898240cf7e71bb69b4868fe32d5af7d51c913a4fae4e0c23f946790f6e1c2c9
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/concourse/img/concourse-stack-220x234.png
+    keywords:
+    - concourse
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: concourse
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/concourse
+    urls:
+    - https://helmhub-io.github.io/charts/concourse-5.1.47.tgz
+    version: 5.1.47
+  consul:
+  - annotations:
+      images: |
+        - name: consul
+          image: docker.io/helmhubio/consul:1.21.4-debian-12-r1
+        - name: consul-exporter
+          image: docker.io/helmhubio/consul-exporter:0.13.0-debian-12-r29
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 1.21.4
+    created: "2025-11-08T08:47:59.587604456+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: HashiCorp Consul is a tool for discovering and configuring services
+      in your infrastructure.
+    digest: 46b363e66e4b14b3bd356f75edc244306e755446740cf884061a60eda5b275a0
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/consul/img/consul-stack-220x234.png
+    keywords:
+    - discovering
+    - configuring
+    - services
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: consul
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/consul
+    urls:
+    - https://helmhub-io.github.io/charts/consul-11.4.33.tgz
+    version: 11.4.33
+  contour:
+  - annotations:
+      images: |
+        - name: contour
+          image: docker.io/helmhubio/contour:1.32.1-debian-12-r0
+        - name: envoy
+          image: docker.io/helmhubio/envoy:1.35.1-debian-12-r0
+        - name: nginx
+          image: docker.io/helmhubio/nginx:1.29.1-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.32.1
+    created: "2025-11-08T08:47:59.604922764+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Contour is an open source Kubernetes ingress controller that works
+      by deploying the Envoy proxy as a reverse proxy and load balancer.
+    digest: 06ed2183e220a58a2a9f9c6370f75997c038fdb296df367c2da93ff79bb1cf7a
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/contour/img/contour-stack-220x234.png
+    keywords:
+    - ingress
+    - envoy
+    - contour
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: contour
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/contour
+    urls:
+    - https://helmhub-io.github.io/charts/contour-21.1.5.tgz
+    version: 21.1.5
+  deepspeed:
+  - annotations:
+      images: |
+        - name: deepspeed
+          image: docker.io/helmhubio/deepspeed:0.17.5-debian-12-r0
+        - name: git
+          image: docker.io/helmhubio/git:2.51.0-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 0.17.5
+    created: "2025-11-08T08:47:59.610810837+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: DeepSpeed is deep learning software suite for empowering ChatGPT-like
+      model training. Features dense or sparse model inference, high throughput and
+      high compression.
+    digest: d86a3f0d932081de83de6e37f3e3987fafc9891e75f98a5ac363e12673ba84a4
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/deepspeed/img/deepspeed-stack-220x234.png
+    keywords:
+    - deepspeed
+    - pytorch
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: deepspeed
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/deepspeed
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/pytorch
+    urls:
+    - https://helmhub-io.github.io/charts/deepspeed-2.3.51.tgz
+    version: 2.3.51
+  discourse:
+  - annotations:
+      images: |
+        - name: discourse
+          image: docker.io/helmhubio/discourse:3.5.0-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.5.0
+    created: "2025-11-08T08:47:59.642553333+01:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.X.X
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.X.X
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Discourse is an open source discussion platform with built-in moderation
+      and governance systems that let discussion communities protect themselves from
+      bad actors even without official moderators.
+    digest: 2435c2f7c548ac3204eb5c722aca33ba94bdb3b3ff6f83c95d956347cf442963
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/discourse/img/discourse-stack-220x234.png
+    keywords:
+    - community
+    - forum
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    - email: username.taken@gmail.com
+      name: paulczar
+    - email: preteluca@gmail.com
+      name: lucaprete
+    name: discourse
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/discourse
+    urls:
+    - https://helmhub-io.github.io/charts/discourse-17.0.2.tgz
+    version: 17.0.2
+  dremio:
+  - annotations:
+      images: |
+        - name: dremio
+          image: docker.io/helmhubio/dremio:26.0.0-debian-12-r5
+        - name: jmx-exporter
+          image: docker.io/helmhubio/jmx-exporter:1.4.0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 26.0.0
+    created: "2025-11-08T08:47:59.661376273+01:00"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 17.x.x
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Dremio is an open-source self-service data access tool that provides
+      high-performance queries for interactive analytics on data lakes.
+    digest: 7b5c1df0155fdbaa6002714168fa0a54a7b55c1093edcc252c486f859c26aa92
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/dremio/img/dremio-stack-220x234.png
+    keywords:
+    - dremio
+    - data-lake
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: dremio
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/dremio
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/dremio
+    - https://github.com/dremio/dremio-oss
+    urls:
+    - https://helmhub-io.github.io/charts/dremio-3.0.14.tgz
+    version: 3.0.14
+  drupal:
+  - annotations:
+      images: |
+        - name: apache-exporter
+          image: docker.io/helmhubio/apache-exporter:1.0.10-debian-12-r55
+        - name: drupal
+          image: docker.io/helmhubio/drupal:11.2.3-debian-12-r2
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 11.2.3
+    created: "2025-11-08T08:47:59.673197215+01:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Drupal is one of the most versatile open source content management
+      systems in the world. It is pre-configured with the Ctools and Views modules,
+      Drush and Let's Encrypt auto-configuration support.
+    digest: b43a6a9ff4bc393615d07f6ca357a41501300c5f72e611c2ce41df9a9e8118af
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/drupal/img/drupal-stack-220x234.png
+    keywords:
+    - drupal
+    - cms
+    - blog
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: drupal
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/drupal
+    urls:
+    - https://helmhub-io.github.io/charts/drupal-23.0.1.tgz
+    version: 23.0.1
+  ejbca:
+  - annotations:
+      images: |
+        - name: ejbca
+          image: docker.io/helmhubio/ejbca:9.1.1-debian-12-r12
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 9.1.1
+    created: "2025-11-08T08:47:59.685843137+01:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - ejbca-database
+      version: 22.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: EJBCA is an enterprise class PKI Certificate Authority software,
+      built using Java (JEE) technology.
+    digest: db2a53255ada548218bedc40e43b1af6da329097dfc3f9b96e6bbd7bc2fa75e8
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/ejbca/img/ejbca-stack-220x234.png
+    keywords:
+    - ejbca
+    - ca
+    - pki
+    - certificate
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: ejbca
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/ejbca
+    urls:
+    - https://helmhub-io.github.io/charts/ejbca-19.0.1.tgz
+    version: 19.0.1
+  envoy-gateway:
+  - annotations:
+      images: |
+        - name: envoy
+          image: docker.io/helmhubio/envoy:1.35.1-debian-12-r0
+        - name: envoy-gateway
+          image: docker.io/helmhubio/envoy-gateway:1.5.0-debian-12-r1
+        - name: envoy-ratelimit
+          image: docker.io/helmhubio/envoy-ratelimit:2025.8.15-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 1.5.0
+    created: "2025-11-08T08:47:59.709702137+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Envoy Gateway simplifies traffic management by extending Envoy Proxy's
+      features, offering Kubernetes Gateway API integration for secure, scalable,
+      and observable application routing
+    digest: 984423d556da5ae30e33635e72fd6d9c454eced650c16e85b23ec16d0d7e796a
+    home: https://github.com/helmhub-io/charts
+    icon: https://helmhub.io/assets/stacks/envoy-gateway/img/envoy-gateway-stack-220x234.png
+    keywords:
+    - envoy-gateway
+    - traffic
+    - gateway
+    - ingress
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: envoy-gateway
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/envoy-gateway
+    urls:
+    - https://helmhub-io.github.io/charts/envoy-gateway-2.0.5.tgz
+    version: 2.0.5
+  etcd:
+  - annotations:
+      images: |
+        - name: etcd
+          image: docker.io/helmhubio/etcd:3.6.4-debian-12-r4
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 3.6.4
+    created: "2025-11-08T08:47:59.715449977+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: etcd is a distributed key-value store designed to securely store
+      data across a cluster. etcd is widely used in production on account of its reliability,
+      fault-tolerance and ease of use.
+    digest: b0d6538b2c1a88d9ac47fb9dbb7b1bf79dca36429a609144af85638fde8be06f
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/etcd/img/etcd-stack-220x234.png
+    keywords:
+    - etcd
+    - cluster
+    - database
+    - cache
+    - key-value
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: etcd
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/etcd
+    urls:
+    - https://helmhub-io.github.io/charts/etcd-12.0.20.tgz
+    version: 12.0.20
+  external-dns:
+  - annotations:
+      images: |
+        - name: external-dns
+          image: docker.io/helmhubio/external-dns:0.18.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 0.18.0
+    created: "2025-11-08T08:47:59.720010834+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ExternalDNS is a Kubernetes addon that configures public DNS servers
+      with information about exposed Kubernetes services to make them discoverable.
+    digest: 65b884bfce497ab6ce297001992e3cf562cdb9f8ef22f4e2bfd682a45f8b3f84
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/external-dns/img/external-dns-stack-220x234.png
+    keywords:
+    - external-dns
+    - network
+    - dns
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: external-dns
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/external-dns
+    urls:
+    - https://helmhub-io.github.io/charts/external-dns-9.0.4.tgz
+    version: 9.0.4
+  flink:
+  - annotations:
+      images: |
+        - name: flink
+          image: docker.io/helmhubio/flink:2.1.0-debian-12-r1
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 2.1.0
+    created: "2025-11-08T08:47:59.723493588+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Flink is a framework and distributed processing engine for
+      stateful computations over unbounded and bounded data streams.
+    digest: 7cdd15451712d4c488e5226818ef23dc6cde965f412291b5181b8c5174222050
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/flink/img/flink-stack-220x234.png
+    keywords:
+    - flink
+    - stream-processing
+    - batch-processing
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: flink
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/flink
+    urls:
+    - https://helmhub-io.github.io/charts/flink-2.0.8.tgz
+    version: 2.0.8
+  fluent-bit:
+  - annotations:
+      images: |
+        - name: fluent-bit
+          image: docker.io/helmhubio/fluent-bit:4.0.8-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 4.0.8
+    created: "2025-11-08T08:47:59.727257566+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Fluent Bit is a Fast and Lightweight Log Processor and Forwarder.
+      It has been made with a strong focus on performance to allow the collection
+      of events from different sources without complexity.
+    digest: 34c62da5fbb4920a7c79d1cffceda097575760781e566b9317f1a4d71d7dc64d
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/fluent-bit/img/fluent-bit-stack-220x234.png
+    keywords:
+    - fluent-bit
+    - logging
+    - monitoring
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: fluent-bit
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/fluent-bit
+    urls:
+    - https://helmhub-io.github.io/charts/fluent-bit-3.1.14.tgz
+    version: 3.1.14
+  fluentd:
+  - annotations:
+      images: |
+        - name: fluentd
+          image: docker.io/helmhubio/fluentd:1.19.0-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.19.0
+    created: "2025-11-08T08:47:59.734769159+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Fluentd collects events from various data sources and writes them
+      to files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on.
+    digest: 3e61b99b53525d68b659e7491cb341dd7a97ac2e4db12db2d0088f1daeaf8447
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/fluentd/img/fluentd-stack-220x234.png
+    keywords:
+    - fluentd
+    - logging
+    - logs
+    - data
+    - collector
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: fluentd
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/fluentd
+    urls:
+    - https://helmhub-io.github.io/charts/fluentd-7.2.6.tgz
+    version: 7.2.6
+  flux:
+  - annotations:
+      images: |
+        - name: fluxcd-helm-controller
+          image: docker.io/helmhubio/fluxcd-helm-controller:1.3.0-debian-12-r9
+        - name: fluxcd-image-automation-controller
+          image: docker.io/helmhubio/fluxcd-image-automation-controller:0.41.2-debian-12-r4
+        - name: fluxcd-image-reflector-controller
+          image: docker.io/helmhubio/fluxcd-image-reflector-controller:0.35.2-debian-12-r4
+        - name: fluxcd-kustomize-controller
+          image: docker.io/helmhubio/fluxcd-kustomize-controller:1.6.1-debian-12-r5
+        - name: fluxcd-notification-controller
+          image: docker.io/helmhubio/fluxcd-notification-controller:1.6.0-debian-12-r8
+        - name: fluxcd-source-controller
+          image: docker.io/helmhubio/fluxcd-source-controller:1.6.2-debian-12-r6
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 1.6.2
+    created: "2025-11-08T08:47:59.750317828+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Source Controller is a component of Flux. Flux is a tool for keeping
+      Kubernetes clusters in sync with sources of configuration.
+    digest: 40b9503cb75dad0f68ab9474dcfc007ce2b4badbc5c3fdeab8c913f949ddd7f4
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/fluxcd-kustomize-controller/img/fluxcd-kustomize-controller-stack-220x234.png
+    keywords:
+    - deployment
+    - gitops
+    - cd
+    - continuous-delivery
+    - helm
+    - kustomize
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: flux
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/flux
+    urls:
+    - https://helmhub-io.github.io/charts/flux-2.4.37.tgz
+    version: 2.4.37
+  ghost:
+  - annotations:
+      images: |
+        - name: ghost
+          image: docker.io/helmhubio/ghost:6.0.5-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 6.0.5
+    created: "2025-11-08T08:47:59.761122414+01:00"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - ghost-database
+      version: 14.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Ghost is an open source publishing platform designed to create blogs,
+      magazines, and news sites. It includes a simple markdown editor with preview,
+      theming, and SEO built-in to simplify editing.
+    digest: 5db720adaad749a36cfcfec325a4cc26cdc6ccfad3cebf26b99b5cdbab5c076e
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/ghost/img/ghost-stack-220x234.png
+    keywords:
+    - ghost
+    - blog
+    - http
+    - web
+    - application
+    - nodejs
+    - javascript
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: ghost
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/ghost
+    urls:
+    - https://helmhub-io.github.io/charts/ghost-25.0.5.tgz
+    version: 25.0.5
+  gitea:
+  - annotations:
+      images: |
+        - name: gitea
+          image: docker.io/helmhubio/gitea:1.24.5
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 1.24.5
+    created: "2025-11-08T08:47:59.775616193+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Gitea is a lightweight code hosting solution. Written in Go, features
+      low resource consumption, easy upgrades and multiple databases.
+    digest: 4c34c3ae66675807d6c5827f0c78d879a1f80c683ebff4e50a9e65499b352e22
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/gitea/img/gitea-stack-220x234.png
+    keywords:
+    - gitea
+    - analytics
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: gitea
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/gitea
+    urls:
+    - https://helmhub-io.github.io/charts/gitea-3.2.23.tgz
+    version: 3.2.23
+  gitlab-runner:
+  - annotations:
+      images: |
+        - name: gitlab-runner
+          image: docker.io/helmhubio/gitlab-runner:18.3.0-debian-12-r0
+        - name: gitlab-runner-helper
+          image: docker.io/helmhubio/gitlab-runner-helper:18.3.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 18.3.0
+    created: "2025-11-08T08:47:59.779238359+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Gitlab Runner is an auxiliary application for Gitlab installations.
+      Written in Go, it allows to run CI/CD jobs and send the results back to Gitlab.
+    digest: 8195edfe483369e066bbeaffaa1aaf549f41c17ddf5a399ea798fb22dff73c34
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/gitlab-runner/img/gitlab-runner-stack-220x234.png
+    keywords:
+    - git
+    - ci
+    - deploy
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: gitlab-runner
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/gitlab-runner
+    urls:
+    - https://helmhub-io.github.io/charts/gitlab-runner-1.1.9.tgz
+    version: 1.1.9
+  grafana:
+  - annotations:
+      images: |
+        - name: grafana
+          image: docker.io/helmhubio/grafana:12.1.1-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 12.1.1
+    created: "2025-11-08T08:47:59.785430077+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana is an open source metric analytics and visualization suite
+      for visualizing time series data that supports various types of data sources.
+    digest: ed5719ad55dfa120535107842c10caf073ecaf90c54a79588b2ac986e67ddf33
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana/img/grafana-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - metrics
+    - logs
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: grafana
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/grafana
+    urls:
+    - https://helmhub-io.github.io/charts/grafana-12.1.9.tgz
+    version: 12.1.9
+  grafana-alloy:
+  - annotations:
+      images: |
+        - name: configmap-reload
+          image: docker.io/helmhubio/configmap-reload:0.15.0-debian-12-r12
+        - name: grafana-alloy
+          image: docker.io/helmhubio/grafana-alloy:1.10.2-debian-12-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.10.2
+    created: "2025-11-08T08:47:59.791842919+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana Alloy is an open source OpenTelemetry Collector distribution
+      with built-in Prometheus pipelines and support for metrics, logs, traces, and
+      profiles.
+    digest: a8a659334116e218fb9fca695a57efe5cf637b045f31e62793f404b915cb32f9
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-alloy/img/grafana-alloy-stack-220x234.png
+    keywords:
+    - grafana
+    - logging
+    - logs
+    - data
+    - collector
+    - tracing
+    - metrics
+    - infrastructure
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: grafana-alloy
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/grafana-alloy
+    urls:
+    - https://helmhub-io.github.io/charts/grafana-alloy-1.0.8.tgz
+    version: 1.0.8
+  grafana-k6-operator:
+  - annotations:
+      images: |
+        - name: grafana-k6
+          image: docker.io/helmhubio/grafana-k6:1.2.3-debian-12-r0
+        - name: grafana-k6-operator
+          image: docker.io/helmhubio/grafana-k6-operator:0.0.23-debian-12-r1
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 0.0.23
+    created: "2025-11-08T08:47:59.797057091+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana k6 Operator is a Kubernetes operator that enables running
+      distributed k6 load tests in a cluster, automating test execution and scaling
+      for performance validation.
+    digest: a3d34f27574a605fe02a524e4084d05f41a88aedc6f726d31619ed1a0b921387
+    home: https://github.com/helmhub-io/charts
+    icon: https://helmhub.io/assets/stacks/grafana-k6-operator/img/grafana-k6-operator-stack-220x234.png
+    keywords:
+    - grafana-k6-operator
+    - operator
+    - tests
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: grafana-k6-operator
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/grafana-k6-operator
+    urls:
+    - https://helmhub-io.github.io/charts/grafana-k6-operator-1.0.12.tgz
+    version: 1.0.12
+  grafana-mimir:
+  - annotations:
+      images: |
+        - name: grafana-mimir
+          image: docker.io/helmhubio/grafana-mimir:2.17.0
+        - name: memcached
+          image: docker.io/helmhubio/memcached:1.6.39-debian-12-r1
+        - name: nginx
+          image: docker.io/helmhubio/nginx:1.29.1-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 2.17.0
+    created: "2025-11-08T08:47:59.825432573+01:00"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 17.x.x
+    - alias: memcachedmetadata
+      condition: memcachedmetadata.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 7.x.x
+    - alias: memcachedindex
+      condition: memcachedindex.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 7.x.x
+    - alias: memcachedfrontend
+      condition: memcachedfrontend.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 7.x.x
+    - alias: memcachedchunks
+      condition: memcachedchunks.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 7.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana Mimir is an open source, horizontally scalable, highly available,
+      multi-tenant, long-term storage for Prometheus.
+    digest: abf102432bda6d8ac3c532a363aaf0ac49333028e6519778fc4e33e4b09564e1
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-mimir/img/grafana-mimir-stack-220x234.png
+    keywords:
+    - grafana
+    - tracing
+    - metrics
+    - infrastructure
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: grafana-mimir
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/grafana-mimir
+    urls:
+    - https://helmhub-io.github.io/charts/grafana-mimir-3.0.19.tgz
+    version: 3.0.19
+  grafana-operator:
+  - annotations:
+      images: |
+        - name: grafana
+          image: docker.io/helmhubio/grafana:12.1.1-debian-12-r0
+        - name: grafana-operator
+          image: docker.io/helmhubio/grafana-operator:5.19.4-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.19.4
+    created: "2025-11-08T08:47:59.831275685+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana Operator is a Kubernetes operator that enables the installation
+      and management of Grafana instances, dashboards and plugins.
+    digest: 0896b378798d91cd7d3fd6f9f23dbc82e37597540bdc8a522ba52e38200acd6a
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana/img/grafana-stack-220x234.png
+    keywords:
+    - grafana
+    - operator
+    - monitoring
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: grafana-operator
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/grafana-operator
+    urls:
+    - https://helmhub-io.github.io/charts/grafana-operator-4.9.38.tgz
+    version: 4.9.38
+  grafana-tempo:
+  - annotations:
+      images: |
+        - name: grafana-tempo
+          image: docker.io/helmhubio/grafana-tempo:2.8.2-debian-12-r1
+        - name: grafana-tempo-query
+          image: docker.io/helmhubio/grafana-tempo-query:2.8.2-debian-12-r1
+        - name: grafana-tempo-vulture
+          image: docker.io/helmhubio/grafana-tempo-vulture:2.8.2-debian-12-r1
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 2.8.2
+    created: "2025-11-08T08:47:59.845170277+01:00"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 7.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Grafana Tempo is a distributed tracing system that has out-of-the-box
+      integration with Grafana. It is highly scalable and works with many popular
+      tracing protocols.
+    digest: 20194d8450e11460e59a2323593f5c0e48bac4684fae511f12a45ed68d8fbaeb
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/grafana-tempo/img/grafana-tempo-stack-220x234.png
+    keywords:
+    - grafana
+    - tracing
+    - metrics
+    - infrastructure
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: grafana-tempo
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/grafana-tempo
+    urls:
+    - https://helmhub-io.github.io/charts/grafana-tempo-5.0.1.tgz
+    version: 5.0.1
+  haproxy:
+  - annotations:
+      images: |
+        - name: haproxy
+          image: docker.io/helmhubio/haproxy:3.2.4-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.2.4
+    created: "2025-11-08T08:47:59.849331771+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL
+      termination and offloading, TCP and HTTP normalization, traffic regulation,
+      caching and protection against DDoS attacks.
+    digest: 8c3ac2d5fb05fccffa08bcf124a4b077da76184a41601d195713ad17e8737ea4
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/haproxy/img/haproxy-stack-220x234.png
+    keywords:
+    - haproxy
+    - proxy
+    - infrastructure
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: haproxy
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/haproxy
+    urls:
+    - https://helmhub-io.github.io/charts/haproxy-3.0.0.tgz
+    version: 3.0.0
+  harbor:
+  - annotations:
+      images: |
+        - name: harbor-adapter-trivy
+          image: docker.io/helmhubio/harbor-adapter-trivy:2.13.2-debian-12-r2
+        - name: harbor-core
+          image: docker.io/helmhubio/harbor-core:2.13.2-debian-12-r3
+        - name: harbor-exporter
+          image: docker.io/helmhubio/harbor-exporter:2.13.2-debian-12-r2
+        - name: harbor-jobservice
+          image: docker.io/helmhubio/harbor-jobservice:2.13.2-debian-12-r3
+        - name: harbor-portal
+          image: docker.io/helmhubio/harbor-portal:2.13.2-debian-12-r2
+        - name: harbor-registry
+          image: docker.io/helmhubio/harbor-registry:2.13.2-debian-12-r2
+        - name: harbor-registryctl
+          image: docker.io/helmhubio/harbor-registryctl:2.13.2-debian-12-r3
+        - name: nginx
+          image: docker.io/helmhubio/nginx:1.29.1-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 2.13.2
+    created: "2025-11-08T08:47:59.883263029+01:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Harbor is an open source trusted cloud-native registry to store,
+      sign, and scan content. It adds functionalities like security, identity, and
+      management to the open source Docker distribution.
+    digest: aa14ee233279e2e419a4db15ceee7bdd1bc4f5f1514b0a9546185e47d5e416dc
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/harbor-core/img/harbor-core-stack-220x234.png
+    keywords:
+    - docker
+    - registry
+    - vulnerability
+    - scan
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: harbor
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/harbor
+    urls:
+    - https://helmhub-io.github.io/charts/harbor-27.0.4.tgz
+    version: 27.0.4
+  influxdb:
+  - annotations:
+      images: |
+        - name: influxdb
+          image: docker.io/helmhubio/influxdb:3.4.1-debian-12-r0
+        - name: kubectl
+          image: docker.io/helmhubio/kubectl:1.33.4-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 3.4.1
+    created: "2025-11-08T08:47:59.887734647+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: InfluxDB(TM) Core is an open source time-series database. It is a
+      core component of the FDAP (Apache Flight, DataFusion, Arrow, and Parquet) stack.
+    digest: aa7891ab377217fc71012c794ddaeda23483c12d6f87d14ba6d910d159abac53
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/influxdb/img/influxdb-stack-220x234.png
+    keywords:
+    - influxdb
+    - fdap
+    - database
+    - timeseries
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: influxdb
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/influxdb
+    urls:
+    - https://helmhub-io.github.io/charts/influxdb-7.1.21.tgz
+    version: 7.1.21
+  jaeger:
+  - annotations:
+      images: |
+        - name: cassandra
+          image: docker.io/helmhubio/cassandra:5.0.5-debian-12-r7
+        - name: jaeger
+          image: docker.io/helmhubio/jaeger:2.9.0-debian-12-r1
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 2.9.0
+    created: "2025-11-08T08:47:59.897653245+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 12.x.x
+    description: Jaeger is a distributed tracing system. It is used for monitoring
+      and troubleshooting microservices-based distributed systems.
+    digest: f4159f01b1b7c063f2cd8942c2b0bdc6e8706ab9fe30c386fb5e0d594621c9fa
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/jaeger/img/jaeger-stack-220x234.png
+    keywords:
+    - jaeger
+    - tracing
+    - monitoring
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: jaeger
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/jaeger
+    urls:
+    - https://helmhub-io.github.io/charts/jaeger-6.0.6.tgz
+    version: 6.0.6
+  janusgraph:
+  - annotations:
+      images: |
+        - name: janusgraph
+          image: docker.io/helmhubio/janusgraph:1.1.0-debian-12-r21
+        - name: jmx-exporter
+          image: docker.io/helmhubio/jmx-exporter:1.4.0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 1.1.0
+    created: "2025-11-08T08:47:59.908465137+01:00"
+    dependencies:
+    - condition: storageBackend.cassandra.enabled
+      name: cassandra
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: JanusGraph is a scalable graph database optimized for storing and
+      querying graphs containing hundreds of billions of vertices and edges distributed
+      across a multi-machine cluster.
+    digest: dc58528c3f149dfd260e98aae047971d7f1b76c63287a461f38c3fca702feb43
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/janusgraph/img/janusgraph-stack-220x234.png
+    keywords:
+    - janusgraph
+    - graph
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: janusgraph
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/janusgraph
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/janusgraph
+    - https://github.com/janusgraph/janusgraph
+    urls:
+    - https://helmhub-io.github.io/charts/janusgraph-1.4.11.tgz
+    version: 1.4.11
+  jenkins:
+  - annotations:
+      images: |
+        - name: jenkins
+          image: docker.io/helmhubio/jenkins:2.516.2-debian-12-r0
+        - name: jenkins-agent
+          image: docker.io/helmhubio/jenkins-agent:0.3327.0-debian-12-r1
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 2.516.2
+    created: "2025-11-08T08:47:59.912624151+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Jenkins is an open source Continuous Integration and Continuous Delivery
+      (CI/CD) server designed to automate the building, testing, and deploying of
+      any software project.
+    digest: 26969833f12041d9fbfdef229845ba65f8e503e1df1c511dcca93f9475262170
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/jenkins/img/jenkins-stack-220x234.png
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: jenkins
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/jenkins
+    urls:
+    - https://helmhub-io.github.io/charts/jenkins-13.6.18.tgz
+    version: 13.6.18
+  jupyterhub:
+  - annotations:
+      images: |
+        - name: configurable-http-proxy
+          image: docker.io/helmhubio/configurable-http-proxy:5.0.1-debian-12-r21
+        - name: jupyter-base-notebook
+          image: docker.io/helmhubio/jupyter-base-notebook:5.3.0-debian-12-r12
+        - name: jupyterhub
+          image: docker.io/helmhubio/jupyterhub:5.3.0-debian-12-r16
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.3.0
+    created: "2025-11-08T08:47:59.929747253+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: JupyterHub brings the power of notebooks to groups of users. It gives
+      users access to computational environments and resources without burdening the
+      users with installation and maintenance tasks.
+    digest: 8b7bfc4311c025f45cd7ac6f9db6949a4304b7f00f4b1bb55d0c0bbe8f5a7c1e
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/jupyterhub/img/jupyterhub-stack-220x234.png
+    keywords:
+    - python
+    - scientific
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: jupyterhub
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/jupyterhub
+    urls:
+    - https://helmhub-io.github.io/charts/jupyterhub-10.0.6.tgz
+    version: 10.0.6
+  kafka:
+  - annotations:
+      images: |
+        - name: jmx-exporter
+          image: docker.io/helmhubio/jmx-exporter:1.4.0
+        - name: kafka
+          image: docker.io/helmhubio/kafka:4.0.0-debian-12-r10
+        - name: kubectl
+          image: docker.io/helmhubio/kubectl:1.33.4-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 4.0.0
+    created: "2025-11-08T08:47:59.939203943+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Kafka is a distributed streaming platform designed to build
+      real-time pipelines and can be used as a message broker or as a replacement
+      for a log aggregation solution for big data applications.
+    digest: 8d48c9a6342e4c30b9da7fc751781b666e56899fd8b813c882bdb48318f158cd
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kafka/img/kafka-stack-220x234.png
+    keywords:
+    - kafka
+    - streaming
+    - producer
+    - consumer
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: kafka
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/kafka
+    urls:
+    - https://helmhub-io.github.io/charts/kafka-32.4.4.tgz
+    version: 32.4.4
+  keycloak:
+  - annotations:
+      images: |
+        - name: keycloak
+          image: docker.io/helmhubio/keycloak:26.3.3-debian-12-r0
+        - name: keycloak-config-cli
+          image: docker.io/helmhubio/keycloak-config-cli:6.4.0-debian-12-r11
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 26.3.3
+    created: "2025-11-08T08:47:59.954044916+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Keycloak is a high performance Java-based identity and access management
+      solution. It lets developers add an authentication layer to their applications
+      with minimum effort.
+    digest: a27a54b36f7674670c2e2a00b826be1eac672165744c7d2c31f26b3d31dd74f4
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/keycloak/img/keycloak-stack-220x234.png
+    keywords:
+    - keycloak
+    - access-management
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: keycloak
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/keycloak
+    urls:
+    - https://helmhub-io.github.io/charts/keycloak-25.2.4.tgz
+    version: 25.2.4
+  keydb:
+  - annotations:
+      images: |
+        - name: keydb
+          image: docker.io/helmhubio/keydb:6.3.4-debian-12-r24
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: redis-exporter
+          image: docker.io/helmhubio/redis-exporter:1.76.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 6.3.4
+    created: "2025-11-08T08:47:59.959372561+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: KeyDB is a high performance fork of Redis with a focus on multithreading,
+      memory efficiency, and high throughput.
+    digest: 3c31d3b75c58f9d654b19e157b59ef3bc5fa7a4ef9343a6b07b29bfabc7c3eee
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/keydb/img/keydb-stack-220x234.png
+    keywords:
+    - keydb
+    - keyvalue
+    - database
+    - cache
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: keydb
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/keydb
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/keydb
+    urls:
+    - https://helmhub-io.github.io/charts/keydb-0.5.23.tgz
+    version: 0.5.23
+  kiam:
+  - annotations:
+      images: |
+        - name: kiam
+          image: docker.io/helmhubio/kiam:4.2.0-debian-12-r70
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 4.2.0
+    created: "2025-11-08T08:47:59.963824681+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: kiam is a proxy that captures AWS Metadata API requests. It allows
+      AWS IAM roles to be set for Kubernetes workloads.
+    digest: 90ac578d1df8ab9145113b2986a4d7acff1a76d03f1663a562f6dff3e9fe76a4
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kiam/img/kiam-stack-220x234.png
+    keywords:
+    - aws
+    - iam
+    - security
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: kiam
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/kiam
+    urls:
+    - https://helmhub-io.github.io/charts/kiam-2.3.17.tgz
+    version: 2.3.17
+  kibana:
+  - annotations:
+      images: |
+        - name: kibana
+          image: docker.io/helmhubio/kibana:9.1.2-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 9.1.2
+    created: "2025-11-08T08:47:59.969373281+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Kibana is an open source, browser based analytics and search dashboard
+      for Elasticsearch. Kibana strives to be easy to get started with, while also
+      being flexible and powerful.
+    digest: df4b77ea8d4ef55f23a56a21a59926cbca53fa01bf72c7b77cbe2479e50e4ccf
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kibana/img/kibana-stack-220x234.png
+    keywords:
+    - kibana
+    - analytics
+    - monitoring
+    - metrics
+    - logs
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: kibana
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/kibana
+    urls:
+    - https://helmhub-io.github.io/charts/kibana-12.1.11.tgz
+    version: 12.1.11
+  kong:
+  - annotations:
+      images: |
+        - name: kong
+          image: docker.io/helmhubio/kong:3.9.1-debian-12-r10
+        - name: kong-ingress-controller
+          image: docker.io/helmhubio/kong-ingress-controller:3.5.1-debian-12-r3
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.9.1
+    created: "2025-11-08T08:47:59.987871232+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 12.x.x
+    description: Kong is an open source Microservice API gateway and platform designed
+      for managing microservices requests of high-availability, fault-tolerance, and
+      distributed systems.
+    digest: 6681de5f7066318e15ff244be10d329ca69cedab06ba7d8f264ba1d420ddee80
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kong/img/kong-stack-220x234.png
+    keywords:
+    - kong
+    - ingress
+    - openresty
+    - controller
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: kong
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/kong
+    urls:
+    - https://helmhub-io.github.io/charts/kong-15.4.23.tgz
+    version: 15.4.23
+  kube-arangodb:
+  - annotations:
+      images: |
+        - name: arangodb
+          image: docker.io/helmhubio/arangodb:3.11.14-debian-12-r4
+        - name: kube-arangodb
+          image: docker.io/helmhubio/kube-arangodb:1.3.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 1.3.0
+    created: "2025-11-08T08:47:59.992460228+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: kube-arangodb is a Kubernetes Operator that manages ArangoDB clusters,
+      ensuring automatic deployment, scaling, and healing of database instances.
+    digest: e9199e7442f6568b35854681064c71b8f8d4aaaed0c66ba38d030f74f7088879
+    home: https://github.com/helmhub-io/charts
+    icon: https://helmhub.io/assets/stacks/kube-arangodb/img/kube-arangodb-stack-220x234.png
+    keywords:
+    - kube-arangodb
+    - operator
+    - arangodb
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: kube-arangodb
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/kube-arangodb
+    urls:
+    - https://helmhub-io.github.io/charts/kube-arangodb-0.1.24.tgz
+    version: 0.1.24
+  kube-state-metrics:
+  - annotations:
+      images: |
+        - name: kube-state-metrics
+          image: docker.io/helmhubio/kube-state-metrics:2.16.0-debian-12-r5
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 2.16.0
+    created: "2025-11-08T08:47:59.995842511+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: kube-state-metrics is a simple service that listens to the Kubernetes
+      API server and generates metrics about the state of the objects.
+    digest: a82a1f008a63fcaf7ef0be4dfed2f5c57f55ab00efb87cc6048905d3a29162f8
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kube-state-metrics/img/kube-state-metrics-stack-220x234.png
+    keywords:
+    - prometheus
+    - kube-state-metrics
+    - monitoring
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: kube-state-metrics
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/kube-state-metrics
+    urls:
+    - https://helmhub-io.github.io/charts/kube-state-metrics-5.1.1.tgz
+    version: 5.1.1
+  kuberay:
+  - annotations:
+      images: |
+        - name: kuberay-apiserver
+          image: docker.io/helmhubio/kuberay-apiserver:1.4.2-debian-12-r2
+        - name: kuberay-operator
+          image: docker.io/helmhubio/kuberay-operator:1.4.2-debian-12-r2
+        - name: ray
+          image: docker.io/helmhubio/ray:2.49.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 1.4.2
+    created: "2025-11-08T08:48:00.013785869+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: KubeRay is a Kubernetes operator for deploying and management of
+      Ray applications on Kubernetes using CustomResourceDefinitions.
+    digest: 365d4e343bafe820a47f6edd2ee78ba0c9a7fbbdf7c97a2f99158751542e1a2b
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kuberay/img/kuberay-stack-220x234.png
+    keywords:
+    - ray
+    - machine-learning
+    - kuberay
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: kuberay
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/kuberay
+    urls:
+    - https://helmhub-io.github.io/charts/kuberay-1.4.30.tgz
+    version: 1.4.30
+  kubernetes-event-exporter:
+  - annotations:
+      images: |
+        - name: kubernetes-event-exporter
+          image: docker.io/helmhubio/kubernetes-event-exporter:1.7.0-debian-12-r46
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.7.0
+    created: "2025-11-08T08:48:00.017903717+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Kubernetes Event Exporter makes it easy to export Kubernetes events
+      to other tools, thereby enabling better event observability, custom alerts and
+      aggregation.
+    digest: 13139a489015f1ee818bc9b83c6e96e79c6e30fd23e9267b72bd1dfc72f2f8a7
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/kubernetes-event-exporter/img/kubernetes-event-exporter-stack-220x234.png
+    keywords:
+    - alerting
+    - event exporting
+    - events
+    - kubernetes events
+    - monitoring
+    - observability
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: kubernetes-event-exporter
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/kubernetes-event-exporter
+    urls:
+    - https://helmhub-io.github.io/charts/kubernetes-event-exporter-3.6.4.tgz
+    version: 3.6.4
+  logstash:
+  - annotations:
+      images: |
+        - name: logstash
+          image: docker.io/helmhubio/logstash:9.1.2-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 9.1.2
+    created: "2025-11-08T08:48:00.02240445+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Logstash is an open source data processing engine. It ingests data
+      from multiple sources, processes it, and sends the output to final destination
+      in real-time. It is a core component of the ELK stack.
+    digest: 0ce6f381768d8e51f0741cb4883d68de3bc451ce16db20508026c814b54597a2
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/logstash/img/logstash-stack-220x234.png
+    keywords:
+    - logstash
+    - logging
+    - elk
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: logstash
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/logstash
+    urls:
+    - https://helmhub-io.github.io/charts/logstash-7.0.12.tgz
+    version: 7.0.12
+  mariadb:
+  - annotations:
+      images: |
+        - name: mariadb
+          image: docker.io/helmhubio/mariadb:12.0.2-debian-12-r0
+        - name: mysqld-exporter
+          image: docker.io/helmhubio/mysqld-exporter:0.17.2-debian-12-r16
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 12.0.2
+    created: "2025-11-08T08:48:00.029486852+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MariaDB is an open source, community-developed SQL database server
+      that is widely in use around the world due to its enterprise features, flexibility,
+      and collaboration with leading tech firms.
+    digest: c06c9ce6ecf3cc9fe61537f9d558c7a434e048534fc8872f794354684f24a03c
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mariadb/img/mariadb-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: mariadb
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/mariadb
+    urls:
+    - https://helmhub-io.github.io/charts/mariadb-23.0.0.tgz
+    version: 23.0.0
+  mariadb-galera:
+  - annotations:
+      images: |
+        - name: mariadb-galera
+          image: docker.io/helmhubio/mariadb-galera:12.0.2-debian-12-r0
+        - name: mysqld-exporter
+          image: docker.io/helmhubio/mysqld-exporter:0.17.2-debian-12-r16
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 12.0.2
+    created: "2025-11-08T08:48:00.034872415+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MariaDB Galera is a multi-primary database cluster solution for synchronous
+      replication and high availability.
+    digest: f018ad7f2d14a685644cd01291cfb6abd5973dbefaac21d500c7eeb225ed1e6b
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mariadb-galera/img/mariadb-galera-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    - galera
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: mariadb-galera
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/mariadb-galera
+    urls:
+    - https://helmhub-io.github.io/charts/mariadb-galera-16.0.2.tgz
+    version: 16.0.2
+  matomo:
+  - annotations:
+      images: |
+        - name: apache-exporter
+          image: docker.io/helmhubio/apache-exporter:1.0.10-debian-12-r55
+        - name: matomo
+          image: docker.io/helmhubio/matomo:5.3.2-debian-12-r13
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.3.2
+    created: "2025-11-08T08:48:00.049832699+01:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Matomo, formerly known as Piwik, is a real time web analytics program.
+      It provides detailed reports on website visitors.
+    digest: daa5c1b4a2eac09904583e29953a1f785c1190832622695bbd7d0d1fad347c22
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/matomo/img/matomo-stack-220x234.png
+    keywords:
+    - matomo
+    - analytics
+    - http
+    - web
+    - application
+    - php
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: matomo
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/matomo
+    urls:
+    - https://helmhub-io.github.io/charts/matomo-11.0.1.tgz
+    version: 11.0.1
+  memcached:
+  - annotations:
+      images: |
+        - name: memcached
+          image: docker.io/helmhubio/memcached:1.6.39-debian-12-r1
+        - name: memcached-exporter
+          image: docker.io/helmhubio/memcached-exporter:0.15.3-debian-12-r5
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 1.6.39
+    created: "2025-11-08T08:48:00.053338102+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Memcached is an high-performance, distributed memory object caching
+      system, generic in nature, but intended for use in speeding up dynamic web applications
+      by alleviating database load.
+    digest: f2e22f7e194ec58ac9acccb840ff846d1ab1d29d015b894f9f93671605dd67a4
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/memcached/img/memcached-stack-220x234.png
+    keywords:
+    - memcached
+    - cache
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: memcached
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/memcached
+    urls:
+    - https://helmhub-io.github.io/charts/memcached-8.0.0.tgz
+    version: 8.0.0
+  metallb:
+  - annotations:
+      images: |
+        - name: metallb-controller
+          image: docker.io/helmhubio/metallb-controller:0.15.2-debian-12-r7
+        - name: metallb-speaker
+          image: docker.io/helmhubio/metallb-speaker:0.15.2-debian-12-r6
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 0.15.2
+    created: "2025-11-08T08:48:00.058122231+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MetalLB is a load-balancer implementation for bare metal Kubernetes
+      clusters, using standard routing protocols.
+    digest: 5ccddc5bcd2d6761b6b93c39053ba7b884bd1a83b2df3fdbcfabe9e6a6dbe57b
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/metallb-speaker/img/metallb-speaker-stack-220x234.png
+    keywords:
+    - load-balancer
+    - balancer
+    - lb
+    - bgp
+    - arp
+    - vrrp
+    - vip
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: metallb
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/metallb
+    urls:
+    - https://helmhub-io.github.io/charts/metallb-6.4.23.tgz
+    version: 6.4.23
+  metrics-server:
+  - annotations:
+      images: |
+        - name: metrics-server
+          image: docker.io/helmhubio/metrics-server:0.8.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 0.8.0
+    created: "2025-11-08T08:48:00.061486256+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Metrics Server aggregates resource usage data, such as container
+      CPU and memory usage, in a Kubernetes cluster and makes it available via the
+      Metrics API.
+    digest: bc445edd0551e3c91da7d1dab9347d0c493b2ff454ef51fb0ec581b73d214729
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/metrics-server/img/metrics-server-stack-220x234.png
+    keywords:
+    - metrics-server
+    - cluster
+    - metrics
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: metrics-server
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/metrics-server
+    urls:
+    - https://helmhub-io.github.io/charts/metrics-server-7.4.13.tgz
+    version: 7.4.13
+  milvus:
+  - annotations:
+      images: |
+        - name: attu
+          image: docker.io/helmhubio/attu:2.5.12-debian-12-r20
+        - name: milvus
+          image: docker.io/helmhubio/milvus:2.6.0-debian-12-r1
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: pymilvus
+          image: docker.io/helmhubio/pymilvus:2.6.0-debian-12-r5
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2.6.0
+    created: "2025-11-08T08:48:00.101397871+01:00"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 12.x.x
+    - condition: kafka.enabled
+      name: kafka
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 32.x.x
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 17.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Milvus is a cloud-native, open-source vector database solution for
+      AI applications and similarity search. Features high scalability, hibrid search
+      and unified lambda structure.
+    digest: 5a507eecb6ea4b2eed17a11bb9ef138eee8be79b1bbf0f6b7f3190ac0c7fde5e
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/milvus/img/milvus-stack-220x234.png
+    keywords:
+    - milvus
+    - ai
+    - database
+    - infrastructure
+    - attu
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: milvus
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/milvus
+    urls:
+    - https://helmhub-io.github.io/charts/milvus-16.0.2.tgz
+    version: 16.0.2
+  minio:
+  - annotations:
+      images: |
+        - name: minio
+          image: docker.io/helmhubio/minio:2025.7.23-debian-12-r5
+        - name: minio-client
+          image: docker.io/helmhubio/minio-client:2025.7.21-debian-12-r3
+        - name: minio-object-browser
+          image: docker.io/helmhubio/minio-object-browser:2.0.2-debian-12-r3
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2025.7.23
+    created: "2025-11-08T08:48:00.107370909+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
+      storage service, mainly used for storing unstructured data (such as photos,
+      videos, log files, etc.).
+    digest: c50a08efc16cd93d40a65f0699bf3eb2325a7f3aadcb14be9d4b99fef9c319b3
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/minio/img/minio-stack-220x234.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: minio
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/minio
+    urls:
+    - https://helmhub-io.github.io/charts/minio-17.0.22.tgz
+    version: 17.0.22
+  minio-operator:
+  - annotations:
+      images: |
+        - name: minio
+          image: docker.io/helmhubio/minio:2025.7.23-debian-12-r5
+        - name: minio-operator
+          image: docker.io/helmhubio/minio-operator:7.1.1-debian-12-r7
+        - name: minio-operator-sidecar
+          image: docker.io/helmhubio/minio-operator-sidecar:7.1.1-debian-12-r7
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 7.1.1
+    created: "2025-11-08T08:48:00.111221308+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MinIO(R) Operator is a Kubernetes-native tool for deploying and managing
+      high-performance, S3-compatible MinIO(R) object storage across hybrid cloud
+      infrastructures.
+    digest: 1f01eff51b6b34d70373a67ccd6fda9819ee05fe4fcb46e8e8998bcfe20e05cd
+    home: https://github.com/helmhub-io/charts
+    icon: https://helmhub.io/assets/stacks/minio-operator/img/minio-operator-stack-220x234.png
+    keywords:
+    - minio-operator
+    - operator
+    - postgresql
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: minio-operator
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/minio-operator
+    urls:
+    - https://helmhub-io.github.io/charts/minio-operator-0.2.10.tgz
+    version: 0.2.10
+  mlflow:
+  - annotations:
+      images: |
+        - name: git
+          image: docker.io/helmhubio/git:2.51.0-debian-12-r0
+        - name: mlflow
+          image: docker.io/helmhubio/mlflow:3.3.2
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.3.2
+    created: "2025-11-08T08:48:00.13519202+01:00"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 17.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MLflow is an open-source platform designed to manage the end-to-end
+      machine learning lifecycle. It allows you to track experiments, package code
+      into reproducible runs, and share and deploy models.
+    digest: e8af0068eadaa207f1e9d2664c234f0845ba8ce2d9945761ab2eb563b2612824
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mlflow/img/mlflow-stack-220x234.png
+    keywords:
+    - mlflow
+    - models
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: mlflow
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/mlflow
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/mlflow
+    - https://github.com/mlflow/mlflow
+    urls:
+    - https://helmhub-io.github.io/charts/mlflow-5.2.0.tgz
+    version: 5.2.0
+  mongodb:
+  - annotations:
+      images: |
+        - name: kubectl
+          image: docker.io/helmhubio/kubectl:1.33.4-debian-12-r0
+        - name: mongodb
+          image: docker.io/helmhubio/mongodb:8.0.13-debian-12-r0
+        - name: mongodb-exporter
+          image: docker.io/helmhubio/mongodb-exporter:0.47.0-debian-12-r1
+        - name: nginx
+          image: docker.io/helmhubio/nginx:1.29.1-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 8.0.13
+    created: "2025-11-08T08:48:00.145207892+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 71e7993c6c7ec67c61f7070dbb199cab48f1d61e1b854685e0b9adee6a3783ac
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: mongodb
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/mongodb
+    urls:
+    - https://helmhub-io.github.io/charts/mongodb-17.0.0.tgz
+    version: 17.0.0
+  mongodb-sharded:
+  - annotations:
+      images: |
+        - name: mongodb-exporter
+          image: docker.io/helmhubio/mongodb-exporter:0.47.0-debian-12-r1
+        - name: mongodb-sharded
+          image: docker.io/helmhubio/mongodb-sharded:8.0.13
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 8.0.13
+    created: "2025-11-08T08:48:00.151789097+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is an open source NoSQL database that uses JSON for data
+      storage. MongoDB(TM) Sharded improves scalability and reliability for large
+      datasets by distributing data across multiple machines.
+    digest: ab5f53c57e0481839f343c90f9192150b73fc4a963e7290e39a9e021676e2d18
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: mongodb-sharded
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/mongodb-sharded
+    urls:
+    - https://helmhub-io.github.io/charts/mongodb-sharded-9.4.13.tgz
+    version: 9.4.13
+  moodle:
+  - annotations:
+      images: |
+        - name: apache-exporter
+          image: docker.io/helmhubio/apache-exporter:1.0.10-debian-12-r55
+        - name: moodle
+          image: docker.io/helmhubio/moodle:5.0.2-debian-12-r2
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.0.2
+    created: "2025-11-08T08:48:00.163442414+01:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Moodle(TM) LMS is an open source online Learning Management System
+      widely used at universities, schools, and corporations. It is modular and highly
+      adaptable to any type of online learning.
+    digest: e72ae1421f7d766493c61a91b4c230bff0b6e7ad7348f31f48b389f19737bc54
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/moodle/img/moodle-stack-220x234.png
+    keywords:
+    - moodle
+    - learning
+    - php
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: moodle
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/moodle
+    urls:
+    - https://helmhub-io.github.io/charts/moodle-28.0.1.tgz
+    version: 28.0.1
+  multus-cni:
+  - annotations:
+      images: |
+        - name: multus-cni
+          image: docker.io/helmhubio/multus-cni:4.2.2-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 4.2.2
+    created: "2025-11-08T08:48:00.166130891+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Multus is a CNI plugin for Kubernetes clusters. Written in Go, features
+      adding multiple network interfaces to pods.
+    digest: affd4d63757f4a61a6d649e2fe2232a354e1fee2c1d00761802ebfde3060d44f
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/multus-cni/img/multus-cni-stack-220x234.png
+    keywords:
+    - multus-cni
+    - cni
+    - kubernetes
+    - networking
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: multus-cni
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/multus-cni
+    urls:
+    - https://helmhub-io.github.io/charts/multus-cni-2.2.22.tgz
+    version: 2.2.22
+  mysql:
+  - annotations:
+      images: |
+        - name: mysql
+          image: docker.io/helmhubio/mysql:9.4.0-debian-12-r1
+        - name: mysqld-exporter
+          image: docker.io/helmhubio/mysqld-exporter:0.17.2-debian-12-r16
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 9.4.0
+    created: "2025-11-08T08:48:00.17153431+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MySQL is a fast, reliable, scalable, and easy to use open source
+      relational database system. Designed to handle mission-critical, heavy-load
+      production applications.
+    digest: 15f1bfe6a80533994e2c03440dbc57a3b2349736be0917c9d48bdae3fdd8113d
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/mysql/img/mysql-stack-220x234.png
+    keywords:
+    - mysql
+    - database
+    - sql
+    - cluster
+    - high availability
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: mysql
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/mysql
+    urls:
+    - https://helmhub-io.github.io/charts/mysql-14.0.4.tgz
+    version: 14.0.4
+  nats:
+  - annotations:
+      images: |
+        - name: nats
+          image: docker.io/helmhubio/nats:2.11.8-debian-12-r0
+        - name: nats-exporter
+          image: docker.io/helmhubio/nats-exporter:0.17.3-debian-12-r8
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 2.11.8
+    created: "2025-11-08T08:48:00.176571668+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NATS is an open source, lightweight and high-performance messaging
+      system. It is ideal for distributed systems and supports modern cloud architectures
+      and pub-sub, request-reply and queuing models.
+    digest: 49668cd0f7bf8207c5a4fddcfe10aefa6a3dac319448953040367a66b703647a
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nats/img/nats-stack-220x234.png
+    keywords:
+    - nats
+    - messaging
+    - addressing
+    - discovery
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: nats
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/nats
+    urls:
+    - https://helmhub-io.github.io/charts/nats-9.0.29.tgz
+    version: 9.0.29
+  neo4j:
+  - annotations:
+      images: |
+        - name: neo4j
+          image: docker.io/helmhubio/neo4j:5.26.11-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 5.26.11
+    created: "2025-11-08T08:48:00.181458097+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Neo4j is a high performance graph store with all the features expected
+      of a mature and robust database, like a friendly query language and ACID transactions.
+    digest: 4c2215a6ab94533ba7edf2d3bc801f7e1c3f37ec2acbff71098fe083216d2539
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/neo4j/img/neo4j-stack-220x234.png
+    keywords:
+    - database
+    - neo4j
+    - graph
+    - graphdb
+    - graph-database
+    - nosql
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: neo4j
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/neo4j
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/neo4j
+    - https://github.com/neo4j/neo4j
+    urls:
+    - https://helmhub-io.github.io/charts/neo4j-0.4.15.tgz
+    version: 0.4.15
+  nessie:
+  - annotations:
+      images: |
+        - name: nessie
+          image: docker.io/helmhubio/nessie:0.104.10
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: postgresql
+          image: docker.io/helmhubio/postgresql:17.6.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 0.104.10
+    created: "2025-11-08T08:48:00.193347302+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Nessie is an open-source version control system for data lakes, enabling
+      isolated data experimentation before committing changes.
+    digest: 21662732a6110f084a9bf46420e2890197c19bd4c7e8f1df5a1268cd5f85c016
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nessie/img/nessie-stack-220x234.png
+    keywords:
+    - nessie
+    - graph
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: nessie
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/nessie
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/nessie
+    - https://github.com/nessie/nessie
+    urls:
+    - https://helmhub-io.github.io/charts/nessie-2.0.35.tgz
+    version: 2.0.35
+  nginx:
+  - annotations:
+      images: |
+        - name: git
+          image: docker.io/helmhubio/git:2.51.0-debian-12-r0
+        - name: nginx
+          image: docker.io/helmhubio/nginx:1.29.1-debian-12-r0
+        - name: nginx-exporter
+          image: docker.io/helmhubio/nginx-exporter:1.4.2-debian-12-r9
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.29.1
+    created: "2025-11-08T08:48:00.198406298+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NGINX Open Source is a web server that can be also used as a reverse
+      proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due
+      to its ability to provide faster content.
+    digest: ae69bee685fe0470df192a031322b34fc024c665bcf876c31da7169848f4e6f3
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nginx/img/nginx-stack-220x234.png
+    keywords:
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: nginx
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/nginx
+    urls:
+    - https://helmhub-io.github.io/charts/nginx-22.1.0.tgz
+    version: 22.1.0
+  nginx-ingress-controller:
+  - annotations:
+      images: |
+        - name: nginx
+          image: docker.io/helmhubio/nginx:1.29.1-debian-12-r0
+        - name: nginx-ingress-controller
+          image: docker.io/helmhubio/nginx-ingress-controller:1.13.1
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.13.1
+    created: "2025-11-08T08:48:00.204722612+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NGINX Ingress Controller is an Ingress controller that manages external
+      access to HTTP services in a Kubernetes cluster using NGINX.
+    digest: d2db17d0ceaed7031bf7926e274f50c35e92571c5da6168795562d5a8518907e
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/nginx-ingress-controller/img/nginx-ingress-controller-stack-220x234.png
+    keywords:
+    - ingress
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    kubeVersion: '>= 1.20.0-0'
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: nginx-ingress-controller
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/nginx-ingress-controller
+    urls:
+    - https://helmhub-io.github.io/charts/nginx-ingress-controller-12.0.8.tgz
+    version: 12.0.8
+  node-exporter:
+  - annotations:
+      images: |
+        - name: node-exporter
+          image: docker.io/helmhubio/node-exporter:1.9.1-debian-12-r14
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.9.1
+    created: "2025-11-08T08:48:00.20889987+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Prometheus exporter for hardware and OS metrics exposed by UNIX kernels,
+      with pluggable metric collectors.
+    digest: e563b782bac7434798e502468666e4968e3281ae5aeb5b9622ddc1a2d64de78e
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/node-exporter/img/node-exporter-stack-220x234.png
+    keywords:
+    - prometheus
+    - node-exporter
+    - monitoring
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: node-exporter
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/node-exporter
+    urls:
+    - https://helmhub-io.github.io/charts/node-exporter-4.5.20.tgz
+    version: 4.5.20
+  oauth2-proxy:
+  - annotations:
+      images: |
+        - name: oauth2-proxy
+          image: docker.io/helmhubio/oauth2-proxy:7.12.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 7.12.0
+    created: "2025-11-08T08:48:00.225519233+01:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: A reverse proxy and static file server that provides authentication
+      using Providers (Google, GitHub, and others) to validate accounts by email,
+      domain or group.
+    digest: b05539950d65187b0c241916424a920be9b56957210164d05d4ea994ddb8ac36
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/oauth2-proxy/img/oauth2-proxy-stack-220x234.png
+    keywords:
+    - kubernetes
+    - oauth
+    - oauth2
+    - authentication
+    - google
+    - github
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: oauth2-proxy
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/oauth2-proxy
+    urls:
+    - https://helmhub-io.github.io/charts/oauth2-proxy-8.0.3.tgz
+    version: 8.0.3
+  odoo:
+  - annotations:
+      images: |
+        - name: odoo
+          image: docker.io/helmhubio/odoo:18.0.20250805-debian-12-r9
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 18.0.20250805
+    created: "2025-11-08T08:48:00.237363405+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
+      that can connect a wide variety of business operations such as sales, supply
+      chain, finance, and project management.
+    digest: 62396f3e9d174586da3e3200f350e25300ad6cc502c57e8cdf6cee0cd39682b5
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/odoo/img/odoo-stack-220x234.png
+    keywords:
+    - odoo
+    - crm
+    - www
+    - http
+    - web
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: odoo
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/odoo
+    urls:
+    - https://helmhub-io.github.io/charts/odoo-28.2.11.tgz
+    version: 28.2.11
+  opensearch:
+  - annotations:
+      images: |
+        - name: opensearch
+          image: docker.io/helmhubio/opensearch:3.2.0
+        - name: opensearch-dashboards
+          image: docker.io/helmhubio/opensearch-dashboards:3.2.0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 3.2.0
+    created: "2025-11-08T08:48:00.249696566+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: OpenSearch is a scalable open-source solution for search, analytics,
+      and observability. Features full-text queries, natural language processing,
+      custom dictionaries, amongst others.
+    digest: f1edec44a2920984b1226292282be60deb1de7d51cac4fe8ec0f73f97505aebe
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/opensearch/img/opensearch-stack-220x234.png
+    keywords:
+    - opensearch
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: opensearch
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/opensearch
+    urls:
+    - https://helmhub-io.github.io/charts/opensearch-2.0.11.tgz
+    version: 2.0.11
+  parse:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: parse
+          image: docker.io/helmhubio/parse:8.2.3-debian-12-r9
+        - name: parse-dashboard
+          image: docker.io/helmhubio/parse-dashboard:7.3.0-debian-12-r9
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 8.2.3
+    created: "2025-11-08T08:48:00.263734948+01:00"
+    dependencies:
+    - name: mongodb
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Parse is a platform that enables users to add a scalable and powerful
+      backend to launch a full-featured app for iOS, Android, JavaScript, Windows,
+      Unity, and more.
+    digest: 55f189eca17176cbd2a373ba1fca5d6a747d764a46472ee174c1347e4c707ef5
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/parse/img/parse-stack-220x234.png
+    keywords:
+    - parse
+    - backend
+    - serverless
+    - platform
+    - mbaas
+    - mobile
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: parse
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/parse
+    urls:
+    - https://helmhub-io.github.io/charts/parse-25.1.16.tgz
+    version: 25.1.16
+  phpmyadmin:
+  - annotations:
+      images: |
+        - name: apache-exporter
+          image: docker.io/helmhubio/apache-exporter:1.0.10-debian-12-r55
+        - name: phpmyadmin
+          image: docker.io/helmhubio/phpmyadmin:5.2.2-debian-12-r23
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.2.2
+    created: "2025-11-08T08:48:00.274677319+01:00"
+    dependencies:
+    - condition: db.bundleTestDB
+      name: mariadb
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - phpmyadmin-database
+      version: 22.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: phpMyAdmin is a free software tool written in PHP, intended to handle
+      the administration of MySQL over the Web. phpMyAdmin supports a wide range of
+      operations on MySQL and MariaDB.
+    digest: 1b07f0bb6602017ff1bd1132e46104b95696c7cafd8155642a77a12a33e0d2aa
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/phpmyadmin/img/phpmyadmin-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - phpmyadmin
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: phpmyadmin
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/phpmyadmin
+    urls:
+    - https://helmhub-io.github.io/charts/phpmyadmin-20.0.1.tgz
+    version: 20.0.1
+  pinniped:
+  - annotations:
+      images: |
+        - name: pinniped
+          image: docker.io/helmhubio/pinniped:0.40.0-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 0.40.0
+    created: "2025-11-08T08:48:00.281729337+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Pinniped is an identity service provider for Kubernetes. It supplies
+      a consistent and unified login experience across all your clusters. Pinniped
+      is securely integrated with enterprise IDP protocols.
+    digest: 65ca733f388d90fd70ebeb16541a8b3cffaf09349a244e9b678b6c58b3e4a9b1
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/pinniped/img/pinniped-stack-220x234.png
+    keywords:
+    - identity
+    - infrastructure
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: pinniped
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/pinniped
+    urls:
+    - https://helmhub-io.github.io/charts/pinniped-2.4.24.tgz
+    version: 2.4.24
+  postgresql:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: postgres-exporter
+          image: docker.io/helmhubio/postgres-exporter:0.17.1-debian-12-r16
+        - name: postgresql
+          image: docker.io/helmhubio/postgresql:17.6.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 17.6.0
+    created: "2025-11-08T08:48:00.288485737+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 9053e5be35bfb443f28d4942341115f4d736f7878aa582643aded543a7a91b26
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: postgresql
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/postgresql
+    urls:
+    - https://helmhub-io.github.io/charts/postgresql-17.0.0.tgz
+    version: 17.0.0
+  postgresql-ha:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: pgpool
+          image: docker.io/helmhubio/pgpool:4.6.3
+        - name: postgres-exporter
+          image: docker.io/helmhubio/postgres-exporter:0.17.1-debian-12-r16
+        - name: postgresql-repmgr
+          image: docker.io/helmhubio/postgresql-repmgr:17.6.0-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 17.6.0
+    created: "2025-11-08T08:48:00.297657029+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: This PostgreSQL cluster solution includes the PostgreSQL replication
+      manager, an open-source tool for managing replication and failover on PostgreSQL
+      clusters.
+    digest: 75565d454ec3d9d9e4207e22d4a5ad573480646de83c99276f32067fc0124c15
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - repmgr
+    - pgpool
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    - high availability
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: postgresql-ha
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/postgresql-ha
+    urls:
+    - https://helmhub-io.github.io/charts/postgresql-ha-16.3.4.tgz
+    version: 16.3.4
+  prometheus:
+  - annotations:
+      images: |
+        - name: alertmanager
+          image: docker.io/helmhubio/alertmanager:0.28.1-debian-12-r15
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: prometheus
+          image: docker.io/helmhubio/prometheus:3.5.0-debian-12-r3
+        - name: thanos
+          image: docker.io/helmhubio/thanos:0.39.2-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.5.0
+    created: "2025-11-08T08:48:00.303569958+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Prometheus is an open source monitoring and alerting system. It enables
+      sysadmins to monitor their infrastructures by collecting metrics from configured
+      targets at given intervals.
+    digest: 462fa7af607c0266cd1726c3595391a73da4f9d87050a1d62ca75d8fbb373bcf
+    home: https://github.com/prometheus/prometheus
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/prometheus/img/prometheus-stack-220x234.png
+    keywords:
+    - prometheus
+    - monitoring
+    maintainers:
+    - name: HelmHubIO
+      url: https://github.com/helmhub-io/charts
+    name: prometheus
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/prometheus
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/prometheus
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus-community/helm-charts
+    urls:
+    - https://helmhub-io.github.io/charts/prometheus-2.1.24.tgz
+    version: 2.1.24
+  pytorch:
+  - annotations:
+      images: |
+        - name: git
+          image: docker.io/helmhubio/git:2.51.0-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: pytorch
+          image: docker.io/helmhubio/pytorch:2.8.0-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 2.8.0
+    created: "2025-11-08T08:48:00.307240817+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: PyTorch is a deep learning platform that accelerates the transition
+      from research prototyping to production deployment. HelmHubIO image includes
+      Torchvision for specific computer vision support.
+    digest: 70c3895af11645fa9451baba156347641a6c3873fb031784cc8f6255cd7f55ac
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/pytorch/img/pytorch-stack-220x234.png
+    keywords:
+    - pytorch
+    - python
+    - machine
+    - learning
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: pytorch
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/pytorch
+    urls:
+    - https://helmhub-io.github.io/charts/pytorch-5.0.0.tgz
+    version: 5.0.0
+  rabbitmq:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: rabbitmq
+          image: docker.io/helmhubio/rabbitmq:4.1.3-debian-12-r1
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 4.1.3
+    created: "2025-11-08T08:48:00.314101688+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: RabbitMQ is an open source general-purpose message broker that is
+      designed for consistent, highly-available messaging scenarios (both synchronous
+      and asynchronous).
+    digest: 2d4840d721d16b59bbe9d3904756f25853e568f69df029abf1499d8c4504bfa9
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - message queue
+    - AMQP
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: rabbitmq
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/rabbitmq
+    urls:
+    - https://helmhub-io.github.io/charts/rabbitmq-16.0.15.tgz
+    version: 16.0.15
+  rabbitmq-cluster-operator:
+  - annotations:
+      images: |
+        - name: rabbitmq
+          image: docker.io/helmhubio/rabbitmq:4.1.3-debian-12-r1
+        - name: rabbitmq-cluster-operator
+          image: docker.io/helmhubio/rabbitmq-cluster-operator:2.16.1-debian-12-r0
+        - name: rmq-default-credential-updater
+          image: docker.io/helmhubio/rmq-default-credential-updater:1.0.8-debian-12-r0
+        - name: rmq-messaging-topology-operator
+          image: docker.io/helmhubio/rmq-messaging-topology-operator:1.17.4-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2.16.1
+    created: "2025-11-08T08:48:00.324182224+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: The RabbitMQ Cluster Kubernetes Operator automates provisioning,
+      management, and operations of RabbitMQ clusters running on Kubernetes.
+    digest: d53a0daeaea2f14323657b9627f8d4d3b45413f268caee87732da7d12a1d464d
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/rabbitmq-cluster-operator/img/rabbitmq-cluster-operator-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - operator
+    - infrastructure
+    - message queue
+    - AMQP
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: rabbitmq-cluster-operator
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/rabbitmq-cluster-operator
+    urls:
+    - https://helmhub-io.github.io/charts/rabbitmq-cluster-operator-4.4.35.tgz
+    version: 4.4.35
+  redis:
+  - annotations:
+      images: |
+        - name: kubectl
+          image: docker.io/helmhubio/kubectl:1.33.4-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: redis
+          image: docker.io/helmhubio/redis:8.2.1-debian-12-r0
+        - name: redis-exporter
+          image: docker.io/helmhubio/redis-exporter:1.76.0-debian-12-r0
+        - name: redis-sentinel
+          image: docker.io/helmhubio/redis-sentinel:8.2.1-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 8.2.1
+    created: "2025-11-08T08:48:00.334422461+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, advanced key-value store. It is often
+      referred to as a data structure server since keys can contain strings, hashes,
+      lists, sets and sorted sets.
+    digest: 1cce865666b61f05ca3262959c356d5819666e84558689934cec94ba16f3cb07
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: redis
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/redis
+    urls:
+    - https://helmhub-io.github.io/charts/redis-23.0.2.tgz
+    version: 23.0.2
+  redis-cluster:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: redis-cluster
+          image: docker.io/helmhubio/redis-cluster:8.2.1-debian-12-r0
+        - name: redis-exporter
+          image: docker.io/helmhubio/redis-exporter:1.76.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 8.2.1
+    created: "2025-11-08T08:48:00.342006264+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redis(R) is an open source, scalable, distributed in-memory cache
+      for applications. It can be used to store and serve data in the form of strings,
+      hashes, lists, sets and sorted sets.
+    digest: 9b40791ecee051b9bee6a35746b9936f8609bd261b36c7767469aba388bf04b6
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: redis-cluster
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/redis-cluster
+    urls:
+    - https://helmhub-io.github.io/charts/redis-cluster-13.0.5.tgz
+    version: 13.0.5
+  redmine:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: redmine
+          image: docker.io/helmhubio/redmine:6.0.6-debian-12-r6
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 6.0.6
+    created: "2025-11-08T08:48:00.367262042+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Redmine is an open source management application. It includes a tracking
+      issue system, Gantt charts for a visual view of projects and deadlines, and
+      supports SCM integration for version control.
+    digest: 92c4492de530749823fec1bd5d462d3069e0d7b5f149ce496fcdfccb9f3baa4d
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/redmine/img/redmine-stack-220x234.png
+    keywords:
+    - redmine
+    - project management
+    - www
+    - http
+    - web
+    - application
+    - ruby
+    - rails
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: redmine
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/redmine
+    urls:
+    - https://helmhub-io.github.io/charts/redmine-34.0.1.tgz
+    version: 34.0.1
+  schema-registry:
+  - annotations:
+      images: |
+        - name: schema-registry
+          image: docker.io/helmhubio/schema-registry:8.0.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 8.0.0
+    created: "2025-11-08T08:48:00.381675263+01:00"
+    dependencies:
+    - condition: kafka.enabled
+      name: kafka
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 32.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Confluent Schema Registry provides a RESTful interface by adding
+      a serving layer for your metadata on top of Kafka. It expands Kafka enabling
+      support for Apache Avro, JSON, and Protobuf schemas.
+    digest: af32b340b519d5e83090b27bee57f3b2cde0bfb0847829c53b01562b266b48ea
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/schema-registry/img/schema-registry-stack-220x234.png
+    keywords:
+    - schema-registry
+    - confluent
+    - kafka
+    - zookeeper
+    - streaming
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: schema-registry
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/schema-registry
+    urls:
+    - https://helmhub-io.github.io/charts/schema-registry-26.0.6.tgz
+    version: 26.0.6
+  scylladb:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: scylladb
+          image: docker.io/helmhubio/scylladb:2025.2.2-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 2025.2.2
+    created: "2025-11-08T08:48:00.392534765+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: ScyllaDB is an open-source, distributed NoSQL wide-column data store.
+      Written in C++, it is designed for high throughput and low latency, compatible
+      with Apache Cassandra.
+    digest: 990b490d5ba26e030b234ec2f37eedf6cf057d32c1e04b18a8b8e2130a3521bf
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/scylladb/img/scylladb-stack-220x234.png
+    keywords:
+    - scylladb
+    - database
+    - nosql
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: scylladb
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/scylladb
+    urls:
+    - https://helmhub-io.github.io/charts/scylladb-5.0.7.tgz
+    version: 5.0.7
+  sealed-secrets:
+  - annotations:
+      images: |
+        - name: sealed-secrets-controller
+          image: docker.io/helmhubio/sealed-secrets-controller:0.31.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 0.31.0
+    created: "2025-11-08T08:48:00.399881726+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Sealed Secrets are "one-way" encrypted K8s Secrets that can be created
+      by anyone, but can only be decrypted by the controller running in the target
+      cluster recovering the original object.
+    digest: 89c34f7a273550b6dfc71dea2d9a6e512144fa903462dfdabeb2266ab4279012
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/sealed-secrets/img/sealed-secrets-stack-220x234.png
+    keywords:
+    - secrets
+    - sealed-secrets
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: sealed-secrets
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/sealed-secrets
+    - https://helmhub.io
+    urls:
+    - https://helmhub-io.github.io/charts/sealed-secrets-2.5.20.tgz
+    version: 2.5.20
+  seaweedfs:
+  - annotations:
+      images: |
+        - name: mariadb
+          image: docker.io/helmhubio/mariadb:12.0.2-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: postgresql
+          image: docker.io/helmhubio/postgresql:17.6.0-debian-12-r4
+        - name: seaweedfs
+          image: docker.io/helmhubio/seaweedfs:3.96.0-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.96.0
+    created: "2025-11-08T08:48:00.451256973+01:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - seaweedfs-database
+      version: 22.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - seaweedfs-database
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: SeaweedFS is a simple and highly scalable distributed file system.
+    digest: b1bfa372dae2fdc0fe0203a0f1827085e2efd0e3bf4ae75234be5e06aba67999
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/seaweedfs/img/seaweedfs-stack-220x234.png
+    keywords:
+    - seaweedfs
+    - storage
+    - blob-storage
+    - file-storage
+    - object-storage
+    - s3
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: seaweedfs
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/seawwedfs
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/seaweedfs
+    urls:
+    - https://helmhub-io.github.io/charts/seaweedfs-6.0.2.tgz
+    version: 6.0.2
+  solr:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: solr
+          image: docker.io/helmhubio/solr:9.9.0-debian-12-r1
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 9.9.0
+    created: "2025-11-08T08:48:00.469019452+01:00"
+    dependencies:
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 13.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Solr is an extremely powerful, open source enterprise search
+      platform built on Apache Lucene. It is highly reliable and flexible, scalable,
+      and designed to add value very quickly after launch.
+    digest: c1d7e0b0c68272fa6d9141525dfd169fd1c094a2cf6c45e1fec91a37b5be1f88
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/solr/img/solr-stack-220x234.png
+    keywords:
+    - solr
+    - zookeeper
+    - apache
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: solr
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/solr
+    urls:
+    - https://helmhub-io.github.io/charts/solr-9.6.11.tgz
+    version: 9.6.11
+  sonarqube:
+  - annotations:
+      images: |
+        - name: jmx-exporter
+          image: docker.io/helmhubio/jmx-exporter:1.4.0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: sonarqube
+          image: docker.io/helmhubio/sonarqube:25.8.0-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 25.8.0
+    created: "2025-11-08T08:48:00.486244573+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: SonarQube(TM) is an open source quality management platform that
+      analyzes and measures code's technical quality. It enables developers to detect
+      code issues, vulnerabilities, and bugs in early stages.
+    digest: 6876a5f8ed10382bfa526fe3db3de2006ab40a9466d0c7d83e8386ff44019216
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/sonarqube/img/sonarqube-stack-220x234.png
+    keywords:
+    - sonarqube
+    - code-quality
+    - code-review
+    - static-analysis
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: sonarqube
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/sonarqube
+    urls:
+    - https://helmhub-io.github.io/charts/sonarqube-8.1.18.tgz
+    version: 8.1.18
+  spark:
+  - annotations:
+      images: |
+        - name: spark
+          image: docker.io/helmhubio/spark:4.0.0-debian-12-r20
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 4.0.0
+    created: "2025-11-08T08:48:00.490491941+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Spark is a high-performance engine for large-scale computing
+      tasks, such as data processing, machine learning and real-time data streaming.
+      It includes APIs for Java, Python, Scala and R.
+    digest: 12a279a1f0995e041ebf244ddc8fa204bf95e43562e5b42d61d0b69d3cad8ce1
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/spark/img/spark-stack-220x234.png
+    keywords:
+    - apache
+    - spark
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: spark
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/spark
+    urls:
+    - https://helmhub-io.github.io/charts/spark-10.0.4.tgz
+    version: 10.0.4
+  superset:
+  - annotations:
+      images: |
+        - name: superset
+          image: docker.io/helmhubio/superset:5.0.0-debian-12-r71
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 5.0.0
+    created: "2025-11-08T08:48:00.517307932+01:00"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 16.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Superset is a modern data exploration and data visualization platform.
+    digest: d087e916f3ef897047f8150348273eb606b091b9141f927f1c525d760c0aa5de
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/superset/img/superset-stack-220x234.png
+    keywords:
+    - superset
+    - analytics
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: superset
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/superset
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/superset
+    - https://github.com/apache/superset
+    urls:
+    - https://helmhub-io.github.io/charts/superset-5.0.1.tgz
+    version: 5.0.1
+  tensorflow-resnet:
+  - annotations:
+      images: |
+        - name: tensorflow-resnet
+          image: docker.io/helmhubio/tensorflow-resnet:2.19.1-debian-12-r0
+        - name: tensorflow-serving
+          image: docker.io/helmhubio/tensorflow-serving:2.19.1-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 2.19.1
+    created: "2025-11-08T08:48:00.520133821+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: TensorFlow ResNet is a client utility for use with TensorFlow Serving
+      and ResNet models.
+    digest: 8425408dbd8b0082c5ad95f22ba2bc72488a6bd7452176cc8534aea8a3ffea27
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/tensorflow-inception/img/tensorflow-inception-stack-220x234.png
+    keywords:
+    - tensorflow
+    - serving
+    - resnet
+    - machine
+    - learning
+    - library
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: tensorflow-resnet
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/tensorflow-resnet
+    urls:
+    - https://helmhub-io.github.io/charts/tensorflow-resnet-4.3.15.tgz
+    version: 4.3.15
+  thanos:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: thanos
+          image: docker.io/helmhubio/thanos:0.39.2-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 0.39.2
+    created: "2025-11-08T08:48:00.54606643+01:00"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 17.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Thanos is a highly available metrics system that can be added on
+      top of existing Prometheus deployments, providing a global query view across
+      all Prometheus installations.
+    digest: 359c9daa513f63cbef5667086c7d216822d9da46597fa6120268381accafb9aa
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/thanos/img/thanos-stack-220x234.png
+    keywords:
+    - analytics
+    - monitoring
+    - prometheus
+    - thanos
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: thanos
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/thanos
+    urls:
+    - https://helmhub-io.github.io/charts/thanos-17.3.2.tgz
+    version: 17.3.2
+  tomcat:
+  - annotations:
+      images: |
+        - name: jmx-exporter
+          image: docker.io/helmhubio/jmx-exporter:1.4.0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: tomcat
+          image: docker.io/helmhubio/tomcat:11.0.10-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 11.0.10
+    created: "2025-11-08T08:48:00.551716645+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Tomcat is an open-source web server designed to host and run
+      Java-based web applications. It is a lightweight server with a good performance
+      for applications running in production environments.
+    digest: 085421b2628fb1bf579bf1d499ec314082117ec2ee2b7082015e58c49d9206e5
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/tomcat/img/tomcat-stack-220x234.png
+    keywords:
+    - tomcat
+    - java
+    - http
+    - web
+    - application server
+    - jsp
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: tomcat
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/tomcat
+    urls:
+    - https://helmhub-io.github.io/charts/tomcat-13.0.0.tgz
+    version: 13.0.0
+  valkey:
+  - annotations:
+      images: |
+        - name: kubectl
+          image: docker.io/helmhubio/kubectl:1.33.4-debian-12-r0
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: redis-exporter
+          image: docker.io/helmhubio/redis-exporter:1.76.0-debian-12-r0
+        - name: valkey
+          image: docker.io/helmhubio/valkey:8.1.3-debian-12-r3
+        - name: valkey-sentinel
+          image: docker.io/helmhubio/valkey-sentinel:8.1.3-debian-12-r3
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 8.1.3
+    created: "2025-11-08T08:48:00.559484481+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Valkey is an open source (BSD) high-performance key/value datastore
+      that supports a variety workloads such as caching, message queues, and can act
+      as a primary database.
+    digest: 1b837c24bd595a7a9b30e8716341cc614fe0a6fa1ea8cdfcf06b1a6f3fb3de78
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/valkey/img/valkey-stack-220x234.png
+    keywords:
+    - valkey
+    - keyvalue
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: valkey
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/valkey
+    urls:
+    - https://helmhub-io.github.io/charts/valkey-4.0.1.tgz
+    version: 4.0.1
+  valkey-cluster:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: redis-exporter
+          image: docker.io/helmhubio/redis-exporter:1.76.0-debian-12-r0
+        - name: valkey-cluster
+          image: docker.io/helmhubio/valkey-cluster:8.1.3-debian-12-r3
+      licenses: Apache-2.0
+      tanzuCategory: service
+    apiVersion: v2
+    appVersion: 8.1.3
+    created: "2025-11-08T08:48:00.567909267+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Valkey is an open source (BSD) high-performance key/value datastore
+      that supports a variety workloads such as caching, message queues, and can act
+      as a primary database.
+    digest: 210cdb7f4c8d6c0e66cdfd2572c4e9d69fe9291de02d082f6cf4343d3ebb9326
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/valkey/img/valkey-stack-220x234.png
+    keywords:
+    - valkey
+    - keyvalue
+    - database
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: valkey-cluster
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/valkey-cluster
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/vakey-cluster
+    urls:
+    - https://helmhub-io.github.io/charts/valkey-cluster-3.0.25.tgz
+    version: 3.0.25
+  vault:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: vault
+          image: docker.io/helmhubio/vault:1.20.2-debian-12-r2
+        - name: vault-csi-provider
+          image: docker.io/helmhubio/vault-csi-provider:1.5.1-debian-12-r4
+        - name: vault-k8s
+          image: docker.io/helmhubio/vault-k8s:1.7.0-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 1.20.2
+    created: "2025-11-08T08:48:00.574861014+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Vault is a tool for securely managing and accessing secrets using
+      a unified interface. Features secure storage, dynamic secrets, data encryption
+      and revocation.
+    digest: e99dbf8192132e1c6adc9ddd0692c416d1e07d2f4ff7ba0a2ad4172f26a9b452
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/vault/img/vault-stack-220x234.png
+    keywords:
+    - security
+    - secrets
+    - injection
+    - vault
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: vault
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/vault
+    urls:
+    - https://helmhub-io.github.io/charts/vault-1.9.1.tgz
+    version: 1.9.1
+  victoriametrics:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: victoriametrics-vmagent
+          image: docker.io/helmhubio/victoriametrics-vmagent:1.124.0-debian-12-r0
+        - name: victoriametrics-vmalert
+          image: docker.io/helmhubio/victoriametrics-vmalert:1.124.0-debian-12-r0
+        - name: victoriametrics-vmauth
+          image: docker.io/helmhubio/victoriametrics-vmauth:1.124.0-debian-12-r0
+        - name: victoriametrics-vminsert
+          image: docker.io/helmhubio/victoriametrics-vminsert:1.124.0-debian-12-r0
+        - name: victoriametrics-vmselect
+          image: docker.io/helmhubio/victoriametrics-vmselect:1.124.0-debian-12-r0
+        - name: victoriametrics-vmstorage
+          image: docker.io/helmhubio/victoriametrics-vmstorage:1.124.0-debian-12-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.124.0
+    created: "2025-11-08T08:48:00.587515278+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: VictoriaMetrics is a fast, cost-effective, and scalable monitoring
+      solution and time series database, compatible with Prometheus and Graphite
+    digest: ac80eeb3cc6de84e7f88fd775cce411c3d9971cf349a599ec53c07ee667b34fb
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/victoriametrics/img/victoriametrics-stack-220x234.png
+    keywords:
+    - monitoring
+    - metrics
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: victoriametrics
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/victoriametrics
+    urls:
+    - https://helmhub-io.github.io/charts/victoriametrics-0.1.32.tgz
+    version: 0.1.32
+  whereabouts:
+  - annotations:
+      images: |
+        - name: whereabouts
+          image: docker.io/helmhubio/whereabouts:0.9.2-debian-12-r2
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 0.9.2
+    created: "2025-11-08T08:48:00.590057322+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Whereabouts is a CNI IPAM plugin for Kubernetes clusters. It dynamically
+      assigns IP addresses cluster-wide. Features both IPv4 and IPv6 addressing.
+    digest: 734e6ad857fd1dffdf5fcd5dcc4571fc8ecdd73f6b4c302e5f7e25c770d872bf
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/whereabouts/img/whereabouts-stack-220x234.png
+    keywords:
+    - whereabouts
+    - cni
+    - kubernetes
+    - networking
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: whereabouts
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/whereabouts
+    urls:
+    - https://helmhub-io.github.io/charts/whereabouts-1.2.20.tgz
+    version: 1.2.20
+  wildfly:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: wildfly
+          image: docker.io/helmhubio/wildfly:37.0.0-debian-12-r0
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 37.0.0
+    created: "2025-11-08T08:48:00.593785313+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Wildfly is a lightweight, open source application server, formerly
+      known as JBoss, that implements the latest enterprise Java standards.
+    digest: eb1268468149256eda1ca09709864f4f97cd1c376255d7e4a4deee387269a8b6
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/wildfly/img/wildfly-stack-220x234.png
+    keywords:
+    - wildfly
+    - java
+    - http
+    - web
+    - application server
+    - jsp
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: wildfly
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/wildfly
+    urls:
+    - https://helmhub-io.github.io/charts/wildfly-25.0.1.tgz
+    version: 25.0.1
+  wordpress:
+  - annotations:
+      images: |
+        - name: apache-exporter
+          image: docker.io/helmhubio/apache-exporter:1.0.10-debian-12-r55
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: wordpress
+          image: docker.io/helmhubio/wordpress:6.8.2-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 6.8.2
+    created: "2025-11-08T08:48:00.612975219+01:00"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 7.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 22.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: fb9980330ea9fd8cec0c3fb336ba8626b9de7b86a8248a74bdca29c2dd23fff0
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: wordpress
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/wordpress
+    urls:
+    - https://helmhub-io.github.io/charts/wordpress-27.0.0.tgz
+    version: 27.0.0
+  zipkin:
+  - annotations:
+      images: |
+        - name: cassandra
+          image: docker.io/helmhubio/cassandra:5.0.5-debian-12-r7
+        - name: zipkin
+          image: docker.io/helmhubio/zipkin:3.5.1-debian-12-r5
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 3.5.1
+    created: "2025-11-08T08:48:00.623503817+01:00"
+    dependencies:
+    - condition: cassandra.enabled
+      name: cassandra
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      version: 12.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Zipkin is a distributed tracing system that helps collect and analyze
+      timing data to troubleshoot latency issues in service architectures, providing
+      visibility into service call performance.
+    digest: ba2947daebe6b15494b6c6079cb4dc360ebccef55f453497858abd01ab0c27f2
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/zipkin/img/zipkin-stack-220x234.png
+    keywords:
+    - zipkin
+    - tracing
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: zipkin
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/zipkin
+    - https://github.com/helmhub-io/containers/tree/main/helmhubio/zipkin
+    - https://github.com/openzipkin/zipkin
+    urls:
+    - https://helmhub-io.github.io/charts/zipkin-1.3.12.tgz
+    version: 1.3.12
+  zookeeper:
+  - annotations:
+      images: |
+        - name: os-shell
+          image: docker.io/helmhubio/os-shell:12-debian-12-r51
+        - name: zookeeper
+          image: docker.io/helmhubio/zookeeper:3.9.3-debian-12-r21
+      licenses: Apache-2.0
+      tanzuCategory: clusterUtility
+    apiVersion: v2
+    appVersion: 3.9.3
+    created: "2025-11-08T08:48:00.627973147+01:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/helmhubiocharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache ZooKeeper provides a reliable, centralized register of configuration
+      data and services for distributed applications.
+    digest: 51b7d19154aaf49c96299a332cb1b6db0955ea97066ac514f81291329096e3f0
+    home: https://github.com/helmhub-io/charts
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/zookeeper/img/zookeeper-stack-220x234.png
+    keywords:
+    - zookeeper
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/helmhub-io/charts
+    name: zookeeper
+    sources:
+    - https://github.com/helmhub-io/charts/tree/main/helmhubio/zookeeper
+    urls:
+    - https://helmhub-io.github.io/charts/zookeeper-13.8.8.tgz
+    version: 13.8.8
+generated: "2025-11-08T08:47:59.35964223+01:00"

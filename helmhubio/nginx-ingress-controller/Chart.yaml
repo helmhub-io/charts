@@ -6,7 +6,7 @@ annotations:
     - name: nginx
       image: docker.io/helmhubio/nginx:1.29.1-debian-12-r0
     - name: nginx-ingress-controller
-      image: docker.io/helmhubio/nginx-ingress-controller:1.13.1-debian-12-r1
+      image: docker.io/helmhubio/nginx-ingress-controller:1.13.1
   licenses: Apache-2.0
   tanzuCategory: clusterUtility
 apiVersion: v2
