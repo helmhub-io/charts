@@ -2,9 +2,6 @@ CHART NAME: {{ .Chart.Name }}
 CHART VERSION: {{ .Chart.Version }}
 APP VERSION: {{ .Chart.AppVersion }}
 
-⚠ WARNING: Since August 28th, 2025, only a limited subset of images/charts are available for free.
-    Subscribe to HelmHubIO Secure Images to receive continued support and security updates.
-    More info at https://helmhub.io and https://github.com/helmhub-io/containers/issues/83267
 
 {{- if and (not .Values.auth.client.enabled) (eq .Values.service.type "LoadBalancer") }}
 -------------------------------------------------------------------------------
