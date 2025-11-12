@@ -214,5 +214,7 @@ jobs:
 
 - **Repository:** https://helmhub-io.github.io/charts/
 - **Test Reports:** `/tmp/helm-chart-tests/`
-- **Documentation:** [README.md](../README.md)
+## Additional Resources
+
+- **Documentation:** [README.md](README.md)
 - **Issue Tracker:** [GitHub Issues](https://github.com/helmhub-io/charts/issues)
