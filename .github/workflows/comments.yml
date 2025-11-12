@@ -15,7 +15,8 @@ permissions:
 concurrency:
   group: card-movement-${{ github.event.issue.number }}
 jobs:
-  call-comments-workflow:
-    if: ${{ github.repository_owner == 'bitnami' }}
-    uses: helmhub-io/support/.github/workflows/comment-created.yml@main
+  request-review:
+    name: Request review
+    if: ${{ github.repository_owner == 'helmhub-io' }}
+    uses: helmhub-io/support/.github/workflows/item-comments-request-review.yml@main
     secrets: inherit

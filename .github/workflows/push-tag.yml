@@ -7,7 +7,7 @@ on: # rebuild any PRs and main branch changes
     branches:
       - main
     paths:
-      - 'bitnami/**'
+      - 'helmhubio/**'
       - '!**.md'
 # Remove all permissions by default.
 permissions: {}
@@ -20,7 +20,7 @@ jobs:
     outputs:
       chart: ${{ steps.get-chart.outputs.chart }}
       result: ${{ steps.get-chart.outputs.result }}
-    if: ${{ github.repository_owner == 'bitnami' }}
+    if: ${{ github.repository_owner == 'helmhub-io' }}
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
         with:
@@ -32,10 +32,10 @@ jobs:
           cd charts
           files_changed="$(git show --pretty="" --name-only)"
           # Adding || true to avoid "Process exited with code 1" errors
-          charts_dirs_changed="$(echo "$files_changed" | xargs dirname | grep -o "bitnami/[^/]*" | sort | uniq || true)"
+          charts_dirs_changed="$(echo "$files_changed" | xargs dirname | grep -o "helmhubio/[^/]*" | sort | uniq || true)"
           # Using grep -c as a better alternative to wc -l when dealing with empty strings."
-          num_charts_changed="$(echo "$charts_dirs_changed" | grep -c "bitnami" || true)"
-          num_version_bumps="$(echo "$files_changed" | grep  "bitnami/[^/]*/Chart.yaml" | xargs git show | grep -c "+version" || true)"
+          num_charts_changed="$(echo "$charts_dirs_changed" | grep -c "helmhubio" || true)"
+          num_version_bumps="$(echo "$files_changed" | grep  "helmhubio/[^/]*/Chart.yaml" | xargs git show | grep -c "+version" || true)"
 
           if [[ "$num_charts_changed" -ne "$num_version_bumps" ]]; then
             # Changes done in charts but version not bumped -> ERROR
@@ -44,7 +44,7 @@ jobs:
             echo "result=fail" >> $GITHUB_OUTPUT
           elif [[ "$num_charts_changed" -eq "1" ]]; then
             # Changes done in only one chart -> OK
-            chart_name=$(echo "$charts_dirs_changed" | sed "s|bitnami/||g")
+            chart_name=$(echo "$charts_dirs_changed" | sed "s|helmhubio/||g")
             echo "chart=${chart_name}" >> $GITHUB_OUTPUT
             echo "result=ok" >> $GITHUB_OUTPUT
           else
@@ -80,7 +80,7 @@ jobs:
         run: |
           cd charts
           # Get chart version and list of tags
-          chart_version="$(yq e '.version' bitnami/${CHART}/Chart.yaml)"
+          chart_version="$(yq e '.version' helmhubio/${CHART}/Chart.yaml)"
           git fetch --tags
           # If the tag does not exist, create and push it (this allows re-executing the job)
           if ! git tag | grep ${CHART}/${chart_version}; then
