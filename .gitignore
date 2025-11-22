@@ -4,3 +4,4 @@ charts/
 /.idea/*
 .vscode
 .DS_Store
+/home/freeman/helmchart/charts/WORKFLOW_FIXES.md
